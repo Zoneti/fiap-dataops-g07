@@ -1,0 +1,12 @@
+*.screenshot
+**/jobInfo.properties
+talendJobs/.JETEmitters/
+talendJobs/.Java/
+talendJobs/.metadata/
+talendJobs/INGESTAODADOS/code/routines/system/*.*
+talendJobs/INGESTAODADOS/temp/
+talendJobs/INGESTAODADOS/sqlPatterns/
+talendJobs/INGESTAODADOS/.settings
+talendJobs/INGESTAODADOS/poms/
+#talend.project
+talendJobs/INGESTAODADOS/.project
