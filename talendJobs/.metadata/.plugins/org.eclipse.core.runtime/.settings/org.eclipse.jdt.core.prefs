@@ -37,6 +37,7 @@ org.eclipse.jdt.core.classpathVariable.HADOOP_DISTRIBUTIONS=D\:/Programas/Talend
 org.eclipse.jdt.core.classpathVariable.MANAGEMENT_LIBRARIES=D\:/Programas/Talend/plugins/org.talend.metadata.managment_7.3.1.20200217_0831.jar
 org.eclipse.jdt.core.classpathVariable.ORG_TALEND_DESIGNER_ABSTRACTMAP_LIBRARIES=D\:/Programas/Talend/plugins/org.talend.designer.abstractmap_7.3.1.20190624_1017.jar
 org.eclipse.jdt.core.classpathVariable.TALEND_MODEL=D\:/Programas/Talend/plugins/org.talend.model_7.3.1.20200210_0613.jar
+org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
 org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
 org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.8
 org.eclipse.jdt.core.compiler.compliance=1.8

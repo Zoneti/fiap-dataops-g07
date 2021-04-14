@@ -1,2 +1,2 @@
-TOS_Jobs_Records={"INGESTAODADOS"\:{"projects"\:{},"type"\:"local"}}
+TOS_Jobs_Records={"INGESTAODADOS"\:{"projects"\:{"METADATA_CONNECTIONS"\:{"nb"\:1,"nb.used"\:1,"types"\:{"Microsoft SQL Server"\:1}},"PROCESS"\:{"details"\:{"components"\:[{"component_name"\:"tPrejob","count"\:1},{"component_name"\:"tMSSqlConnection","count"\:1},{"component_name"\:"tMSSqlInput","count"\:10},{"component_name"\:"tFileOutputDelimited","count"\:10},{"component_name"\:"tPostjob","count"\:1},{"component_name"\:"tMSSqlClose","count"\:1}],"nb.components"\:24,"nb.contextVars"\:0},"nb"\:1}},"type"\:"local"}}
 eclipse.preferences.version=1
