@@ -10,7 +10,8 @@
   <url>http://www.talend.org/</url>
   <modules>
     <module>code/routines</module>
-    <module>jobs/process/exportrawdata_0.1</module>
+    <module>jobs/process/jobexportrawdata_0.1</module>
+    <module>jobs/process/jobexportdatascience_0.1</module>
   </modules>
   <properties>
     <talend.project.name>INGESTAODADOS</talend.project.name>

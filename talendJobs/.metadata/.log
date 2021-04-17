@@ -1011,3 +1011,591 @@ org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.la
 
 !ENTRY org.eclipse.core.resources 2 10035 2021-04-13 22:54:37.304
 !MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2021-04-16 21:30:02.776 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_281
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.jdt.launching.macosx 4 0 2021-04-16 21:30:05.356
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.macosx [19]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.jdt.launching.ui.macosx 4 0 2021-04-16 21:30:05.357
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.ui.macosx [20]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:31:06.699
+!MESSAGE 2021-04-16 21:31:06,696 INFO  org.talend.utils.StudioKeysFileCheck  - encryptionKeyFilePath: D:\Programas\Talend\configuration\studio.keys
+
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-04-16 21:31:07.274
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:31:16.409
+!MESSAGE 2021-04-16 21:31:16,408 INFO  org.talend.repository.ui.login.LoginProjectPage  - validate updatesite...
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:31:32.926
+!MESSAGE 2021-04-16 21:31:32,924 WARN  org.talend.sdk.component.studio.logging.JULToOsgiHandler  - [org.talend.sdk.component.server.service.ComponentManagerService.init] No system property 'jdk.serialFilter', ensure it is intended
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:31:52.491
+!MESSAGE 2021-04-16 21:31:52,490 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:31:52.491
+!MESSAGE 2021-04-16 21:31:52,491 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Resources folder /INGESTAODADOS_ROUTINES/src/main/java overlaps with sources folder /INGESTAODADOS_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:31:52.496
+!MESSAGE 2021-04-16 21:31:52,495 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_ROUTINES/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:31:52.496
+!MESSAGE 2021-04-16 21:31:52,496 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_ROUTINES/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:31:55.658
+!MESSAGE 2021-04-16 21:31:55,657 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  - D:\Projetos\fiap-dataops-g07\talendJobs\INGESTAODADOS\poms\code\routines
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:31:55.660
+!MESSAGE 2021-04-16 21:31:55,660 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  -  mvn -B -o -s D:\Programas\Talend\configuration\maven_user_settings.xml install -llr -Dmaven.main.skip=true -Dci.builder.skip=true
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:32:01.015
+!MESSAGE 2021-04-16 21:32:01,015 INFO  org.talend.core.repository.model.ProxyRepositoryFactory  - user@talend.com logged on IngestaoDados
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:32:02.054
+!MESSAGE 2021-04-16 21:32:02,053 INFO  org.talend.core.repository.logintask.ReadOnlyProjectConfirm  - ReadOnly confirm
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:32:32.857
+!MESSAGE 2021-04-16 21:32:32,857 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:32:32.863
+!MESSAGE 2021-04-16 21:32:32,863 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:32:32.881
+!MESSAGE 2021-04-16 21:32:32,881 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:32:32.888
+!MESSAGE 2021-04-16 21:32:32,888 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: esb-java-11-group
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:32:32.892
+!MESSAGE 2021-04-16 21:32:32,892 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:32:32.899
+!MESSAGE 2021-04-16 21:32:32,899 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:32:32.903
+!MESSAGE 2021-04-16 21:32:32,903 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:32:32.962
+!MESSAGE 2021-04-16 21:32:32,962 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:32:33.045
+!MESSAGE 2021-04-16 21:32:33,044 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: esb-java-11-group
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:32:33.072
+!MESSAGE 2021-04-16 21:32:33,072 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:32:33.137
+!MESSAGE 2021-04-16 21:32:33,137 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:32:33.144
+!MESSAGE 2021-04-16 21:32:33,144 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:32:33.158
+!MESSAGE 2021-04-16 21:32:33,158 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:32:33.164
+!MESSAGE 2021-04-16 21:32:33,163 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:32:33.177
+!MESSAGE 2021-04-16 21:32:33,177 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:32:33.183
+!MESSAGE 2021-04-16 21:32:33,182 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:32:33.188
+!MESSAGE 2021-04-16 21:32:33,188 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:34:31.900
+!MESSAGE 2021-04-16 21:34:31,900 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:34:32.115
+!MESSAGE 2021-04-16 21:34:32,114 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_EXPORTRAWDATA_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:34:32.115
+!MESSAGE 2021-04-16 21:34:32,115 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_EXPORTRAWDATA_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:34:32.117
+!MESSAGE 2021-04-16 21:34:32,116 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_EXPORTRAWDATA_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:34:32.117
+!MESSAGE 2021-04-16 21:34:32,117 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_EXPORTRAWDATA_0.1/src/test/resources
+
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-04-16 21:36:26.618
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2021-04-16 21:36:37.526 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_281
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.jdt.launching.macosx 4 0 2021-04-16 21:36:38.418
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.macosx [19]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.jdt.launching.ui.macosx 4 0 2021-04-16 21:36:38.419
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.ui.macosx [20]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:36:40.416
+!MESSAGE 2021-04-16 21:36:40,413 INFO  org.talend.utils.StudioKeysFileCheck  - encryptionKeyFilePath: D:\Programas\Talend\configuration\studio.keys
+
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-04-16 21:36:40.658
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:36:43.648
+!MESSAGE 2021-04-16 21:36:43,647 INFO  org.talend.repository.ui.login.LoginProjectPage  - validate updatesite...
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:37:48.428
+!MESSAGE 2021-04-16 21:37:48,428 WARN  org.talend.sdk.component.studio.logging.JULToOsgiHandler  - [org.talend.sdk.component.server.service.ComponentManagerService.init] No system property 'jdk.serialFilter', ensure it is intended
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:37:52.449
+!MESSAGE 2021-04-16 21:37:52,449 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:37:52.450
+!MESSAGE 2021-04-16 21:37:52,450 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Resources folder /INGESTAODADOS_ROUTINES/src/main/java overlaps with sources folder /INGESTAODADOS_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:37:52.455
+!MESSAGE 2021-04-16 21:37:52,454 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_ROUTINES/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:37:52.455
+!MESSAGE 2021-04-16 21:37:52,455 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_ROUTINES/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:37:55.205
+!MESSAGE 2021-04-16 21:37:55,205 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  - D:\Projetos\fiap-dataops-g07\talendJobs\INGESTAODADOS\poms\code\routines
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:37:55.206
+!MESSAGE 2021-04-16 21:37:55,206 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  -  mvn -B -o -s D:\Programas\Talend\configuration\maven_user_settings.xml install -llr -Dmaven.main.skip=true -Dci.builder.skip=true
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:37:58.366
+!MESSAGE 2021-04-16 21:37:58,365 INFO  org.talend.core.repository.model.ProxyRepositoryFactory  - user@talend.com logged on IngestaoDados
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:37:59.138
+!MESSAGE 2021-04-16 21:37:59,138 INFO  org.talend.core.repository.logintask.ReadOnlyProjectConfirm  - ReadOnly confirm
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:38:14.683
+!MESSAGE 2021-04-16 21:38:14,683 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:38:14.686
+!MESSAGE 2021-04-16 21:38:14,686 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:38:14.699
+!MESSAGE 2021-04-16 21:38:14,699 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:38:14.704
+!MESSAGE 2021-04-16 21:38:14,704 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: esb-java-11-group
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:38:14.707
+!MESSAGE 2021-04-16 21:38:14,706 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:38:14.712
+!MESSAGE 2021-04-16 21:38:14,711 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:38:14.717
+!MESSAGE 2021-04-16 21:38:14,717 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:38:14.744
+!MESSAGE 2021-04-16 21:38:14,744 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:38:14.825
+!MESSAGE 2021-04-16 21:38:14,825 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: esb-java-11-group
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:38:14.855
+!MESSAGE 2021-04-16 21:38:14,854 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:38:14.929
+!MESSAGE 2021-04-16 21:38:14,929 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:38:14.938
+!MESSAGE 2021-04-16 21:38:14,937 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:38:14.957
+!MESSAGE 2021-04-16 21:38:14,957 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:38:14.962
+!MESSAGE 2021-04-16 21:38:14,962 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:38:15.004
+!MESSAGE 2021-04-16 21:38:15,004 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:38:15.009
+!MESSAGE 2021-04-16 21:38:15,009 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-04-16 21:38:15.014
+!MESSAGE 2021-04-16 21:38:15,014 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:39:00.520
+!MESSAGE 2021-04-16 21:39:00,520 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:39:00.695
+!MESSAGE 2021-04-16 21:39:00,695 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_EXPORTRAWDATA_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:39:00.696
+!MESSAGE 2021-04-16 21:39:00,695 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_EXPORTRAWDATA_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:39:00.697
+!MESSAGE 2021-04-16 21:39:00,697 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_EXPORTRAWDATA_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:39:00.698
+!MESSAGE 2021-04-16 21:39:00,698 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_EXPORTRAWDATA_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:40:43.997
+!MESSAGE 2021-04-16 21:40:43,996 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:40:44.194
+!MESSAGE 2021-04-16 21:40:44,193 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:40:44.461
+!MESSAGE 2021-04-16 21:40:44,461 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_EXPORTRAWDATA_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:40:44.462
+!MESSAGE 2021-04-16 21:40:44,462 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_EXPORTRAWDATA_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:40:44.467
+!MESSAGE 2021-04-16 21:40:44,466 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_EXPORTRAWDATA_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:40:44.467
+!MESSAGE 2021-04-16 21:40:44,467 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_EXPORTRAWDATA_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:40:44.578
+!MESSAGE 2021-04-16 21:40:44,577 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:40:44.950
+!MESSAGE 2021-04-16 21:40:44,949 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:40:45.374
+!MESSAGE 2021-04-16 21:40:45,374 INFO  org.talend.designer.core.runprocess.Processor  - Command line: C:/Program Files/Java/jre1.8.0_281/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/Programas/Talend/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/Programas/Talend/configuration/studio.keys -cp D:/Projetos/fiap-dataops-g07/talendJobs/INGESTAODADOS/poms/jobs/process/exportrawdata_0.1/target/classpath.jar; ingestaodados.exportrawdata_0_1.ExportRawData --context=Default --stat_port=3398 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:42:22.121
+!MESSAGE 2021-04-16 21:42:22,120 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:42:22.277
+!MESSAGE 2021-04-16 21:42:22,277 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:42:22.633
+!MESSAGE 2021-04-16 21:42:22,633 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_EXPORTRAWDATA_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:42:22.635
+!MESSAGE 2021-04-16 21:42:22,634 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_EXPORTRAWDATA_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:42:22.638
+!MESSAGE 2021-04-16 21:42:22,638 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_EXPORTRAWDATA_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:42:22.639
+!MESSAGE 2021-04-16 21:42:22,639 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_EXPORTRAWDATA_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:42:22.724
+!MESSAGE 2021-04-16 21:42:22,724 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:42:22.961
+!MESSAGE 2021-04-16 21:42:22,961 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:42:23.140
+!MESSAGE 2021-04-16 21:42:23,139 INFO  org.talend.designer.core.runprocess.Processor  - Command line: C:/Program Files/Java/jre1.8.0_281/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/Programas/Talend/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/Programas/Talend/configuration/studio.keys -cp D:/Projetos/fiap-dataops-g07/talendJobs/INGESTAODADOS/poms/jobs/process/exportrawdata_0.1/target/classpath.jar; ingestaodados.exportrawdata_0_1.ExportRawData --context=Default --stat_port=3832 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:50:42.155
+!MESSAGE 2021-04-16 21:50:42,155 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:50:42.280
+!MESSAGE 2021-04-16 21:50:42,279 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_JOBREPORTVENDAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:50:42.281
+!MESSAGE 2021-04-16 21:50:42,280 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_JOBREPORTVENDAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:50:42.288
+!MESSAGE 2021-04-16 21:50:42,287 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_JOBREPORTVENDAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:50:42.289
+!MESSAGE 2021-04-16 21:50:42,289 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_JOBREPORTVENDAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:51:18.723
+!MESSAGE 2021-04-16 21:51:18,723 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:51:18.876
+!MESSAGE 2021-04-16 21:51:18,876 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_JOBEXPORTRAWDATA_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:51:18.877
+!MESSAGE 2021-04-16 21:51:18,876 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_JOBEXPORTRAWDATA_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:51:18.882
+!MESSAGE 2021-04-16 21:51:18,881 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_JOBEXPORTRAWDATA_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:51:18.883
+!MESSAGE 2021-04-16 21:51:18,882 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_JOBEXPORTRAWDATA_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:53:47.218
+!MESSAGE 2021-04-16 21:53:47,218 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:53:47.452
+!MESSAGE 2021-04-16 21:53:47,451 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_JOBEXPORTDATASCIENCE_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:53:47.452
+!MESSAGE 2021-04-16 21:53:47,452 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_JOBEXPORTDATASCIENCE_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:53:47.457
+!MESSAGE 2021-04-16 21:53:47,456 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_JOBEXPORTDATASCIENCE_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 21:53:47.457
+!MESSAGE 2021-04-16 21:53:47,457 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_JOBEXPORTDATASCIENCE_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 22:08:50.339
+!MESSAGE 2021-04-16 22:08:50,338 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 22:08:50.401
+!MESSAGE 2021-04-16 22:08:50,400 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 22:08:50.559
+!MESSAGE 2021-04-16 22:08:50,558 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_JOBEXPORTRAWDATA_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 22:08:50.559
+!MESSAGE 2021-04-16 22:08:50,559 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_JOBEXPORTRAWDATA_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 22:08:50.562
+!MESSAGE 2021-04-16 22:08:50,562 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_JOBEXPORTRAWDATA_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 22:08:50.563
+!MESSAGE 2021-04-16 22:08:50,563 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_JOBEXPORTRAWDATA_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 22:08:50.627
+!MESSAGE 2021-04-16 22:08:50,626 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 22:08:50.819
+!MESSAGE 2021-04-16 22:08:50,819 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 22:08:51.095
+!MESSAGE 2021-04-16 22:08:51,095 INFO  org.talend.designer.core.runprocess.Processor  - Command line: C:/Program Files/Java/jre1.8.0_281/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/Programas/Talend/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/Programas/Talend/configuration/studio.keys -cp D:/Projetos/fiap-dataops-g07/talendJobs/INGESTAODADOS/poms/jobs/process/jobexportrawdata_0.1/target/classpath.jar; ingestaodados.jobexportrawdata_0_1.JobExportRawData --context=Default --stat_port=3443 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 22:10:14.131
+!MESSAGE 2021-04-16 22:10:14,131 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 22:10:14.183
+!MESSAGE 2021-04-16 22:10:14,182 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 22:10:14.475
+!MESSAGE 2021-04-16 22:10:14,475 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_JOBEXPORTRAWDATA_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 22:10:14.476
+!MESSAGE 2021-04-16 22:10:14,475 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_JOBEXPORTRAWDATA_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 22:10:14.478
+!MESSAGE 2021-04-16 22:10:14,478 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_JOBEXPORTRAWDATA_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 22:10:14.478
+!MESSAGE 2021-04-16 22:10:14,478 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_JOBEXPORTRAWDATA_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 22:10:14.547
+!MESSAGE 2021-04-16 22:10:14,546 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 22:10:14.710
+!MESSAGE 2021-04-16 22:10:14,709 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 22:10:14.886
+!MESSAGE 2021-04-16 22:10:14,886 INFO  org.talend.designer.core.runprocess.Processor  - Command line: C:/Program Files/Java/jre1.8.0_281/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/Programas/Talend/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/Programas/Talend/configuration/studio.keys -cp D:/Projetos/fiap-dataops-g07/talendJobs/INGESTAODADOS/poms/jobs/process/jobexportrawdata_0.1/target/classpath.jar; ingestaodados.jobexportrawdata_0_1.JobExportRawData --context=Default --stat_port=3524 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 23:15:52.651
+!MESSAGE 2021-04-16 23:15:52,651 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 23:15:52.701
+!MESSAGE 2021-04-16 23:15:52,701 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 23:15:52.981
+!MESSAGE 2021-04-16 23:15:52,981 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_JOBEXPORTRAWDATA_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 23:15:52.982
+!MESSAGE 2021-04-16 23:15:52,981 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_JOBEXPORTRAWDATA_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 23:15:52.985
+!MESSAGE 2021-04-16 23:15:52,985 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_JOBEXPORTRAWDATA_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 23:15:52.986
+!MESSAGE 2021-04-16 23:15:52,985 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_JOBEXPORTRAWDATA_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 23:15:53.040
+!MESSAGE 2021-04-16 23:15:53,040 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 23:15:53.192
+!MESSAGE 2021-04-16 23:15:53,191 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-04-16 23:15:53.337
+!MESSAGE 2021-04-16 23:15:53,336 INFO  org.talend.designer.core.runprocess.Processor  - Command line: C:/Program Files/Java/jre1.8.0_281/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/Programas/Talend/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/Programas/Talend/configuration/studio.keys -cp D:/Projetos/fiap-dataops-g07/talendJobs/INGESTAODADOS/poms/jobs/process/jobexportrawdata_0.1/target/classpath.jar; ingestaodados.jobexportrawdata_0_1.JobExportRawData --context=Default --stat_port=3682 %*
+
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-04-16 23:17:07.561
+!MESSAGE The workspace will exit with unsaved changes in this session.
