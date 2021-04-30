@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_NBxOgKlFEeucQ7YV5N33cg" comment="connectionComment" label="connectionLabel" dataPackage="_NBxOgalFEeucQ7YV5N33cg" mappingTypeUsed="true" mappingTypeId="id_MSSQL"/>
+  <TalendMetadata:GenericPackage xmi:id="_NBxOgalFEeucQ7YV5N33cg" dataManager="_NBxOgKlFEeucQ7YV5N33cg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_NBxOgqlFEeucQ7YV5N33cg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NBxOg6lFEeucQ7YV5N33cg" name="ProductCategoryID" id="329" label="ProductCategoryID" length="10" sourceType="INT IDENTITY" talendType="id_Integer" key="true" nullable="false">
+        <initialValue xmi:id="_NBxOhKlFEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NBxOhalFEeucQ7YV5N33cg" name="ParentProductCategoryID" id="330" label="ParentProductCategoryID" length="10" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_NBxOhqlFEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NBxOh6lFEeucQ7YV5N33cg" name="rowguid" id="331" label="rowguid" length="36" sourceType="UNIQUEIDENTIFIER" talendType="id_Object" nullable="false">
+        <initialValue xmi:id="_NBxOiKlFEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NBxOialFEeucQ7YV5N33cg" name="ModifiedDate" id="332" label="ModifiedDate" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_NBxOiqlFEeucQ7YV5N33cg"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

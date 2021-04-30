@@ -470,6 +470,26 @@ public class JobExportRawData implements TalendJob {
 		tPostjob_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
+	public void tRunJob_2_error(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		status = "failure";
+
+		tRunJob_2_onSubJobError(exception, errorComponent, globalMap);
+	}
+
+	public void tPostjob_2_error(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		status = "failure";
+
+		tPostjob_2_onSubJobError(exception, errorComponent, globalMap);
+	}
+
 	public void tDBClose_1_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
@@ -588,6 +608,22 @@ public class JobExportRawData implements TalendJob {
 
 	}
 
+	public void tRunJob_2_onSubJobError(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
+				exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception), "");
+
+	}
+
+	public void tPostjob_2_onSubJobError(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
+				exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception), "");
+
+	}
+
 	public void tDBClose_1_onSubJobError(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
@@ -615,12 +651,6 @@ public class JobExportRawData implements TalendJob {
 	public static class row1Struct implements routines.system.IPersistableRow<row1Struct> {
 		final static byte[] commonByteArrayLock_INGESTAODADOS_JobExportRawData = new byte[0];
 		static byte[] commonByteArray_INGESTAODADOS_JobExportRawData = new byte[0];
-		protected static final int DEFAULT_HASHCODE = 1;
-		protected static final int PRIME = 31;
-		protected int hashCode = DEFAULT_HASHCODE;
-		public boolean hashCodeDirty = true;
-
-		public String loopKey;
 
 		public int AddressID;
 
@@ -638,6 +668,18 @@ public class JobExportRawData implements TalendJob {
 
 		public String getAddressLine2() {
 			return this.AddressLine2;
+		}
+
+		public String StateProvince;
+
+		public String getStateProvince() {
+			return this.StateProvince;
+		}
+
+		public String CountryRegion;
+
+		public String getCountryRegion() {
+			return this.CountryRegion;
 		}
 
 		public String City;
@@ -662,54 +704,6 @@ public class JobExportRawData implements TalendJob {
 
 		public java.util.Date getModifiedDate() {
 			return this.ModifiedDate;
-		}
-
-		@Override
-		public int hashCode() {
-			if (this.hashCodeDirty) {
-				final int prime = PRIME;
-				int result = DEFAULT_HASHCODE;
-
-				result = prime * result + (int) this.AddressID;
-
-				this.hashCode = result;
-				this.hashCodeDirty = false;
-			}
-			return this.hashCode;
-		}
-
-		@Override
-		public boolean equals(Object obj) {
-			if (this == obj)
-				return true;
-			if (obj == null)
-				return false;
-			if (getClass() != obj.getClass())
-				return false;
-			final row1Struct other = (row1Struct) obj;
-
-			if (this.AddressID != other.AddressID)
-				return false;
-
-			return true;
-		}
-
-		public void copyDataTo(row1Struct other) {
-
-			other.AddressID = this.AddressID;
-			other.AddressLine1 = this.AddressLine1;
-			other.AddressLine2 = this.AddressLine2;
-			other.City = this.City;
-			other.PostalCode = this.PostalCode;
-			other.rowguid = this.rowguid;
-			other.ModifiedDate = this.ModifiedDate;
-
-		}
-
-		public void copyKeysDataTo(row1Struct other) {
-
-			other.AddressID = this.AddressID;
-
 		}
 
 		private String readString(ObjectInputStream dis) throws IOException {
@@ -777,6 +771,10 @@ public class JobExportRawData implements TalendJob {
 
 					this.AddressLine2 = readString(dis);
 
+					this.StateProvince = readString(dis);
+
+					this.CountryRegion = readString(dis);
+
 					this.City = readString(dis);
 
 					this.PostalCode = readString(dis);
@@ -814,6 +812,14 @@ public class JobExportRawData implements TalendJob {
 
 				// String
 
+				writeString(this.StateProvince, dos);
+
+				// String
+
+				writeString(this.CountryRegion, dos);
+
+				// String
+
 				writeString(this.City, dos);
 
 				// String
@@ -842,6 +848,8 @@ public class JobExportRawData implements TalendJob {
 			sb.append("AddressID=" + String.valueOf(AddressID));
 			sb.append(",AddressLine1=" + AddressLine1);
 			sb.append(",AddressLine2=" + AddressLine2);
+			sb.append(",StateProvince=" + StateProvince);
+			sb.append(",CountryRegion=" + CountryRegion);
 			sb.append(",City=" + City);
 			sb.append(",PostalCode=" + PostalCode);
 			sb.append(",rowguid=" + String.valueOf(rowguid));
@@ -857,11 +865,6 @@ public class JobExportRawData implements TalendJob {
 		public int compareTo(row1Struct other) {
 
 			int returnValue = -1;
-
-			returnValue = checkNullsAndCompare(this.AddressID, other.AddressID);
-			if (returnValue != 0) {
-				return returnValue;
-			}
 
 			return returnValue;
 		}
@@ -1000,6 +1003,10 @@ public class JobExportRawData implements TalendJob {
 					outtFileOutputDelimited_1.write(OUT_DELIM_tFileOutputDelimited_1);
 					outtFileOutputDelimited_1.write("AddressLine2");
 					outtFileOutputDelimited_1.write(OUT_DELIM_tFileOutputDelimited_1);
+					outtFileOutputDelimited_1.write("StateProvince");
+					outtFileOutputDelimited_1.write(OUT_DELIM_tFileOutputDelimited_1);
+					outtFileOutputDelimited_1.write("CountryRegion");
+					outtFileOutputDelimited_1.write(OUT_DELIM_tFileOutputDelimited_1);
 					outtFileOutputDelimited_1.write("City");
 					outtFileOutputDelimited_1.write(OUT_DELIM_tFileOutputDelimited_1);
 					outtFileOutputDelimited_1.write("PostalCode");
@@ -1043,7 +1050,7 @@ public class JobExportRawData implements TalendJob {
 				String dbUser_tDBInput_1 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_1 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:989HEIUir1tuy2oLqnOOQUykQ0SGbiV8dComGFyZECNRoeyISA==");
+						"enc:routine.encryption.key.v1:30/AN/a3XZ947mmHN1zZJ3+YYHj1aq5eg7v6cJ1U11hFIzt60Q==");
 
 				String dbPwd_tDBInput_1 = decryptedPassword_tDBInput_1;
 
@@ -1064,8 +1071,9 @@ public class JobExportRawData implements TalendJob {
 
 				java.sql.Statement stmt_tDBInput_1 = conn_tDBInput_1.createStatement();
 
-				String dbquery_tDBInput_1 = "SELECT SalesLT.Address.AddressID,\n		SalesLT.Address.AddressLine1,\n		SalesLT.Address.AddressLine2,\n		SalesLT.Address.Cit"
-						+ "y,\n		SalesLT.Address.PostalCode,\n		SalesLT.Address.rowguid,\n		SalesLT.Address.ModifiedDate\nFROM	SalesLT.Address";
+				String dbquery_tDBInput_1 = "SELECT SalesLT.Address.AddressID,\n		SalesLT.Address.AddressLine1,\n		SalesLT.Address.AddressLine2,\n		SalesLT.Address.St"
+						+ "ateProvince,\n		SalesLT.Address.CountryRegion,\n		SalesLT.Address.City,\n		SalesLT.Address.PostalCode,\n		SalesLT.Address.r"
+						+ "owguid,\n		SalesLT.Address.ModifiedDate\nFROM	SalesLT.Address";
 
 				globalMap.put("tDBInput_1_QUERY", dbquery_tDBInput_1);
 				java.sql.ResultSet rs_tDBInput_1 = null;
@@ -1122,13 +1130,45 @@ public class JobExportRawData implements TalendJob {
 							}
 						}
 						if (colQtyInRs_tDBInput_1 < 4) {
-							row1.City = null;
+							row1.StateProvince = null;
 						} else {
 
 							tmpContent_tDBInput_1 = rs_tDBInput_1.getString(4);
 							if (tmpContent_tDBInput_1 != null) {
 								if (talendToDBList_tDBInput_1.contains(
 										rsmd_tDBInput_1.getColumnTypeName(4).toUpperCase(java.util.Locale.ENGLISH))) {
+									row1.StateProvince = FormatterUtils.formatUnwithE(tmpContent_tDBInput_1);
+								} else {
+									row1.StateProvince = tmpContent_tDBInput_1;
+								}
+							} else {
+								row1.StateProvince = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_1 < 5) {
+							row1.CountryRegion = null;
+						} else {
+
+							tmpContent_tDBInput_1 = rs_tDBInput_1.getString(5);
+							if (tmpContent_tDBInput_1 != null) {
+								if (talendToDBList_tDBInput_1.contains(
+										rsmd_tDBInput_1.getColumnTypeName(5).toUpperCase(java.util.Locale.ENGLISH))) {
+									row1.CountryRegion = FormatterUtils.formatUnwithE(tmpContent_tDBInput_1);
+								} else {
+									row1.CountryRegion = tmpContent_tDBInput_1;
+								}
+							} else {
+								row1.CountryRegion = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_1 < 6) {
+							row1.City = null;
+						} else {
+
+							tmpContent_tDBInput_1 = rs_tDBInput_1.getString(6);
+							if (tmpContent_tDBInput_1 != null) {
+								if (talendToDBList_tDBInput_1.contains(
+										rsmd_tDBInput_1.getColumnTypeName(6).toUpperCase(java.util.Locale.ENGLISH))) {
 									row1.City = FormatterUtils.formatUnwithE(tmpContent_tDBInput_1);
 								} else {
 									row1.City = tmpContent_tDBInput_1;
@@ -1137,14 +1177,14 @@ public class JobExportRawData implements TalendJob {
 								row1.City = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_1 < 5) {
+						if (colQtyInRs_tDBInput_1 < 7) {
 							row1.PostalCode = null;
 						} else {
 
-							tmpContent_tDBInput_1 = rs_tDBInput_1.getString(5);
+							tmpContent_tDBInput_1 = rs_tDBInput_1.getString(7);
 							if (tmpContent_tDBInput_1 != null) {
 								if (talendToDBList_tDBInput_1.contains(
-										rsmd_tDBInput_1.getColumnTypeName(5).toUpperCase(java.util.Locale.ENGLISH))) {
+										rsmd_tDBInput_1.getColumnTypeName(7).toUpperCase(java.util.Locale.ENGLISH))) {
 									row1.PostalCode = FormatterUtils.formatUnwithE(tmpContent_tDBInput_1);
 								} else {
 									row1.PostalCode = tmpContent_tDBInput_1;
@@ -1153,20 +1193,20 @@ public class JobExportRawData implements TalendJob {
 								row1.PostalCode = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_1 < 6) {
+						if (colQtyInRs_tDBInput_1 < 8) {
 							row1.rowguid = null;
 						} else {
 
-							row1.rowguid = rs_tDBInput_1.getObject(6);
+							row1.rowguid = rs_tDBInput_1.getObject(8);
 							if (rs_tDBInput_1.wasNull()) {
 								throw new RuntimeException("Null value in non-Nullable column");
 							}
 						}
-						if (colQtyInRs_tDBInput_1 < 7) {
+						if (colQtyInRs_tDBInput_1 < 9) {
 							row1.ModifiedDate = null;
 						} else {
 
-							row1.ModifiedDate = mssqlGTU_tDBInput_1.getDate(rsmd_tDBInput_1, rs_tDBInput_1, 7);
+							row1.ModifiedDate = mssqlGTU_tDBInput_1.getDate(rsmd_tDBInput_1, rs_tDBInput_1, 9);
 
 						}
 
@@ -1217,6 +1257,14 @@ public class JobExportRawData implements TalendJob {
 							sb_tFileOutputDelimited_1.append(row1.AddressLine2);
 						}
 						sb_tFileOutputDelimited_1.append(OUT_DELIM_tFileOutputDelimited_1);
+						if (row1.StateProvince != null) {
+							sb_tFileOutputDelimited_1.append(row1.StateProvince);
+						}
+						sb_tFileOutputDelimited_1.append(OUT_DELIM_tFileOutputDelimited_1);
+						if (row1.CountryRegion != null) {
+							sb_tFileOutputDelimited_1.append(row1.CountryRegion);
+						}
+						sb_tFileOutputDelimited_1.append(OUT_DELIM_tFileOutputDelimited_1);
 						if (row1.City != null) {
 							sb_tFileOutputDelimited_1.append(row1.City);
 						}
@@ -1230,8 +1278,7 @@ public class JobExportRawData implements TalendJob {
 						}
 						sb_tFileOutputDelimited_1.append(OUT_DELIM_tFileOutputDelimited_1);
 						if (row1.ModifiedDate != null) {
-							sb_tFileOutputDelimited_1
-									.append(FormatterUtils.format_Date(row1.ModifiedDate, "dd-MM-yyyy"));
+							sb_tFileOutputDelimited_1.append(row1.ModifiedDate);
 						}
 						sb_tFileOutputDelimited_1.append(OUT_DELIM_ROWSEP_tFileOutputDelimited_1);
 
@@ -1399,12 +1446,6 @@ public class JobExportRawData implements TalendJob {
 	public static class row2Struct implements routines.system.IPersistableRow<row2Struct> {
 		final static byte[] commonByteArrayLock_INGESTAODADOS_JobExportRawData = new byte[0];
 		static byte[] commonByteArray_INGESTAODADOS_JobExportRawData = new byte[0];
-		protected static final int DEFAULT_HASHCODE = 1;
-		protected static final int PRIME = 31;
-		protected int hashCode = DEFAULT_HASHCODE;
-		public boolean hashCodeDirty = true;
-
-		public String loopKey;
 
 		public int CustomerID;
 
@@ -1412,10 +1453,34 @@ public class JobExportRawData implements TalendJob {
 			return this.CustomerID;
 		}
 
+		public boolean NameStyle;
+
+		public boolean getNameStyle() {
+			return this.NameStyle;
+		}
+
 		public String Title;
 
 		public String getTitle() {
 			return this.Title;
+		}
+
+		public String FirstName;
+
+		public String getFirstName() {
+			return this.FirstName;
+		}
+
+		public String MiddleName;
+
+		public String getMiddleName() {
+			return this.MiddleName;
+		}
+
+		public String LastName;
+
+		public String getLastName() {
+			return this.LastName;
 		}
 
 		public String Suffix;
@@ -1442,6 +1507,12 @@ public class JobExportRawData implements TalendJob {
 			return this.EmailAddress;
 		}
 
+		public String Phone;
+
+		public String getPhone() {
+			return this.Phone;
+		}
+
 		public String PasswordHash;
 
 		public String getPasswordHash() {
@@ -1464,57 +1535,6 @@ public class JobExportRawData implements TalendJob {
 
 		public java.util.Date getModifiedDate() {
 			return this.ModifiedDate;
-		}
-
-		@Override
-		public int hashCode() {
-			if (this.hashCodeDirty) {
-				final int prime = PRIME;
-				int result = DEFAULT_HASHCODE;
-
-				result = prime * result + (int) this.CustomerID;
-
-				this.hashCode = result;
-				this.hashCodeDirty = false;
-			}
-			return this.hashCode;
-		}
-
-		@Override
-		public boolean equals(Object obj) {
-			if (this == obj)
-				return true;
-			if (obj == null)
-				return false;
-			if (getClass() != obj.getClass())
-				return false;
-			final row2Struct other = (row2Struct) obj;
-
-			if (this.CustomerID != other.CustomerID)
-				return false;
-
-			return true;
-		}
-
-		public void copyDataTo(row2Struct other) {
-
-			other.CustomerID = this.CustomerID;
-			other.Title = this.Title;
-			other.Suffix = this.Suffix;
-			other.CompanyName = this.CompanyName;
-			other.SalesPerson = this.SalesPerson;
-			other.EmailAddress = this.EmailAddress;
-			other.PasswordHash = this.PasswordHash;
-			other.PasswordSalt = this.PasswordSalt;
-			other.rowguid = this.rowguid;
-			other.ModifiedDate = this.ModifiedDate;
-
-		}
-
-		public void copyKeysDataTo(row2Struct other) {
-
-			other.CustomerID = this.CustomerID;
-
 		}
 
 		private String readString(ObjectInputStream dis) throws IOException {
@@ -1578,7 +1598,15 @@ public class JobExportRawData implements TalendJob {
 
 					this.CustomerID = dis.readInt();
 
+					this.NameStyle = dis.readBoolean();
+
 					this.Title = readString(dis);
+
+					this.FirstName = readString(dis);
+
+					this.MiddleName = readString(dis);
+
+					this.LastName = readString(dis);
 
 					this.Suffix = readString(dis);
 
@@ -1587,6 +1615,8 @@ public class JobExportRawData implements TalendJob {
 					this.SalesPerson = readString(dis);
 
 					this.EmailAddress = readString(dis);
+
+					this.Phone = readString(dis);
 
 					this.PasswordHash = readString(dis);
 
@@ -1615,9 +1645,25 @@ public class JobExportRawData implements TalendJob {
 
 				dos.writeInt(this.CustomerID);
 
+				// boolean
+
+				dos.writeBoolean(this.NameStyle);
+
 				// String
 
 				writeString(this.Title, dos);
+
+				// String
+
+				writeString(this.FirstName, dos);
+
+				// String
+
+				writeString(this.MiddleName, dos);
+
+				// String
+
+				writeString(this.LastName, dos);
 
 				// String
 
@@ -1634,6 +1680,10 @@ public class JobExportRawData implements TalendJob {
 				// String
 
 				writeString(this.EmailAddress, dos);
+
+				// String
+
+				writeString(this.Phone, dos);
 
 				// String
 
@@ -1663,11 +1713,16 @@ public class JobExportRawData implements TalendJob {
 			sb.append(super.toString());
 			sb.append("[");
 			sb.append("CustomerID=" + String.valueOf(CustomerID));
+			sb.append(",NameStyle=" + String.valueOf(NameStyle));
 			sb.append(",Title=" + Title);
+			sb.append(",FirstName=" + FirstName);
+			sb.append(",MiddleName=" + MiddleName);
+			sb.append(",LastName=" + LastName);
 			sb.append(",Suffix=" + Suffix);
 			sb.append(",CompanyName=" + CompanyName);
 			sb.append(",SalesPerson=" + SalesPerson);
 			sb.append(",EmailAddress=" + EmailAddress);
+			sb.append(",Phone=" + Phone);
 			sb.append(",PasswordHash=" + PasswordHash);
 			sb.append(",PasswordSalt=" + PasswordSalt);
 			sb.append(",rowguid=" + String.valueOf(rowguid));
@@ -1683,11 +1738,6 @@ public class JobExportRawData implements TalendJob {
 		public int compareTo(row2Struct other) {
 
 			int returnValue = -1;
-
-			returnValue = checkNullsAndCompare(this.CustomerID, other.CustomerID);
-			if (returnValue != 0) {
-				return returnValue;
-			}
 
 			return returnValue;
 		}
@@ -1822,7 +1872,15 @@ public class JobExportRawData implements TalendJob {
 				if (filetFileOutputDelimited_2.length() == 0) {
 					outtFileOutputDelimited_2.write("CustomerID");
 					outtFileOutputDelimited_2.write(OUT_DELIM_tFileOutputDelimited_2);
+					outtFileOutputDelimited_2.write("NameStyle");
+					outtFileOutputDelimited_2.write(OUT_DELIM_tFileOutputDelimited_2);
 					outtFileOutputDelimited_2.write("Title");
+					outtFileOutputDelimited_2.write(OUT_DELIM_tFileOutputDelimited_2);
+					outtFileOutputDelimited_2.write("FirstName");
+					outtFileOutputDelimited_2.write(OUT_DELIM_tFileOutputDelimited_2);
+					outtFileOutputDelimited_2.write("MiddleName");
+					outtFileOutputDelimited_2.write(OUT_DELIM_tFileOutputDelimited_2);
+					outtFileOutputDelimited_2.write("LastName");
 					outtFileOutputDelimited_2.write(OUT_DELIM_tFileOutputDelimited_2);
 					outtFileOutputDelimited_2.write("Suffix");
 					outtFileOutputDelimited_2.write(OUT_DELIM_tFileOutputDelimited_2);
@@ -1831,6 +1889,8 @@ public class JobExportRawData implements TalendJob {
 					outtFileOutputDelimited_2.write("SalesPerson");
 					outtFileOutputDelimited_2.write(OUT_DELIM_tFileOutputDelimited_2);
 					outtFileOutputDelimited_2.write("EmailAddress");
+					outtFileOutputDelimited_2.write(OUT_DELIM_tFileOutputDelimited_2);
+					outtFileOutputDelimited_2.write("Phone");
 					outtFileOutputDelimited_2.write(OUT_DELIM_tFileOutputDelimited_2);
 					outtFileOutputDelimited_2.write("PasswordHash");
 					outtFileOutputDelimited_2.write(OUT_DELIM_tFileOutputDelimited_2);
@@ -1875,7 +1935,7 @@ public class JobExportRawData implements TalendJob {
 				String dbUser_tDBInput_2 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_2 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:HqNqTdt3cJHf5S4YoaEwF083e4Z9Ae3ERCBRWWDQlwWl9L+dTg==");
+						"enc:routine.encryption.key.v1:iT2jbamO2aTw0JrHyEjDDqks7keu+onW0LOyH9Go+n5mM2Rz5Q==");
 
 				String dbPwd_tDBInput_2 = decryptedPassword_tDBInput_2;
 
@@ -1896,9 +1956,11 @@ public class JobExportRawData implements TalendJob {
 
 				java.sql.Statement stmt_tDBInput_2 = conn_tDBInput_2.createStatement();
 
-				String dbquery_tDBInput_2 = "SELECT SalesLT.Customer.CustomerID,\n		SalesLT.Customer.Title,\n		SalesLT.Customer.Suffix,\n		SalesLT.Customer.CompanyName"
-						+ ",\n		SalesLT.Customer.SalesPerson,\n		SalesLT.Customer.EmailAddress,\n		SalesLT.Customer.PasswordHash,\n		SalesLT.Customer.P"
-						+ "asswordSalt,\n		SalesLT.Customer.rowguid,\n		SalesLT.Customer.ModifiedDate\nFROM	SalesLT.Customer";
+				String dbquery_tDBInput_2 = "SELECT SalesLT.Customer.CustomerID,\n		SalesLT.Customer.NameStyle,\n		SalesLT.Customer.Title,\n		SalesLT.Customer.FirstN"
+						+ "ame,\n		SalesLT.Customer.MiddleName,\n		SalesLT.Customer.LastName,\n		SalesLT.Customer.Suffix,\n		SalesLT.Customer.Company"
+						+ "Name,\n		SalesLT.Customer.SalesPerson,\n		SalesLT.Customer.EmailAddress,\n		SalesLT.Customer.Phone,\n		SalesLT.Customer.Pas"
+						+ "swordHash,\n		SalesLT.Customer.PasswordSalt,\n		SalesLT.Customer.rowguid,\n		SalesLT.Customer.ModifiedDate\nFROM	SalesLT.Cus"
+						+ "tomer";
 
 				globalMap.put("tDBInput_2_QUERY", dbquery_tDBInput_2);
 				java.sql.ResultSet rs_tDBInput_2 = null;
@@ -1923,13 +1985,22 @@ public class JobExportRawData implements TalendJob {
 							}
 						}
 						if (colQtyInRs_tDBInput_2 < 2) {
+							row2.NameStyle = false;
+						} else {
+
+							row2.NameStyle = rs_tDBInput_2.getBoolean(2);
+							if (rs_tDBInput_2.wasNull()) {
+								throw new RuntimeException("Null value in non-Nullable column");
+							}
+						}
+						if (colQtyInRs_tDBInput_2 < 3) {
 							row2.Title = null;
 						} else {
 
-							tmpContent_tDBInput_2 = rs_tDBInput_2.getString(2);
+							tmpContent_tDBInput_2 = rs_tDBInput_2.getString(3);
 							if (tmpContent_tDBInput_2 != null) {
 								if (talendToDBList_tDBInput_2.contains(
-										rsmd_tDBInput_2.getColumnTypeName(2).toUpperCase(java.util.Locale.ENGLISH))) {
+										rsmd_tDBInput_2.getColumnTypeName(3).toUpperCase(java.util.Locale.ENGLISH))) {
 									row2.Title = FormatterUtils.formatUnwithE(tmpContent_tDBInput_2);
 								} else {
 									row2.Title = tmpContent_tDBInput_2;
@@ -1938,14 +2009,62 @@ public class JobExportRawData implements TalendJob {
 								row2.Title = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_2 < 3) {
+						if (colQtyInRs_tDBInput_2 < 4) {
+							row2.FirstName = null;
+						} else {
+
+							tmpContent_tDBInput_2 = rs_tDBInput_2.getString(4);
+							if (tmpContent_tDBInput_2 != null) {
+								if (talendToDBList_tDBInput_2.contains(
+										rsmd_tDBInput_2.getColumnTypeName(4).toUpperCase(java.util.Locale.ENGLISH))) {
+									row2.FirstName = FormatterUtils.formatUnwithE(tmpContent_tDBInput_2);
+								} else {
+									row2.FirstName = tmpContent_tDBInput_2;
+								}
+							} else {
+								row2.FirstName = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_2 < 5) {
+							row2.MiddleName = null;
+						} else {
+
+							tmpContent_tDBInput_2 = rs_tDBInput_2.getString(5);
+							if (tmpContent_tDBInput_2 != null) {
+								if (talendToDBList_tDBInput_2.contains(
+										rsmd_tDBInput_2.getColumnTypeName(5).toUpperCase(java.util.Locale.ENGLISH))) {
+									row2.MiddleName = FormatterUtils.formatUnwithE(tmpContent_tDBInput_2);
+								} else {
+									row2.MiddleName = tmpContent_tDBInput_2;
+								}
+							} else {
+								row2.MiddleName = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_2 < 6) {
+							row2.LastName = null;
+						} else {
+
+							tmpContent_tDBInput_2 = rs_tDBInput_2.getString(6);
+							if (tmpContent_tDBInput_2 != null) {
+								if (talendToDBList_tDBInput_2.contains(
+										rsmd_tDBInput_2.getColumnTypeName(6).toUpperCase(java.util.Locale.ENGLISH))) {
+									row2.LastName = FormatterUtils.formatUnwithE(tmpContent_tDBInput_2);
+								} else {
+									row2.LastName = tmpContent_tDBInput_2;
+								}
+							} else {
+								row2.LastName = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_2 < 7) {
 							row2.Suffix = null;
 						} else {
 
-							tmpContent_tDBInput_2 = rs_tDBInput_2.getString(3);
+							tmpContent_tDBInput_2 = rs_tDBInput_2.getString(7);
 							if (tmpContent_tDBInput_2 != null) {
 								if (talendToDBList_tDBInput_2.contains(
-										rsmd_tDBInput_2.getColumnTypeName(3).toUpperCase(java.util.Locale.ENGLISH))) {
+										rsmd_tDBInput_2.getColumnTypeName(7).toUpperCase(java.util.Locale.ENGLISH))) {
 									row2.Suffix = FormatterUtils.formatUnwithE(tmpContent_tDBInput_2);
 								} else {
 									row2.Suffix = tmpContent_tDBInput_2;
@@ -1954,14 +2073,14 @@ public class JobExportRawData implements TalendJob {
 								row2.Suffix = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_2 < 4) {
+						if (colQtyInRs_tDBInput_2 < 8) {
 							row2.CompanyName = null;
 						} else {
 
-							tmpContent_tDBInput_2 = rs_tDBInput_2.getString(4);
+							tmpContent_tDBInput_2 = rs_tDBInput_2.getString(8);
 							if (tmpContent_tDBInput_2 != null) {
 								if (talendToDBList_tDBInput_2.contains(
-										rsmd_tDBInput_2.getColumnTypeName(4).toUpperCase(java.util.Locale.ENGLISH))) {
+										rsmd_tDBInput_2.getColumnTypeName(8).toUpperCase(java.util.Locale.ENGLISH))) {
 									row2.CompanyName = FormatterUtils.formatUnwithE(tmpContent_tDBInput_2);
 								} else {
 									row2.CompanyName = tmpContent_tDBInput_2;
@@ -1970,14 +2089,14 @@ public class JobExportRawData implements TalendJob {
 								row2.CompanyName = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_2 < 5) {
+						if (colQtyInRs_tDBInput_2 < 9) {
 							row2.SalesPerson = null;
 						} else {
 
-							tmpContent_tDBInput_2 = rs_tDBInput_2.getString(5);
+							tmpContent_tDBInput_2 = rs_tDBInput_2.getString(9);
 							if (tmpContent_tDBInput_2 != null) {
 								if (talendToDBList_tDBInput_2.contains(
-										rsmd_tDBInput_2.getColumnTypeName(5).toUpperCase(java.util.Locale.ENGLISH))) {
+										rsmd_tDBInput_2.getColumnTypeName(9).toUpperCase(java.util.Locale.ENGLISH))) {
 									row2.SalesPerson = FormatterUtils.formatUnwithE(tmpContent_tDBInput_2);
 								} else {
 									row2.SalesPerson = tmpContent_tDBInput_2;
@@ -1986,14 +2105,14 @@ public class JobExportRawData implements TalendJob {
 								row2.SalesPerson = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_2 < 6) {
+						if (colQtyInRs_tDBInput_2 < 10) {
 							row2.EmailAddress = null;
 						} else {
 
-							tmpContent_tDBInput_2 = rs_tDBInput_2.getString(6);
+							tmpContent_tDBInput_2 = rs_tDBInput_2.getString(10);
 							if (tmpContent_tDBInput_2 != null) {
 								if (talendToDBList_tDBInput_2.contains(
-										rsmd_tDBInput_2.getColumnTypeName(6).toUpperCase(java.util.Locale.ENGLISH))) {
+										rsmd_tDBInput_2.getColumnTypeName(10).toUpperCase(java.util.Locale.ENGLISH))) {
 									row2.EmailAddress = FormatterUtils.formatUnwithE(tmpContent_tDBInput_2);
 								} else {
 									row2.EmailAddress = tmpContent_tDBInput_2;
@@ -2002,14 +2121,30 @@ public class JobExportRawData implements TalendJob {
 								row2.EmailAddress = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_2 < 7) {
+						if (colQtyInRs_tDBInput_2 < 11) {
+							row2.Phone = null;
+						} else {
+
+							tmpContent_tDBInput_2 = rs_tDBInput_2.getString(11);
+							if (tmpContent_tDBInput_2 != null) {
+								if (talendToDBList_tDBInput_2.contains(
+										rsmd_tDBInput_2.getColumnTypeName(11).toUpperCase(java.util.Locale.ENGLISH))) {
+									row2.Phone = FormatterUtils.formatUnwithE(tmpContent_tDBInput_2);
+								} else {
+									row2.Phone = tmpContent_tDBInput_2;
+								}
+							} else {
+								row2.Phone = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_2 < 12) {
 							row2.PasswordHash = null;
 						} else {
 
-							tmpContent_tDBInput_2 = rs_tDBInput_2.getString(7);
+							tmpContent_tDBInput_2 = rs_tDBInput_2.getString(12);
 							if (tmpContent_tDBInput_2 != null) {
 								if (talendToDBList_tDBInput_2.contains(
-										rsmd_tDBInput_2.getColumnTypeName(7).toUpperCase(java.util.Locale.ENGLISH))) {
+										rsmd_tDBInput_2.getColumnTypeName(12).toUpperCase(java.util.Locale.ENGLISH))) {
 									row2.PasswordHash = FormatterUtils.formatUnwithE(tmpContent_tDBInput_2);
 								} else {
 									row2.PasswordHash = tmpContent_tDBInput_2;
@@ -2018,14 +2153,14 @@ public class JobExportRawData implements TalendJob {
 								row2.PasswordHash = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_2 < 8) {
+						if (colQtyInRs_tDBInput_2 < 13) {
 							row2.PasswordSalt = null;
 						} else {
 
-							tmpContent_tDBInput_2 = rs_tDBInput_2.getString(8);
+							tmpContent_tDBInput_2 = rs_tDBInput_2.getString(13);
 							if (tmpContent_tDBInput_2 != null) {
 								if (talendToDBList_tDBInput_2.contains(
-										rsmd_tDBInput_2.getColumnTypeName(8).toUpperCase(java.util.Locale.ENGLISH))) {
+										rsmd_tDBInput_2.getColumnTypeName(13).toUpperCase(java.util.Locale.ENGLISH))) {
 									row2.PasswordSalt = FormatterUtils.formatUnwithE(tmpContent_tDBInput_2);
 								} else {
 									row2.PasswordSalt = tmpContent_tDBInput_2;
@@ -2034,20 +2169,20 @@ public class JobExportRawData implements TalendJob {
 								row2.PasswordSalt = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_2 < 9) {
+						if (colQtyInRs_tDBInput_2 < 14) {
 							row2.rowguid = null;
 						} else {
 
-							row2.rowguid = rs_tDBInput_2.getObject(9);
+							row2.rowguid = rs_tDBInput_2.getObject(14);
 							if (rs_tDBInput_2.wasNull()) {
 								throw new RuntimeException("Null value in non-Nullable column");
 							}
 						}
-						if (colQtyInRs_tDBInput_2 < 10) {
+						if (colQtyInRs_tDBInput_2 < 15) {
 							row2.ModifiedDate = null;
 						} else {
 
-							row2.ModifiedDate = mssqlGTU_tDBInput_2.getDate(rsmd_tDBInput_2, rs_tDBInput_2, 10);
+							row2.ModifiedDate = mssqlGTU_tDBInput_2.getDate(rsmd_tDBInput_2, rs_tDBInput_2, 15);
 
 						}
 
@@ -2090,8 +2225,22 @@ public class JobExportRawData implements TalendJob {
 						StringBuilder sb_tFileOutputDelimited_2 = new StringBuilder();
 						sb_tFileOutputDelimited_2.append(row2.CustomerID);
 						sb_tFileOutputDelimited_2.append(OUT_DELIM_tFileOutputDelimited_2);
+						sb_tFileOutputDelimited_2.append(row2.NameStyle);
+						sb_tFileOutputDelimited_2.append(OUT_DELIM_tFileOutputDelimited_2);
 						if (row2.Title != null) {
 							sb_tFileOutputDelimited_2.append(row2.Title);
+						}
+						sb_tFileOutputDelimited_2.append(OUT_DELIM_tFileOutputDelimited_2);
+						if (row2.FirstName != null) {
+							sb_tFileOutputDelimited_2.append(row2.FirstName);
+						}
+						sb_tFileOutputDelimited_2.append(OUT_DELIM_tFileOutputDelimited_2);
+						if (row2.MiddleName != null) {
+							sb_tFileOutputDelimited_2.append(row2.MiddleName);
+						}
+						sb_tFileOutputDelimited_2.append(OUT_DELIM_tFileOutputDelimited_2);
+						if (row2.LastName != null) {
+							sb_tFileOutputDelimited_2.append(row2.LastName);
 						}
 						sb_tFileOutputDelimited_2.append(OUT_DELIM_tFileOutputDelimited_2);
 						if (row2.Suffix != null) {
@@ -2110,6 +2259,10 @@ public class JobExportRawData implements TalendJob {
 							sb_tFileOutputDelimited_2.append(row2.EmailAddress);
 						}
 						sb_tFileOutputDelimited_2.append(OUT_DELIM_tFileOutputDelimited_2);
+						if (row2.Phone != null) {
+							sb_tFileOutputDelimited_2.append(row2.Phone);
+						}
+						sb_tFileOutputDelimited_2.append(OUT_DELIM_tFileOutputDelimited_2);
 						if (row2.PasswordHash != null) {
 							sb_tFileOutputDelimited_2.append(row2.PasswordHash);
 						}
@@ -2123,8 +2276,7 @@ public class JobExportRawData implements TalendJob {
 						}
 						sb_tFileOutputDelimited_2.append(OUT_DELIM_tFileOutputDelimited_2);
 						if (row2.ModifiedDate != null) {
-							sb_tFileOutputDelimited_2
-									.append(FormatterUtils.format_Date(row2.ModifiedDate, "dd-MM-yyyy"));
+							sb_tFileOutputDelimited_2.append(row2.ModifiedDate);
 						}
 						sb_tFileOutputDelimited_2.append(OUT_DELIM_ROWSEP_tFileOutputDelimited_2);
 
@@ -2292,12 +2444,6 @@ public class JobExportRawData implements TalendJob {
 	public static class row3Struct implements routines.system.IPersistableRow<row3Struct> {
 		final static byte[] commonByteArrayLock_INGESTAODADOS_JobExportRawData = new byte[0];
 		static byte[] commonByteArray_INGESTAODADOS_JobExportRawData = new byte[0];
-		protected static final int DEFAULT_HASHCODE = 1;
-		protected static final int PRIME = 31;
-		protected int hashCode = DEFAULT_HASHCODE;
-		public boolean hashCodeDirty = true;
-
-		public String loopKey;
 
 		public int CustomerID;
 
@@ -2309,6 +2455,12 @@ public class JobExportRawData implements TalendJob {
 
 		public int getAddressID() {
 			return this.AddressID;
+		}
+
+		public String AddressType;
+
+		public String getAddressType() {
+			return this.AddressType;
 		}
 
 		public Object rowguid;
@@ -2323,55 +2475,34 @@ public class JobExportRawData implements TalendJob {
 			return this.ModifiedDate;
 		}
 
-		@Override
-		public int hashCode() {
-			if (this.hashCodeDirty) {
-				final int prime = PRIME;
-				int result = DEFAULT_HASHCODE;
-
-				result = prime * result + (int) this.CustomerID;
-
-				result = prime * result + (int) this.AddressID;
-
-				this.hashCode = result;
-				this.hashCodeDirty = false;
+		private String readString(ObjectInputStream dis) throws IOException {
+			String strReturn = null;
+			int length = 0;
+			length = dis.readInt();
+			if (length == -1) {
+				strReturn = null;
+			} else {
+				if (length > commonByteArray_INGESTAODADOS_JobExportRawData.length) {
+					if (length < 1024 && commonByteArray_INGESTAODADOS_JobExportRawData.length == 0) {
+						commonByteArray_INGESTAODADOS_JobExportRawData = new byte[1024];
+					} else {
+						commonByteArray_INGESTAODADOS_JobExportRawData = new byte[2 * length];
+					}
+				}
+				dis.readFully(commonByteArray_INGESTAODADOS_JobExportRawData, 0, length);
+				strReturn = new String(commonByteArray_INGESTAODADOS_JobExportRawData, 0, length, utf8Charset);
 			}
-			return this.hashCode;
+			return strReturn;
 		}
 
-		@Override
-		public boolean equals(Object obj) {
-			if (this == obj)
-				return true;
-			if (obj == null)
-				return false;
-			if (getClass() != obj.getClass())
-				return false;
-			final row3Struct other = (row3Struct) obj;
-
-			if (this.CustomerID != other.CustomerID)
-				return false;
-
-			if (this.AddressID != other.AddressID)
-				return false;
-
-			return true;
-		}
-
-		public void copyDataTo(row3Struct other) {
-
-			other.CustomerID = this.CustomerID;
-			other.AddressID = this.AddressID;
-			other.rowguid = this.rowguid;
-			other.ModifiedDate = this.ModifiedDate;
-
-		}
-
-		public void copyKeysDataTo(row3Struct other) {
-
-			other.CustomerID = this.CustomerID;
-			other.AddressID = this.AddressID;
-
+		private void writeString(String str, ObjectOutputStream dos) throws IOException {
+			if (str == null) {
+				dos.writeInt(-1);
+			} else {
+				byte[] byteArray = str.getBytes(utf8Charset);
+				dos.writeInt(byteArray.length);
+				dos.write(byteArray);
+			}
 		}
 
 		private java.util.Date readDate(ObjectInputStream dis) throws IOException {
@@ -2407,6 +2538,8 @@ public class JobExportRawData implements TalendJob {
 
 					this.AddressID = dis.readInt();
 
+					this.AddressType = readString(dis);
+
 					this.rowguid = (Object) dis.readObject();
 
 					this.ModifiedDate = readDate(dis);
@@ -2434,6 +2567,10 @@ public class JobExportRawData implements TalendJob {
 
 				dos.writeInt(this.AddressID);
 
+				// String
+
+				writeString(this.AddressType, dos);
+
 				// Object
 
 				dos.writeObject(this.rowguid);
@@ -2455,6 +2592,7 @@ public class JobExportRawData implements TalendJob {
 			sb.append("[");
 			sb.append("CustomerID=" + String.valueOf(CustomerID));
 			sb.append(",AddressID=" + String.valueOf(AddressID));
+			sb.append(",AddressType=" + AddressType);
 			sb.append(",rowguid=" + String.valueOf(rowguid));
 			sb.append(",ModifiedDate=" + String.valueOf(ModifiedDate));
 			sb.append("]");
@@ -2468,16 +2606,6 @@ public class JobExportRawData implements TalendJob {
 		public int compareTo(row3Struct other) {
 
 			int returnValue = -1;
-
-			returnValue = checkNullsAndCompare(this.CustomerID, other.CustomerID);
-			if (returnValue != 0) {
-				return returnValue;
-			}
-
-			returnValue = checkNullsAndCompare(this.AddressID, other.AddressID);
-			if (returnValue != 0) {
-				return returnValue;
-			}
 
 			return returnValue;
 		}
@@ -2614,6 +2742,8 @@ public class JobExportRawData implements TalendJob {
 					outtFileOutputDelimited_3.write(OUT_DELIM_tFileOutputDelimited_3);
 					outtFileOutputDelimited_3.write("AddressID");
 					outtFileOutputDelimited_3.write(OUT_DELIM_tFileOutputDelimited_3);
+					outtFileOutputDelimited_3.write("AddressType");
+					outtFileOutputDelimited_3.write(OUT_DELIM_tFileOutputDelimited_3);
 					outtFileOutputDelimited_3.write("rowguid");
 					outtFileOutputDelimited_3.write(OUT_DELIM_tFileOutputDelimited_3);
 					outtFileOutputDelimited_3.write("ModifiedDate");
@@ -2653,7 +2783,7 @@ public class JobExportRawData implements TalendJob {
 				String dbUser_tDBInput_3 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_3 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:NVUnMG5BhWWwc9vQq1BlCWHPq4pC9eOv0b891VC1rUKEPHp0lA==");
+						"enc:routine.encryption.key.v1:/Ju1CpVR9foEGtB5cWZwK4F6XZA5wtxx8cDwMYAjUbWn+rqSJQ==");
 
 				String dbPwd_tDBInput_3 = decryptedPassword_tDBInput_3;
 
@@ -2674,8 +2804,8 @@ public class JobExportRawData implements TalendJob {
 
 				java.sql.Statement stmt_tDBInput_3 = conn_tDBInput_3.createStatement();
 
-				String dbquery_tDBInput_3 = "SELECT SalesLT.CustomerAddress.CustomerID,\n		SalesLT.CustomerAddress.AddressID,\n		SalesLT.CustomerAddress.rowguid,\n		Sa"
-						+ "lesLT.CustomerAddress.ModifiedDate\nFROM	SalesLT.CustomerAddress";
+				String dbquery_tDBInput_3 = "SELECT SalesLT.CustomerAddress.CustomerID,\n		SalesLT.CustomerAddress.AddressID,\n		SalesLT.CustomerAddress.AddressType,"
+						+ "\n		SalesLT.CustomerAddress.rowguid,\n		SalesLT.CustomerAddress.ModifiedDate\nFROM	SalesLT.CustomerAddress";
 
 				globalMap.put("tDBInput_3_QUERY", dbquery_tDBInput_3);
 				java.sql.ResultSet rs_tDBInput_3 = null;
@@ -2709,19 +2839,35 @@ public class JobExportRawData implements TalendJob {
 							}
 						}
 						if (colQtyInRs_tDBInput_3 < 3) {
+							row3.AddressType = null;
+						} else {
+
+							tmpContent_tDBInput_3 = rs_tDBInput_3.getString(3);
+							if (tmpContent_tDBInput_3 != null) {
+								if (talendToDBList_tDBInput_3.contains(
+										rsmd_tDBInput_3.getColumnTypeName(3).toUpperCase(java.util.Locale.ENGLISH))) {
+									row3.AddressType = FormatterUtils.formatUnwithE(tmpContent_tDBInput_3);
+								} else {
+									row3.AddressType = tmpContent_tDBInput_3;
+								}
+							} else {
+								row3.AddressType = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_3 < 4) {
 							row3.rowguid = null;
 						} else {
 
-							row3.rowguid = rs_tDBInput_3.getObject(3);
+							row3.rowguid = rs_tDBInput_3.getObject(4);
 							if (rs_tDBInput_3.wasNull()) {
 								throw new RuntimeException("Null value in non-Nullable column");
 							}
 						}
-						if (colQtyInRs_tDBInput_3 < 4) {
+						if (colQtyInRs_tDBInput_3 < 5) {
 							row3.ModifiedDate = null;
 						} else {
 
-							row3.ModifiedDate = mssqlGTU_tDBInput_3.getDate(rsmd_tDBInput_3, rs_tDBInput_3, 4);
+							row3.ModifiedDate = mssqlGTU_tDBInput_3.getDate(rsmd_tDBInput_3, rs_tDBInput_3, 5);
 
 						}
 
@@ -2766,13 +2912,16 @@ public class JobExportRawData implements TalendJob {
 						sb_tFileOutputDelimited_3.append(OUT_DELIM_tFileOutputDelimited_3);
 						sb_tFileOutputDelimited_3.append(row3.AddressID);
 						sb_tFileOutputDelimited_3.append(OUT_DELIM_tFileOutputDelimited_3);
+						if (row3.AddressType != null) {
+							sb_tFileOutputDelimited_3.append(row3.AddressType);
+						}
+						sb_tFileOutputDelimited_3.append(OUT_DELIM_tFileOutputDelimited_3);
 						if (row3.rowguid != null) {
 							sb_tFileOutputDelimited_3.append(row3.rowguid);
 						}
 						sb_tFileOutputDelimited_3.append(OUT_DELIM_tFileOutputDelimited_3);
 						if (row3.ModifiedDate != null) {
-							sb_tFileOutputDelimited_3
-									.append(FormatterUtils.format_Date(row3.ModifiedDate, "dd-MM-yyyy"));
+							sb_tFileOutputDelimited_3.append(row3.ModifiedDate);
 						}
 						sb_tFileOutputDelimited_3.append(OUT_DELIM_ROWSEP_tFileOutputDelimited_3);
 
@@ -2940,17 +3089,17 @@ public class JobExportRawData implements TalendJob {
 	public static class row4Struct implements routines.system.IPersistableRow<row4Struct> {
 		final static byte[] commonByteArrayLock_INGESTAODADOS_JobExportRawData = new byte[0];
 		static byte[] commonByteArray_INGESTAODADOS_JobExportRawData = new byte[0];
-		protected static final int DEFAULT_HASHCODE = 1;
-		protected static final int PRIME = 31;
-		protected int hashCode = DEFAULT_HASHCODE;
-		public boolean hashCodeDirty = true;
-
-		public String loopKey;
 
 		public int ProductID;
 
 		public int getProductID() {
 			return this.ProductID;
+		}
+
+		public String Name;
+
+		public String getName() {
+			return this.Name;
 		}
 
 		public String ProductNumber;
@@ -3043,63 +3192,6 @@ public class JobExportRawData implements TalendJob {
 			return this.ModifiedDate;
 		}
 
-		@Override
-		public int hashCode() {
-			if (this.hashCodeDirty) {
-				final int prime = PRIME;
-				int result = DEFAULT_HASHCODE;
-
-				result = prime * result + (int) this.ProductID;
-
-				this.hashCode = result;
-				this.hashCodeDirty = false;
-			}
-			return this.hashCode;
-		}
-
-		@Override
-		public boolean equals(Object obj) {
-			if (this == obj)
-				return true;
-			if (obj == null)
-				return false;
-			if (getClass() != obj.getClass())
-				return false;
-			final row4Struct other = (row4Struct) obj;
-
-			if (this.ProductID != other.ProductID)
-				return false;
-
-			return true;
-		}
-
-		public void copyDataTo(row4Struct other) {
-
-			other.ProductID = this.ProductID;
-			other.ProductNumber = this.ProductNumber;
-			other.Color = this.Color;
-			other.StandardCost = this.StandardCost;
-			other.ListPrice = this.ListPrice;
-			other.Size = this.Size;
-			other.Weight = this.Weight;
-			other.ProductCategoryID = this.ProductCategoryID;
-			other.ProductModelID = this.ProductModelID;
-			other.SellStartDate = this.SellStartDate;
-			other.SellEndDate = this.SellEndDate;
-			other.DiscontinuedDate = this.DiscontinuedDate;
-			other.ThumbNailPhoto = this.ThumbNailPhoto;
-			other.ThumbnailPhotoFileName = this.ThumbnailPhotoFileName;
-			other.rowguid = this.rowguid;
-			other.ModifiedDate = this.ModifiedDate;
-
-		}
-
-		public void copyKeysDataTo(row4Struct other) {
-
-			other.ProductID = this.ProductID;
-
-		}
-
 		private String readString(ObjectInputStream dis) throws IOException {
 			String strReturn = null;
 			int length = 0;
@@ -3182,6 +3274,8 @@ public class JobExportRawData implements TalendJob {
 
 					this.ProductID = dis.readInt();
 
+					this.Name = readString(dis);
+
 					this.ProductNumber = readString(dis);
 
 					this.Color = readString(dis);
@@ -3230,6 +3324,10 @@ public class JobExportRawData implements TalendJob {
 				// int
 
 				dos.writeInt(this.ProductID);
+
+				// String
+
+				writeString(this.Name, dos);
 
 				// String
 
@@ -3303,6 +3401,7 @@ public class JobExportRawData implements TalendJob {
 			sb.append(super.toString());
 			sb.append("[");
 			sb.append("ProductID=" + String.valueOf(ProductID));
+			sb.append(",Name=" + Name);
 			sb.append(",ProductNumber=" + ProductNumber);
 			sb.append(",Color=" + Color);
 			sb.append(",StandardCost=" + String.valueOf(StandardCost));
@@ -3329,11 +3428,6 @@ public class JobExportRawData implements TalendJob {
 		public int compareTo(row4Struct other) {
 
 			int returnValue = -1;
-
-			returnValue = checkNullsAndCompare(this.ProductID, other.ProductID);
-			if (returnValue != 0) {
-				return returnValue;
-			}
 
 			return returnValue;
 		}
@@ -3468,6 +3562,8 @@ public class JobExportRawData implements TalendJob {
 				if (filetFileOutputDelimited_4.length() == 0) {
 					outtFileOutputDelimited_4.write("ProductID");
 					outtFileOutputDelimited_4.write(OUT_DELIM_tFileOutputDelimited_4);
+					outtFileOutputDelimited_4.write("Name");
+					outtFileOutputDelimited_4.write(OUT_DELIM_tFileOutputDelimited_4);
 					outtFileOutputDelimited_4.write("ProductNumber");
 					outtFileOutputDelimited_4.write(OUT_DELIM_tFileOutputDelimited_4);
 					outtFileOutputDelimited_4.write("Color");
@@ -3533,7 +3629,7 @@ public class JobExportRawData implements TalendJob {
 				String dbUser_tDBInput_4 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_4 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:GqpjxMAZKbNl8xcyQxpnG2EJiQ6tMhnp5YrUN5P/EMA6ExVuwA==");
+						"enc:routine.encryption.key.v1:444vhaUGNFDCcuDyq+IRHLse36qP9Js03KypAS111kl5AaUFZg==");
 
 				String dbPwd_tDBInput_4 = decryptedPassword_tDBInput_4;
 
@@ -3554,11 +3650,11 @@ public class JobExportRawData implements TalendJob {
 
 				java.sql.Statement stmt_tDBInput_4 = conn_tDBInput_4.createStatement();
 
-				String dbquery_tDBInput_4 = "SELECT SalesLT.Product.ProductID,\n		SalesLT.Product.ProductNumber,\n		SalesLT.Product.Color,\n		SalesLT.Product.StandardC"
-						+ "ost,\n		SalesLT.Product.ListPrice,\n		SalesLT.Product.Size,\n		SalesLT.Product.Weight,\n		SalesLT.Product.ProductCategoryID,"
-						+ "\n		SalesLT.Product.ProductModelID,\n		SalesLT.Product.SellStartDate,\n		SalesLT.Product.SellEndDate,\n		SalesLT.Product.Dis"
-						+ "continuedDate,\n		SalesLT.Product.ThumbNailPhoto,\n		SalesLT.Product.ThumbnailPhotoFileName,\n		SalesLT.Product.rowguid,\n		"
-						+ "SalesLT.Product.ModifiedDate\nFROM	SalesLT.Product";
+				String dbquery_tDBInput_4 = "SELECT SalesLT.Product.ProductID,\n		SalesLT.Product.Name,\n		SalesLT.Product.ProductNumber,\n		SalesLT.Product.Color,\n		"
+						+ "SalesLT.Product.StandardCost,\n		SalesLT.Product.ListPrice,\n		SalesLT.Product.Size,\n		SalesLT.Product.Weight,\n		SalesLT.P"
+						+ "roduct.ProductCategoryID,\n		SalesLT.Product.ProductModelID,\n		SalesLT.Product.SellStartDate,\n		SalesLT.Product.SellEndDa"
+						+ "te,\n		SalesLT.Product.DiscontinuedDate,\n		SalesLT.Product.ThumbNailPhoto,\n		SalesLT.Product.ThumbnailPhotoFileName,\n		Sa"
+						+ "lesLT.Product.rowguid,\n		SalesLT.Product.ModifiedDate\nFROM	SalesLT.Product";
 
 				globalMap.put("tDBInput_4_QUERY", dbquery_tDBInput_4);
 				java.sql.ResultSet rs_tDBInput_4 = null;
@@ -3583,13 +3679,29 @@ public class JobExportRawData implements TalendJob {
 							}
 						}
 						if (colQtyInRs_tDBInput_4 < 2) {
-							row4.ProductNumber = null;
+							row4.Name = null;
 						} else {
 
 							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(2);
 							if (tmpContent_tDBInput_4 != null) {
 								if (talendToDBList_tDBInput_4.contains(
 										rsmd_tDBInput_4.getColumnTypeName(2).toUpperCase(java.util.Locale.ENGLISH))) {
+									row4.Name = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
+								} else {
+									row4.Name = tmpContent_tDBInput_4;
+								}
+							} else {
+								row4.Name = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_4 < 3) {
+							row4.ProductNumber = null;
+						} else {
+
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(3);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(3).toUpperCase(java.util.Locale.ENGLISH))) {
 									row4.ProductNumber = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
 									row4.ProductNumber = tmpContent_tDBInput_4;
@@ -3598,14 +3710,14 @@ public class JobExportRawData implements TalendJob {
 								row4.ProductNumber = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_4 < 3) {
+						if (colQtyInRs_tDBInput_4 < 4) {
 							row4.Color = null;
 						} else {
 
-							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(3);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(4);
 							if (tmpContent_tDBInput_4 != null) {
 								if (talendToDBList_tDBInput_4.contains(
-										rsmd_tDBInput_4.getColumnTypeName(3).toUpperCase(java.util.Locale.ENGLISH))) {
+										rsmd_tDBInput_4.getColumnTypeName(4).toUpperCase(java.util.Locale.ENGLISH))) {
 									row4.Color = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
 									row4.Color = tmpContent_tDBInput_4;
@@ -3614,32 +3726,32 @@ public class JobExportRawData implements TalendJob {
 								row4.Color = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_4 < 4) {
+						if (colQtyInRs_tDBInput_4 < 5) {
 							row4.StandardCost = null;
 						} else {
 
-							row4.StandardCost = rs_tDBInput_4.getObject(4);
-							if (rs_tDBInput_4.wasNull()) {
-								throw new RuntimeException("Null value in non-Nullable column");
-							}
-						}
-						if (colQtyInRs_tDBInput_4 < 5) {
-							row4.ListPrice = null;
-						} else {
-
-							row4.ListPrice = rs_tDBInput_4.getObject(5);
+							row4.StandardCost = rs_tDBInput_4.getObject(5);
 							if (rs_tDBInput_4.wasNull()) {
 								throw new RuntimeException("Null value in non-Nullable column");
 							}
 						}
 						if (colQtyInRs_tDBInput_4 < 6) {
+							row4.ListPrice = null;
+						} else {
+
+							row4.ListPrice = rs_tDBInput_4.getObject(6);
+							if (rs_tDBInput_4.wasNull()) {
+								throw new RuntimeException("Null value in non-Nullable column");
+							}
+						}
+						if (colQtyInRs_tDBInput_4 < 7) {
 							row4.Size = null;
 						} else {
 
-							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(6);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(7);
 							if (tmpContent_tDBInput_4 != null) {
 								if (talendToDBList_tDBInput_4.contains(
-										rsmd_tDBInput_4.getColumnTypeName(6).toUpperCase(java.util.Locale.ENGLISH))) {
+										rsmd_tDBInput_4.getColumnTypeName(7).toUpperCase(java.util.Locale.ENGLISH))) {
 									row4.Size = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
 									row4.Size = tmpContent_tDBInput_4;
@@ -3648,71 +3760,71 @@ public class JobExportRawData implements TalendJob {
 								row4.Size = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_4 < 7) {
+						if (colQtyInRs_tDBInput_4 < 8) {
 							row4.Weight = null;
 						} else {
 
-							row4.Weight = rs_tDBInput_4.getBigDecimal(7);
+							row4.Weight = rs_tDBInput_4.getBigDecimal(8);
 							if (rs_tDBInput_4.wasNull()) {
 								row4.Weight = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_4 < 8) {
+						if (colQtyInRs_tDBInput_4 < 9) {
 							row4.ProductCategoryID = null;
 						} else {
 
-							row4.ProductCategoryID = rs_tDBInput_4.getInt(8);
+							row4.ProductCategoryID = rs_tDBInput_4.getInt(9);
 							if (rs_tDBInput_4.wasNull()) {
 								row4.ProductCategoryID = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_4 < 9) {
+						if (colQtyInRs_tDBInput_4 < 10) {
 							row4.ProductModelID = null;
 						} else {
 
-							row4.ProductModelID = rs_tDBInput_4.getInt(9);
+							row4.ProductModelID = rs_tDBInput_4.getInt(10);
 							if (rs_tDBInput_4.wasNull()) {
 								row4.ProductModelID = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_4 < 10) {
+						if (colQtyInRs_tDBInput_4 < 11) {
 							row4.SellStartDate = null;
 						} else {
 
-							row4.SellStartDate = mssqlGTU_tDBInput_4.getDate(rsmd_tDBInput_4, rs_tDBInput_4, 10);
-
-						}
-						if (colQtyInRs_tDBInput_4 < 11) {
-							row4.SellEndDate = null;
-						} else {
-
-							row4.SellEndDate = mssqlGTU_tDBInput_4.getDate(rsmd_tDBInput_4, rs_tDBInput_4, 11);
+							row4.SellStartDate = mssqlGTU_tDBInput_4.getDate(rsmd_tDBInput_4, rs_tDBInput_4, 11);
 
 						}
 						if (colQtyInRs_tDBInput_4 < 12) {
-							row4.DiscontinuedDate = null;
+							row4.SellEndDate = null;
 						} else {
 
-							row4.DiscontinuedDate = mssqlGTU_tDBInput_4.getDate(rsmd_tDBInput_4, rs_tDBInput_4, 12);
+							row4.SellEndDate = mssqlGTU_tDBInput_4.getDate(rsmd_tDBInput_4, rs_tDBInput_4, 12);
 
 						}
 						if (colQtyInRs_tDBInput_4 < 13) {
+							row4.DiscontinuedDate = null;
+						} else {
+
+							row4.DiscontinuedDate = mssqlGTU_tDBInput_4.getDate(rsmd_tDBInput_4, rs_tDBInput_4, 13);
+
+						}
+						if (colQtyInRs_tDBInput_4 < 14) {
 							row4.ThumbNailPhoto = null;
 						} else {
 
-							row4.ThumbNailPhoto = rs_tDBInput_4.getObject(13);
+							row4.ThumbNailPhoto = rs_tDBInput_4.getObject(14);
 							if (rs_tDBInput_4.wasNull()) {
 								row4.ThumbNailPhoto = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_4 < 14) {
+						if (colQtyInRs_tDBInput_4 < 15) {
 							row4.ThumbnailPhotoFileName = null;
 						} else {
 
-							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(14);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(15);
 							if (tmpContent_tDBInput_4 != null) {
 								if (talendToDBList_tDBInput_4.contains(
-										rsmd_tDBInput_4.getColumnTypeName(14).toUpperCase(java.util.Locale.ENGLISH))) {
+										rsmd_tDBInput_4.getColumnTypeName(15).toUpperCase(java.util.Locale.ENGLISH))) {
 									row4.ThumbnailPhotoFileName = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
 									row4.ThumbnailPhotoFileName = tmpContent_tDBInput_4;
@@ -3721,20 +3833,20 @@ public class JobExportRawData implements TalendJob {
 								row4.ThumbnailPhotoFileName = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_4 < 15) {
+						if (colQtyInRs_tDBInput_4 < 16) {
 							row4.rowguid = null;
 						} else {
 
-							row4.rowguid = rs_tDBInput_4.getObject(15);
+							row4.rowguid = rs_tDBInput_4.getObject(16);
 							if (rs_tDBInput_4.wasNull()) {
 								throw new RuntimeException("Null value in non-Nullable column");
 							}
 						}
-						if (colQtyInRs_tDBInput_4 < 16) {
+						if (colQtyInRs_tDBInput_4 < 17) {
 							row4.ModifiedDate = null;
 						} else {
 
-							row4.ModifiedDate = mssqlGTU_tDBInput_4.getDate(rsmd_tDBInput_4, rs_tDBInput_4, 16);
+							row4.ModifiedDate = mssqlGTU_tDBInput_4.getDate(rsmd_tDBInput_4, rs_tDBInput_4, 17);
 
 						}
 
@@ -3777,6 +3889,10 @@ public class JobExportRawData implements TalendJob {
 						StringBuilder sb_tFileOutputDelimited_4 = new StringBuilder();
 						sb_tFileOutputDelimited_4.append(row4.ProductID);
 						sb_tFileOutputDelimited_4.append(OUT_DELIM_tFileOutputDelimited_4);
+						if (row4.Name != null) {
+							sb_tFileOutputDelimited_4.append(row4.Name);
+						}
+						sb_tFileOutputDelimited_4.append(OUT_DELIM_tFileOutputDelimited_4);
 						if (row4.ProductNumber != null) {
 							sb_tFileOutputDelimited_4.append(row4.ProductNumber);
 						}
@@ -3811,18 +3927,15 @@ public class JobExportRawData implements TalendJob {
 						}
 						sb_tFileOutputDelimited_4.append(OUT_DELIM_tFileOutputDelimited_4);
 						if (row4.SellStartDate != null) {
-							sb_tFileOutputDelimited_4
-									.append(FormatterUtils.format_Date(row4.SellStartDate, "dd-MM-yyyy"));
+							sb_tFileOutputDelimited_4.append(row4.SellStartDate);
 						}
 						sb_tFileOutputDelimited_4.append(OUT_DELIM_tFileOutputDelimited_4);
 						if (row4.SellEndDate != null) {
-							sb_tFileOutputDelimited_4
-									.append(FormatterUtils.format_Date(row4.SellEndDate, "dd-MM-yyyy"));
+							sb_tFileOutputDelimited_4.append(row4.SellEndDate);
 						}
 						sb_tFileOutputDelimited_4.append(OUT_DELIM_tFileOutputDelimited_4);
 						if (row4.DiscontinuedDate != null) {
-							sb_tFileOutputDelimited_4
-									.append(FormatterUtils.format_Date(row4.DiscontinuedDate, "dd-MM-yyyy"));
+							sb_tFileOutputDelimited_4.append(row4.DiscontinuedDate);
 						}
 						sb_tFileOutputDelimited_4.append(OUT_DELIM_tFileOutputDelimited_4);
 						if (row4.ThumbNailPhoto != null) {
@@ -3838,8 +3951,7 @@ public class JobExportRawData implements TalendJob {
 						}
 						sb_tFileOutputDelimited_4.append(OUT_DELIM_tFileOutputDelimited_4);
 						if (row4.ModifiedDate != null) {
-							sb_tFileOutputDelimited_4
-									.append(FormatterUtils.format_Date(row4.ModifiedDate, "dd-MM-yyyy"));
+							sb_tFileOutputDelimited_4.append(row4.ModifiedDate);
 						}
 						sb_tFileOutputDelimited_4.append(OUT_DELIM_ROWSEP_tFileOutputDelimited_4);
 
@@ -4007,17 +4119,17 @@ public class JobExportRawData implements TalendJob {
 	public static class row5Struct implements routines.system.IPersistableRow<row5Struct> {
 		final static byte[] commonByteArrayLock_INGESTAODADOS_JobExportRawData = new byte[0];
 		static byte[] commonByteArray_INGESTAODADOS_JobExportRawData = new byte[0];
-		protected static final int DEFAULT_HASHCODE = 1;
-		protected static final int PRIME = 31;
-		protected int hashCode = DEFAULT_HASHCODE;
-		public boolean hashCodeDirty = true;
-
-		public String loopKey;
 
 		public int ProductCategoryID;
 
 		public int getProductCategoryID() {
 			return this.ProductCategoryID;
+		}
+
+		public String Name;
+
+		public String getName() {
+			return this.Name;
 		}
 
 		public Integer ParentProductCategoryID;
@@ -4038,49 +4150,34 @@ public class JobExportRawData implements TalendJob {
 			return this.ModifiedDate;
 		}
 
-		@Override
-		public int hashCode() {
-			if (this.hashCodeDirty) {
-				final int prime = PRIME;
-				int result = DEFAULT_HASHCODE;
-
-				result = prime * result + (int) this.ProductCategoryID;
-
-				this.hashCode = result;
-				this.hashCodeDirty = false;
+		private String readString(ObjectInputStream dis) throws IOException {
+			String strReturn = null;
+			int length = 0;
+			length = dis.readInt();
+			if (length == -1) {
+				strReturn = null;
+			} else {
+				if (length > commonByteArray_INGESTAODADOS_JobExportRawData.length) {
+					if (length < 1024 && commonByteArray_INGESTAODADOS_JobExportRawData.length == 0) {
+						commonByteArray_INGESTAODADOS_JobExportRawData = new byte[1024];
+					} else {
+						commonByteArray_INGESTAODADOS_JobExportRawData = new byte[2 * length];
+					}
+				}
+				dis.readFully(commonByteArray_INGESTAODADOS_JobExportRawData, 0, length);
+				strReturn = new String(commonByteArray_INGESTAODADOS_JobExportRawData, 0, length, utf8Charset);
 			}
-			return this.hashCode;
+			return strReturn;
 		}
 
-		@Override
-		public boolean equals(Object obj) {
-			if (this == obj)
-				return true;
-			if (obj == null)
-				return false;
-			if (getClass() != obj.getClass())
-				return false;
-			final row5Struct other = (row5Struct) obj;
-
-			if (this.ProductCategoryID != other.ProductCategoryID)
-				return false;
-
-			return true;
-		}
-
-		public void copyDataTo(row5Struct other) {
-
-			other.ProductCategoryID = this.ProductCategoryID;
-			other.ParentProductCategoryID = this.ParentProductCategoryID;
-			other.rowguid = this.rowguid;
-			other.ModifiedDate = this.ModifiedDate;
-
-		}
-
-		public void copyKeysDataTo(row5Struct other) {
-
-			other.ProductCategoryID = this.ProductCategoryID;
-
+		private void writeString(String str, ObjectOutputStream dos) throws IOException {
+			if (str == null) {
+				dos.writeInt(-1);
+			} else {
+				byte[] byteArray = str.getBytes(utf8Charset);
+				dos.writeInt(byteArray.length);
+				dos.write(byteArray);
+			}
 		}
 
 		private Integer readInteger(ObjectInputStream dis) throws IOException {
@@ -4135,6 +4232,8 @@ public class JobExportRawData implements TalendJob {
 
 					this.ProductCategoryID = dis.readInt();
 
+					this.Name = readString(dis);
+
 					this.ParentProductCategoryID = readInteger(dis);
 
 					this.rowguid = (Object) dis.readObject();
@@ -4160,6 +4259,10 @@ public class JobExportRawData implements TalendJob {
 
 				dos.writeInt(this.ProductCategoryID);
 
+				// String
+
+				writeString(this.Name, dos);
+
 				// Integer
 
 				writeInteger(this.ParentProductCategoryID, dos);
@@ -4184,6 +4287,7 @@ public class JobExportRawData implements TalendJob {
 			sb.append(super.toString());
 			sb.append("[");
 			sb.append("ProductCategoryID=" + String.valueOf(ProductCategoryID));
+			sb.append(",Name=" + Name);
 			sb.append(",ParentProductCategoryID=" + String.valueOf(ParentProductCategoryID));
 			sb.append(",rowguid=" + String.valueOf(rowguid));
 			sb.append(",ModifiedDate=" + String.valueOf(ModifiedDate));
@@ -4198,11 +4302,6 @@ public class JobExportRawData implements TalendJob {
 		public int compareTo(row5Struct other) {
 
 			int returnValue = -1;
-
-			returnValue = checkNullsAndCompare(this.ProductCategoryID, other.ProductCategoryID);
-			if (returnValue != 0) {
-				return returnValue;
-			}
 
 			return returnValue;
 		}
@@ -4337,6 +4436,8 @@ public class JobExportRawData implements TalendJob {
 				if (filetFileOutputDelimited_5.length() == 0) {
 					outtFileOutputDelimited_5.write("ProductCategoryID");
 					outtFileOutputDelimited_5.write(OUT_DELIM_tFileOutputDelimited_5);
+					outtFileOutputDelimited_5.write("Name");
+					outtFileOutputDelimited_5.write(OUT_DELIM_tFileOutputDelimited_5);
 					outtFileOutputDelimited_5.write("ParentProductCategoryID");
 					outtFileOutputDelimited_5.write(OUT_DELIM_tFileOutputDelimited_5);
 					outtFileOutputDelimited_5.write("rowguid");
@@ -4378,7 +4479,7 @@ public class JobExportRawData implements TalendJob {
 				String dbUser_tDBInput_5 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_5 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:2ku3Q6gTn0Yg0WaLdvu4yqtNJihCgPYTqCFJ23v7EwnoJG87sA==");
+						"enc:routine.encryption.key.v1:UrsHhgoCJu4aI0qjpowNTU5wXik6iJhd0dT2+PM5hKWjQd70qg==");
 
 				String dbPwd_tDBInput_5 = decryptedPassword_tDBInput_5;
 
@@ -4399,8 +4500,8 @@ public class JobExportRawData implements TalendJob {
 
 				java.sql.Statement stmt_tDBInput_5 = conn_tDBInput_5.createStatement();
 
-				String dbquery_tDBInput_5 = "SELECT SalesLT.ProductCategory.ProductCategoryID,\n		SalesLT.ProductCategory.ParentProductCategoryID,\n		SalesLT.ProductC"
-						+ "ategory.rowguid,\n		SalesLT.ProductCategory.ModifiedDate\nFROM	SalesLT.ProductCategory";
+				String dbquery_tDBInput_5 = "SELECT SalesLT.ProductCategory.ProductCategoryID,\n		SalesLT.ProductCategory.Name,		\n		SalesLT.ProductCategory.ParentPr"
+						+ "oductCategoryID,\n		SalesLT.ProductCategory.rowguid,\n		SalesLT.ProductCategory.ModifiedDate\nFROM	SalesLT.ProductCategory";
 
 				globalMap.put("tDBInput_5_QUERY", dbquery_tDBInput_5);
 				java.sql.ResultSet rs_tDBInput_5 = null;
@@ -4425,28 +4526,44 @@ public class JobExportRawData implements TalendJob {
 							}
 						}
 						if (colQtyInRs_tDBInput_5 < 2) {
+							row5.Name = null;
+						} else {
+
+							tmpContent_tDBInput_5 = rs_tDBInput_5.getString(2);
+							if (tmpContent_tDBInput_5 != null) {
+								if (talendToDBList_tDBInput_5.contains(
+										rsmd_tDBInput_5.getColumnTypeName(2).toUpperCase(java.util.Locale.ENGLISH))) {
+									row5.Name = FormatterUtils.formatUnwithE(tmpContent_tDBInput_5);
+								} else {
+									row5.Name = tmpContent_tDBInput_5;
+								}
+							} else {
+								row5.Name = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_5 < 3) {
 							row5.ParentProductCategoryID = null;
 						} else {
 
-							row5.ParentProductCategoryID = rs_tDBInput_5.getInt(2);
+							row5.ParentProductCategoryID = rs_tDBInput_5.getInt(3);
 							if (rs_tDBInput_5.wasNull()) {
 								row5.ParentProductCategoryID = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_5 < 3) {
+						if (colQtyInRs_tDBInput_5 < 4) {
 							row5.rowguid = null;
 						} else {
 
-							row5.rowguid = rs_tDBInput_5.getObject(3);
+							row5.rowguid = rs_tDBInput_5.getObject(4);
 							if (rs_tDBInput_5.wasNull()) {
 								throw new RuntimeException("Null value in non-Nullable column");
 							}
 						}
-						if (colQtyInRs_tDBInput_5 < 4) {
+						if (colQtyInRs_tDBInput_5 < 5) {
 							row5.ModifiedDate = null;
 						} else {
 
-							row5.ModifiedDate = mssqlGTU_tDBInput_5.getDate(rsmd_tDBInput_5, rs_tDBInput_5, 4);
+							row5.ModifiedDate = mssqlGTU_tDBInput_5.getDate(rsmd_tDBInput_5, rs_tDBInput_5, 5);
 
 						}
 
@@ -4489,6 +4606,10 @@ public class JobExportRawData implements TalendJob {
 						StringBuilder sb_tFileOutputDelimited_5 = new StringBuilder();
 						sb_tFileOutputDelimited_5.append(row5.ProductCategoryID);
 						sb_tFileOutputDelimited_5.append(OUT_DELIM_tFileOutputDelimited_5);
+						if (row5.Name != null) {
+							sb_tFileOutputDelimited_5.append(row5.Name);
+						}
+						sb_tFileOutputDelimited_5.append(OUT_DELIM_tFileOutputDelimited_5);
 						if (row5.ParentProductCategoryID != null) {
 							sb_tFileOutputDelimited_5.append(row5.ParentProductCategoryID);
 						}
@@ -4498,8 +4619,7 @@ public class JobExportRawData implements TalendJob {
 						}
 						sb_tFileOutputDelimited_5.append(OUT_DELIM_tFileOutputDelimited_5);
 						if (row5.ModifiedDate != null) {
-							sb_tFileOutputDelimited_5
-									.append(FormatterUtils.format_Date(row5.ModifiedDate, "dd-MM-yyyy"));
+							sb_tFileOutputDelimited_5.append(row5.ModifiedDate);
 						}
 						sb_tFileOutputDelimited_5.append(OUT_DELIM_ROWSEP_tFileOutputDelimited_5);
 
@@ -5047,7 +5167,7 @@ public class JobExportRawData implements TalendJob {
 				String dbUser_tDBInput_6 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_6 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:gEpcW8V4NHZLVQGyUE4UvDQKBTNhbDcCtsxK010LXYSTsDRGqw==");
+						"enc:routine.encryption.key.v1:/51djDuv+ydPnB1PDFUVff8at3HWtlFZAfWNJkXIC79TE0cm5Q==");
 
 				String dbPwd_tDBInput_6 = decryptedPassword_tDBInput_6;
 
@@ -5068,8 +5188,9 @@ public class JobExportRawData implements TalendJob {
 
 				java.sql.Statement stmt_tDBInput_6 = conn_tDBInput_6.createStatement();
 
-				String dbquery_tDBInput_6 = "SELECT SalesLT.ProductDescription.ProductDescriptionID,\n		SalesLT.ProductDescription.Description,\n		SalesLT.ProductDesc"
-						+ "ription.rowguid,\n		SalesLT.ProductDescription.ModifiedDate\nFROM	SalesLT.ProductDescription";
+				String dbquery_tDBInput_6 = "SELECT SalesLT.ProductDescription.ProductDescriptionID,\n		SalesLT.ProductDescription.Description COLLATE Latin1_General"
+						+ "_100_CI_AI_SC,\n		SalesLT.ProductDescription.rowguid,\n		SalesLT.ProductDescription.ModifiedDate\nFROM	SalesLT.ProductDescr"
+						+ "iption";
 
 				globalMap.put("tDBInput_6_QUERY", dbquery_tDBInput_6);
 				java.sql.ResultSet rs_tDBInput_6 = null;
@@ -5766,7 +5887,7 @@ public class JobExportRawData implements TalendJob {
 				String dbUser_tDBInput_7 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_7 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:hOya9MS20o8NAPoqnLP72PBiT/CXlfpL2YUiq3iOzg+ICk0v5g==");
+						"enc:routine.encryption.key.v1:Q/U7dbVB1CWjOunJB3HobxmnSEZ5qvlRjR7SVWyk8zToHhDPUg==");
 
 				String dbPwd_tDBInput_7 = decryptedPassword_tDBInput_7;
 
@@ -6515,7 +6636,7 @@ public class JobExportRawData implements TalendJob {
 				String dbUser_tDBInput_8 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_8 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:eGIQEbn5+CJYvmROnmSEpsnykmjpzE6X17JriUA8TatmtBTGyA==");
+						"enc:routine.encryption.key.v1:6PzoT6LahOSFtx6l0jn8bL+V/V2NLBeCW2ZRH9yjv7/FdVAe/g==");
 
 				String dbPwd_tDBInput_8 = decryptedPassword_tDBInput_8;
 
@@ -6866,12 +6987,6 @@ public class JobExportRawData implements TalendJob {
 	public static class row9Struct implements routines.system.IPersistableRow<row9Struct> {
 		final static byte[] commonByteArrayLock_INGESTAODADOS_JobExportRawData = new byte[0];
 		static byte[] commonByteArray_INGESTAODADOS_JobExportRawData = new byte[0];
-		protected static final int DEFAULT_HASHCODE = 1;
-		protected static final int PRIME = 31;
-		protected int hashCode = DEFAULT_HASHCODE;
-		public boolean hashCodeDirty = true;
-
-		public String loopKey;
 
 		public int SalesOrderID;
 
@@ -6909,10 +7024,28 @@ public class JobExportRawData implements TalendJob {
 			return this.Status;
 		}
 
+		public boolean OnlineOrderFlag;
+
+		public boolean getOnlineOrderFlag() {
+			return this.OnlineOrderFlag;
+		}
+
 		public String SalesOrderNumber;
 
 		public String getSalesOrderNumber() {
 			return this.SalesOrderNumber;
+		}
+
+		public String PurchaseOrderNumber;
+
+		public String getPurchaseOrderNumber() {
+			return this.PurchaseOrderNumber;
+		}
+
+		public String AccountNumber;
+
+		public String getAccountNumber() {
+			return this.AccountNumber;
 		}
 
 		public int CustomerID;
@@ -6985,66 +7118,6 @@ public class JobExportRawData implements TalendJob {
 
 		public java.util.Date getModifiedDate() {
 			return this.ModifiedDate;
-		}
-
-		@Override
-		public int hashCode() {
-			if (this.hashCodeDirty) {
-				final int prime = PRIME;
-				int result = DEFAULT_HASHCODE;
-
-				result = prime * result + (int) this.SalesOrderID;
-
-				this.hashCode = result;
-				this.hashCodeDirty = false;
-			}
-			return this.hashCode;
-		}
-
-		@Override
-		public boolean equals(Object obj) {
-			if (this == obj)
-				return true;
-			if (obj == null)
-				return false;
-			if (getClass() != obj.getClass())
-				return false;
-			final row9Struct other = (row9Struct) obj;
-
-			if (this.SalesOrderID != other.SalesOrderID)
-				return false;
-
-			return true;
-		}
-
-		public void copyDataTo(row9Struct other) {
-
-			other.SalesOrderID = this.SalesOrderID;
-			other.RevisionNumber = this.RevisionNumber;
-			other.OrderDate = this.OrderDate;
-			other.DueDate = this.DueDate;
-			other.ShipDate = this.ShipDate;
-			other.Status = this.Status;
-			other.SalesOrderNumber = this.SalesOrderNumber;
-			other.CustomerID = this.CustomerID;
-			other.ShipToAddressID = this.ShipToAddressID;
-			other.BillToAddressID = this.BillToAddressID;
-			other.ShipMethod = this.ShipMethod;
-			other.CreditCardApprovalCode = this.CreditCardApprovalCode;
-			other.SubTotal = this.SubTotal;
-			other.TaxAmt = this.TaxAmt;
-			other.Freight = this.Freight;
-			other.TotalDue = this.TotalDue;
-			other.Comment = this.Comment;
-			other.rowguid = this.rowguid;
-			other.ModifiedDate = this.ModifiedDate;
-
-		}
-
-		public void copyKeysDataTo(row9Struct other) {
-
-			other.SalesOrderID = this.SalesOrderID;
-
 		}
 
 		private java.util.Date readDate(ObjectInputStream dis) throws IOException {
@@ -7139,7 +7212,13 @@ public class JobExportRawData implements TalendJob {
 
 					this.Status = dis.readShort();
 
+					this.OnlineOrderFlag = dis.readBoolean();
+
 					this.SalesOrderNumber = readString(dis);
+
+					this.PurchaseOrderNumber = readString(dis);
+
+					this.AccountNumber = readString(dis);
 
 					this.CustomerID = dis.readInt();
 
@@ -7204,9 +7283,21 @@ public class JobExportRawData implements TalendJob {
 
 				dos.writeShort(this.Status);
 
+				// boolean
+
+				dos.writeBoolean(this.OnlineOrderFlag);
+
 				// String
 
 				writeString(this.SalesOrderNumber, dos);
+
+				// String
+
+				writeString(this.PurchaseOrderNumber, dos);
+
+				// String
+
+				writeString(this.AccountNumber, dos);
 
 				// int
 
@@ -7273,7 +7364,10 @@ public class JobExportRawData implements TalendJob {
 			sb.append(",DueDate=" + String.valueOf(DueDate));
 			sb.append(",ShipDate=" + String.valueOf(ShipDate));
 			sb.append(",Status=" + String.valueOf(Status));
+			sb.append(",OnlineOrderFlag=" + String.valueOf(OnlineOrderFlag));
 			sb.append(",SalesOrderNumber=" + SalesOrderNumber);
+			sb.append(",PurchaseOrderNumber=" + PurchaseOrderNumber);
+			sb.append(",AccountNumber=" + AccountNumber);
 			sb.append(",CustomerID=" + String.valueOf(CustomerID));
 			sb.append(",ShipToAddressID=" + String.valueOf(ShipToAddressID));
 			sb.append(",BillToAddressID=" + String.valueOf(BillToAddressID));
@@ -7297,11 +7391,6 @@ public class JobExportRawData implements TalendJob {
 		public int compareTo(row9Struct other) {
 
 			int returnValue = -1;
-
-			returnValue = checkNullsAndCompare(this.SalesOrderID, other.SalesOrderID);
-			if (returnValue != 0) {
-				return returnValue;
-			}
 
 			return returnValue;
 		}
@@ -7446,7 +7535,13 @@ public class JobExportRawData implements TalendJob {
 					outtFileOutputDelimited_9.write(OUT_DELIM_tFileOutputDelimited_9);
 					outtFileOutputDelimited_9.write("Status");
 					outtFileOutputDelimited_9.write(OUT_DELIM_tFileOutputDelimited_9);
+					outtFileOutputDelimited_9.write("OnlineOrderFlag");
+					outtFileOutputDelimited_9.write(OUT_DELIM_tFileOutputDelimited_9);
 					outtFileOutputDelimited_9.write("SalesOrderNumber");
+					outtFileOutputDelimited_9.write(OUT_DELIM_tFileOutputDelimited_9);
+					outtFileOutputDelimited_9.write("PurchaseOrderNumber");
+					outtFileOutputDelimited_9.write(OUT_DELIM_tFileOutputDelimited_9);
+					outtFileOutputDelimited_9.write("AccountNumber");
 					outtFileOutputDelimited_9.write(OUT_DELIM_tFileOutputDelimited_9);
 					outtFileOutputDelimited_9.write("CustomerID");
 					outtFileOutputDelimited_9.write(OUT_DELIM_tFileOutputDelimited_9);
@@ -7507,7 +7602,7 @@ public class JobExportRawData implements TalendJob {
 				String dbUser_tDBInput_9 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_9 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:aApgacSWlrhnywZNgh36yjoxMC946KOrqoKH4EqGfUQlgDzsfA==");
+						"enc:routine.encryption.key.v1:ORywetLV9y94ohTQZWsLL7oyBw/yQXuak2pcJ3jvlWpPaZqfhg==");
 
 				String dbPwd_tDBInput_9 = decryptedPassword_tDBInput_9;
 
@@ -7529,12 +7624,13 @@ public class JobExportRawData implements TalendJob {
 				java.sql.Statement stmt_tDBInput_9 = conn_tDBInput_9.createStatement();
 
 				String dbquery_tDBInput_9 = "SELECT SalesLT.SalesOrderHeader.SalesOrderID,\n		SalesLT.SalesOrderHeader.RevisionNumber,\n		SalesLT.SalesOrderHeader.Ord"
-						+ "erDate,\n		SalesLT.SalesOrderHeader.DueDate,\n		SalesLT.SalesOrderHeader.ShipDate,\n		SalesLT.SalesOrderHeader.Status,\n		Sa"
-						+ "lesLT.SalesOrderHeader.SalesOrderNumber,\n		SalesLT.SalesOrderHeader.CustomerID,\n		SalesLT.SalesOrderHeader.ShipToAddress"
-						+ "ID,\n		SalesLT.SalesOrderHeader.BillToAddressID,\n		SalesLT.SalesOrderHeader.ShipMethod,\n		SalesLT.SalesOrderHeader.Credit"
-						+ "CardApprovalCode,\n		SalesLT.SalesOrderHeader.SubTotal,\n		SalesLT.SalesOrderHeader.TaxAmt,\n		SalesLT.SalesOrderHeader.Fre"
-						+ "ight,\n		SalesLT.SalesOrderHeader.TotalDue,\n		SalesLT.SalesOrderHeader.Comment,\n		SalesLT.SalesOrderHeader.rowguid,\n		Sal"
-						+ "esLT.SalesOrderHeader.ModifiedDate\nFROM	SalesLT.SalesOrderHeader";
+						+ "erDate,\n		SalesLT.SalesOrderHeader.DueDate,\n		SalesLT.SalesOrderHeader.ShipDate,\n		SalesLT.SalesOrderHeader.Status,\n		S"
+						+ "alesLT.SalesOrderHeader.OnlineOrderFlag,\n		SalesLT.SalesOrderHeader.SalesOrderNumber,\n		SalesLT.SalesOrderHeader.Purcha"
+						+ "seOrderNumber,\n		SalesLT.SalesOrderHeader.AccountNumber,\n		SalesLT.SalesOrderHeader.CustomerID,\n		SalesLT.SalesOrderHea"
+						+ "der.ShipToAddressID,\n		SalesLT.SalesOrderHeader.BillToAddressID,\n		SalesLT.SalesOrderHeader.ShipMethod,\n		SalesLT.SalesO"
+						+ "rderHeader.CreditCardApprovalCode,\n		SalesLT.SalesOrderHeader.SubTotal,\n		SalesLT.SalesOrderHeader.TaxAmt,\n		SalesLT.Sal"
+						+ "esOrderHeader.Freight,\n		SalesLT.SalesOrderHeader.TotalDue,\n		SalesLT.SalesOrderHeader.Comment,\n		SalesLT.SalesOrderHead"
+						+ "er.rowguid,\n		SalesLT.SalesOrderHeader.ModifiedDate\nFROM	SalesLT.SalesOrderHeader";
 
 				globalMap.put("tDBInput_9_QUERY", dbquery_tDBInput_9);
 				java.sql.ResultSet rs_tDBInput_9 = null;
@@ -7598,13 +7694,22 @@ public class JobExportRawData implements TalendJob {
 							}
 						}
 						if (colQtyInRs_tDBInput_9 < 7) {
+							row9.OnlineOrderFlag = false;
+						} else {
+
+							row9.OnlineOrderFlag = rs_tDBInput_9.getBoolean(7);
+							if (rs_tDBInput_9.wasNull()) {
+								throw new RuntimeException("Null value in non-Nullable column");
+							}
+						}
+						if (colQtyInRs_tDBInput_9 < 8) {
 							row9.SalesOrderNumber = null;
 						} else {
 
-							tmpContent_tDBInput_9 = rs_tDBInput_9.getString(7);
+							tmpContent_tDBInput_9 = rs_tDBInput_9.getString(8);
 							if (tmpContent_tDBInput_9 != null) {
 								if (talendToDBList_tDBInput_9.contains(
-										rsmd_tDBInput_9.getColumnTypeName(7).toUpperCase(java.util.Locale.ENGLISH))) {
+										rsmd_tDBInput_9.getColumnTypeName(8).toUpperCase(java.util.Locale.ENGLISH))) {
 									row9.SalesOrderNumber = FormatterUtils.formatUnwithE(tmpContent_tDBInput_9);
 								} else {
 									row9.SalesOrderNumber = tmpContent_tDBInput_9;
@@ -7613,41 +7718,73 @@ public class JobExportRawData implements TalendJob {
 								row9.SalesOrderNumber = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_9 < 8) {
+						if (colQtyInRs_tDBInput_9 < 9) {
+							row9.PurchaseOrderNumber = null;
+						} else {
+
+							tmpContent_tDBInput_9 = rs_tDBInput_9.getString(9);
+							if (tmpContent_tDBInput_9 != null) {
+								if (talendToDBList_tDBInput_9.contains(
+										rsmd_tDBInput_9.getColumnTypeName(9).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.PurchaseOrderNumber = FormatterUtils.formatUnwithE(tmpContent_tDBInput_9);
+								} else {
+									row9.PurchaseOrderNumber = tmpContent_tDBInput_9;
+								}
+							} else {
+								row9.PurchaseOrderNumber = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_9 < 10) {
+							row9.AccountNumber = null;
+						} else {
+
+							tmpContent_tDBInput_9 = rs_tDBInput_9.getString(10);
+							if (tmpContent_tDBInput_9 != null) {
+								if (talendToDBList_tDBInput_9.contains(
+										rsmd_tDBInput_9.getColumnTypeName(10).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.AccountNumber = FormatterUtils.formatUnwithE(tmpContent_tDBInput_9);
+								} else {
+									row9.AccountNumber = tmpContent_tDBInput_9;
+								}
+							} else {
+								row9.AccountNumber = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_9 < 11) {
 							row9.CustomerID = 0;
 						} else {
 
-							row9.CustomerID = rs_tDBInput_9.getInt(8);
+							row9.CustomerID = rs_tDBInput_9.getInt(11);
 							if (rs_tDBInput_9.wasNull()) {
 								throw new RuntimeException("Null value in non-Nullable column");
 							}
 						}
-						if (colQtyInRs_tDBInput_9 < 9) {
+						if (colQtyInRs_tDBInput_9 < 12) {
 							row9.ShipToAddressID = null;
 						} else {
 
-							row9.ShipToAddressID = rs_tDBInput_9.getInt(9);
+							row9.ShipToAddressID = rs_tDBInput_9.getInt(12);
 							if (rs_tDBInput_9.wasNull()) {
 								row9.ShipToAddressID = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_9 < 10) {
+						if (colQtyInRs_tDBInput_9 < 13) {
 							row9.BillToAddressID = null;
 						} else {
 
-							row9.BillToAddressID = rs_tDBInput_9.getInt(10);
+							row9.BillToAddressID = rs_tDBInput_9.getInt(13);
 							if (rs_tDBInput_9.wasNull()) {
 								row9.BillToAddressID = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_9 < 11) {
+						if (colQtyInRs_tDBInput_9 < 14) {
 							row9.ShipMethod = null;
 						} else {
 
-							tmpContent_tDBInput_9 = rs_tDBInput_9.getString(11);
+							tmpContent_tDBInput_9 = rs_tDBInput_9.getString(14);
 							if (tmpContent_tDBInput_9 != null) {
 								if (talendToDBList_tDBInput_9.contains(
-										rsmd_tDBInput_9.getColumnTypeName(11).toUpperCase(java.util.Locale.ENGLISH))) {
+										rsmd_tDBInput_9.getColumnTypeName(14).toUpperCase(java.util.Locale.ENGLISH))) {
 									row9.ShipMethod = FormatterUtils.formatUnwithE(tmpContent_tDBInput_9);
 								} else {
 									row9.ShipMethod = tmpContent_tDBInput_9;
@@ -7656,14 +7793,14 @@ public class JobExportRawData implements TalendJob {
 								row9.ShipMethod = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_9 < 12) {
+						if (colQtyInRs_tDBInput_9 < 15) {
 							row9.CreditCardApprovalCode = null;
 						} else {
 
-							tmpContent_tDBInput_9 = rs_tDBInput_9.getString(12);
+							tmpContent_tDBInput_9 = rs_tDBInput_9.getString(15);
 							if (tmpContent_tDBInput_9 != null) {
 								if (talendToDBList_tDBInput_9.contains(
-										rsmd_tDBInput_9.getColumnTypeName(12).toUpperCase(java.util.Locale.ENGLISH))) {
+										rsmd_tDBInput_9.getColumnTypeName(15).toUpperCase(java.util.Locale.ENGLISH))) {
 									row9.CreditCardApprovalCode = FormatterUtils.formatUnwithE(tmpContent_tDBInput_9);
 								} else {
 									row9.CreditCardApprovalCode = tmpContent_tDBInput_9;
@@ -7672,50 +7809,58 @@ public class JobExportRawData implements TalendJob {
 								row9.CreditCardApprovalCode = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_9 < 13) {
+						if (colQtyInRs_tDBInput_9 < 16) {
 							row9.SubTotal = null;
 						} else {
 
-							row9.SubTotal = rs_tDBInput_9.getObject(13);
-							if (rs_tDBInput_9.wasNull()) {
-								throw new RuntimeException("Null value in non-Nullable column");
-							}
-						}
-						if (colQtyInRs_tDBInput_9 < 14) {
-							row9.TaxAmt = null;
-						} else {
-
-							row9.TaxAmt = rs_tDBInput_9.getObject(14);
-							if (rs_tDBInput_9.wasNull()) {
-								throw new RuntimeException("Null value in non-Nullable column");
-							}
-						}
-						if (colQtyInRs_tDBInput_9 < 15) {
-							row9.Freight = null;
-						} else {
-
-							row9.Freight = rs_tDBInput_9.getObject(15);
-							if (rs_tDBInput_9.wasNull()) {
-								throw new RuntimeException("Null value in non-Nullable column");
-							}
-						}
-						if (colQtyInRs_tDBInput_9 < 16) {
-							row9.TotalDue = null;
-						} else {
-
-							row9.TotalDue = rs_tDBInput_9.getObject(16);
+							row9.SubTotal = rs_tDBInput_9.getObject(16);
 							if (rs_tDBInput_9.wasNull()) {
 								throw new RuntimeException("Null value in non-Nullable column");
 							}
 						}
 						if (colQtyInRs_tDBInput_9 < 17) {
+							row9.TaxAmt = null;
+						} else {
+
+							row9.TaxAmt = rs_tDBInput_9.getObject(17);
+							if (rs_tDBInput_9.wasNull()) {
+								throw new RuntimeException("Null value in non-Nullable column");
+							}
+						}
+						if (colQtyInRs_tDBInput_9 < 18) {
+							row9.Freight = null;
+						} else {
+
+							row9.Freight = rs_tDBInput_9.getObject(18);
+							if (rs_tDBInput_9.wasNull()) {
+								throw new RuntimeException("Null value in non-Nullable column");
+							}
+						}
+						if (colQtyInRs_tDBInput_9 < 19) {
+							row9.TotalDue = null;
+						} else {
+
+							row9.TotalDue = rs_tDBInput_9.getObject(19);
+							if (rs_tDBInput_9.wasNull()) {
+								throw new RuntimeException("Null value in non-Nullable column");
+							}
+						}
+						if (colQtyInRs_tDBInput_9 < 20) {
 							row9.Comment = null;
 						} else {
 
-							tmpContent_tDBInput_9 = rs_tDBInput_9.getString(17);
+							net.sourceforge.jtds.jdbc.ClobImpl clob_tDBInput_9 = (net.sourceforge.jtds.jdbc.ClobImpl) rs_tDBInput_9
+									.getClob(20);
+							if (clob_tDBInput_9 != null) {
+								net.sourceforge.jtds.jdbc.TalendNTextImpl tNTextImpl_tDBInput_9 = new net.sourceforge.jtds.jdbc.TalendNTextImpl(
+										clob_tDBInput_9);
+								tmpContent_tDBInput_9 = tNTextImpl_tDBInput_9.getValue();
+							} else {
+								tmpContent_tDBInput_9 = null;
+							}
 							if (tmpContent_tDBInput_9 != null) {
 								if (talendToDBList_tDBInput_9.contains(
-										rsmd_tDBInput_9.getColumnTypeName(17).toUpperCase(java.util.Locale.ENGLISH))) {
+										rsmd_tDBInput_9.getColumnTypeName(20).toUpperCase(java.util.Locale.ENGLISH))) {
 									row9.Comment = FormatterUtils.formatUnwithE(tmpContent_tDBInput_9);
 								} else {
 									row9.Comment = tmpContent_tDBInput_9;
@@ -7724,20 +7869,20 @@ public class JobExportRawData implements TalendJob {
 								row9.Comment = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_9 < 18) {
+						if (colQtyInRs_tDBInput_9 < 21) {
 							row9.rowguid = null;
 						} else {
 
-							row9.rowguid = rs_tDBInput_9.getObject(18);
+							row9.rowguid = rs_tDBInput_9.getObject(21);
 							if (rs_tDBInput_9.wasNull()) {
 								throw new RuntimeException("Null value in non-Nullable column");
 							}
 						}
-						if (colQtyInRs_tDBInput_9 < 19) {
+						if (colQtyInRs_tDBInput_9 < 22) {
 							row9.ModifiedDate = null;
 						} else {
 
-							row9.ModifiedDate = mssqlGTU_tDBInput_9.getDate(rsmd_tDBInput_9, rs_tDBInput_9, 19);
+							row9.ModifiedDate = mssqlGTU_tDBInput_9.getDate(rsmd_tDBInput_9, rs_tDBInput_9, 22);
 
 						}
 
@@ -7783,21 +7928,31 @@ public class JobExportRawData implements TalendJob {
 						sb_tFileOutputDelimited_9.append(row9.RevisionNumber);
 						sb_tFileOutputDelimited_9.append(OUT_DELIM_tFileOutputDelimited_9);
 						if (row9.OrderDate != null) {
-							sb_tFileOutputDelimited_9.append(FormatterUtils.format_Date(row9.OrderDate, "dd-MM-yyyy"));
+							sb_tFileOutputDelimited_9.append(row9.OrderDate);
 						}
 						sb_tFileOutputDelimited_9.append(OUT_DELIM_tFileOutputDelimited_9);
 						if (row9.DueDate != null) {
-							sb_tFileOutputDelimited_9.append(FormatterUtils.format_Date(row9.DueDate, "dd-MM-yyyy"));
+							sb_tFileOutputDelimited_9.append(row9.DueDate);
 						}
 						sb_tFileOutputDelimited_9.append(OUT_DELIM_tFileOutputDelimited_9);
 						if (row9.ShipDate != null) {
-							sb_tFileOutputDelimited_9.append(FormatterUtils.format_Date(row9.ShipDate, "dd-MM-yyyy"));
+							sb_tFileOutputDelimited_9.append(row9.ShipDate);
 						}
 						sb_tFileOutputDelimited_9.append(OUT_DELIM_tFileOutputDelimited_9);
 						sb_tFileOutputDelimited_9.append(row9.Status);
 						sb_tFileOutputDelimited_9.append(OUT_DELIM_tFileOutputDelimited_9);
+						sb_tFileOutputDelimited_9.append(row9.OnlineOrderFlag);
+						sb_tFileOutputDelimited_9.append(OUT_DELIM_tFileOutputDelimited_9);
 						if (row9.SalesOrderNumber != null) {
 							sb_tFileOutputDelimited_9.append(row9.SalesOrderNumber);
+						}
+						sb_tFileOutputDelimited_9.append(OUT_DELIM_tFileOutputDelimited_9);
+						if (row9.PurchaseOrderNumber != null) {
+							sb_tFileOutputDelimited_9.append(row9.PurchaseOrderNumber);
+						}
+						sb_tFileOutputDelimited_9.append(OUT_DELIM_tFileOutputDelimited_9);
+						if (row9.AccountNumber != null) {
+							sb_tFileOutputDelimited_9.append(row9.AccountNumber);
 						}
 						sb_tFileOutputDelimited_9.append(OUT_DELIM_tFileOutputDelimited_9);
 						sb_tFileOutputDelimited_9.append(row9.CustomerID);
@@ -7843,8 +7998,7 @@ public class JobExportRawData implements TalendJob {
 						}
 						sb_tFileOutputDelimited_9.append(OUT_DELIM_tFileOutputDelimited_9);
 						if (row9.ModifiedDate != null) {
-							sb_tFileOutputDelimited_9
-									.append(FormatterUtils.format_Date(row9.ModifiedDate, "dd-MM-yyyy"));
+							sb_tFileOutputDelimited_9.append(row9.ModifiedDate);
 						}
 						sb_tFileOutputDelimited_9.append(OUT_DELIM_ROWSEP_tFileOutputDelimited_9);
 
@@ -8012,17 +8166,17 @@ public class JobExportRawData implements TalendJob {
 	public static class row10Struct implements routines.system.IPersistableRow<row10Struct> {
 		final static byte[] commonByteArrayLock_INGESTAODADOS_JobExportRawData = new byte[0];
 		static byte[] commonByteArray_INGESTAODADOS_JobExportRawData = new byte[0];
-		protected static final int DEFAULT_HASHCODE = 1;
-		protected static final int PRIME = 31;
-		protected int hashCode = DEFAULT_HASHCODE;
-		public boolean hashCodeDirty = true;
-
-		public String loopKey;
 
 		public int ProductModelID;
 
 		public int getProductModelID() {
 			return this.ProductModelID;
+		}
+
+		public String Name;
+
+		public String getName() {
+			return this.Name;
 		}
 
 		public String CatalogDescription;
@@ -8041,51 +8195,6 @@ public class JobExportRawData implements TalendJob {
 
 		public java.util.Date getModifiedDate() {
 			return this.ModifiedDate;
-		}
-
-		@Override
-		public int hashCode() {
-			if (this.hashCodeDirty) {
-				final int prime = PRIME;
-				int result = DEFAULT_HASHCODE;
-
-				result = prime * result + (int) this.ProductModelID;
-
-				this.hashCode = result;
-				this.hashCodeDirty = false;
-			}
-			return this.hashCode;
-		}
-
-		@Override
-		public boolean equals(Object obj) {
-			if (this == obj)
-				return true;
-			if (obj == null)
-				return false;
-			if (getClass() != obj.getClass())
-				return false;
-			final row10Struct other = (row10Struct) obj;
-
-			if (this.ProductModelID != other.ProductModelID)
-				return false;
-
-			return true;
-		}
-
-		public void copyDataTo(row10Struct other) {
-
-			other.ProductModelID = this.ProductModelID;
-			other.CatalogDescription = this.CatalogDescription;
-			other.rowguid = this.rowguid;
-			other.ModifiedDate = this.ModifiedDate;
-
-		}
-
-		public void copyKeysDataTo(row10Struct other) {
-
-			other.ProductModelID = this.ProductModelID;
-
 		}
 
 		private String readString(ObjectInputStream dis) throws IOException {
@@ -8149,6 +8258,8 @@ public class JobExportRawData implements TalendJob {
 
 					this.ProductModelID = dis.readInt();
 
+					this.Name = readString(dis);
+
 					this.CatalogDescription = readString(dis);
 
 					this.rowguid = (Object) dis.readObject();
@@ -8176,6 +8287,10 @@ public class JobExportRawData implements TalendJob {
 
 				// String
 
+				writeString(this.Name, dos);
+
+				// String
+
 				writeString(this.CatalogDescription, dos);
 
 				// Object
@@ -8198,6 +8313,7 @@ public class JobExportRawData implements TalendJob {
 			sb.append(super.toString());
 			sb.append("[");
 			sb.append("ProductModelID=" + String.valueOf(ProductModelID));
+			sb.append(",Name=" + Name);
 			sb.append(",CatalogDescription=" + CatalogDescription);
 			sb.append(",rowguid=" + String.valueOf(rowguid));
 			sb.append(",ModifiedDate=" + String.valueOf(ModifiedDate));
@@ -8212,11 +8328,6 @@ public class JobExportRawData implements TalendJob {
 		public int compareTo(row10Struct other) {
 
 			int returnValue = -1;
-
-			returnValue = checkNullsAndCompare(this.ProductModelID, other.ProductModelID);
-			if (returnValue != 0) {
-				return returnValue;
-			}
 
 			return returnValue;
 		}
@@ -8355,6 +8466,8 @@ public class JobExportRawData implements TalendJob {
 				if (filetFileOutputDelimited_10.length() == 0) {
 					outtFileOutputDelimited_10.write("ProductModelID");
 					outtFileOutputDelimited_10.write(OUT_DELIM_tFileOutputDelimited_10);
+					outtFileOutputDelimited_10.write("Name");
+					outtFileOutputDelimited_10.write(OUT_DELIM_tFileOutputDelimited_10);
 					outtFileOutputDelimited_10.write("CatalogDescription");
 					outtFileOutputDelimited_10.write(OUT_DELIM_tFileOutputDelimited_10);
 					outtFileOutputDelimited_10.write("rowguid");
@@ -8396,7 +8509,7 @@ public class JobExportRawData implements TalendJob {
 				String dbUser_tDBInput_10 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_10 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:1gYSuKxJYbtcokZ8kk7Ny26FzdP80rFWra+Uei5hsFgcBRgh0A==");
+						"enc:routine.encryption.key.v1:t46/N/ffQqQ+cEfzLlp2+RbzWg+jJqSe6n00CjKk0cU04JHlIw==");
 
 				String dbPwd_tDBInput_10 = decryptedPassword_tDBInput_10;
 
@@ -8417,8 +8530,9 @@ public class JobExportRawData implements TalendJob {
 
 				java.sql.Statement stmt_tDBInput_10 = conn_tDBInput_10.createStatement();
 
-				String dbquery_tDBInput_10 = "SELECT SalesLT.ProductModel.ProductModelID,\n		SalesLT.ProductModel.CatalogDescription,\n		SalesLT.ProductModel.rowguid,\n"
-						+ "		SalesLT.ProductModel.ModifiedDate\nFROM	SalesLT.ProductModel";
+				String dbquery_tDBInput_10 = "SELECT SalesLT.ProductModel.ProductModelID,\n		SalesLT.ProductModel.Name,\n		replace(convert(varchar(max),SalesLT.Produc"
+						+ "tModel.CatalogDescription), char(10), '') CatalogDescription,\n		SalesLT.ProductModel.rowguid,\n		SalesLT.ProductModel.Mod"
+						+ "ifiedDate\nFROM	SalesLT.ProductModel";
 
 				globalMap.put("tDBInput_10_QUERY", dbquery_tDBInput_10);
 				java.sql.ResultSet rs_tDBInput_10 = null;
@@ -8443,13 +8557,29 @@ public class JobExportRawData implements TalendJob {
 							}
 						}
 						if (colQtyInRs_tDBInput_10 < 2) {
-							row10.CatalogDescription = null;
+							row10.Name = null;
 						} else {
 
 							tmpContent_tDBInput_10 = rs_tDBInput_10.getString(2);
 							if (tmpContent_tDBInput_10 != null) {
 								if (talendToDBList_tDBInput_10.contains(
 										rsmd_tDBInput_10.getColumnTypeName(2).toUpperCase(java.util.Locale.ENGLISH))) {
+									row10.Name = FormatterUtils.formatUnwithE(tmpContent_tDBInput_10);
+								} else {
+									row10.Name = tmpContent_tDBInput_10;
+								}
+							} else {
+								row10.Name = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_10 < 3) {
+							row10.CatalogDescription = null;
+						} else {
+
+							tmpContent_tDBInput_10 = rs_tDBInput_10.getString(3);
+							if (tmpContent_tDBInput_10 != null) {
+								if (talendToDBList_tDBInput_10.contains(
+										rsmd_tDBInput_10.getColumnTypeName(3).toUpperCase(java.util.Locale.ENGLISH))) {
 									row10.CatalogDescription = FormatterUtils.formatUnwithE(tmpContent_tDBInput_10);
 								} else {
 									row10.CatalogDescription = tmpContent_tDBInput_10;
@@ -8458,20 +8588,20 @@ public class JobExportRawData implements TalendJob {
 								row10.CatalogDescription = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_10 < 3) {
+						if (colQtyInRs_tDBInput_10 < 4) {
 							row10.rowguid = null;
 						} else {
 
-							row10.rowguid = rs_tDBInput_10.getObject(3);
+							row10.rowguid = rs_tDBInput_10.getObject(4);
 							if (rs_tDBInput_10.wasNull()) {
 								throw new RuntimeException("Null value in non-Nullable column");
 							}
 						}
-						if (colQtyInRs_tDBInput_10 < 4) {
+						if (colQtyInRs_tDBInput_10 < 5) {
 							row10.ModifiedDate = null;
 						} else {
 
-							row10.ModifiedDate = mssqlGTU_tDBInput_10.getDate(rsmd_tDBInput_10, rs_tDBInput_10, 4);
+							row10.ModifiedDate = mssqlGTU_tDBInput_10.getDate(rsmd_tDBInput_10, rs_tDBInput_10, 5);
 
 						}
 
@@ -8514,6 +8644,10 @@ public class JobExportRawData implements TalendJob {
 						StringBuilder sb_tFileOutputDelimited_10 = new StringBuilder();
 						sb_tFileOutputDelimited_10.append(row10.ProductModelID);
 						sb_tFileOutputDelimited_10.append(OUT_DELIM_tFileOutputDelimited_10);
+						if (row10.Name != null) {
+							sb_tFileOutputDelimited_10.append(row10.Name);
+						}
+						sb_tFileOutputDelimited_10.append(OUT_DELIM_tFileOutputDelimited_10);
 						if (row10.CatalogDescription != null) {
 							sb_tFileOutputDelimited_10.append(row10.CatalogDescription);
 						}
@@ -8523,8 +8657,7 @@ public class JobExportRawData implements TalendJob {
 						}
 						sb_tFileOutputDelimited_10.append(OUT_DELIM_tFileOutputDelimited_10);
 						if (row10.ModifiedDate != null) {
-							sb_tFileOutputDelimited_10
-									.append(FormatterUtils.format_Date(row10.ModifiedDate, "dd-MM-yyyy"));
+							sb_tFileOutputDelimited_10.append(row10.ModifiedDate);
 						}
 						sb_tFileOutputDelimited_10.append(OUT_DELIM_ROWSEP_tFileOutputDelimited_10);
 
@@ -8768,7 +8901,7 @@ public class JobExportRawData implements TalendJob {
 				if (execStat) {
 					runStat.updateStatOnConnection("OnComponentOk2", 0, "ok");
 				}
-				tDBClose_1Process(globalMap);
+				tRunJob_2Process(globalMap);
 
 				/**
 				 * [tPostjob_1 end ] stop
@@ -8807,6 +8940,312 @@ public class JobExportRawData implements TalendJob {
 		}
 
 		globalMap.put("tPostjob_1_SUBPROCESS_STATE", 1);
+	}
+
+	public void tRunJob_2Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+		globalMap.put("tRunJob_2_SUBPROCESS_STATE", 0);
+
+		final boolean execStat = this.execStat;
+
+		String iterateId = "";
+
+		String currentComponent = "";
+		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
+
+		try {
+			// TDI-39566 avoid throwing an useless Exception
+			boolean resumeIt = true;
+			if (globalResumeTicket == false && resumeEntryMethodName != null) {
+				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
+				resumeIt = resumeEntryMethodName.equals(currentMethodName);
+			}
+			if (resumeIt || globalResumeTicket) { // start the resume
+				globalResumeTicket = true;
+
+				/**
+				 * [tRunJob_2 begin ] start
+				 */
+
+				ok_Hash.put("tRunJob_2", false);
+				start_Hash.put("tRunJob_2", System.currentTimeMillis());
+
+				currentComponent = "tRunJob_2";
+
+				int tos_count_tRunJob_2 = 0;
+
+				/**
+				 * [tRunJob_2 begin ] stop
+				 */
+
+				/**
+				 * [tRunJob_2 main ] start
+				 */
+
+				currentComponent = "tRunJob_2";
+
+				java.util.List<String> paraList_tRunJob_2 = new java.util.ArrayList<String>();
+
+				paraList_tRunJob_2.add("--father_pid=" + pid);
+
+				paraList_tRunJob_2.add("--root_pid=" + rootPid);
+
+				paraList_tRunJob_2.add("--father_node=tRunJob_2");
+
+				paraList_tRunJob_2.add("--context=Default");
+
+				if (enableLogStash) {
+					paraList_tRunJob_2.add("--monitoring=" + enableLogStash);
+				}
+
+				// for feature:10589
+
+				paraList_tRunJob_2.add("--stat_port=" + portStats);
+
+				if (resuming_logs_dir_path != null) {
+					paraList_tRunJob_2.add("--resuming_logs_dir_path=" + resuming_logs_dir_path);
+				}
+				String childResumePath_tRunJob_2 = ResumeUtil.getChildJobCheckPointPath(resuming_checkpoint_path);
+				String tRunJobName_tRunJob_2 = ResumeUtil.getRighttRunJob(resuming_checkpoint_path);
+				if ("tRunJob_2".equals(tRunJobName_tRunJob_2) && childResumePath_tRunJob_2 != null) {
+					paraList_tRunJob_2.add("--resuming_checkpoint_path="
+							+ ResumeUtil.getChildJobCheckPointPath(resuming_checkpoint_path));
+				}
+				paraList_tRunJob_2.add("--parent_part_launcher=JOB:" + jobName + "/NODE:tRunJob_2");
+
+				java.util.Map<String, Object> parentContextMap_tRunJob_2 = new java.util.HashMap<String, Object>();
+
+				Object obj_tRunJob_2 = null;
+
+				ingestaodados.jobexportharmonized_0_1.JobExportHarmonized childJob_tRunJob_2 = new ingestaodados.jobexportharmonized_0_1.JobExportHarmonized();
+				// pass DataSources
+				java.util.Map<String, routines.system.TalendDataSource> talendDataSources_tRunJob_2 = (java.util.Map<String, routines.system.TalendDataSource>) globalMap
+						.get(KEY_DB_DATASOURCES);
+				if (null != talendDataSources_tRunJob_2) {
+					java.util.Map<String, javax.sql.DataSource> dataSources_tRunJob_2 = new java.util.HashMap<String, javax.sql.DataSource>();
+					for (java.util.Map.Entry<String, routines.system.TalendDataSource> talendDataSourceEntry_tRunJob_2 : talendDataSources_tRunJob_2
+							.entrySet()) {
+						dataSources_tRunJob_2.put(talendDataSourceEntry_tRunJob_2.getKey(),
+								talendDataSourceEntry_tRunJob_2.getValue().getRawDataSource());
+					}
+					childJob_tRunJob_2.setDataSources(dataSources_tRunJob_2);
+				}
+
+				childJob_tRunJob_2.parentContextMap = parentContextMap_tRunJob_2;
+
+				String[][] childReturn_tRunJob_2 = childJob_tRunJob_2
+						.runJob((String[]) paraList_tRunJob_2.toArray(new String[paraList_tRunJob_2.size()]));
+
+				if (childJob_tRunJob_2.getErrorCode() == null) {
+					globalMap.put("tRunJob_2_CHILD_RETURN_CODE",
+							childJob_tRunJob_2.getStatus() != null && ("failure").equals(childJob_tRunJob_2.getStatus())
+									? 1
+									: 0);
+				} else {
+					globalMap.put("tRunJob_2_CHILD_RETURN_CODE", childJob_tRunJob_2.getErrorCode());
+				}
+				if (childJob_tRunJob_2.getExceptionStackTrace() != null) {
+					globalMap.put("tRunJob_2_CHILD_EXCEPTION_STACKTRACE", childJob_tRunJob_2.getExceptionStackTrace());
+				}
+				errorCode = childJob_tRunJob_2.getErrorCode();
+				if (childJob_tRunJob_2.getErrorCode() != null || ("failure").equals(childJob_tRunJob_2.getStatus())) {
+					java.lang.Exception ce_tRunJob_2 = childJob_tRunJob_2.getException();
+					throw new RuntimeException("Child job running failed.\n" + ((ce_tRunJob_2 != null)
+							? (ce_tRunJob_2.getClass().getName() + ": " + ce_tRunJob_2.getMessage())
+							: ""));
+				}
+
+				tos_count_tRunJob_2++;
+
+				/**
+				 * [tRunJob_2 main ] stop
+				 */
+
+				/**
+				 * [tRunJob_2 process_data_begin ] start
+				 */
+
+				currentComponent = "tRunJob_2";
+
+				/**
+				 * [tRunJob_2 process_data_begin ] stop
+				 */
+
+				/**
+				 * [tRunJob_2 process_data_end ] start
+				 */
+
+				currentComponent = "tRunJob_2";
+
+				/**
+				 * [tRunJob_2 process_data_end ] stop
+				 */
+
+				/**
+				 * [tRunJob_2 end ] start
+				 */
+
+				currentComponent = "tRunJob_2";
+
+				ok_Hash.put("tRunJob_2", true);
+				end_Hash.put("tRunJob_2", System.currentTimeMillis());
+
+				/**
+				 * [tRunJob_2 end ] stop
+				 */
+			} // end the resume
+
+		} catch (java.lang.Exception e) {
+
+			TalendException te = new TalendException(e, currentComponent, globalMap);
+
+			throw te;
+		} catch (java.lang.Error error) {
+
+			runStat.stopThreadStat();
+
+			throw error;
+		} finally {
+
+			try {
+
+				/**
+				 * [tRunJob_2 finally ] start
+				 */
+
+				currentComponent = "tRunJob_2";
+
+				/**
+				 * [tRunJob_2 finally ] stop
+				 */
+			} catch (java.lang.Exception e) {
+				// ignore
+			} catch (java.lang.Error error) {
+				// ignore
+			}
+			resourceMap = null;
+		}
+
+		globalMap.put("tRunJob_2_SUBPROCESS_STATE", 1);
+	}
+
+	public void tPostjob_2Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+		globalMap.put("tPostjob_2_SUBPROCESS_STATE", 0);
+
+		final boolean execStat = this.execStat;
+
+		String iterateId = "";
+
+		String currentComponent = "";
+		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
+
+		try {
+			// TDI-39566 avoid throwing an useless Exception
+			boolean resumeIt = true;
+			if (globalResumeTicket == false && resumeEntryMethodName != null) {
+				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
+				resumeIt = resumeEntryMethodName.equals(currentMethodName);
+			}
+			if (resumeIt || globalResumeTicket) { // start the resume
+				globalResumeTicket = true;
+
+				/**
+				 * [tPostjob_2 begin ] start
+				 */
+
+				ok_Hash.put("tPostjob_2", false);
+				start_Hash.put("tPostjob_2", System.currentTimeMillis());
+
+				currentComponent = "tPostjob_2";
+
+				int tos_count_tPostjob_2 = 0;
+
+				/**
+				 * [tPostjob_2 begin ] stop
+				 */
+
+				/**
+				 * [tPostjob_2 main ] start
+				 */
+
+				currentComponent = "tPostjob_2";
+
+				tos_count_tPostjob_2++;
+
+				/**
+				 * [tPostjob_2 main ] stop
+				 */
+
+				/**
+				 * [tPostjob_2 process_data_begin ] start
+				 */
+
+				currentComponent = "tPostjob_2";
+
+				/**
+				 * [tPostjob_2 process_data_begin ] stop
+				 */
+
+				/**
+				 * [tPostjob_2 process_data_end ] start
+				 */
+
+				currentComponent = "tPostjob_2";
+
+				/**
+				 * [tPostjob_2 process_data_end ] stop
+				 */
+
+				/**
+				 * [tPostjob_2 end ] start
+				 */
+
+				currentComponent = "tPostjob_2";
+
+				ok_Hash.put("tPostjob_2", true);
+				end_Hash.put("tPostjob_2", System.currentTimeMillis());
+
+				if (execStat) {
+					runStat.updateStatOnConnection("OnComponentOk3", 0, "ok");
+				}
+				tDBClose_1Process(globalMap);
+
+				/**
+				 * [tPostjob_2 end ] stop
+				 */
+			} // end the resume
+
+		} catch (java.lang.Exception e) {
+
+			TalendException te = new TalendException(e, currentComponent, globalMap);
+
+			throw te;
+		} catch (java.lang.Error error) {
+
+			runStat.stopThreadStat();
+
+			throw error;
+		} finally {
+
+			try {
+
+				/**
+				 * [tPostjob_2 finally ] start
+				 */
+
+				currentComponent = "tPostjob_2";
+
+				/**
+				 * [tPostjob_2 finally ] stop
+				 */
+			} catch (java.lang.Exception e) {
+				// ignore
+			} catch (java.lang.Error error) {
+				// ignore
+			}
+			resourceMap = null;
+		}
+
+		globalMap.put("tPostjob_2_SUBPROCESS_STATE", 1);
 	}
 
 	public void tDBClose_1Process(final java.util.Map<String, Object> globalMap) throws TalendException {
@@ -9094,7 +9533,7 @@ public class JobExportRawData implements TalendJob {
 				String dbUser_tDBConnection_1 = "sqlfamily";
 
 				final String decryptedPassword_tDBConnection_1 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:Hg6XXeCE8Nkn/+bbf1HsojH5mP9k124ons1TLgHntgO8mYQ85A==");
+						"enc:routine.encryption.key.v1:9h1web8nU0GBnbTK2EZV9gGQxSzhS5NNvpNPllW35BjP2w8stw==");
 				String dbPwd_tDBConnection_1 = decryptedPassword_tDBConnection_1;
 
 				java.sql.Connection conn_tDBConnection_1 = null;
@@ -9544,6 +9983,18 @@ public class JobExportRawData implements TalendJob {
 			e_tPostjob_1.printStackTrace();
 
 		}
+		try {
+			errorCode = null;
+			tPostjob_2Process(globalMap);
+			if (!"failure".equals(status)) {
+				status = "end";
+			}
+		} catch (TalendException e_tPostjob_2) {
+			globalMap.put("tPostjob_2_SUBPROCESS_STATE", -1);
+
+			e_tPostjob_2.printStackTrace();
+
+		}
 
 		end = System.currentTimeMillis();
 
@@ -9707,6 +10158,6 @@ public class JobExportRawData implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 330273 characters generated by Talend Open Studio for Big Data on the 16 de
- * Abril de 2021 23h15min52s BRT
+ * 350762 characters generated by Talend Open Studio for Big Data on the 29 de
+ * Abril de 2021 23h23min54s BRT
  ************************************************************************************************/
