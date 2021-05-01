@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_ZfsIYJy7EeukptPwW1f-cw" id="_Jbg6IJy7EeukptPwW1f-cw" label="ConexaoAdventureWorks" purpose="Conectar base Adventure Works" description="Conectar base Adventure Works" version="0.1" statusCode="" item="_ZfsIYpy7EeukptPwW1f-cw" displayName="ConexaoAdventureWorks">
+    <author href="../../talend.project#_IHCS0I0KEeusA4yTh_rCww"/>
+    <additionalProperties xmi:id="_ZfvywJy7EeukptPwW1f-cw" key="created_product_fullname" value="Talend Open Studio for Big Data"/>
+    <additionalProperties xmi:id="_ZfvywZy7EeukptPwW1f-cw" key="created_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_Zfvywpy7EeukptPwW1f-cw" key="created_date" value="2021-04-13T21:50:24.876-0300"/>
+    <additionalProperties xmi:id="_Zfvyw5y7EeukptPwW1f-cw" key="modified_product_fullname" value="Talend Open Studio for Big Data"/>
+    <additionalProperties xmi:id="_ZfvyxJy7EeukptPwW1f-cw" key="modified_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_ZfvyxZy7EeukptPwW1f-cw" key="modified_date" value="2021-04-29T20:01:02.013-0300"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_ZfsIYZy7EeukptPwW1f-cw" path=""/>
+  <TalendProperties:DatabaseConnectionItem xmi:id="_ZfsIYpy7EeukptPwW1f-cw" property="_ZfsIYJy7EeukptPwW1f-cw" state="_ZfsIYZy7EeukptPwW1f-cw" typeName="Microsoft SQL Server">
+    <connection href="ConexaoAdventureWorks_0.1.item#_ZfpsIJy7EeukptPwW1f-cw"/>
+  </TalendProperties:DatabaseConnectionItem>
+</xmi:XMI>
