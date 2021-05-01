@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_uR-rkJy7EeukptPwW1f-cw" id="_uR6aIJy7EeukptPwW1f-cw" label="JobExportRawData" purpose="exportar dados brutos das tabelas" description="exportar dados brutos das tabelas" version="0.1" statusCode="" item="_uR_SoZy7EeukptPwW1f-cw" displayName="JobExportRawData">
+    <author href="../talend.project#_IHCS0I0KEeusA4yTh_rCww"/>
+    <additionalProperties xmi:id="_uSC9AJy7EeukptPwW1f-cw" key="created_product_fullname" value="Talend Open Studio for Big Data"/>
+    <additionalProperties xmi:id="_uSC9AZy7EeukptPwW1f-cw" key="created_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_uSC9Apy7EeukptPwW1f-cw" key="created_date" value="2021-04-13T21:52:44.368-0300"/>
+    <additionalProperties xmi:id="_uSC9A5y7EeukptPwW1f-cw" key="modified_product_fullname" value="Talend Open Studio for Big Data"/>
+    <additionalProperties xmi:id="_uSC9BJy7EeukptPwW1f-cw" key="modified_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_uSC9BZy7EeukptPwW1f-cw" key="modified_date" value="2021-04-24T17:58:53.469-0300"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_uR_SoJy7EeukptPwW1f-cw" path=""/>
+  <TalendProperties:ProcessItem xmi:id="_uR_SoZy7EeukptPwW1f-cw" property="_uR-rkJy7EeukptPwW1f-cw" state="_uR_SoJy7EeukptPwW1f-cw">
+    <process href="JobExportRawData_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

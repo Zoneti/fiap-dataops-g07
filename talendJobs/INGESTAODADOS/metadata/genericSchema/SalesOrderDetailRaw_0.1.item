@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_dzs5oKlQEeucQ7YV5N33cg" comment="connectionComment" label="connectionLabel" dataPackage="_dzs5oalQEeucQ7YV5N33cg"/>
+  <TalendMetadata:GenericPackage xmi:id="_dzs5oalQEeucQ7YV5N33cg" dataManager="_dzs5oKlQEeucQ7YV5N33cg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_dzs5oqlQEeucQ7YV5N33cg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dzs5o6lQEeucQ7YV5N33cg" name="SalesOrderID" id="364" label="SalesOrderID" length="10" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
+        <initialValue xmi:id="_dzs5pKlQEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dzs5palQEeucQ7YV5N33cg" name="SalesOrderDetailID" id="365" label="SalesOrderDetailID" length="10" sourceType="INT IDENTITY" talendType="id_Integer" key="true" nullable="false">
+        <initialValue xmi:id="_dzs5pqlQEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dzs5p6lQEeucQ7YV5N33cg" name="OrderQty" id="366" label="OrderQty" length="5" sourceType="SMALLINT" talendType="id_Short" nullable="false">
+        <initialValue xmi:id="_dzs5qKlQEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dzs5qalQEeucQ7YV5N33cg" name="ProductID" id="367" label="ProductID" length="10" sourceType="INT" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_dzs5qqlQEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dzs5q6lQEeucQ7YV5N33cg" name="UnitPrice" id="368" label="UnitPrice" length="19" precision="4" sourceType="MONEY" talendType="id_Object" nullable="false">
+        <initialValue xmi:id="_dzs5rKlQEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dzs5ralQEeucQ7YV5N33cg" name="UnitPriceDiscount" id="369" label="UnitPriceDiscount" length="19" precision="4" sourceType="MONEY" talendType="id_Object" nullable="false">
+        <initialValue xmi:id="_dzs5rqlQEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dzs5r6lQEeucQ7YV5N33cg" name="LineTotal" id="370" label="LineTotal" length="38" precision="6" sourceType="NUMERIC" talendType="id_BigDecimal" nullable="false">
+        <initialValue xmi:id="_dzs5sKlQEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dzs5salQEeucQ7YV5N33cg" name="rowguid" id="371" label="rowguid" length="36" sourceType="UNIQUEIDENTIFIER" talendType="id_Object" nullable="false">
+        <initialValue xmi:id="_dzs5sqlQEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dzs5s6lQEeucQ7YV5N33cg" name="ModifiedDate" id="372" label="ModifiedDate" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_dzs5tKlQEeucQ7YV5N33cg"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

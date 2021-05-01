@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_P8JT8qlQEeucQ7YV5N33cg" comment="connectionComment" label="connectionLabel" dataPackage="_P8JT86lQEeucQ7YV5N33cg"/>
+  <TalendMetadata:GenericPackage xmi:id="_P8JT86lQEeucQ7YV5N33cg" dataManager="_P8JT8qlQEeucQ7YV5N33cg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_P8JT9KlQEeucQ7YV5N33cg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_P8JT9alQEeucQ7YV5N33cg" name="ProductCategoryID" id="6278" label="ProductCategoryID" length="10" sourceType="INT IDENTITY" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_P8JT9qlQEeucQ7YV5N33cg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_P8JT96lQEeucQ7YV5N33cg" name="Name" id="6279" label="Name" length="50" sourceType="NVARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_P8JT-KlQEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_P8JT-alQEeucQ7YV5N33cg" name="ParentProductCategoryID" id="6280" label="ParentProductCategoryID" length="10" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_P8JT-qlQEeucQ7YV5N33cg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_P8JT-6lQEeucQ7YV5N33cg" name="rowguid" id="6281" label="rowguid" length="36" sourceType="UNIQUEIDENTIFIER" talendType="id_Object" nullable="false">
+        <initialValue xmi:id="_P8JT_KlQEeucQ7YV5N33cg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_P8JT_alQEeucQ7YV5N33cg" name="ModifiedDate" id="6282" label="ModifiedDate" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" nullable="false">
+        <initialValue xmi:id="_P8JT_qlQEeucQ7YV5N33cg"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
