@@ -25,15 +25,16 @@
 			<item value="D:\Programas\Talend\IngestaoDados.zip"/>
 		</list>
 		<section name="destinationFile">
-			<item value="D:\Programas\Talend\JobExportDS_0.1.zip" key="destinationFile"/>
+			<item value="D:\Programas\Talend\IngestaoDados.zip" key="destinationFile"/>
 		</section>
 	</section>
 	<section name="GenerateDocAsHTMLWizard">
 		<list key="GenerateDocAsHTMLWizardPage.STORE_DESTINATION_NAMES_ID">
 			<item value="D:\Programas\Talend\JobExportDS_0.1.zip"/>
+			<item value="D:\Programas\Talend\JobExportDS_0.1HTML.zip"/>
 		</list>
 		<section name="destinationFile">
-			<item value="D:\Programas\Talend\JobExportDS_0.1.zip" key="destinationFile"/>
+			<item value="D:\Programas\Talend\JobExportDS_0.1HTML.zip" key="destinationFile"/>
 		</section>
 	</section>
 </section>
