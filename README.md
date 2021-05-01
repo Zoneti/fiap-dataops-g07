@@ -16,3 +16,9 @@ Gabriel Zoneti Figueira Peres (RM 338951)
 - *JobExportHarmonized:* Export dados harmonizados
 - *JobExportRawData:* Export dados brutos
 - *JobSalesReport:* Export do relatório de Sales
+
+## Aula 3
+**Nome do Arquivo:** Documentação Projeto DataOps.pptx
+**Pasta com as Builds:** BuildsIngestaoDados/
+**Pasta com as Dags:** Dags/
+**Pasta com Documentação Talend:** DocumentaçãoJobsHTML/
