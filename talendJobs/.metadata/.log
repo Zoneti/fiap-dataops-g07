@@ -7695,3 +7695,279 @@ There may be some other errors caused by JVM compatibility. Make sure your JVM s
 !ENTRY org.talend.platform.logging 1 0 2021-05-01 02:41:21.832
 !MESSAGE 2021-05-01 02:41:21,832 INFO  org.talend.designer.core.runprocess.Processor  - Command line: C:/Program Files/Java/jre1.8.0_281/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/Programas/Talend/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/Programas/Talend/configuration/studio.keys -cp D:/Projetos/fiap-dataops-g07/talendJobs/INGESTAODADOS/poms/jobs/process/jobexportds_0.1/target/classpath.jar; ingestaodados.jobexportds_0_1.JobExportDS --context=Default --stat_port=4018 %*
 
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:48:59.149
+!MESSAGE 2021-05-01 02:48:59,148 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  - D:\Projetos\fiap-dataops-g07\talendJobs\INGESTAODADOS\poms\code\routines
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:48:59.149
+!MESSAGE 2021-05-01 02:48:59,149 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  -  mvn -B -o -s D:\Programas\Talend\configuration\maven_user_settings.xml install -llr -Dmaven.main.skip=true -Dci.builder.skip=true
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:01.981
+!MESSAGE 2021-05-01 02:49:01,981 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:02.016
+!MESSAGE 2021-05-01 02:49:02,016 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:02.210
+!MESSAGE 2021-05-01 02:49:02,210 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_JOBEXPORTDS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:02.210
+!MESSAGE 2021-05-01 02:49:02,210 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_JOBEXPORTDS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:02.239
+!MESSAGE 2021-05-01 02:49:02,239 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_JOBEXPORTDS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:02.240
+!MESSAGE 2021-05-01 02:49:02,240 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_JOBEXPORTDS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:02.300
+!MESSAGE 2021-05-01 02:49:02,299 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:02.617
+!MESSAGE 2021-05-01 02:49:02,617 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:02.721
+!MESSAGE 2021-05-01 02:49:02,721 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  - D:\Projetos\fiap-dataops-g07\talendJobs\INGESTAODADOS\poms\jobs\process\jobexportds_0.1
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:02.722
+!MESSAGE 2021-05-01 02:49:02,722 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  -  mvn -B -o -s D:\Programas\Talend\configuration\maven_user_settings.xml package -llr -l D:/Projetos/fiap-dataops-g07/talendJobs/INGESTAODADOS/poms/jobs/process/jobexportds_0.1/lastGenerated.log -P default-settings,include-java-sources,!include-maven-resources,include-items,include-libs,include-binaries,!include-running-log4j,!include-log4j,include-contexts,!include-test-sources,!include-test-reports,!include-xmlMappings,!include-running-xmlMappings,packaging-and-assembly,!ci-builder -Dmaven.test.skip=true -Dmaven.main.skip=true -Dci.builder.skip=true
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:06.929
+!MESSAGE 2021-05-01 02:49:06,929 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  - D:\Projetos\fiap-dataops-g07\talendJobs\INGESTAODADOS\poms\code\routines
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:06.930
+!MESSAGE 2021-05-01 02:49:06,930 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  -  mvn -B -o -s D:\Programas\Talend\configuration\maven_user_settings.xml install -llr -Dmaven.main.skip=true -Dci.builder.skip=true
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:10.121
+!MESSAGE 2021-05-01 02:49:10,121 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  - D:\Projetos\fiap-dataops-g07\talendJobs\INGESTAODADOS\poms
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:10.122
+!MESSAGE 2021-05-01 02:49:10,122 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  -  mvn -B -o -Dmaven.test.skip=true -DskipTests -s D:\Programas\Talend\configuration\maven_user_settings.xml install -llr -T 1C -f build-aggregator.pom -P !packaging-and-assembly,!signature -Dci.builder.skip=true
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:14.001
+!MESSAGE 2021-05-01 02:49:14,000 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:14.041
+!MESSAGE 2021-05-01 02:49:14,041 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:14.041
+!MESSAGE 2021-05-01 02:49:14,041 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_JOBSALESREPORT_0.1: org.example.ingestaodados.job:JobSalesReport:0.1.0 with classifier  to /INGESTAODADOS_JOBSALESREPORT_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:14.042
+!MESSAGE 2021-05-01 02:49:14,042 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_JOBEXPORTDS_0.1: org.example.ingestaodados.job:JobExportDS:0.1.0 with classifier  to /INGESTAODADOS_JOBEXPORTDS_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:14.234
+!MESSAGE 2021-05-01 02:49:14,234 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_JOBEXPORTHARMONIZED_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:14.235
+!MESSAGE 2021-05-01 02:49:14,234 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_JOBEXPORTHARMONIZED_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:14.235
+!MESSAGE 2021-05-01 02:49:14,235 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_JOBEXPORTHARMONIZED_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:14.236
+!MESSAGE 2021-05-01 02:49:14,236 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_JOBEXPORTHARMONIZED_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:14.307
+!MESSAGE 2021-05-01 02:49:14,307 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:14.481
+!MESSAGE 2021-05-01 02:49:14,480 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:14.846
+!MESSAGE 2021-05-01 02:49:14,846 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:15.497
+!MESSAGE 2021-05-01 02:49:15,497 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:15.497
+!MESSAGE 2021-05-01 02:49:15,497 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_JOBSALESREPORT_0.1: org.example.ingestaodados.job:JobSalesReport:0.1.0 with classifier  to /INGESTAODADOS_JOBSALESREPORT_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:15.498
+!MESSAGE 2021-05-01 02:49:15,498 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_JOBEXPORTDS_0.1: org.example.ingestaodados.job:JobExportDS:0.1.0 with classifier  to /INGESTAODADOS_JOBEXPORTDS_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:15.601
+!MESSAGE 2021-05-01 02:49:15,601 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  - D:\Projetos\fiap-dataops-g07\talendJobs\INGESTAODADOS\poms\jobs\process\jobexportharmonized_0.1
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:15.601
+!MESSAGE 2021-05-01 02:49:15,601 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  -  mvn -B -o -s D:\Programas\Talend\configuration\maven_user_settings.xml package -llr -l D:/Projetos/fiap-dataops-g07/talendJobs/INGESTAODADOS/poms/jobs/process/jobexportharmonized_0.1/lastGenerated.log -P default-settings,include-java-sources,!include-maven-resources,include-items,include-libs,include-binaries,!include-running-log4j,!include-log4j,include-contexts,!include-test-sources,!include-test-reports,!include-xmlMappings,!include-running-xmlMappings,packaging-and-assembly,!ci-builder -Dmaven.test.skip=true -Dmaven.main.skip=true -Dci.builder.skip=true
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:19.019
+!MESSAGE 2021-05-01 02:49:19,019 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  - D:\Projetos\fiap-dataops-g07\talendJobs\INGESTAODADOS\poms\code\routines
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:19.019
+!MESSAGE 2021-05-01 02:49:19,019 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  -  mvn -B -o -s D:\Programas\Talend\configuration\maven_user_settings.xml install -llr -Dmaven.main.skip=true -Dci.builder.skip=true
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:22.432
+!MESSAGE 2021-05-01 02:49:22,431 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  - D:\Projetos\fiap-dataops-g07\talendJobs\INGESTAODADOS\poms
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:22.432
+!MESSAGE 2021-05-01 02:49:22,432 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  -  mvn -B -o -Dmaven.test.skip=true -DskipTests -s D:\Programas\Talend\configuration\maven_user_settings.xml install -llr -T 1C -f build-aggregator.pom -P !packaging-and-assembly,!signature -Dci.builder.skip=true
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:27.020
+!MESSAGE 2021-05-01 02:49:27,020 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:27.081
+!MESSAGE 2021-05-01 02:49:27,081 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:27.081
+!MESSAGE 2021-05-01 02:49:27,081 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_JOBEXPORTHARMONIZED_0.1: org.example.ingestaodados.job:JobExportHarmonized:0.1.0 with classifier  to /INGESTAODADOS_JOBEXPORTHARMONIZED_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:27.082
+!MESSAGE 2021-05-01 02:49:27,082 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_JOBSALESREPORT_0.1: org.example.ingestaodados.job:JobSalesReport:0.1.0 with classifier  to /INGESTAODADOS_JOBSALESREPORT_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:27.083
+!MESSAGE 2021-05-01 02:49:27,083 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_JOBEXPORTDS_0.1: org.example.ingestaodados.job:JobExportDS:0.1.0 with classifier  to /INGESTAODADOS_JOBEXPORTDS_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:27.289
+!MESSAGE 2021-05-01 02:49:27,288 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_JOBEXPORTRAWDATA_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:27.289
+!MESSAGE 2021-05-01 02:49:27,289 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_JOBEXPORTRAWDATA_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:27.332
+!MESSAGE 2021-05-01 02:49:27,332 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_JOBEXPORTRAWDATA_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:27.333
+!MESSAGE 2021-05-01 02:49:27,333 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_JOBEXPORTRAWDATA_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:27.406
+!MESSAGE 2021-05-01 02:49:27,406 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:27.650
+!MESSAGE 2021-05-01 02:49:27,650 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:28.009
+!MESSAGE 2021-05-01 02:49:28,008 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:28.529
+!MESSAGE 2021-05-01 02:49:28,529 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:28.529
+!MESSAGE 2021-05-01 02:49:28,529 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_JOBSALESREPORT_0.1: org.example.ingestaodados.job:JobSalesReport:0.1.0 with classifier  to /INGESTAODADOS_JOBSALESREPORT_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:28.530
+!MESSAGE 2021-05-01 02:49:28,530 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_JOBEXPORTDS_0.1: org.example.ingestaodados.job:JobExportDS:0.1.0 with classifier  to /INGESTAODADOS_JOBEXPORTDS_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:28.919
+!MESSAGE 2021-05-01 02:49:28,918 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:28.919
+!MESSAGE 2021-05-01 02:49:28,919 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_JOBEXPORTHARMONIZED_0.1: org.example.ingestaodados.job:JobExportHarmonized:0.1.0 with classifier  to /INGESTAODADOS_JOBEXPORTHARMONIZED_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:28.920
+!MESSAGE 2021-05-01 02:49:28,920 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_JOBSALESREPORT_0.1: org.example.ingestaodados.job:JobSalesReport:0.1.0 with classifier  to /INGESTAODADOS_JOBSALESREPORT_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:28.922
+!MESSAGE 2021-05-01 02:49:28,921 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_JOBEXPORTDS_0.1: org.example.ingestaodados.job:JobExportDS:0.1.0 with classifier  to /INGESTAODADOS_JOBEXPORTDS_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:29.058
+!MESSAGE 2021-05-01 02:49:29,058 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  - D:\Projetos\fiap-dataops-g07\talendJobs\INGESTAODADOS\poms\jobs\process\jobexportrawdata_0.1
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:29.059
+!MESSAGE 2021-05-01 02:49:29,059 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  -  mvn -B -o -s D:\Programas\Talend\configuration\maven_user_settings.xml package -llr -l D:/Projetos/fiap-dataops-g07/talendJobs/INGESTAODADOS/poms/jobs/process/jobexportrawdata_0.1/lastGenerated.log -P default-settings,include-java-sources,!include-maven-resources,include-items,include-libs,include-binaries,!include-running-log4j,!include-log4j,include-contexts,!include-test-sources,!include-test-reports,!include-xmlMappings,!include-running-xmlMappings,packaging-and-assembly,!ci-builder -Dmaven.test.skip=true -Dmaven.main.skip=true -Dci.builder.skip=true
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:32.657
+!MESSAGE 2021-05-01 02:49:32,657 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  - D:\Projetos\fiap-dataops-g07\talendJobs\INGESTAODADOS\poms\code\routines
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:32.658
+!MESSAGE 2021-05-01 02:49:32,658 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  -  mvn -B -o -s D:\Programas\Talend\configuration\maven_user_settings.xml install -llr -Dmaven.main.skip=true -Dci.builder.skip=true
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:35.486
+!MESSAGE 2021-05-01 02:49:35,486 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:35.531
+!MESSAGE 2021-05-01 02:49:35,531 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:35.822
+!MESSAGE 2021-05-01 02:49:35,821 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_JOBSALESREPORT_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:35.822
+!MESSAGE 2021-05-01 02:49:35,822 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_JOBSALESREPORT_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:35.823
+!MESSAGE 2021-05-01 02:49:35,823 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /INGESTAODADOS_JOBSALESREPORT_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:35.823
+!MESSAGE 2021-05-01 02:49:35,823 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /INGESTAODADOS_JOBSALESREPORT_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:35.878
+!MESSAGE 2021-05-01 02:49:35,878 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:36.033
+!MESSAGE 2021-05-01 02:49:36,033 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/INGESTAODADOS_ROUTINES: org.example.ingestaodados.code:routines:7.3.1 with classifier  to /INGESTAODADOS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:36.070
+!MESSAGE 2021-05-01 02:49:36,070 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  - D:\Projetos\fiap-dataops-g07\talendJobs\INGESTAODADOS\poms\jobs\process\jobsalesreport_0.1
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-01 02:49:36.071
+!MESSAGE 2021-05-01 02:49:36,070 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  -  mvn -B -o -s D:\Programas\Talend\configuration\maven_user_settings.xml package -llr -l D:/Projetos/fiap-dataops-g07/talendJobs/INGESTAODADOS/poms/jobs/process/jobsalesreport_0.1/lastGenerated.log -P default-settings,include-java-sources,!include-maven-resources,include-items,include-libs,include-binaries,!include-running-log4j,!include-log4j,include-contexts,!include-test-sources,!include-test-reports,!include-xmlMappings,!include-running-xmlMappings,packaging-and-assembly,!ci-builder -Dmaven.test.skip=true -Dmaven.main.skip=true -Dci.builder.skip=true
+
