@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_xk9oUKo6Eeu-gepNM6E72w" comment="connectionComment" label="connectionLabel" dataPackage="_xk9oUao6Eeu-gepNM6E72w"/>
+  <TalendMetadata:GenericPackage xmi:id="_xk9oUao6Eeu-gepNM6E72w" dataManager="_xk9oUKo6Eeu-gepNM6E72w">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_xk9oUqo6Eeu-gepNM6E72w" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_xk9oU6o6Eeu-gepNM6E72w" name="SalesOrderID" id="479" label="SalesOrderID" length="10" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
+        <initialValue xmi:id="_xk9oVKo6Eeu-gepNM6E72w"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_xk9oVao6Eeu-gepNM6E72w" name="SalesOrderDetailID" id="480" label="SalesOrderDetailID" length="10" sourceType="INT IDENTITY" talendType="id_Integer" key="true" nullable="false">
+        <initialValue xmi:id="_xk9oVqo6Eeu-gepNM6E72w"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_xk9oV6o6Eeu-gepNM6E72w" name="OrderQty" id="481" label="OrderQty" length="5" sourceType="SMALLINT" talendType="id_Short" nullable="false">
+        <initialValue xmi:id="_xk9oWKo6Eeu-gepNM6E72w"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_xk9oWao6Eeu-gepNM6E72w" name="ProductID" id="482" label="ProductID" length="10" sourceType="INT" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_xk9oWqo6Eeu-gepNM6E72w"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_xk9oW6o6Eeu-gepNM6E72w" name="UnitPrice" id="483" label="UnitPrice" length="19" precision="4" sourceType="MONEY" talendType="id_Object" nullable="false">
+        <initialValue xmi:id="_xk9oXKo6Eeu-gepNM6E72w"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_xk9oXao6Eeu-gepNM6E72w" name="UnitPriceDiscount" id="484" label="UnitPriceDiscount" length="19" precision="4" sourceType="MONEY" talendType="id_Object" nullable="false">
+        <initialValue xmi:id="_xk9oXqo6Eeu-gepNM6E72w"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_xk9oX6o6Eeu-gepNM6E72w" name="LineTotal" id="485" label="LineTotal" length="38" precision="6" sourceType="NUMERIC" talendType="id_BigDecimal" nullable="false">
+        <initialValue xmi:id="_xk9oYKo6Eeu-gepNM6E72w"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
