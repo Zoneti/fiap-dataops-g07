@@ -89,6 +89,11 @@
     </dependency>
     <dependency>
       <groupId>org.example.ingestaodados.job</groupId>
+      <artifactId>JobSalesReport</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.ingestaodados.job</groupId>
       <artifactId>JobExportDS</artifactId>
       <version>0.1.0</version>
     </dependency>

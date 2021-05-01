@@ -1050,7 +1050,7 @@ public class JobExportRawData implements TalendJob {
 				String dbUser_tDBInput_1 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_1 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:KU6vsy8C0GCUFqGjMrBTlcco4jE9wH6rvQhv2ud3pZkdp4UPnw==");
+						"enc:routine.encryption.key.v1:jyuJcWhEZ95+zkRJ0SY7p3Rtj1YCdkUPXd1thCDcR9gf2GxqXA==");
 
 				String dbPwd_tDBInput_1 = decryptedPassword_tDBInput_1;
 
@@ -1935,7 +1935,7 @@ public class JobExportRawData implements TalendJob {
 				String dbUser_tDBInput_2 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_2 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:p8yHYCk4OQPY5s9IoxoBrZ5ozLy6lya07Yx3XZIXWT2LD6y2Kw==");
+						"enc:routine.encryption.key.v1:io/uwLdyukN9RJVZzWrNK1JMc5SDATdHieREDbZ30ph2sF5ErQ==");
 
 				String dbPwd_tDBInput_2 = decryptedPassword_tDBInput_2;
 
@@ -2783,7 +2783,7 @@ public class JobExportRawData implements TalendJob {
 				String dbUser_tDBInput_3 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_3 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:qtGfd1kLGmew5ZVCWbLDkaw32kp4XsvtISeuKB8QSiCXwW+naQ==");
+						"enc:routine.encryption.key.v1:jG/ilHP2HwSTH5qJ+4PRKBZt2IwL7eW3+MYPnTqObo0LP1MQLA==");
 
 				String dbPwd_tDBInput_3 = decryptedPassword_tDBInput_3;
 
@@ -3629,7 +3629,7 @@ public class JobExportRawData implements TalendJob {
 				String dbUser_tDBInput_4 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_4 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:M+1AlMtyGLvXDwUZctk61F/U7bllc3jQj5oMK69keJlE63QajA==");
+						"enc:routine.encryption.key.v1:lGs90C3fNHSHZtO1jrpy+ttxGE/cHqxH81tFZSLmThUjQ60ERw==");
 
 				String dbPwd_tDBInput_4 = decryptedPassword_tDBInput_4;
 
@@ -4479,7 +4479,7 @@ public class JobExportRawData implements TalendJob {
 				String dbUser_tDBInput_5 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_5 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:alo2GhD20jSXYUlKHL8EUb+zRvr7UmUNY8AcsmDMgCZ3SL62IA==");
+						"enc:routine.encryption.key.v1:RJQHJu+o7Ze24lM+uGbwJeXDe9mLl43Btls8ScdFkzLsyEjzVw==");
 
 				String dbPwd_tDBInput_5 = decryptedPassword_tDBInput_5;
 
@@ -5167,7 +5167,7 @@ public class JobExportRawData implements TalendJob {
 				String dbUser_tDBInput_6 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_6 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:IOknBJlYX3oqqzJdMTuXxwk6kvoZOhA3zHIbjIl4pz+Wj08h/g==");
+						"enc:routine.encryption.key.v1:BNJ5y0Pa/1i62OSKCvOIqcZYH3Fo7dH8Mn5dyjkikxI24wRleg==");
 
 				String dbPwd_tDBInput_6 = decryptedPassword_tDBInput_6;
 
@@ -5887,7 +5887,7 @@ public class JobExportRawData implements TalendJob {
 				String dbUser_tDBInput_7 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_7 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:wxSS7ETutfIbjS5NFd7MFPDfJAEJ0B3qaqmRwMjqY3umTBWJfQ==");
+						"enc:routine.encryption.key.v1:LuXtgZ3qw2ENkWS8nqz0iBAGY2qnK+dcmle+HEUv95omFglo5Q==");
 
 				String dbPwd_tDBInput_7 = decryptedPassword_tDBInput_7;
 
@@ -6636,7 +6636,7 @@ public class JobExportRawData implements TalendJob {
 				String dbUser_tDBInput_8 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_8 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:nbS4pmzzLe9NAFXTqPAiS/X3sZWxQdRJVVV2oBPI2jaoyAmDNA==");
+						"enc:routine.encryption.key.v1:Mvja3d5idyfC0FbOaeUjZ0T9E/HBHI98mrLS3fcYWdRG7BNPiA==");
 
 				String dbPwd_tDBInput_8 = decryptedPassword_tDBInput_8;
 
@@ -7000,9 +7000,9 @@ public class JobExportRawData implements TalendJob {
 			return this.RevisionNumber;
 		}
 
-		public java.util.Date OrderDate;
+		public String OrderDate;
 
-		public java.util.Date getOrderDate() {
+		public String getOrderDate() {
 			return this.OrderDate;
 		}
 
@@ -7120,27 +7120,6 @@ public class JobExportRawData implements TalendJob {
 			return this.ModifiedDate;
 		}
 
-		private java.util.Date readDate(ObjectInputStream dis) throws IOException {
-			java.util.Date dateReturn = null;
-			int length = 0;
-			length = dis.readByte();
-			if (length == -1) {
-				dateReturn = null;
-			} else {
-				dateReturn = new Date(dis.readLong());
-			}
-			return dateReturn;
-		}
-
-		private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException {
-			if (date1 == null) {
-				dos.writeByte(-1);
-			} else {
-				dos.writeByte(0);
-				dos.writeLong(date1.getTime());
-			}
-		}
-
 		private String readString(ObjectInputStream dis) throws IOException {
 			String strReturn = null;
 			int length = 0;
@@ -7168,6 +7147,27 @@ public class JobExportRawData implements TalendJob {
 				byte[] byteArray = str.getBytes(utf8Charset);
 				dos.writeInt(byteArray.length);
 				dos.write(byteArray);
+			}
+		}
+
+		private java.util.Date readDate(ObjectInputStream dis) throws IOException {
+			java.util.Date dateReturn = null;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				dateReturn = null;
+			} else {
+				dateReturn = new Date(dis.readLong());
+			}
+			return dateReturn;
+		}
+
+		private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException {
+			if (date1 == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeLong(date1.getTime());
 			}
 		}
 
@@ -7204,7 +7204,7 @@ public class JobExportRawData implements TalendJob {
 
 					this.RevisionNumber = dis.readShort();
 
-					this.OrderDate = readDate(dis);
+					this.OrderDate = readString(dis);
 
 					this.DueDate = readDate(dis);
 
@@ -7267,9 +7267,9 @@ public class JobExportRawData implements TalendJob {
 
 				dos.writeShort(this.RevisionNumber);
 
-				// java.util.Date
+				// String
 
-				writeDate(this.OrderDate, dos);
+				writeString(this.OrderDate, dos);
 
 				// java.util.Date
 
@@ -7360,7 +7360,7 @@ public class JobExportRawData implements TalendJob {
 			sb.append("[");
 			sb.append("SalesOrderID=" + String.valueOf(SalesOrderID));
 			sb.append(",RevisionNumber=" + String.valueOf(RevisionNumber));
-			sb.append(",OrderDate=" + String.valueOf(OrderDate));
+			sb.append(",OrderDate=" + OrderDate);
 			sb.append(",DueDate=" + String.valueOf(DueDate));
 			sb.append(",ShipDate=" + String.valueOf(ShipDate));
 			sb.append(",Status=" + String.valueOf(Status));
@@ -7602,7 +7602,7 @@ public class JobExportRawData implements TalendJob {
 				String dbUser_tDBInput_9 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_9 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:xOnd6ZuYMbTq61nn3MM6LXpX9jPh+4BwrNwMtbMVjyqpAlLA1Q==");
+						"enc:routine.encryption.key.v1:wTyPyW8wetDRFOia1tA8WeycjwFx8wL2mvFgNChkkOA3xeVUkA==");
 
 				String dbPwd_tDBInput_9 = decryptedPassword_tDBInput_9;
 
@@ -7623,14 +7623,14 @@ public class JobExportRawData implements TalendJob {
 
 				java.sql.Statement stmt_tDBInput_9 = conn_tDBInput_9.createStatement();
 
-				String dbquery_tDBInput_9 = "SELECT SalesLT.SalesOrderHeader.SalesOrderID,\n		SalesLT.SalesOrderHeader.RevisionNumber,\n		SalesLT.SalesOrderHeader.Ord"
-						+ "erDate,\n		SalesLT.SalesOrderHeader.DueDate,\n		SalesLT.SalesOrderHeader.ShipDate,\n		SalesLT.SalesOrderHeader.Status,\n		S"
-						+ "alesLT.SalesOrderHeader.OnlineOrderFlag,\n		SalesLT.SalesOrderHeader.SalesOrderNumber,\n		SalesLT.SalesOrderHeader.Purcha"
-						+ "seOrderNumber,\n		SalesLT.SalesOrderHeader.AccountNumber,\n		SalesLT.SalesOrderHeader.CustomerID,\n		SalesLT.SalesOrderHea"
-						+ "der.ShipToAddressID,\n		SalesLT.SalesOrderHeader.BillToAddressID,\n		SalesLT.SalesOrderHeader.ShipMethod,\n		SalesLT.SalesO"
-						+ "rderHeader.CreditCardApprovalCode,\n		SalesLT.SalesOrderHeader.SubTotal,\n		SalesLT.SalesOrderHeader.TaxAmt,\n		SalesLT.Sal"
-						+ "esOrderHeader.Freight,\n		SalesLT.SalesOrderHeader.TotalDue,\n		SalesLT.SalesOrderHeader.Comment,\n		SalesLT.SalesOrderHead"
-						+ "er.rowguid,\n		SalesLT.SalesOrderHeader.ModifiedDate\nFROM	SalesLT.SalesOrderHeader";
+				String dbquery_tDBInput_9 = "SELECT SalesLT.SalesOrderHeader.SalesOrderID,\n		SalesLT.SalesOrderHeader.RevisionNumber,\n		convert(varchar(10),SalesLT."
+						+ "SalesOrderHeader.OrderDate,120) OrderDate,\n		SalesLT.SalesOrderHeader.DueDate,\n		SalesLT.SalesOrderHeader.ShipDate,\n		Sa"
+						+ "lesLT.SalesOrderHeader.Status,\n		SalesLT.SalesOrderHeader.OnlineOrderFlag,\n		SalesLT.SalesOrderHeader.SalesOrderNumber,"
+						+ "\n		SalesLT.SalesOrderHeader.PurchaseOrderNumber,\n		SalesLT.SalesOrderHeader.AccountNumber,\n		SalesLT.SalesOrderHeader."
+						+ "CustomerID,\n		SalesLT.SalesOrderHeader.ShipToAddressID,\n		SalesLT.SalesOrderHeader.BillToAddressID,\n		SalesLT.SalesOrder"
+						+ "Header.ShipMethod,\n		SalesLT.SalesOrderHeader.CreditCardApprovalCode,\n		SalesLT.SalesOrderHeader.SubTotal,\n		SalesLT.Sal"
+						+ "esOrderHeader.TaxAmt,\n		SalesLT.SalesOrderHeader.Freight,\n		SalesLT.SalesOrderHeader.TotalDue,\n		SalesLT.SalesOrderHeade"
+						+ "r.Comment,\n		SalesLT.SalesOrderHeader.rowguid,\n		SalesLT.SalesOrderHeader.ModifiedDate\nFROM	SalesLT.SalesOrderHeader";
 
 				globalMap.put("tDBInput_9_QUERY", dbquery_tDBInput_9);
 				java.sql.ResultSet rs_tDBInput_9 = null;
@@ -7667,8 +7667,17 @@ public class JobExportRawData implements TalendJob {
 							row9.OrderDate = null;
 						} else {
 
-							row9.OrderDate = mssqlGTU_tDBInput_9.getDate(rsmd_tDBInput_9, rs_tDBInput_9, 3);
-
+							tmpContent_tDBInput_9 = rs_tDBInput_9.getString(3);
+							if (tmpContent_tDBInput_9 != null) {
+								if (talendToDBList_tDBInput_9.contains(
+										rsmd_tDBInput_9.getColumnTypeName(3).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.OrderDate = FormatterUtils.formatUnwithE(tmpContent_tDBInput_9);
+								} else {
+									row9.OrderDate = tmpContent_tDBInput_9;
+								}
+							} else {
+								row9.OrderDate = null;
+							}
 						}
 						if (colQtyInRs_tDBInput_9 < 4) {
 							row9.DueDate = null;
@@ -8509,7 +8518,7 @@ public class JobExportRawData implements TalendJob {
 				String dbUser_tDBInput_10 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_10 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:+9n5Ju3hCGmZ0fg5P7l8/uw1MG1OCGAZBAJuU06PIWdHfSf+ng==");
+						"enc:routine.encryption.key.v1:iyvRemWbKOCcv98Jo+jLJFHq1ctrrb0QtxObZKXCeDFA1QQ5zg==");
 
 				String dbPwd_tDBInput_10 = decryptedPassword_tDBInput_10;
 
@@ -9533,7 +9542,7 @@ public class JobExportRawData implements TalendJob {
 				String dbUser_tDBConnection_1 = "sqlfamily";
 
 				final String decryptedPassword_tDBConnection_1 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:5whkikM8m1BZkuXDb8H5Mdumo0erQ790PomVkSmYhFfILOHvkA==");
+						"enc:routine.encryption.key.v1:SXFWJvLPRrl8ngrN1t61inPE6U4cOxO3kTJTpAMeVUg6XMweJg==");
 				String dbPwd_tDBConnection_1 = decryptedPassword_tDBConnection_1;
 
 				java.sql.Connection conn_tDBConnection_1 = null;
@@ -10158,6 +10167,6 @@ public class JobExportRawData implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 350762 characters generated by Talend Open Studio for Big Data on the 30 de
- * Abril de 2021 20h46min13s BRT
+ * 351199 characters generated by Talend Open Studio for Big Data on the 30 de
+ * Abril de 2021 23h13min23s BRT
  ************************************************************************************************/

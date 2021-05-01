@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:xtIL5jWQQfBp3MpGYhfbH0UzxfB+YQAXOkqWcZZr" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:ItBq801b+0zjT9j/+JZYv2Ajbh3qow1WG8OVBACw" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -77,7 +77,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:u1tHpwjAIhFMh0VtMjv38/66DUZsYtszOaZosCwT" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:DkF8hXuaRUI/WNoR9zVINieP9cYWDMjAAT+rwkjw" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -121,7 +121,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;SalesLT&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;AdventureWorks&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sqlfamily&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:E6a8uXLyGqT+as/9kp1ZLotVZhUrHe0n2amagAu0wYh/sOokhAih"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ZF1JiiA/Uotb4ky9nXJ/6W3I8EoU1TBzKRFIYcB9synxnR8VFcIk"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -148,7 +148,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;SalesLT&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;AdventureWorks&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sqlfamily&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:KRK5b/kWyubwUta6K6d6ZyTxGW7Qtp0jCtMrqtZYAWh1e6Wy6UZv"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:EUfKlMREEOk7oA1W3jX8MVi0EqvW1YMLdo8iQxRmCM+X7lQi2nvR"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Address&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -253,7 +253,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;SalesLT&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;AdventureWorks&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sqlfamily&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:vmdl2aCySkO48/efUdiUpuOMKRkL2DyrmP8Zg9C16jXUIYwFxLha"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:b9hrZveKGf+F9tiBncZ9E0gZeydJBtAE71nRplt42jjjqS3p/md2"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Customer&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -382,7 +382,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;SalesLT&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;AdventureWorks&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sqlfamily&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:XjDN6qiosqQVYsP1g9NqCUidsD9n6s36kw1/3oBurgiWKvEnIIhh"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:KHxBJMRiDqe680UdtXj16BF3FvwH+oV/8nCje2ZgAPVr6SrAC2Qd"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;CustomerAddress&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -471,7 +471,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;SalesLT&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;AdventureWorks&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sqlfamily&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ZKXUuN5oI/o8RIlnC0CquqggQ5wOEk4qD3bxMv3ec/On2lJJtHrY"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:YsIULGl5t0ExZDdmWd/JwrQY1CxLBCtYnA9hmHKd2dVFMtrs+Rie"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Product&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -608,7 +608,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;SalesLT&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;AdventureWorks&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sqlfamily&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:LXvsQAauqssmPiAbEjOCv+bGeKbkIXv5sD4J0oiITaeB4cU6tPCz"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:+PYXAN1xqw6ITxqCzKEFEoMUBol6K7hVa8CSBLOoOuHwKjL1vHfb"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ProductCategory&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -697,7 +697,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;SalesLT&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;AdventureWorks&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sqlfamily&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:faK+YBaW0qzbqLuY83Too/Y5NHwKdV1s/btFiBFYrkDZm7JcVLFQ"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:vjX3C1JNBmv4Sha7kd0QJ+KYJprmNYuhra7dpHboBzqV71NcrJXC"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Jbg6IJy7EeukptPwW1f-cw - ProductDescription" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ProductDescription&quot;"/>
@@ -802,7 +802,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;SalesLT&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;AdventureWorks&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sqlfamily&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:rqPu8xVWEdu3C+T6xOO87a5d4ur6ECbeMIX+91ypI+cQ/YVfUQ3g"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:HvJ4+MzNOORQrmwsANWth12PzBnLDxKkA/2Xc7HDKXyJNvNlnUPk"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Jbg6IJy7EeukptPwW1f-cw - ProductModelProductDescription" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ProductModelProductDescription&quot;"/>
@@ -915,7 +915,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;SalesLT&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;AdventureWorks&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sqlfamily&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:AKNudjzNlbpfxN2Ft1159zIfMgrWjx93HNWuUutJ7jYSMvqYwlOv"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Epqg9RvzfADXQTrSOcWmHLZMlsLrk2M7fedti26UAfdH5RErgRUV"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Jbg6IJy7EeukptPwW1f-cw - SalesOrderDetail" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;SalesOrderDetail&quot;"/>
@@ -1060,13 +1060,13 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;SalesLT&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;AdventureWorks&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sqlfamily&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:vhSLwG5rC8mK575wwRCJRrBIkGJqPgkhGe4YdgvY0MEAYyLG0Ano"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:j5OPjdyUf+BAsbcb32sqQyNMZppOV4uH8NxW8tsrvesdPTVCe6kz"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;SalesOrderHeader&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT SalesLT.SalesOrderHeader.SalesOrderID,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.RevisionNumber,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.OrderDate,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.DueDate,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.ShipDate,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.Status,&#xD;&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.OnlineOrderFlag,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.SalesOrderNumber,&#xD;&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.PurchaseOrderNumber,&#xD;&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.AccountNumber,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.CustomerID,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.ShipToAddressID,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.BillToAddressID,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.ShipMethod,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.CreditCardApprovalCode,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.SubTotal,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.TaxAmt,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.Freight,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.TotalDue,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.Comment,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.rowguid,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.ModifiedDate&#xA;FROM&#x9;SalesLT.SalesOrderHeader&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT SalesLT.SalesOrderHeader.SalesOrderID,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.RevisionNumber,&#xA;&#x9;&#x9;convert(varchar(10),SalesLT.SalesOrderHeader.OrderDate,120) OrderDate,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.DueDate,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.ShipDate,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.Status,&#xD;&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.OnlineOrderFlag,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.SalesOrderNumber,&#xD;&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.PurchaseOrderNumber,&#xD;&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.AccountNumber,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.CustomerID,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.ShipToAddressID,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.BillToAddressID,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.ShipMethod,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.CreditCardApprovalCode,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.SubTotal,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.TaxAmt,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.Freight,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.TotalDue,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.Comment,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.rowguid,&#xA;&#x9;&#x9;SalesLT.SalesOrderHeader.ModifiedDate&#xA;FROM&#x9;SalesLT.SalesOrderHeader&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -1126,24 +1126,24 @@
     <metadata connector="FLOW" name="tDBInput_9">
       <column comment="" defaultValue="" key="false" length="10" name="SalesOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="3" name="RevisionNumber" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="OrderDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="OrderDate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="DueDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="ShipDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="3" name="Status" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="1" name="OnlineOrderFlag" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="25" name="SalesOrderNumber" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="25" name="PurchaseOrderNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="AccountNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="SalesOrderNumber" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="PurchaseOrderNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="AccountNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="CustomerID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="ShipToAddressID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="BillToAddressID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="50" name="ShipMethod" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="CreditCardApprovalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ShipMethod" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CreditCardApprovalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="SubTotal" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="TaxAmt" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="Freight" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="TotalDue" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1073741823" name="Comment" nullable="true" pattern="" precision="0" sourceType="NTEXT" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="Comment" nullable="true" pattern="" precision="0" sourceType="NTEXT" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="36" name="rowguid" nullable="false" pattern="" precision="0" sourceType="UNIQUEIDENTIFIER" type="id_Object" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="23" name="ModifiedDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
@@ -1182,24 +1182,24 @@
     <metadata connector="FLOW" name="tFileOutputDelimited_9">
       <column comment="" defaultValue="" key="false" length="10" name="SalesOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="3" name="RevisionNumber" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="OrderDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="OrderDate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="DueDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="ShipDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="3" name="Status" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="1" name="OnlineOrderFlag" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="25" name="SalesOrderNumber" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="25" name="PurchaseOrderNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="AccountNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="SalesOrderNumber" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="PurchaseOrderNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="AccountNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="CustomerID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="ShipToAddressID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="BillToAddressID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="50" name="ShipMethod" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="CreditCardApprovalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ShipMethod" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CreditCardApprovalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="SubTotal" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="TaxAmt" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="Freight" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="TotalDue" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1073741823" name="Comment" nullable="true" pattern="" precision="0" sourceType="NTEXT" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="Comment" nullable="true" pattern="" precision="0" sourceType="NTEXT" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="36" name="rowguid" nullable="false" pattern="" precision="0" sourceType="UNIQUEIDENTIFIER" type="id_Object" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="23" name="ModifiedDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
@@ -1217,7 +1217,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;SalesLT&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;AdventureWorks&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sqlfamily&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:k4NDtzNkCwQoA19pGUONfw+kph6aRwhDNumkDavTpdqm0ZMrNi1T"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TvdvbPMUD/1y4oHzlOmDPW9Vu2YL3lNdNSVj5tGFSKRcdYu3pvRU"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ProductModel&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>

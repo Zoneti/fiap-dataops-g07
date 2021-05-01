@@ -14,6 +14,7 @@
     <module>jobs/process/jobexportdatascience_0.1</module>
     <module>jobs/process/jobexportharmonized_0.1</module>
     <module>jobs/process/jobexportds_0.1</module>
+    <module>jobs/process/jobsalesreport_0.1</module>
   </modules>
   <properties>
     <talend.project.name>INGESTAODADOS</talend.project.name>
