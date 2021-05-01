@@ -280,6 +280,15 @@ private class TalendException extends Exception {
 					tFileInputDelimited_1_onSubJobError(exception, errorComponent, globalMap);
 			}
 			
+			public void tMap_8_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_1_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
 			public void tFileOutputDelimited_1_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
 				
 				end_Hash.put(errorComponent, System.currentTimeMillis());
@@ -296,6 +305,123 @@ private class TalendException extends Exception {
 				status = "failure";
 				
 					tFileInputDelimited_1_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
+			public void tFileInputDelimited_7_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_7_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
+			public void tMap_4_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_7_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
+			public void tMap_6_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_7_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
+			public void tFileInputDelimited_13_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_7_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
+			public void tFileInputDelimited_14_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_7_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
+			public void tFileInputDelimited_15_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_15_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
+			public void tMap_5_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_15_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
+			public void tFileInputDelimited_16_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_15_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
+			public void tFileInputDelimited_17_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_15_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
+			public void tFileInputDelimited_18_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_18_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
+			public void tMap_7_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_18_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
+			public void tFileInputDelimited_19_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_18_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
+			public void tFileInputDelimited_20_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_18_onSubJobError(exception, errorComponent, globalMap);
 			}
 			
 			public void tFileInputDelimited_3_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
@@ -424,6 +550,87 @@ private class TalendException extends Exception {
 					tFileInputDelimited_1_onSubJobError(exception, errorComponent, globalMap);
 			}
 			
+			public void tAdvancedHash_SalesTemp_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_7_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
+			public void tAdvancedHash_tAddress_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_7_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
+			public void tAdvancedHash_tCustomer_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_7_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
+			public void tAdvancedHash_max_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_15_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
+			public void tAdvancedHash_row6_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_15_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
+			public void tAdvancedHash_row8_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_15_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
+			public void tAdvancedHash_min_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_18_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
+			public void tAdvancedHash_row9_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_18_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
+			public void tAdvancedHash_row10_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_18_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
 			public void tAdvancedHash_salesHeader_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
 				
 				end_Hash.put(errorComponent, System.currentTimeMillis());
@@ -502,6 +709,66 @@ private class TalendException extends Exception {
 					tFileInputDelimited_1_onSubJobError(exception, errorComponent, globalMap);
 			}
 			
+			public void tAggregateRow_3_AGGOUT_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+							tAggregateRow_3_AGGIN_error(exception, errorComponent, globalMap);
+						
+						}
+					
+			public void tAggregateRow_3_AGGIN_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_7_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
+			public void tAggregateRow_4_AGGOUT_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+							tAggregateRow_4_AGGIN_error(exception, errorComponent, globalMap);
+						
+						}
+					
+			public void tAggregateRow_4_AGGIN_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_7_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
+			public void tAggregateRow_5_AGGOUT_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+							tAggregateRow_5_AGGIN_error(exception, errorComponent, globalMap);
+						
+						}
+					
+			public void tAggregateRow_5_AGGIN_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_15_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
+			public void tAggregateRow_6_AGGOUT_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+							tAggregateRow_6_AGGIN_error(exception, errorComponent, globalMap);
+						
+						}
+					
+			public void tAggregateRow_6_AGGIN_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+				
+				end_Hash.put(errorComponent, System.currentTimeMillis());
+				
+				status = "failure";
+				
+					tFileInputDelimited_18_onSubJobError(exception, errorComponent, globalMap);
+			}
+			
 			public void tAggregateRow_2_AGGOUT_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
 				
 							tAggregateRow_2_AGGIN_error(exception, errorComponent, globalMap);
@@ -522,6 +789,21 @@ private class TalendException extends Exception {
 resumeUtil.addLog("SYSTEM_LOG", "NODE:"+ errorComponent, "", Thread.currentThread().getId()+ "", "FATAL", "", exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception),"");
 
 			}
+			public void tFileInputDelimited_7_onSubJobError(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+
+resumeUtil.addLog("SYSTEM_LOG", "NODE:"+ errorComponent, "", Thread.currentThread().getId()+ "", "FATAL", "", exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception),"");
+
+			}
+			public void tFileInputDelimited_15_onSubJobError(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+
+resumeUtil.addLog("SYSTEM_LOG", "NODE:"+ errorComponent, "", Thread.currentThread().getId()+ "", "FATAL", "", exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception),"");
+
+			}
+			public void tFileInputDelimited_18_onSubJobError(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
+
+resumeUtil.addLog("SYSTEM_LOG", "NODE:"+ errorComponent, "", Thread.currentThread().getId()+ "", "FATAL", "", exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception),"");
+
+			}
 			public void tFileInputDelimited_3_onSubJobError(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {
 
 resumeUtil.addLog("SYSTEM_LOG", "NODE:"+ errorComponent, "", Thread.currentThread().getId()+ "", "FATAL", "", exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception),"");
@@ -538,6 +820,248 @@ resumeUtil.addLog("SYSTEM_LOG", "NODE:"+ errorComponent, "", Thread.currentThrea
 
 
 
+
+public static class SalesResultStruct implements routines.system.IPersistableRow<SalesResultStruct> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+
+	
+			    public java.util.Date OrderDate;
+
+				public java.util.Date getOrderDate () {
+					return this.OrderDate;
+				}
+				
+			    public String CountryRegion;
+
+				public String getCountryRegion () {
+					return this.CountryRegion;
+				}
+				
+			    public String StateProvince;
+
+				public String getStateProvince () {
+					return this.StateProvince;
+				}
+				
+			    public String City;
+
+				public String getCity () {
+					return this.City;
+				}
+				
+			    public String SalesOrign;
+
+				public String getSalesOrign () {
+					return this.SalesOrign;
+				}
+				
+			    public String SalesPersonMAX;
+
+				public String getSalesPersonMAX () {
+					return this.SalesPersonMAX;
+				}
+				
+			    public String SalesPersonMIN;
+
+				public String getSalesPersonMIN () {
+					return this.SalesPersonMIN;
+				}
+				
+			    public float TotalDue;
+
+				public float getTotalDue () {
+					return this.TotalDue;
+				}
+				
+
+
+
+	private java.util.Date readDate(ObjectInputStream dis) throws IOException{
+		java.util.Date dateReturn = null;
+        int length = 0;
+        length = dis.readByte();
+		if (length == -1) {
+			dateReturn = null;
+		} else {
+	    	dateReturn = new Date(dis.readLong());
+		}
+		return dateReturn;
+	}
+
+    private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException{
+		if(date1 == null) {
+            dos.writeByte(-1);
+		} else {
+			dos.writeByte(0);
+	    	dos.writeLong(date1.getTime());
+    	}
+    }
+
+	private String readString(ObjectInputStream dis) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			if(length > commonByteArray_INGESTAODADOS_JobSalesReport.length) {
+				if(length < 1024 && commonByteArray_INGESTAODADOS_JobSalesReport.length == 0) {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[1024];
+				} else {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[2 * length];
+   				}
+			}
+			dis.readFully(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length);
+			strReturn = new String(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length, utf8Charset);
+		}
+		return strReturn;
+	}
+
+    private void writeString(String str, ObjectOutputStream dos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+    }
+
+    public void readData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+					this.OrderDate = readDate(dis);
+					
+					this.CountryRegion = readString(dis);
+					
+					this.StateProvince = readString(dis);
+					
+					this.City = readString(dis);
+					
+					this.SalesOrign = readString(dis);
+					
+					this.SalesPersonMAX = readString(dis);
+					
+					this.SalesPersonMIN = readString(dis);
+					
+			        this.TotalDue = dis.readFloat();
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeData(ObjectOutputStream dos) {
+        try {
+
+		
+					// java.util.Date
+				
+						writeDate(this.OrderDate,dos);
+					
+					// String
+				
+						writeString(this.CountryRegion,dos);
+					
+					// String
+				
+						writeString(this.StateProvince,dos);
+					
+					// String
+				
+						writeString(this.City,dos);
+					
+					// String
+				
+						writeString(this.SalesOrign,dos);
+					
+					// String
+				
+						writeString(this.SalesPersonMAX,dos);
+					
+					// String
+				
+						writeString(this.SalesPersonMIN,dos);
+					
+					// float
+				
+		            	dos.writeFloat(this.TotalDue);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("OrderDate="+String.valueOf(OrderDate));
+		sb.append(",CountryRegion="+CountryRegion);
+		sb.append(",StateProvince="+StateProvince);
+		sb.append(",City="+City);
+		sb.append(",SalesOrign="+SalesOrign);
+		sb.append(",SalesPersonMAX="+SalesPersonMAX);
+		sb.append(",SalesPersonMIN="+SalesPersonMIN);
+		sb.append(",TotalDue="+String.valueOf(TotalDue));
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(SalesResultStruct other) {
+
+		int returnValue = -1;
+		
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
 
 public static class row1Struct implements routines.system.IPersistableRow<row1Struct> {
     final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
@@ -1984,10 +2508,12 @@ public void tFileInputDelimited_1Process(final java.util.Map<String, Object> glo
 
 
 		tFileInputDelimited_2Process(globalMap);
+		tFileInputDelimited_7Process(globalMap);
 
 		salesOrderStruct salesOrder = new salesOrderStruct();
 rpSalesStruct rpSales = new rpSalesStruct();
 row1Struct row1 = new row1Struct();
+SalesResultStruct SalesResult = new SalesResultStruct();
 
 
 
@@ -3172,6 +3698,7 @@ end_Hash.put("tAggregateRow_1_AGGOUT", System.currentTimeMillis());
  */
 
 
+
 	
 	/**
 	 * [tFileOutputDelimited_1 begin ] start
@@ -3189,14 +3716,14 @@ end_Hash.put("tAggregateRow_1_AGGOUT", System.currentTimeMillis());
 
 	
 					if(execStat) {
-						runStat.updateStatOnConnection(resourceMap,iterateId,0,0,"row1");
+						runStat.updateStatOnConnection(resourceMap,iterateId,0,0,"SalesResult");
 					}
 				
 		int tos_count_tFileOutputDelimited_1 = 0;
 		
 
 String fileName_tFileOutputDelimited_1 = "";
-    fileName_tFileOutputDelimited_1 = (new java.io.File("D:/DataLake/Curated/RPsales"+TalendDate.getDate("YYYY-MM-DD")+".csv")).getAbsolutePath().replace("\\","/");
+    fileName_tFileOutputDelimited_1 = (new java.io.File("D:/DataLake/Curated/RPsales_"+TalendDate.getDate("YYYY-MM-DD")+".csv")).getAbsolutePath().replace("\\","/");
     String fullName_tFileOutputDelimited_1 = null;
     String extension_tFileOutputDelimited_1 = null;
     String directory_tFileOutputDelimited_1 = null;
@@ -3258,6 +3785,10 @@ String fileName_tFileOutputDelimited_1 = "";
                                             outtFileOutputDelimited_1.write(OUT_DELIM_tFileOutputDelimited_1);
                                         outtFileOutputDelimited_1.write("SalesOrign");
                                             outtFileOutputDelimited_1.write(OUT_DELIM_tFileOutputDelimited_1);
+                                        outtFileOutputDelimited_1.write("SalesPersonMAX");
+                                            outtFileOutputDelimited_1.write(OUT_DELIM_tFileOutputDelimited_1);
+                                        outtFileOutputDelimited_1.write("SalesPersonMIN");
+                                            outtFileOutputDelimited_1.write(OUT_DELIM_tFileOutputDelimited_1);
                                         outtFileOutputDelimited_1.write("TotalDue");
                                         outtFileOutputDelimited_1.write(OUT_DELIM_ROWSEP_tFileOutputDelimited_1);
                                         outtFileOutputDelimited_1.flush();
@@ -3273,6 +3804,83 @@ resourceMap.put("nb_line_tFileOutputDelimited_1", nb_line_tFileOutputDelimited_1
 
 /**
  * [tFileOutputDelimited_1 begin ] stop
+ */
+
+
+
+	
+	/**
+	 * [tMap_8 begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tMap_8", false);
+		start_Hash.put("tMap_8", System.currentTimeMillis());
+		
+	
+	currentComponent="tMap_8";
+
+	
+					if(execStat) {
+						runStat.updateStatOnConnection(resourceMap,iterateId,0,0,"row1");
+					}
+				
+		int tos_count_tMap_8 = 0;
+		
+
+
+
+
+// ###############################
+// # Lookup's keys initialization
+	
+		org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<SalesTempStruct> tHash_Lookup_SalesTemp = (org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<SalesTempStruct>) 
+				((org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<SalesTempStruct>) 
+					globalMap.get( "tHash_Lookup_SalesTemp" ))
+					;					
+					
+	
+
+SalesTempStruct SalesTempHashKey = new SalesTempStruct();
+SalesTempStruct SalesTempDefault = new SalesTempStruct();
+// ###############################        
+
+// ###############################
+// # Vars initialization
+class  Var__tMap_8__Struct  {
+}
+Var__tMap_8__Struct Var__tMap_8 = new Var__tMap_8__Struct();
+// ###############################
+
+// ###############################
+// # Outputs initialization
+SalesResultStruct SalesResult_tmp = new SalesResultStruct();
+// ###############################
+
+        
+        
+
+
+
+        
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+/**
+ * [tMap_8 begin ] stop
  */
 
 
@@ -3381,6 +3989,204 @@ for(AggOperationStruct_tAggregateRow_1 aggregated_row_tAggregateRow_1 : values_t
 
 	
 	/**
+	 * [tMap_8 main ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_8";
+
+	
+					if(execStat){
+						runStat.updateStatOnConnection(iterateId,1,1,"row1");
+					}
+					
+
+		
+		
+		boolean hasCasePrimitiveKeyWithNull_tMap_8 = false;
+		
+        // ###############################
+        // # Input tables (lookups)
+		  boolean rejectedInnerJoin_tMap_8 = false;
+		  boolean mainRowRejected_tMap_8 = false;
+            				    								  
+		
+
+				///////////////////////////////////////////////
+				// Starting Lookup Table "SalesTemp" 
+				///////////////////////////////////////////////
+
+
+				
+				
+                            
+ 					    boolean forceLoopSalesTemp = false;
+       		  	    	
+       		  	    	
+ 							SalesTempStruct SalesTempObjectFromLookup = null;
+                          
+		           		  	if(!rejectedInnerJoin_tMap_8) { // G_TM_M_020
+
+								
+								hasCasePrimitiveKeyWithNull_tMap_8 = false;
+								
+                        		    		    SalesTempHashKey.OrderDate = row1.OrderDate  == null ? null : new java.util.Date(row1.OrderDate .getTime());
+                        		    		
+                        		    		    SalesTempHashKey.CountryRegion = row1.CountryRegion ;
+                        		    		
+                        		    		    SalesTempHashKey.StateProvince = row1.StateProvince ;
+                        		    		
+                        		    		    SalesTempHashKey.City = row1.City ;
+                        		    		
+                        		    		    SalesTempHashKey.SalesOrign = row1.SalesOrign ;
+                        		    		
+
+								
+		                        	SalesTempHashKey.hashCodeDirty = true;
+                        		
+	  					
+	  							
+			  					
+			  					
+	  					
+		  							tHash_Lookup_SalesTemp.lookup( SalesTempHashKey );
+
+	  							
+
+	  							
+
+ 								
+		  				
+	  								
+						
+									
+  									  		
+ 								
+
+
+
+							} // G_TM_M_020
+			           		  	  
+							
+				           		if(tHash_Lookup_SalesTemp != null && tHash_Lookup_SalesTemp.getCount(SalesTempHashKey) > 1) { // G 071
+			  							
+			  						
+									 		
+									//System.out.println("WARNING: UNIQUE MATCH is configured for the lookup 'SalesTemp' and it contains more one result from keys :  SalesTemp.OrderDate = '" + SalesTempHashKey.OrderDate + "', SalesTemp.CountryRegion = '" + SalesTempHashKey.CountryRegion + "', SalesTemp.StateProvince = '" + SalesTempHashKey.StateProvince + "', SalesTemp.City = '" + SalesTempHashKey.City + "', SalesTemp.SalesOrign = '" + SalesTempHashKey.SalesOrign + "'");
+								} // G 071
+							
+
+							SalesTempStruct SalesTemp = null;
+                    		  	 
+							   
+                    		  	 
+	       		  	    	SalesTempStruct fromLookup_SalesTemp = null;
+							SalesTemp = SalesTempDefault;
+										 
+							
+								 
+							
+							
+								if (tHash_Lookup_SalesTemp !=null && tHash_Lookup_SalesTemp.hasNext()) { // G 099
+								
+							
+								
+								fromLookup_SalesTemp = tHash_Lookup_SalesTemp.next();
+
+							
+							
+								} // G 099
+							
+							
+
+							if(fromLookup_SalesTemp != null) {
+								SalesTemp = fromLookup_SalesTemp;
+							}
+							
+							
+							
+			  							
+								
+	                    		  	
+		                    
+	            	
+	            	
+	            // ###############################
+        { // start of Var scope
+        
+	        // ###############################
+        	// # Vars tables
+        
+Var__tMap_8__Struct Var = Var__tMap_8;// ###############################
+        // ###############################
+        // # Output tables
+
+SalesResult = null;
+
+
+// # Output table : 'SalesResult'
+SalesResult_tmp.OrderDate = row1.OrderDate ;
+SalesResult_tmp.CountryRegion = row1.CountryRegion ;
+SalesResult_tmp.StateProvince = row1.StateProvince ;
+SalesResult_tmp.City = row1.City ;
+SalesResult_tmp.SalesOrign = row1.SalesOrign ;
+SalesResult_tmp.SalesPersonMAX = SalesTemp.SalesPersonMAX ;
+SalesResult_tmp.SalesPersonMIN = SalesTemp.SalesPersonMIN ;
+SalesResult_tmp.TotalDue = row1.TotalDue ;
+SalesResult = SalesResult_tmp;
+// ###############################
+
+} // end of Var scope
+
+rejectedInnerJoin_tMap_8 = false;
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+	tos_count_tMap_8++;
+
+/**
+ * [tMap_8 main ] stop
+ */
+	
+	/**
+	 * [tMap_8 process_data_begin ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_8";
+
+	
+
+ 
+
+
+
+/**
+ * [tMap_8 process_data_begin ] stop
+ */
+// Start of branch "SalesResult"
+if(SalesResult != null) { 
+
+
+
+	
+	/**
 	 * [tFileOutputDelimited_1 main ] start
 	 */
 
@@ -3392,44 +4198,56 @@ for(AggOperationStruct_tAggregateRow_1 aggregated_row_tAggregateRow_1 : values_t
 
 	
 					if(execStat){
-						runStat.updateStatOnConnection(iterateId,1,1,"row1");
+						runStat.updateStatOnConnection(iterateId,1,1,"SalesResult");
 					}
 					
 
 
                     StringBuilder sb_tFileOutputDelimited_1 = new StringBuilder();
-                            if(row1.OrderDate != null) {
+                            if(SalesResult.OrderDate != null) {
                         sb_tFileOutputDelimited_1.append(
-                            FormatterUtils.format_Date(row1.OrderDate, "yyyy-MM-dd")
+                            FormatterUtils.format_Date(SalesResult.OrderDate, "yyyy-MM-dd")
                         );
                             }
                             sb_tFileOutputDelimited_1.append(OUT_DELIM_tFileOutputDelimited_1);
-                            if(row1.CountryRegion != null) {
+                            if(SalesResult.CountryRegion != null) {
                         sb_tFileOutputDelimited_1.append(
-                            row1.CountryRegion
+                            SalesResult.CountryRegion
                         );
                             }
                             sb_tFileOutputDelimited_1.append(OUT_DELIM_tFileOutputDelimited_1);
-                            if(row1.StateProvince != null) {
+                            if(SalesResult.StateProvince != null) {
                         sb_tFileOutputDelimited_1.append(
-                            row1.StateProvince
+                            SalesResult.StateProvince
                         );
                             }
                             sb_tFileOutputDelimited_1.append(OUT_DELIM_tFileOutputDelimited_1);
-                            if(row1.City != null) {
+                            if(SalesResult.City != null) {
                         sb_tFileOutputDelimited_1.append(
-                            row1.City
+                            SalesResult.City
                         );
                             }
                             sb_tFileOutputDelimited_1.append(OUT_DELIM_tFileOutputDelimited_1);
-                            if(row1.SalesOrign != null) {
+                            if(SalesResult.SalesOrign != null) {
                         sb_tFileOutputDelimited_1.append(
-                            row1.SalesOrign
+                            SalesResult.SalesOrign
+                        );
+                            }
+                            sb_tFileOutputDelimited_1.append(OUT_DELIM_tFileOutputDelimited_1);
+                            if(SalesResult.SalesPersonMAX != null) {
+                        sb_tFileOutputDelimited_1.append(
+                            SalesResult.SalesPersonMAX
+                        );
+                            }
+                            sb_tFileOutputDelimited_1.append(OUT_DELIM_tFileOutputDelimited_1);
+                            if(SalesResult.SalesPersonMIN != null) {
+                        sb_tFileOutputDelimited_1.append(
+                            SalesResult.SalesPersonMIN
                         );
                             }
                             sb_tFileOutputDelimited_1.append(OUT_DELIM_tFileOutputDelimited_1);
                         sb_tFileOutputDelimited_1.append(
-                                    FormatterUtils.format_Number(new java.math.BigDecimal(String.valueOf(row1.TotalDue)).toPlainString(), ',', '.')
+                                    FormatterUtils.format_Number(new java.math.BigDecimal(String.valueOf(SalesResult.TotalDue)).toPlainString(), ',', '.')
                         );
                     sb_tFileOutputDelimited_1.append(OUT_DELIM_ROWSEP_tFileOutputDelimited_1);
 
@@ -3491,6 +4309,32 @@ for(AggOperationStruct_tAggregateRow_1 aggregated_row_tAggregateRow_1 : values_t
  * [tFileOutputDelimited_1 process_data_end ] stop
  */
 
+} // End of branch "SalesResult"
+
+
+
+
+	
+	/**
+	 * [tMap_8 process_data_end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_8";
+
+	
+
+ 
+
+
+
+/**
+ * [tMap_8 process_data_end ] stop
+ */
+
 
 
 	
@@ -3546,6 +4390,52 @@ end_Hash.put("tAggregateRow_1_AGGIN", System.currentTimeMillis());
 
 	
 	/**
+	 * [tMap_8 end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_8";
+
+	
+
+
+// ###############################
+// # Lookup hashes releasing
+					if(tHash_Lookup_SalesTemp != null) {
+						tHash_Lookup_SalesTemp.endGet();
+					}
+					globalMap.remove( "tHash_Lookup_SalesTemp" );
+
+					
+					
+				
+// ###############################      
+
+
+
+
+
+				if(execStat){
+			  		runStat.updateStat(resourceMap,iterateId,2,0,"row1");
+			  	}
+			  	
+ 
+
+ok_Hash.put("tMap_8", true);
+end_Hash.put("tMap_8", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tMap_8 end ] stop
+ */
+
+	
+	/**
 	 * [tFileOutputDelimited_1 end ] start
 	 */
 
@@ -3575,7 +4465,7 @@ end_Hash.put("tAggregateRow_1_AGGIN", System.currentTimeMillis());
 	
 
 				if(execStat){
-			  		runStat.updateStat(resourceMap,iterateId,2,0,"row1");
+			  		runStat.updateStat(resourceMap,iterateId,2,0,"SalesResult");
 			  	}
 			  	
  
@@ -3589,6 +4479,9 @@ end_Hash.put("tFileOutputDelimited_1", System.currentTimeMillis());
 /**
  * [tFileOutputDelimited_1 end ] stop
  */
+
+
+
 
 
 
@@ -3622,6 +4515,9 @@ end_Hash.put("tFileOutputDelimited_1", System.currentTimeMillis());
 				throw error;
 			}finally{
 				
+					     			//free memory for "tMap_8"
+					     			globalMap.remove("tHash_Lookup_SalesTemp"); 
+				     			
 							//free memory for "tAggregateRow_1_AGGIN"
 							globalMap.remove("tAggregateRow_1");
 						
@@ -3720,6 +4616,27 @@ end_Hash.put("tFileOutputDelimited_1", System.currentTimeMillis());
 
 	
 	/**
+	 * [tMap_8 finally ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_8";
+
+	
+
+ 
+
+
+
+/**
+ * [tMap_8 finally ] stop
+ */
+
+	
+	/**
 	 * [tFileOutputDelimited_1 finally ] start
 	 */
 
@@ -3753,6 +4670,9 @@ end_Hash.put("tFileOutputDelimited_1", System.currentTimeMillis());
 /**
  * [tFileOutputDelimited_1 finally ] stop
  */
+
+
+
 
 
 
@@ -4598,6 +5518,17700 @@ end_Hash.put("tAdvancedHash_address", System.currentTimeMillis());
 		
 
 		globalMap.put("tFileInputDelimited_2_SUBPROCESS_STATE", 1);
+	}
+	
+
+
+public static class SalesTempStruct implements routines.system.IPersistableComparableLookupRow<SalesTempStruct> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+	protected static final int DEFAULT_HASHCODE = 1;
+    protected static final int PRIME = 31;
+    protected int hashCode = DEFAULT_HASHCODE;
+    public boolean hashCodeDirty = true;
+
+    public String loopKey;
+
+
+
+	
+			    public java.util.Date OrderDate;
+
+				public java.util.Date getOrderDate () {
+					return this.OrderDate;
+				}
+				
+			    public String CountryRegion;
+
+				public String getCountryRegion () {
+					return this.CountryRegion;
+				}
+				
+			    public String StateProvince;
+
+				public String getStateProvince () {
+					return this.StateProvince;
+				}
+				
+			    public String City;
+
+				public String getCity () {
+					return this.City;
+				}
+				
+			    public String SalesOrign;
+
+				public String getSalesOrign () {
+					return this.SalesOrign;
+				}
+				
+			    public String SalesPersonMAX;
+
+				public String getSalesPersonMAX () {
+					return this.SalesPersonMAX;
+				}
+				
+			    public String SalesPersonMIN;
+
+				public String getSalesPersonMIN () {
+					return this.SalesPersonMIN;
+				}
+				
+
+
+	@Override
+	public int hashCode() {
+		if (this.hashCodeDirty) {
+			final int prime = PRIME;
+			int result = DEFAULT_HASHCODE;
+	
+						result = prime * result + ((this.OrderDate == null) ? 0 : this.OrderDate.hashCode());
+					
+						result = prime * result + ((this.CountryRegion == null) ? 0 : this.CountryRegion.hashCode());
+					
+						result = prime * result + ((this.StateProvince == null) ? 0 : this.StateProvince.hashCode());
+					
+						result = prime * result + ((this.City == null) ? 0 : this.City.hashCode());
+					
+						result = prime * result + ((this.SalesOrign == null) ? 0 : this.SalesOrign.hashCode());
+					
+    		this.hashCode = result;
+    		this.hashCodeDirty = false;
+		}
+		return this.hashCode;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) return true;
+		if (obj == null) return false;
+		if (getClass() != obj.getClass()) return false;
+		final SalesTempStruct other = (SalesTempStruct) obj;
+		
+						if (this.OrderDate == null) {
+							if (other.OrderDate != null)
+								return false;
+						
+						} else if (!this.OrderDate.equals(other.OrderDate))
+						
+							return false;
+					
+						if (this.CountryRegion == null) {
+							if (other.CountryRegion != null)
+								return false;
+						
+						} else if (!this.CountryRegion.equals(other.CountryRegion))
+						
+							return false;
+					
+						if (this.StateProvince == null) {
+							if (other.StateProvince != null)
+								return false;
+						
+						} else if (!this.StateProvince.equals(other.StateProvince))
+						
+							return false;
+					
+						if (this.City == null) {
+							if (other.City != null)
+								return false;
+						
+						} else if (!this.City.equals(other.City))
+						
+							return false;
+					
+						if (this.SalesOrign == null) {
+							if (other.SalesOrign != null)
+								return false;
+						
+						} else if (!this.SalesOrign.equals(other.SalesOrign))
+						
+							return false;
+					
+
+		return true;
+    }
+
+	public void copyDataTo(SalesTempStruct other) {
+
+		other.OrderDate = this.OrderDate;
+	            other.CountryRegion = this.CountryRegion;
+	            other.StateProvince = this.StateProvince;
+	            other.City = this.City;
+	            other.SalesOrign = this.SalesOrign;
+	            other.SalesPersonMAX = this.SalesPersonMAX;
+	            other.SalesPersonMIN = this.SalesPersonMIN;
+	            
+	}
+
+	public void copyKeysDataTo(SalesTempStruct other) {
+
+		other.OrderDate = this.OrderDate;
+	            	other.CountryRegion = this.CountryRegion;
+	            	other.StateProvince = this.StateProvince;
+	            	other.City = this.City;
+	            	other.SalesOrign = this.SalesOrign;
+	            	
+	}
+
+
+
+
+	private java.util.Date readDate(ObjectInputStream dis) throws IOException{
+		java.util.Date dateReturn = null;
+        int length = 0;
+        length = dis.readByte();
+		if (length == -1) {
+			dateReturn = null;
+		} else {
+	    	dateReturn = new Date(dis.readLong());
+		}
+		return dateReturn;
+	}
+
+    private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException{
+		if(date1 == null) {
+            dos.writeByte(-1);
+		} else {
+			dos.writeByte(0);
+	    	dos.writeLong(date1.getTime());
+    	}
+    }
+
+	private String readString(ObjectInputStream dis) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			if(length > commonByteArray_INGESTAODADOS_JobSalesReport.length) {
+				if(length < 1024 && commonByteArray_INGESTAODADOS_JobSalesReport.length == 0) {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[1024];
+				} else {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[2 * length];
+   				}
+			}
+			dis.readFully(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length);
+			strReturn = new String(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length, utf8Charset);
+		}
+		return strReturn;
+	}
+
+    private void writeString(String str, ObjectOutputStream dos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+    }
+
+	private String readString(DataInputStream dis, ObjectInputStream ois) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			byte[] byteArray = new byte[length];
+			dis.read(byteArray);
+			strReturn = new String(byteArray, utf8Charset);
+		}
+		return strReturn;
+	}
+
+	private void writeString(String str, DataOutputStream dos, ObjectOutputStream oos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+	}
+
+    public void readKeysData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+					this.OrderDate = readDate(dis);
+					
+					this.CountryRegion = readString(dis);
+					
+					this.StateProvince = readString(dis);
+					
+					this.City = readString(dis);
+					
+					this.SalesOrign = readString(dis);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeKeysData(ObjectOutputStream dos) {
+        try {
+
+		
+					// java.util.Date
+				
+						writeDate(this.OrderDate,dos);
+					
+					// String
+				
+						writeString(this.CountryRegion,dos);
+					
+					// String
+				
+						writeString(this.StateProvince,dos);
+					
+					// String
+				
+						writeString(this.City,dos);
+					
+					// String
+				
+						writeString(this.SalesOrign,dos);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+
+    /**
+     * Fill Values data by reading ObjectInputStream.
+     */
+    public void readValuesData(DataInputStream dis, ObjectInputStream ois) {
+        try {
+
+			int length = 0;
+		
+						this.SalesPersonMAX = readString(dis,ois);
+					
+						this.SalesPersonMIN = readString(dis,ois);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+    }
+
+    /**
+     * Return a byte array which represents Values data.
+     */
+    public void writeValuesData(DataOutputStream dos, ObjectOutputStream oos) {
+        try {
+
+		
+						writeString(this.SalesPersonMAX, dos, oos);
+					
+						writeString(this.SalesPersonMIN, dos, oos);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        	}
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("OrderDate="+String.valueOf(OrderDate));
+		sb.append(",CountryRegion="+CountryRegion);
+		sb.append(",StateProvince="+StateProvince);
+		sb.append(",City="+City);
+		sb.append(",SalesOrign="+SalesOrign);
+		sb.append(",SalesPersonMAX="+SalesPersonMAX);
+		sb.append(",SalesPersonMIN="+SalesPersonMIN);
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(SalesTempStruct other) {
+
+		int returnValue = -1;
+		
+						returnValue = checkNullsAndCompare(this.OrderDate, other.OrderDate);
+						if(returnValue != 0) {
+							return returnValue;
+						}
+
+					
+						returnValue = checkNullsAndCompare(this.CountryRegion, other.CountryRegion);
+						if(returnValue != 0) {
+							return returnValue;
+						}
+
+					
+						returnValue = checkNullsAndCompare(this.StateProvince, other.StateProvince);
+						if(returnValue != 0) {
+							return returnValue;
+						}
+
+					
+						returnValue = checkNullsAndCompare(this.City, other.City);
+						if(returnValue != 0) {
+							return returnValue;
+						}
+
+					
+						returnValue = checkNullsAndCompare(this.SalesOrign, other.SalesOrign);
+						if(returnValue != 0) {
+							return returnValue;
+						}
+
+					
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
+
+public static class row4Struct implements routines.system.IPersistableRow<row4Struct> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+
+	
+			    public java.util.Date OrderDate;
+
+				public java.util.Date getOrderDate () {
+					return this.OrderDate;
+				}
+				
+			    public String CountryRegion;
+
+				public String getCountryRegion () {
+					return this.CountryRegion;
+				}
+				
+			    public String StateProvince;
+
+				public String getStateProvince () {
+					return this.StateProvince;
+				}
+				
+			    public String City;
+
+				public String getCity () {
+					return this.City;
+				}
+				
+			    public String SalesOrign;
+
+				public String getSalesOrign () {
+					return this.SalesOrign;
+				}
+				
+			    public String SalesPerson;
+
+				public String getSalesPerson () {
+					return this.SalesPerson;
+				}
+				
+			    public float TotalDue;
+
+				public float getTotalDue () {
+					return this.TotalDue;
+				}
+				
+			    public float TotalDue_1;
+
+				public float getTotalDue_1 () {
+					return this.TotalDue_1;
+				}
+				
+
+
+
+	private java.util.Date readDate(ObjectInputStream dis) throws IOException{
+		java.util.Date dateReturn = null;
+        int length = 0;
+        length = dis.readByte();
+		if (length == -1) {
+			dateReturn = null;
+		} else {
+	    	dateReturn = new Date(dis.readLong());
+		}
+		return dateReturn;
+	}
+
+    private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException{
+		if(date1 == null) {
+            dos.writeByte(-1);
+		} else {
+			dos.writeByte(0);
+	    	dos.writeLong(date1.getTime());
+    	}
+    }
+
+	private String readString(ObjectInputStream dis) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			if(length > commonByteArray_INGESTAODADOS_JobSalesReport.length) {
+				if(length < 1024 && commonByteArray_INGESTAODADOS_JobSalesReport.length == 0) {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[1024];
+				} else {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[2 * length];
+   				}
+			}
+			dis.readFully(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length);
+			strReturn = new String(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length, utf8Charset);
+		}
+		return strReturn;
+	}
+
+    private void writeString(String str, ObjectOutputStream dos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+    }
+
+    public void readData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+					this.OrderDate = readDate(dis);
+					
+					this.CountryRegion = readString(dis);
+					
+					this.StateProvince = readString(dis);
+					
+					this.City = readString(dis);
+					
+					this.SalesOrign = readString(dis);
+					
+					this.SalesPerson = readString(dis);
+					
+			        this.TotalDue = dis.readFloat();
+					
+			        this.TotalDue_1 = dis.readFloat();
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeData(ObjectOutputStream dos) {
+        try {
+
+		
+					// java.util.Date
+				
+						writeDate(this.OrderDate,dos);
+					
+					// String
+				
+						writeString(this.CountryRegion,dos);
+					
+					// String
+				
+						writeString(this.StateProvince,dos);
+					
+					// String
+				
+						writeString(this.City,dos);
+					
+					// String
+				
+						writeString(this.SalesOrign,dos);
+					
+					// String
+				
+						writeString(this.SalesPerson,dos);
+					
+					// float
+				
+		            	dos.writeFloat(this.TotalDue);
+					
+					// float
+				
+		            	dos.writeFloat(this.TotalDue_1);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("OrderDate="+String.valueOf(OrderDate));
+		sb.append(",CountryRegion="+CountryRegion);
+		sb.append(",StateProvince="+StateProvince);
+		sb.append(",City="+City);
+		sb.append(",SalesOrign="+SalesOrign);
+		sb.append(",SalesPerson="+SalesPerson);
+		sb.append(",TotalDue="+String.valueOf(TotalDue));
+		sb.append(",TotalDue_1="+String.valueOf(TotalDue_1));
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(row4Struct other) {
+
+		int returnValue = -1;
+		
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
+
+public static class OnRowsEndStructtAggregateRow_4 implements routines.system.IPersistableRow<OnRowsEndStructtAggregateRow_4> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+
+	
+			    public java.util.Date OrderDate;
+
+				public java.util.Date getOrderDate () {
+					return this.OrderDate;
+				}
+				
+			    public String CountryRegion;
+
+				public String getCountryRegion () {
+					return this.CountryRegion;
+				}
+				
+			    public String StateProvince;
+
+				public String getStateProvince () {
+					return this.StateProvince;
+				}
+				
+			    public String City;
+
+				public String getCity () {
+					return this.City;
+				}
+				
+			    public String SalesOrign;
+
+				public String getSalesOrign () {
+					return this.SalesOrign;
+				}
+				
+			    public String SalesPerson;
+
+				public String getSalesPerson () {
+					return this.SalesPerson;
+				}
+				
+			    public float TotalDue;
+
+				public float getTotalDue () {
+					return this.TotalDue;
+				}
+				
+			    public float TotalDue_1;
+
+				public float getTotalDue_1 () {
+					return this.TotalDue_1;
+				}
+				
+
+
+
+	private java.util.Date readDate(ObjectInputStream dis) throws IOException{
+		java.util.Date dateReturn = null;
+        int length = 0;
+        length = dis.readByte();
+		if (length == -1) {
+			dateReturn = null;
+		} else {
+	    	dateReturn = new Date(dis.readLong());
+		}
+		return dateReturn;
+	}
+
+    private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException{
+		if(date1 == null) {
+            dos.writeByte(-1);
+		} else {
+			dos.writeByte(0);
+	    	dos.writeLong(date1.getTime());
+    	}
+    }
+
+	private String readString(ObjectInputStream dis) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			if(length > commonByteArray_INGESTAODADOS_JobSalesReport.length) {
+				if(length < 1024 && commonByteArray_INGESTAODADOS_JobSalesReport.length == 0) {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[1024];
+				} else {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[2 * length];
+   				}
+			}
+			dis.readFully(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length);
+			strReturn = new String(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length, utf8Charset);
+		}
+		return strReturn;
+	}
+
+    private void writeString(String str, ObjectOutputStream dos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+    }
+
+    public void readData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+					this.OrderDate = readDate(dis);
+					
+					this.CountryRegion = readString(dis);
+					
+					this.StateProvince = readString(dis);
+					
+					this.City = readString(dis);
+					
+					this.SalesOrign = readString(dis);
+					
+					this.SalesPerson = readString(dis);
+					
+			        this.TotalDue = dis.readFloat();
+					
+			        this.TotalDue_1 = dis.readFloat();
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeData(ObjectOutputStream dos) {
+        try {
+
+		
+					// java.util.Date
+				
+						writeDate(this.OrderDate,dos);
+					
+					// String
+				
+						writeString(this.CountryRegion,dos);
+					
+					// String
+				
+						writeString(this.StateProvince,dos);
+					
+					// String
+				
+						writeString(this.City,dos);
+					
+					// String
+				
+						writeString(this.SalesOrign,dos);
+					
+					// String
+				
+						writeString(this.SalesPerson,dos);
+					
+					// float
+				
+		            	dos.writeFloat(this.TotalDue);
+					
+					// float
+				
+		            	dos.writeFloat(this.TotalDue_1);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("OrderDate="+String.valueOf(OrderDate));
+		sb.append(",CountryRegion="+CountryRegion);
+		sb.append(",StateProvince="+StateProvince);
+		sb.append(",City="+City);
+		sb.append(",SalesOrign="+SalesOrign);
+		sb.append(",SalesPerson="+SalesPerson);
+		sb.append(",TotalDue="+String.valueOf(TotalDue));
+		sb.append(",TotalDue_1="+String.valueOf(TotalDue_1));
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(OnRowsEndStructtAggregateRow_4 other) {
+
+		int returnValue = -1;
+		
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
+
+public static class row3Struct implements routines.system.IPersistableRow<row3Struct> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+
+	
+			    public java.util.Date OrderDate;
+
+				public java.util.Date getOrderDate () {
+					return this.OrderDate;
+				}
+				
+			    public String CountryRegion;
+
+				public String getCountryRegion () {
+					return this.CountryRegion;
+				}
+				
+			    public String StateProvince;
+
+				public String getStateProvince () {
+					return this.StateProvince;
+				}
+				
+			    public String City;
+
+				public String getCity () {
+					return this.City;
+				}
+				
+			    public String SalesOrign;
+
+				public String getSalesOrign () {
+					return this.SalesOrign;
+				}
+				
+			    public String SalesPerson;
+
+				public String getSalesPerson () {
+					return this.SalesPerson;
+				}
+				
+			    public float TotalDue;
+
+				public float getTotalDue () {
+					return this.TotalDue;
+				}
+				
+			    public float TotalDue_1;
+
+				public float getTotalDue_1 () {
+					return this.TotalDue_1;
+				}
+				
+
+
+
+	private java.util.Date readDate(ObjectInputStream dis) throws IOException{
+		java.util.Date dateReturn = null;
+        int length = 0;
+        length = dis.readByte();
+		if (length == -1) {
+			dateReturn = null;
+		} else {
+	    	dateReturn = new Date(dis.readLong());
+		}
+		return dateReturn;
+	}
+
+    private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException{
+		if(date1 == null) {
+            dos.writeByte(-1);
+		} else {
+			dos.writeByte(0);
+	    	dos.writeLong(date1.getTime());
+    	}
+    }
+
+	private String readString(ObjectInputStream dis) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			if(length > commonByteArray_INGESTAODADOS_JobSalesReport.length) {
+				if(length < 1024 && commonByteArray_INGESTAODADOS_JobSalesReport.length == 0) {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[1024];
+				} else {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[2 * length];
+   				}
+			}
+			dis.readFully(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length);
+			strReturn = new String(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length, utf8Charset);
+		}
+		return strReturn;
+	}
+
+    private void writeString(String str, ObjectOutputStream dos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+    }
+
+    public void readData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+					this.OrderDate = readDate(dis);
+					
+					this.CountryRegion = readString(dis);
+					
+					this.StateProvince = readString(dis);
+					
+					this.City = readString(dis);
+					
+					this.SalesOrign = readString(dis);
+					
+					this.SalesPerson = readString(dis);
+					
+			        this.TotalDue = dis.readFloat();
+					
+			        this.TotalDue_1 = dis.readFloat();
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeData(ObjectOutputStream dos) {
+        try {
+
+		
+					// java.util.Date
+				
+						writeDate(this.OrderDate,dos);
+					
+					// String
+				
+						writeString(this.CountryRegion,dos);
+					
+					// String
+				
+						writeString(this.StateProvince,dos);
+					
+					// String
+				
+						writeString(this.City,dos);
+					
+					// String
+				
+						writeString(this.SalesOrign,dos);
+					
+					// String
+				
+						writeString(this.SalesPerson,dos);
+					
+					// float
+				
+		            	dos.writeFloat(this.TotalDue);
+					
+					// float
+				
+		            	dos.writeFloat(this.TotalDue_1);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("OrderDate="+String.valueOf(OrderDate));
+		sb.append(",CountryRegion="+CountryRegion);
+		sb.append(",StateProvince="+StateProvince);
+		sb.append(",City="+City);
+		sb.append(",SalesOrign="+SalesOrign);
+		sb.append(",SalesPerson="+SalesPerson);
+		sb.append(",TotalDue="+String.valueOf(TotalDue));
+		sb.append(",TotalDue_1="+String.valueOf(TotalDue_1));
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(row3Struct other) {
+
+		int returnValue = -1;
+		
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
+
+public static class OnRowsEndStructtAggregateRow_3 implements routines.system.IPersistableRow<OnRowsEndStructtAggregateRow_3> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+
+	
+			    public java.util.Date OrderDate;
+
+				public java.util.Date getOrderDate () {
+					return this.OrderDate;
+				}
+				
+			    public String CountryRegion;
+
+				public String getCountryRegion () {
+					return this.CountryRegion;
+				}
+				
+			    public String StateProvince;
+
+				public String getStateProvince () {
+					return this.StateProvince;
+				}
+				
+			    public String City;
+
+				public String getCity () {
+					return this.City;
+				}
+				
+			    public String SalesOrign;
+
+				public String getSalesOrign () {
+					return this.SalesOrign;
+				}
+				
+			    public String SalesPerson;
+
+				public String getSalesPerson () {
+					return this.SalesPerson;
+				}
+				
+			    public float TotalDue;
+
+				public float getTotalDue () {
+					return this.TotalDue;
+				}
+				
+			    public float TotalDue_1;
+
+				public float getTotalDue_1 () {
+					return this.TotalDue_1;
+				}
+				
+
+
+
+	private java.util.Date readDate(ObjectInputStream dis) throws IOException{
+		java.util.Date dateReturn = null;
+        int length = 0;
+        length = dis.readByte();
+		if (length == -1) {
+			dateReturn = null;
+		} else {
+	    	dateReturn = new Date(dis.readLong());
+		}
+		return dateReturn;
+	}
+
+    private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException{
+		if(date1 == null) {
+            dos.writeByte(-1);
+		} else {
+			dos.writeByte(0);
+	    	dos.writeLong(date1.getTime());
+    	}
+    }
+
+	private String readString(ObjectInputStream dis) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			if(length > commonByteArray_INGESTAODADOS_JobSalesReport.length) {
+				if(length < 1024 && commonByteArray_INGESTAODADOS_JobSalesReport.length == 0) {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[1024];
+				} else {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[2 * length];
+   				}
+			}
+			dis.readFully(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length);
+			strReturn = new String(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length, utf8Charset);
+		}
+		return strReturn;
+	}
+
+    private void writeString(String str, ObjectOutputStream dos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+    }
+
+    public void readData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+					this.OrderDate = readDate(dis);
+					
+					this.CountryRegion = readString(dis);
+					
+					this.StateProvince = readString(dis);
+					
+					this.City = readString(dis);
+					
+					this.SalesOrign = readString(dis);
+					
+					this.SalesPerson = readString(dis);
+					
+			        this.TotalDue = dis.readFloat();
+					
+			        this.TotalDue_1 = dis.readFloat();
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeData(ObjectOutputStream dos) {
+        try {
+
+		
+					// java.util.Date
+				
+						writeDate(this.OrderDate,dos);
+					
+					// String
+				
+						writeString(this.CountryRegion,dos);
+					
+					// String
+				
+						writeString(this.StateProvince,dos);
+					
+					// String
+				
+						writeString(this.City,dos);
+					
+					// String
+				
+						writeString(this.SalesOrign,dos);
+					
+					// String
+				
+						writeString(this.SalesPerson,dos);
+					
+					// float
+				
+		            	dos.writeFloat(this.TotalDue);
+					
+					// float
+				
+		            	dos.writeFloat(this.TotalDue_1);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("OrderDate="+String.valueOf(OrderDate));
+		sb.append(",CountryRegion="+CountryRegion);
+		sb.append(",StateProvince="+StateProvince);
+		sb.append(",City="+City);
+		sb.append(",SalesOrign="+SalesOrign);
+		sb.append(",SalesPerson="+SalesPerson);
+		sb.append(",TotalDue="+String.valueOf(TotalDue));
+		sb.append(",TotalDue_1="+String.valueOf(TotalDue_1));
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(OnRowsEndStructtAggregateRow_3 other) {
+
+		int returnValue = -1;
+		
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
+
+public static class copyOfrpSalesStruct implements routines.system.IPersistableRow<copyOfrpSalesStruct> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+
+	
+			    public java.util.Date OrderDate;
+
+				public java.util.Date getOrderDate () {
+					return this.OrderDate;
+				}
+				
+			    public String CountryRegion;
+
+				public String getCountryRegion () {
+					return this.CountryRegion;
+				}
+				
+			    public String StateProvince;
+
+				public String getStateProvince () {
+					return this.StateProvince;
+				}
+				
+			    public String City;
+
+				public String getCity () {
+					return this.City;
+				}
+				
+			    public String SalesOrign;
+
+				public String getSalesOrign () {
+					return this.SalesOrign;
+				}
+				
+			    public String SalesPerson;
+
+				public String getSalesPerson () {
+					return this.SalesPerson;
+				}
+				
+			    public float TotalDue;
+
+				public float getTotalDue () {
+					return this.TotalDue;
+				}
+				
+			    public float TotalDue_1;
+
+				public float getTotalDue_1 () {
+					return this.TotalDue_1;
+				}
+				
+
+
+
+	private java.util.Date readDate(ObjectInputStream dis) throws IOException{
+		java.util.Date dateReturn = null;
+        int length = 0;
+        length = dis.readByte();
+		if (length == -1) {
+			dateReturn = null;
+		} else {
+	    	dateReturn = new Date(dis.readLong());
+		}
+		return dateReturn;
+	}
+
+    private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException{
+		if(date1 == null) {
+            dos.writeByte(-1);
+		} else {
+			dos.writeByte(0);
+	    	dos.writeLong(date1.getTime());
+    	}
+    }
+
+	private String readString(ObjectInputStream dis) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			if(length > commonByteArray_INGESTAODADOS_JobSalesReport.length) {
+				if(length < 1024 && commonByteArray_INGESTAODADOS_JobSalesReport.length == 0) {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[1024];
+				} else {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[2 * length];
+   				}
+			}
+			dis.readFully(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length);
+			strReturn = new String(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length, utf8Charset);
+		}
+		return strReturn;
+	}
+
+    private void writeString(String str, ObjectOutputStream dos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+    }
+
+    public void readData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+					this.OrderDate = readDate(dis);
+					
+					this.CountryRegion = readString(dis);
+					
+					this.StateProvince = readString(dis);
+					
+					this.City = readString(dis);
+					
+					this.SalesOrign = readString(dis);
+					
+					this.SalesPerson = readString(dis);
+					
+			        this.TotalDue = dis.readFloat();
+					
+			        this.TotalDue_1 = dis.readFloat();
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeData(ObjectOutputStream dos) {
+        try {
+
+		
+					// java.util.Date
+				
+						writeDate(this.OrderDate,dos);
+					
+					// String
+				
+						writeString(this.CountryRegion,dos);
+					
+					// String
+				
+						writeString(this.StateProvince,dos);
+					
+					// String
+				
+						writeString(this.City,dos);
+					
+					// String
+				
+						writeString(this.SalesOrign,dos);
+					
+					// String
+				
+						writeString(this.SalesPerson,dos);
+					
+					// float
+				
+		            	dos.writeFloat(this.TotalDue);
+					
+					// float
+				
+		            	dos.writeFloat(this.TotalDue_1);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("OrderDate="+String.valueOf(OrderDate));
+		sb.append(",CountryRegion="+CountryRegion);
+		sb.append(",StateProvince="+StateProvince);
+		sb.append(",City="+City);
+		sb.append(",SalesOrign="+SalesOrign);
+		sb.append(",SalesPerson="+SalesPerson);
+		sb.append(",TotalDue="+String.valueOf(TotalDue));
+		sb.append(",TotalDue_1="+String.valueOf(TotalDue_1));
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(copyOfrpSalesStruct other) {
+
+		int returnValue = -1;
+		
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
+
+public static class tSalesOrderHeaderStruct implements routines.system.IPersistableRow<tSalesOrderHeaderStruct> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+
+	
+			    public int SalesOrderID;
+
+				public int getSalesOrderID () {
+					return this.SalesOrderID;
+				}
+				
+			    public short RevisionNumber;
+
+				public short getRevisionNumber () {
+					return this.RevisionNumber;
+				}
+				
+			    public String OrderDate;
+
+				public String getOrderDate () {
+					return this.OrderDate;
+				}
+				
+			    public String DueDate;
+
+				public String getDueDate () {
+					return this.DueDate;
+				}
+				
+			    public String ShipDate;
+
+				public String getShipDate () {
+					return this.ShipDate;
+				}
+				
+			    public short Status;
+
+				public short getStatus () {
+					return this.Status;
+				}
+				
+			    public boolean OnlineOrderFlag;
+
+				public boolean getOnlineOrderFlag () {
+					return this.OnlineOrderFlag;
+				}
+				
+			    public String SalesOrderNumber;
+
+				public String getSalesOrderNumber () {
+					return this.SalesOrderNumber;
+				}
+				
+			    public String PurchaseOrderNumber;
+
+				public String getPurchaseOrderNumber () {
+					return this.PurchaseOrderNumber;
+				}
+				
+			    public String AccountNumber;
+
+				public String getAccountNumber () {
+					return this.AccountNumber;
+				}
+				
+			    public int CustomerID;
+
+				public int getCustomerID () {
+					return this.CustomerID;
+				}
+				
+			    public Integer ShipToAddressID;
+
+				public Integer getShipToAddressID () {
+					return this.ShipToAddressID;
+				}
+				
+			    public Integer BillToAddressID;
+
+				public Integer getBillToAddressID () {
+					return this.BillToAddressID;
+				}
+				
+			    public String ShipMethod;
+
+				public String getShipMethod () {
+					return this.ShipMethod;
+				}
+				
+			    public String CreditCardApprovalCode;
+
+				public String getCreditCardApprovalCode () {
+					return this.CreditCardApprovalCode;
+				}
+				
+			    public Object SubTotal;
+
+				public Object getSubTotal () {
+					return this.SubTotal;
+				}
+				
+			    public Object TaxAmt;
+
+				public Object getTaxAmt () {
+					return this.TaxAmt;
+				}
+				
+			    public Object Freight;
+
+				public Object getFreight () {
+					return this.Freight;
+				}
+				
+			    public float TotalDue;
+
+				public float getTotalDue () {
+					return this.TotalDue;
+				}
+				
+
+
+
+	private String readString(ObjectInputStream dis) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			if(length > commonByteArray_INGESTAODADOS_JobSalesReport.length) {
+				if(length < 1024 && commonByteArray_INGESTAODADOS_JobSalesReport.length == 0) {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[1024];
+				} else {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[2 * length];
+   				}
+			}
+			dis.readFully(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length);
+			strReturn = new String(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length, utf8Charset);
+		}
+		return strReturn;
+	}
+
+    private void writeString(String str, ObjectOutputStream dos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+    }
+	private Integer readInteger(ObjectInputStream dis) throws IOException{
+		Integer intReturn;
+        int length = 0;
+        length = dis.readByte();
+		if (length == -1) {
+			intReturn = null;
+		} else {
+	    	intReturn = dis.readInt();
+		}
+		return intReturn;
+	}
+
+	private void writeInteger(Integer intNum, ObjectOutputStream dos) throws IOException{
+		if(intNum == null) {
+            dos.writeByte(-1);
+		} else {
+			dos.writeByte(0);
+	    	dos.writeInt(intNum);
+    	}
+	}
+
+    public void readData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+			        this.SalesOrderID = dis.readInt();
+					
+			        this.RevisionNumber = dis.readShort();
+					
+					this.OrderDate = readString(dis);
+					
+					this.DueDate = readString(dis);
+					
+					this.ShipDate = readString(dis);
+					
+			        this.Status = dis.readShort();
+					
+			        this.OnlineOrderFlag = dis.readBoolean();
+					
+					this.SalesOrderNumber = readString(dis);
+					
+					this.PurchaseOrderNumber = readString(dis);
+					
+					this.AccountNumber = readString(dis);
+					
+			        this.CustomerID = dis.readInt();
+					
+						this.ShipToAddressID = readInteger(dis);
+					
+						this.BillToAddressID = readInteger(dis);
+					
+					this.ShipMethod = readString(dis);
+					
+					this.CreditCardApprovalCode = readString(dis);
+					
+						this.SubTotal = (Object) dis.readObject();
+					
+						this.TaxAmt = (Object) dis.readObject();
+					
+						this.Freight = (Object) dis.readObject();
+					
+			        this.TotalDue = dis.readFloat();
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+			} catch(ClassNotFoundException eCNFE) {
+				 throw new RuntimeException(eCNFE);
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeData(ObjectOutputStream dos) {
+        try {
+
+		
+					// int
+				
+		            	dos.writeInt(this.SalesOrderID);
+					
+					// short
+				
+		            	dos.writeShort(this.RevisionNumber);
+					
+					// String
+				
+						writeString(this.OrderDate,dos);
+					
+					// String
+				
+						writeString(this.DueDate,dos);
+					
+					// String
+				
+						writeString(this.ShipDate,dos);
+					
+					// short
+				
+		            	dos.writeShort(this.Status);
+					
+					// boolean
+				
+		            	dos.writeBoolean(this.OnlineOrderFlag);
+					
+					// String
+				
+						writeString(this.SalesOrderNumber,dos);
+					
+					// String
+				
+						writeString(this.PurchaseOrderNumber,dos);
+					
+					// String
+				
+						writeString(this.AccountNumber,dos);
+					
+					// int
+				
+		            	dos.writeInt(this.CustomerID);
+					
+					// Integer
+				
+						writeInteger(this.ShipToAddressID,dos);
+					
+					// Integer
+				
+						writeInteger(this.BillToAddressID,dos);
+					
+					// String
+				
+						writeString(this.ShipMethod,dos);
+					
+					// String
+				
+						writeString(this.CreditCardApprovalCode,dos);
+					
+					// Object
+				
+       			    	dos.writeObject(this.SubTotal);
+					
+					// Object
+				
+       			    	dos.writeObject(this.TaxAmt);
+					
+					// Object
+				
+       			    	dos.writeObject(this.Freight);
+					
+					// float
+				
+		            	dos.writeFloat(this.TotalDue);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("SalesOrderID="+String.valueOf(SalesOrderID));
+		sb.append(",RevisionNumber="+String.valueOf(RevisionNumber));
+		sb.append(",OrderDate="+OrderDate);
+		sb.append(",DueDate="+DueDate);
+		sb.append(",ShipDate="+ShipDate);
+		sb.append(",Status="+String.valueOf(Status));
+		sb.append(",OnlineOrderFlag="+String.valueOf(OnlineOrderFlag));
+		sb.append(",SalesOrderNumber="+SalesOrderNumber);
+		sb.append(",PurchaseOrderNumber="+PurchaseOrderNumber);
+		sb.append(",AccountNumber="+AccountNumber);
+		sb.append(",CustomerID="+String.valueOf(CustomerID));
+		sb.append(",ShipToAddressID="+String.valueOf(ShipToAddressID));
+		sb.append(",BillToAddressID="+String.valueOf(BillToAddressID));
+		sb.append(",ShipMethod="+ShipMethod);
+		sb.append(",CreditCardApprovalCode="+CreditCardApprovalCode);
+		sb.append(",SubTotal="+String.valueOf(SubTotal));
+		sb.append(",TaxAmt="+String.valueOf(TaxAmt));
+		sb.append(",Freight="+String.valueOf(Freight));
+		sb.append(",TotalDue="+String.valueOf(TotalDue));
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(tSalesOrderHeaderStruct other) {
+
+		int returnValue = -1;
+		
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
+
+public static class after_tFileInputDelimited_7Struct implements routines.system.IPersistableRow<after_tFileInputDelimited_7Struct> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+
+	
+			    public int SalesOrderID;
+
+				public int getSalesOrderID () {
+					return this.SalesOrderID;
+				}
+				
+			    public short RevisionNumber;
+
+				public short getRevisionNumber () {
+					return this.RevisionNumber;
+				}
+				
+			    public String OrderDate;
+
+				public String getOrderDate () {
+					return this.OrderDate;
+				}
+				
+			    public String DueDate;
+
+				public String getDueDate () {
+					return this.DueDate;
+				}
+				
+			    public String ShipDate;
+
+				public String getShipDate () {
+					return this.ShipDate;
+				}
+				
+			    public short Status;
+
+				public short getStatus () {
+					return this.Status;
+				}
+				
+			    public boolean OnlineOrderFlag;
+
+				public boolean getOnlineOrderFlag () {
+					return this.OnlineOrderFlag;
+				}
+				
+			    public String SalesOrderNumber;
+
+				public String getSalesOrderNumber () {
+					return this.SalesOrderNumber;
+				}
+				
+			    public String PurchaseOrderNumber;
+
+				public String getPurchaseOrderNumber () {
+					return this.PurchaseOrderNumber;
+				}
+				
+			    public String AccountNumber;
+
+				public String getAccountNumber () {
+					return this.AccountNumber;
+				}
+				
+			    public int CustomerID;
+
+				public int getCustomerID () {
+					return this.CustomerID;
+				}
+				
+			    public Integer ShipToAddressID;
+
+				public Integer getShipToAddressID () {
+					return this.ShipToAddressID;
+				}
+				
+			    public Integer BillToAddressID;
+
+				public Integer getBillToAddressID () {
+					return this.BillToAddressID;
+				}
+				
+			    public String ShipMethod;
+
+				public String getShipMethod () {
+					return this.ShipMethod;
+				}
+				
+			    public String CreditCardApprovalCode;
+
+				public String getCreditCardApprovalCode () {
+					return this.CreditCardApprovalCode;
+				}
+				
+			    public Object SubTotal;
+
+				public Object getSubTotal () {
+					return this.SubTotal;
+				}
+				
+			    public Object TaxAmt;
+
+				public Object getTaxAmt () {
+					return this.TaxAmt;
+				}
+				
+			    public Object Freight;
+
+				public Object getFreight () {
+					return this.Freight;
+				}
+				
+			    public float TotalDue;
+
+				public float getTotalDue () {
+					return this.TotalDue;
+				}
+				
+
+
+
+	private String readString(ObjectInputStream dis) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			if(length > commonByteArray_INGESTAODADOS_JobSalesReport.length) {
+				if(length < 1024 && commonByteArray_INGESTAODADOS_JobSalesReport.length == 0) {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[1024];
+				} else {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[2 * length];
+   				}
+			}
+			dis.readFully(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length);
+			strReturn = new String(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length, utf8Charset);
+		}
+		return strReturn;
+	}
+
+    private void writeString(String str, ObjectOutputStream dos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+    }
+	private Integer readInteger(ObjectInputStream dis) throws IOException{
+		Integer intReturn;
+        int length = 0;
+        length = dis.readByte();
+		if (length == -1) {
+			intReturn = null;
+		} else {
+	    	intReturn = dis.readInt();
+		}
+		return intReturn;
+	}
+
+	private void writeInteger(Integer intNum, ObjectOutputStream dos) throws IOException{
+		if(intNum == null) {
+            dos.writeByte(-1);
+		} else {
+			dos.writeByte(0);
+	    	dos.writeInt(intNum);
+    	}
+	}
+
+    public void readData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+			        this.SalesOrderID = dis.readInt();
+					
+			        this.RevisionNumber = dis.readShort();
+					
+					this.OrderDate = readString(dis);
+					
+					this.DueDate = readString(dis);
+					
+					this.ShipDate = readString(dis);
+					
+			        this.Status = dis.readShort();
+					
+			        this.OnlineOrderFlag = dis.readBoolean();
+					
+					this.SalesOrderNumber = readString(dis);
+					
+					this.PurchaseOrderNumber = readString(dis);
+					
+					this.AccountNumber = readString(dis);
+					
+			        this.CustomerID = dis.readInt();
+					
+						this.ShipToAddressID = readInteger(dis);
+					
+						this.BillToAddressID = readInteger(dis);
+					
+					this.ShipMethod = readString(dis);
+					
+					this.CreditCardApprovalCode = readString(dis);
+					
+						this.SubTotal = (Object) dis.readObject();
+					
+						this.TaxAmt = (Object) dis.readObject();
+					
+						this.Freight = (Object) dis.readObject();
+					
+			        this.TotalDue = dis.readFloat();
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+			} catch(ClassNotFoundException eCNFE) {
+				 throw new RuntimeException(eCNFE);
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeData(ObjectOutputStream dos) {
+        try {
+
+		
+					// int
+				
+		            	dos.writeInt(this.SalesOrderID);
+					
+					// short
+				
+		            	dos.writeShort(this.RevisionNumber);
+					
+					// String
+				
+						writeString(this.OrderDate,dos);
+					
+					// String
+				
+						writeString(this.DueDate,dos);
+					
+					// String
+				
+						writeString(this.ShipDate,dos);
+					
+					// short
+				
+		            	dos.writeShort(this.Status);
+					
+					// boolean
+				
+		            	dos.writeBoolean(this.OnlineOrderFlag);
+					
+					// String
+				
+						writeString(this.SalesOrderNumber,dos);
+					
+					// String
+				
+						writeString(this.PurchaseOrderNumber,dos);
+					
+					// String
+				
+						writeString(this.AccountNumber,dos);
+					
+					// int
+				
+		            	dos.writeInt(this.CustomerID);
+					
+					// Integer
+				
+						writeInteger(this.ShipToAddressID,dos);
+					
+					// Integer
+				
+						writeInteger(this.BillToAddressID,dos);
+					
+					// String
+				
+						writeString(this.ShipMethod,dos);
+					
+					// String
+				
+						writeString(this.CreditCardApprovalCode,dos);
+					
+					// Object
+				
+       			    	dos.writeObject(this.SubTotal);
+					
+					// Object
+				
+       			    	dos.writeObject(this.TaxAmt);
+					
+					// Object
+				
+       			    	dos.writeObject(this.Freight);
+					
+					// float
+				
+		            	dos.writeFloat(this.TotalDue);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("SalesOrderID="+String.valueOf(SalesOrderID));
+		sb.append(",RevisionNumber="+String.valueOf(RevisionNumber));
+		sb.append(",OrderDate="+OrderDate);
+		sb.append(",DueDate="+DueDate);
+		sb.append(",ShipDate="+ShipDate);
+		sb.append(",Status="+String.valueOf(Status));
+		sb.append(",OnlineOrderFlag="+String.valueOf(OnlineOrderFlag));
+		sb.append(",SalesOrderNumber="+SalesOrderNumber);
+		sb.append(",PurchaseOrderNumber="+PurchaseOrderNumber);
+		sb.append(",AccountNumber="+AccountNumber);
+		sb.append(",CustomerID="+String.valueOf(CustomerID));
+		sb.append(",ShipToAddressID="+String.valueOf(ShipToAddressID));
+		sb.append(",BillToAddressID="+String.valueOf(BillToAddressID));
+		sb.append(",ShipMethod="+ShipMethod);
+		sb.append(",CreditCardApprovalCode="+CreditCardApprovalCode);
+		sb.append(",SubTotal="+String.valueOf(SubTotal));
+		sb.append(",TaxAmt="+String.valueOf(TaxAmt));
+		sb.append(",Freight="+String.valueOf(Freight));
+		sb.append(",TotalDue="+String.valueOf(TotalDue));
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(after_tFileInputDelimited_7Struct other) {
+
+		int returnValue = -1;
+		
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
+public void tFileInputDelimited_7Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+	globalMap.put("tFileInputDelimited_7_SUBPROCESS_STATE", 0);
+
+ final boolean execStat = this.execStat;
+		String currentVirtualComponent = null;
+	
+		String iterateId = "";
+	
+	
+	String currentComponent = "";
+	java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
+
+	try {
+			// TDI-39566 avoid throwing an useless Exception
+			boolean resumeIt = true;
+			if (globalResumeTicket == false && resumeEntryMethodName != null) {
+				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
+				resumeIt = resumeEntryMethodName.equals(currentMethodName);
+			}
+			if (resumeIt || globalResumeTicket) { //start the resume
+				globalResumeTicket = true;
+
+
+		tFileInputDelimited_13Process(globalMap);
+		tFileInputDelimited_14Process(globalMap);
+		tFileInputDelimited_15Process(globalMap);
+		tFileInputDelimited_18Process(globalMap);
+
+		tSalesOrderHeaderStruct tSalesOrderHeader = new tSalesOrderHeaderStruct();
+copyOfrpSalesStruct copyOfrpSales = new copyOfrpSalesStruct();
+row3Struct row3 = new row3Struct();
+row4Struct row4 = new row4Struct();
+SalesTempStruct SalesTemp = new SalesTempStruct();
+
+
+
+
+
+	
+	/**
+	 * [tAggregateRow_3_AGGOUT begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tAggregateRow_3_AGGOUT", false);
+		start_Hash.put("tAggregateRow_3_AGGOUT", System.currentTimeMillis());
+		
+	
+		currentVirtualComponent = "tAggregateRow_3";
+	
+	currentComponent="tAggregateRow_3_AGGOUT";
+
+	
+					if(execStat) {
+						runStat.updateStatOnConnection(resourceMap,iterateId,0,0,"copyOfrpSales");
+					}
+				
+		int tos_count_tAggregateRow_3_AGGOUT = 0;
+		
+
+// ------------ Seems it is not used
+
+java.util.Map hashAggreg_tAggregateRow_3 = new java.util.HashMap(); 
+
+// ------------
+
+	class UtilClass_tAggregateRow_3 { // G_OutBegin_AggR_144
+
+		public double sd(Double[] data) {
+	        final int n = data.length;
+        	if (n < 2) {
+	            return Double.NaN;
+        	}
+        	double d1 = 0d;
+        	double d2 =0d;
+	        
+	        for (int i = 0; i < data.length; i++) {
+            	d1 += (data[i]*data[i]);
+            	d2 += data[i];
+        	}
+        
+	        return Math.sqrt((n*d1 - d2*d2)/n/(n-1));
+	    }
+	    
+		public void checkedIADD(byte a, byte b, boolean checkTypeOverFlow, boolean checkUlp) {
+		    byte r = (byte) (a + b);
+		    if (checkTypeOverFlow && ((a ^ r) & (b ^ r)) < 0) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'short/Short'", "'byte/Byte'"));
+		    }
+		}
+		
+		public void checkedIADD(short a, short b, boolean checkTypeOverFlow, boolean checkUlp) {
+		    short r = (short) (a + b);
+		    if (checkTypeOverFlow && ((a ^ r) & (b ^ r)) < 0) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'int/Integer'", "'short/Short'"));
+		    }
+		}
+		
+		public void checkedIADD(int a, int b, boolean checkTypeOverFlow, boolean checkUlp) {
+		    int r = a + b;
+		    if (checkTypeOverFlow && ((a ^ r) & (b ^ r)) < 0) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'long/Long'", "'int/Integer'"));
+		    }
+		}
+		
+		public void checkedIADD(long a, long b, boolean checkTypeOverFlow, boolean checkUlp) {
+		    long r = a + b;
+		    if (checkTypeOverFlow && ((a ^ r) & (b ^ r)) < 0) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'BigDecimal'", "'long/Long'"));
+		    }
+		}
+		
+		public void checkedIADD(float a, float b, boolean checkTypeOverFlow, boolean checkUlp) {
+		
+			if(checkUlp) {
+			    float minAddedValue = Math.ulp(a);
+			    if (minAddedValue > Math.abs(b)) {
+			        throw new RuntimeException(buildPrecisionMessage(String.valueOf(a), String.valueOf(b), "'double' or 'BigDecimal'", "'float/Float'"));
+			    }
+			}
+			
+		    if (checkTypeOverFlow && ((double) a + (double) b > (double) Float.MAX_VALUE) || ((double) a + (double) b < (double) -Float.MAX_VALUE)) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'double' or 'BigDecimal'", "'float/Float'"));
+		    }
+		}
+		
+		public void checkedIADD(double a, double b, boolean checkTypeOverFlow, boolean checkUlp) {
+		
+			if(checkUlp) {
+			    double minAddedValue = Math.ulp(a);
+			    if (minAddedValue > Math.abs(b)) {
+			        throw new RuntimeException(buildPrecisionMessage(String.valueOf(a), String.valueOf(a), "'BigDecimal'", "'double/Double'"));
+			    }
+			}
+		
+		    if (checkTypeOverFlow && (a + b > (double) Double.MAX_VALUE) || (a + b < -Double.MAX_VALUE )) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'BigDecimal'", "'double/Double'"));
+		    }
+		}
+		
+		public void checkedIADD(double a, byte b, boolean checkTypeOverFlow, boolean checkUlp) {
+		
+		    if (checkTypeOverFlow && (a + b > (double) Double.MAX_VALUE) || (a + b < -Double.MAX_VALUE )) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'BigDecimal'", "'double/Double'"));
+		    }
+		}
+		
+		public void checkedIADD(double a, short b, boolean checkTypeOverFlow, boolean checkUlp) {
+		
+		    if (checkTypeOverFlow && (a + b > (double) Double.MAX_VALUE) || (a + b < -Double.MAX_VALUE )) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'BigDecimal'", "'double/Double'"));
+		    }
+		}
+		
+		public void checkedIADD(double a, int b, boolean checkTypeOverFlow, boolean checkUlp) {
+		
+		    if (checkTypeOverFlow && (a + b > (double) Double.MAX_VALUE) || (a + b < -Double.MAX_VALUE )) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'BigDecimal'", "'double/Double'"));
+		    }
+		}
+		
+		public void checkedIADD(double a, float b, boolean checkTypeOverFlow, boolean checkUlp) {
+		
+			if(checkUlp) {
+			    double minAddedValue = Math.ulp(a);
+			    if (minAddedValue > Math.abs(b)) {
+			        throw new RuntimeException(buildPrecisionMessage(String.valueOf(a), String.valueOf(a), "'BigDecimal'", "'double/Double'"));
+			    }
+			}
+		
+		    if (checkTypeOverFlow && (a + b > (double) Double.MAX_VALUE) || (a + b < -Double.MAX_VALUE )) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'BigDecimal'", "'double/Double'"));
+		    }
+		}
+		
+		private String buildOverflowMessage(String a, String b, String advicedTypes, String originalType) {
+		    return "Type overflow when adding " + b + " to " + a
+		    + ", to resolve this problem, increase the precision by using "+ advicedTypes +" type in place of "+ originalType +".";
+		}
+		
+		private String buildPrecisionMessage(String a, String b, String advicedTypes, String originalType) {
+		    return "The double precision is unsufficient to add the value " + b + " to " + a
+		    + ", to resolve this problem, increase the precision by using "+ advicedTypes +" type in place of "+ originalType +".";
+		}
+
+	} // G_OutBegin_AggR_144
+
+	UtilClass_tAggregateRow_3 utilClass_tAggregateRow_3 = new UtilClass_tAggregateRow_3();
+
+	
+
+	class AggOperationStruct_tAggregateRow_3 { // G_OutBegin_AggR_100
+
+		private static final int DEFAULT_HASHCODE = 1;
+	    private static final int PRIME = 31;
+	    private int hashCode = DEFAULT_HASHCODE;
+	    public boolean hashCodeDirty = true;
+
+    				java.util.Date OrderDate;
+    				String CountryRegion;
+    				String StateProvince;
+    				String City;
+    				String SalesOrign;
+    				String SalesPerson;BigDecimal TotalDue_sum;
+           			BigDecimal TotalDue_1_sum;
+           			
+        
+	    @Override
+		public int hashCode() {
+			if (this.hashCodeDirty) {
+				final int prime = PRIME;
+				int result = DEFAULT_HASHCODE;
+		
+							result = prime * result + ((this.OrderDate == null) ? 0 : this.OrderDate.hashCode());
+							
+							result = prime * result + ((this.CountryRegion == null) ? 0 : this.CountryRegion.hashCode());
+							
+							result = prime * result + ((this.StateProvince == null) ? 0 : this.StateProvince.hashCode());
+							
+							result = prime * result + ((this.City == null) ? 0 : this.City.hashCode());
+							
+							result = prime * result + ((this.SalesOrign == null) ? 0 : this.SalesOrign.hashCode());
+							
+							result = prime * result + ((this.SalesPerson == null) ? 0 : this.SalesPerson.hashCode());
+							
+	    		this.hashCode = result;
+	    		this.hashCodeDirty = false;		
+			}
+			return this.hashCode;
+		}
+		
+		@Override
+		public boolean equals(Object obj) {
+			if (this == obj) return true;
+			if (obj == null) return false;
+			if (getClass() != obj.getClass()) return false;
+			final AggOperationStruct_tAggregateRow_3 other = (AggOperationStruct_tAggregateRow_3) obj;
+			
+							if (this.OrderDate == null) {
+								if (other.OrderDate != null) 
+									return false;
+							} else if (!this.OrderDate.equals(other.OrderDate)) 
+								return false;
+						
+							if (this.CountryRegion == null) {
+								if (other.CountryRegion != null) 
+									return false;
+							} else if (!this.CountryRegion.equals(other.CountryRegion)) 
+								return false;
+						
+							if (this.StateProvince == null) {
+								if (other.StateProvince != null) 
+									return false;
+							} else if (!this.StateProvince.equals(other.StateProvince)) 
+								return false;
+						
+							if (this.City == null) {
+								if (other.City != null) 
+									return false;
+							} else if (!this.City.equals(other.City)) 
+								return false;
+						
+							if (this.SalesOrign == null) {
+								if (other.SalesOrign != null) 
+									return false;
+							} else if (!this.SalesOrign.equals(other.SalesOrign)) 
+								return false;
+						
+							if (this.SalesPerson == null) {
+								if (other.SalesPerson != null) 
+									return false;
+							} else if (!this.SalesPerson.equals(other.SalesPerson)) 
+								return false;
+						
+			
+			return true;
+		}
+  
+        
+	} // G_OutBegin_AggR_100
+
+	AggOperationStruct_tAggregateRow_3 operation_result_tAggregateRow_3 = null;
+	AggOperationStruct_tAggregateRow_3 operation_finder_tAggregateRow_3 = new AggOperationStruct_tAggregateRow_3();
+	java.util.Map<AggOperationStruct_tAggregateRow_3,AggOperationStruct_tAggregateRow_3> hash_tAggregateRow_3 = new java.util.HashMap<AggOperationStruct_tAggregateRow_3,AggOperationStruct_tAggregateRow_3>();
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_3_AGGOUT begin ] stop
+ */
+
+
+
+	
+	/**
+	 * [tMap_4 begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tMap_4", false);
+		start_Hash.put("tMap_4", System.currentTimeMillis());
+		
+	
+	currentComponent="tMap_4";
+
+	
+					if(execStat) {
+						runStat.updateStatOnConnection(resourceMap,iterateId,0,0,"tSalesOrderHeader");
+					}
+				
+		int tos_count_tMap_4 = 0;
+		
+
+
+
+
+// ###############################
+// # Lookup's keys initialization
+	
+		org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<tAddressStruct> tHash_Lookup_tAddress = (org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<tAddressStruct>) 
+				((org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<tAddressStruct>) 
+					globalMap.get( "tHash_Lookup_tAddress" ))
+					;					
+					
+	
+
+tAddressStruct tAddressHashKey = new tAddressStruct();
+tAddressStruct tAddressDefault = new tAddressStruct();
+	
+		org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<tCustomerStruct> tHash_Lookup_tCustomer = (org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<tCustomerStruct>) 
+				((org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<tCustomerStruct>) 
+					globalMap.get( "tHash_Lookup_tCustomer" ))
+					;					
+					
+	
+
+tCustomerStruct tCustomerHashKey = new tCustomerStruct();
+tCustomerStruct tCustomerDefault = new tCustomerStruct();
+// ###############################        
+
+// ###############################
+// # Vars initialization
+class  Var__tMap_4__Struct  {
+}
+Var__tMap_4__Struct Var__tMap_4 = new Var__tMap_4__Struct();
+// ###############################
+
+// ###############################
+// # Outputs initialization
+copyOfrpSalesStruct copyOfrpSales_tmp = new copyOfrpSalesStruct();
+// ###############################
+
+        
+        
+
+
+
+        
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+/**
+ * [tMap_4 begin ] stop
+ */
+
+
+
+	
+	/**
+	 * [tFileInputDelimited_7 begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tFileInputDelimited_7", false);
+		start_Hash.put("tFileInputDelimited_7", System.currentTimeMillis());
+		
+	
+	currentComponent="tFileInputDelimited_7";
+
+	
+		int tos_count_tFileInputDelimited_7 = 0;
+		
+	
+	
+	
+ 
+	
+	
+	final routines.system.RowState rowstate_tFileInputDelimited_7 = new routines.system.RowState();
+	
+	
+				int nb_line_tFileInputDelimited_7 = 0;
+				org.talend.fileprocess.FileInputDelimited fid_tFileInputDelimited_7 = null;
+				int limit_tFileInputDelimited_7 = -1;
+				try{
+					
+						Object filename_tFileInputDelimited_7 = "D:/DataLake/Harmonized/HA_salesOrderHeader_"+TalendDate.getDate("YYYY-MM-DD")+".csv";
+						if(filename_tFileInputDelimited_7 instanceof java.io.InputStream){
+							
+			int footer_value_tFileInputDelimited_7 = 0, random_value_tFileInputDelimited_7 = -1;
+			if(footer_value_tFileInputDelimited_7 >0 || random_value_tFileInputDelimited_7 > 0){
+				throw new java.lang.Exception("When the input source is a stream,footer and random shouldn't be bigger than 0.");				
+			}
+		
+						}
+						try {
+							fid_tFileInputDelimited_7 = new org.talend.fileprocess.FileInputDelimited("D:/DataLake/Harmonized/HA_salesOrderHeader_"+TalendDate.getDate("YYYY-MM-DD")+".csv", "ISO-8859-15",";","\n",true,1,0,
+									limit_tFileInputDelimited_7
+								,-1, false);
+						} catch(java.lang.Exception e) {
+							
+								
+								System.err.println(e.getMessage());
+							
+						}
+					
+				    
+					while (fid_tFileInputDelimited_7!=null && fid_tFileInputDelimited_7.nextRecord()) {
+						rowstate_tFileInputDelimited_7.reset();
+						
+			    						tSalesOrderHeader = null;			
+												
+									boolean whetherReject_tFileInputDelimited_7 = false;
+									tSalesOrderHeader = new tSalesOrderHeaderStruct();
+									try {
+										
+				int columnIndexWithD_tFileInputDelimited_7 = 0;
+				
+					String temp = ""; 
+				
+					columnIndexWithD_tFileInputDelimited_7 = 0;
+					
+						temp = fid_tFileInputDelimited_7.get(columnIndexWithD_tFileInputDelimited_7);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								tSalesOrderHeader.SalesOrderID = ParserUtils.parseTo_int(ParserUtils.parseTo_Number(temp, ',', '.'));
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_7) {
+									rowstate_tFileInputDelimited_7.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"SalesOrderID", "tSalesOrderHeader", temp, ex_tFileInputDelimited_7), ex_tFileInputDelimited_7));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_7.setException(new RuntimeException("Value is empty for column : 'SalesOrderID' in 'tSalesOrderHeader' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_7 = 1;
+					
+						temp = fid_tFileInputDelimited_7.get(columnIndexWithD_tFileInputDelimited_7);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								tSalesOrderHeader.RevisionNumber = ParserUtils.parseTo_short(ParserUtils.parseTo_Number(temp, ',', '.'));
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_7) {
+									rowstate_tFileInputDelimited_7.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"RevisionNumber", "tSalesOrderHeader", temp, ex_tFileInputDelimited_7), ex_tFileInputDelimited_7));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_7.setException(new RuntimeException("Value is empty for column : 'RevisionNumber' in 'tSalesOrderHeader' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_7 = 2;
+					
+							tSalesOrderHeader.OrderDate = fid_tFileInputDelimited_7.get(columnIndexWithD_tFileInputDelimited_7);
+						
+				
+					columnIndexWithD_tFileInputDelimited_7 = 3;
+					
+							tSalesOrderHeader.DueDate = fid_tFileInputDelimited_7.get(columnIndexWithD_tFileInputDelimited_7);
+						
+				
+					columnIndexWithD_tFileInputDelimited_7 = 4;
+					
+							tSalesOrderHeader.ShipDate = fid_tFileInputDelimited_7.get(columnIndexWithD_tFileInputDelimited_7);
+						
+				
+					columnIndexWithD_tFileInputDelimited_7 = 5;
+					
+						temp = fid_tFileInputDelimited_7.get(columnIndexWithD_tFileInputDelimited_7);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								tSalesOrderHeader.Status = ParserUtils.parseTo_short(ParserUtils.parseTo_Number(temp, ',', '.'));
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_7) {
+									rowstate_tFileInputDelimited_7.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"Status", "tSalesOrderHeader", temp, ex_tFileInputDelimited_7), ex_tFileInputDelimited_7));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_7.setException(new RuntimeException("Value is empty for column : 'Status' in 'tSalesOrderHeader' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_7 = 6;
+					
+						temp = fid_tFileInputDelimited_7.get(columnIndexWithD_tFileInputDelimited_7);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								tSalesOrderHeader.OnlineOrderFlag = ParserUtils.parseTo_boolean(temp);
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_7) {
+									rowstate_tFileInputDelimited_7.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"OnlineOrderFlag", "tSalesOrderHeader", temp, ex_tFileInputDelimited_7), ex_tFileInputDelimited_7));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_7.setException(new RuntimeException("Value is empty for column : 'OnlineOrderFlag' in 'tSalesOrderHeader' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_7 = 7;
+					
+							tSalesOrderHeader.SalesOrderNumber = fid_tFileInputDelimited_7.get(columnIndexWithD_tFileInputDelimited_7);
+						
+				
+					columnIndexWithD_tFileInputDelimited_7 = 8;
+					
+							tSalesOrderHeader.PurchaseOrderNumber = fid_tFileInputDelimited_7.get(columnIndexWithD_tFileInputDelimited_7);
+						
+				
+					columnIndexWithD_tFileInputDelimited_7 = 9;
+					
+							tSalesOrderHeader.AccountNumber = fid_tFileInputDelimited_7.get(columnIndexWithD_tFileInputDelimited_7);
+						
+				
+					columnIndexWithD_tFileInputDelimited_7 = 10;
+					
+						temp = fid_tFileInputDelimited_7.get(columnIndexWithD_tFileInputDelimited_7);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								tSalesOrderHeader.CustomerID = ParserUtils.parseTo_int(ParserUtils.parseTo_Number(temp, ',', '.'));
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_7) {
+									rowstate_tFileInputDelimited_7.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"CustomerID", "tSalesOrderHeader", temp, ex_tFileInputDelimited_7), ex_tFileInputDelimited_7));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_7.setException(new RuntimeException("Value is empty for column : 'CustomerID' in 'tSalesOrderHeader' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_7 = 11;
+					
+						temp = fid_tFileInputDelimited_7.get(columnIndexWithD_tFileInputDelimited_7);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								tSalesOrderHeader.ShipToAddressID = ParserUtils.parseTo_Integer(ParserUtils.parseTo_Number(temp, ',', '.'));
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_7) {
+									rowstate_tFileInputDelimited_7.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"ShipToAddressID", "tSalesOrderHeader", temp, ex_tFileInputDelimited_7), ex_tFileInputDelimited_7));
+								}
+    							
+						} else {						
+							
+								
+									tSalesOrderHeader.ShipToAddressID = null;
+								
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_7 = 12;
+					
+						temp = fid_tFileInputDelimited_7.get(columnIndexWithD_tFileInputDelimited_7);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								tSalesOrderHeader.BillToAddressID = ParserUtils.parseTo_Integer(ParserUtils.parseTo_Number(temp, ',', '.'));
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_7) {
+									rowstate_tFileInputDelimited_7.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"BillToAddressID", "tSalesOrderHeader", temp, ex_tFileInputDelimited_7), ex_tFileInputDelimited_7));
+								}
+    							
+						} else {						
+							
+								
+									tSalesOrderHeader.BillToAddressID = null;
+								
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_7 = 13;
+					
+							tSalesOrderHeader.ShipMethod = fid_tFileInputDelimited_7.get(columnIndexWithD_tFileInputDelimited_7);
+						
+				
+					columnIndexWithD_tFileInputDelimited_7 = 14;
+					
+							tSalesOrderHeader.CreditCardApprovalCode = fid_tFileInputDelimited_7.get(columnIndexWithD_tFileInputDelimited_7);
+						
+				
+					columnIndexWithD_tFileInputDelimited_7 = 15;
+					
+							tSalesOrderHeader.SubTotal = fid_tFileInputDelimited_7.get(columnIndexWithD_tFileInputDelimited_7);
+						
+				
+					columnIndexWithD_tFileInputDelimited_7 = 16;
+					
+							tSalesOrderHeader.TaxAmt = fid_tFileInputDelimited_7.get(columnIndexWithD_tFileInputDelimited_7);
+						
+				
+					columnIndexWithD_tFileInputDelimited_7 = 17;
+					
+							tSalesOrderHeader.Freight = fid_tFileInputDelimited_7.get(columnIndexWithD_tFileInputDelimited_7);
+						
+				
+					columnIndexWithD_tFileInputDelimited_7 = 18;
+					
+						temp = fid_tFileInputDelimited_7.get(columnIndexWithD_tFileInputDelimited_7);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								tSalesOrderHeader.TotalDue = ParserUtils.parseTo_float(ParserUtils.parseTo_Number(temp, ',', '.'));
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_7) {
+									rowstate_tFileInputDelimited_7.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"TotalDue", "tSalesOrderHeader", temp, ex_tFileInputDelimited_7), ex_tFileInputDelimited_7));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_7.setException(new RuntimeException("Value is empty for column : 'TotalDue' in 'tSalesOrderHeader' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+				
+										
+										if(rowstate_tFileInputDelimited_7.getException()!=null) {
+											throw rowstate_tFileInputDelimited_7.getException();
+										}
+										
+										
+							
+			    					} catch (java.lang.Exception e) {
+			        					whetherReject_tFileInputDelimited_7 = true;
+			        					
+			                					System.err.println(e.getMessage());
+			                					tSalesOrderHeader = null;
+			                				
+			    					}
+								
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_7 begin ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_7 main ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_7";
+
+	
+
+ 
+
+
+	tos_count_tFileInputDelimited_7++;
+
+/**
+ * [tFileInputDelimited_7 main ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_7 process_data_begin ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_7";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_7 process_data_begin ] stop
+ */
+// Start of branch "tSalesOrderHeader"
+if(tSalesOrderHeader != null) { 
+
+
+
+	
+	/**
+	 * [tMap_4 main ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_4";
+
+	
+					if(execStat){
+						runStat.updateStatOnConnection(iterateId,1,1,"tSalesOrderHeader");
+					}
+					
+
+		
+		
+		boolean hasCasePrimitiveKeyWithNull_tMap_4 = false;
+		
+        // ###############################
+        // # Input tables (lookups)
+		  boolean rejectedInnerJoin_tMap_4 = false;
+		  boolean mainRowRejected_tMap_4 = false;
+            				    								  
+		
+
+				///////////////////////////////////////////////
+				// Starting Lookup Table "tAddress" 
+				///////////////////////////////////////////////
+
+
+				
+				
+                            
+ 					    boolean forceLooptAddress = false;
+       		  	    	
+       		  	    	
+ 							tAddressStruct tAddressObjectFromLookup = null;
+                          
+		           		  	if(!rejectedInnerJoin_tMap_4) { // G_TM_M_020
+
+								
+								hasCasePrimitiveKeyWithNull_tMap_4 = false;
+								
+	                        		    	Object exprKeyValue_tAddress__AddressID = tSalesOrderHeader.BillToAddressID ;
+	                        		    	if(exprKeyValue_tAddress__AddressID == null) {
+	                        		    		hasCasePrimitiveKeyWithNull_tMap_4 = true;
+	                        		    	} else {
+                        		    			tAddressHashKey.AddressID = (int)(Integer) exprKeyValue_tAddress__AddressID;
+                        		    		}
+                        		    		
+
+								
+		                        	tAddressHashKey.hashCodeDirty = true;
+                        		
+	  					
+	  							
+	
+		  							if(!hasCasePrimitiveKeyWithNull_tMap_4) { // G_TM_M_091
+		  							
+			  					
+			  					
+			  					
+	  					
+		  							tHash_Lookup_tAddress.lookup( tAddressHashKey );
+
+	  							
+
+	  							
+
+			  						} // G_TM_M_091
+			  						
+			  					
+
+ 								
+		  				
+	  								
+						
+									
+  									  		
+ 								
+
+
+
+							} // G_TM_M_020
+			           		  	  
+							
+				           		if(tHash_Lookup_tAddress != null && tHash_Lookup_tAddress.getCount(tAddressHashKey) > 1) { // G 071
+			  							
+			  						
+									 		
+									//System.out.println("WARNING: UNIQUE MATCH is configured for the lookup 'tAddress' and it contains more one result from keys :  tAddress.AddressID = '" + tAddressHashKey.AddressID + "'");
+								} // G 071
+							
+
+							tAddressStruct tAddress = null;
+                    		  	 
+							   
+                    		  	 
+	       		  	    	tAddressStruct fromLookup_tAddress = null;
+							tAddress = tAddressDefault;
+										 
+							
+								 
+							
+							
+								if (tHash_Lookup_tAddress !=null && tHash_Lookup_tAddress.hasNext()) { // G 099
+								
+							
+								
+								fromLookup_tAddress = tHash_Lookup_tAddress.next();
+
+							
+							
+								} // G 099
+							
+							
+
+							if(fromLookup_tAddress != null) {
+								tAddress = fromLookup_tAddress;
+							}
+							
+							
+							
+			  							
+								
+	                    		  	
+		                    
+	            	
+	           	
+	            	
+	            	
+	            
+
+				///////////////////////////////////////////////
+				// Starting Lookup Table "tCustomer" 
+				///////////////////////////////////////////////
+
+
+				
+				
+                            
+ 					    boolean forceLooptCustomer = false;
+       		  	    	
+       		  	    	
+ 							tCustomerStruct tCustomerObjectFromLookup = null;
+                          
+		           		  	if(!rejectedInnerJoin_tMap_4) { // G_TM_M_020
+
+								
+								hasCasePrimitiveKeyWithNull_tMap_4 = false;
+								
+	                        		    	Object exprKeyValue_tCustomer__CustomerID = tSalesOrderHeader.CustomerID ;
+	                        		    	if(exprKeyValue_tCustomer__CustomerID == null) {
+	                        		    		hasCasePrimitiveKeyWithNull_tMap_4 = true;
+	                        		    	} else {
+                        		    			tCustomerHashKey.CustomerID = (int)(Integer) exprKeyValue_tCustomer__CustomerID;
+                        		    		}
+                        		    		
+
+								
+		                        	tCustomerHashKey.hashCodeDirty = true;
+                        		
+	  					
+	  							
+	
+		  							if(!hasCasePrimitiveKeyWithNull_tMap_4) { // G_TM_M_091
+		  							
+			  					
+			  					
+			  					
+	  					
+		  							tHash_Lookup_tCustomer.lookup( tCustomerHashKey );
+
+	  							
+
+	  							
+
+			  						} // G_TM_M_091
+			  						
+			  					
+
+ 								
+		  				
+	  								
+						
+									
+  									  		
+ 								
+
+
+
+							} // G_TM_M_020
+			           		  	  
+							
+				           		if(tHash_Lookup_tCustomer != null && tHash_Lookup_tCustomer.getCount(tCustomerHashKey) > 1) { // G 071
+			  							
+			  						
+									 		
+									//System.out.println("WARNING: UNIQUE MATCH is configured for the lookup 'tCustomer' and it contains more one result from keys :  tCustomer.CustomerID = '" + tCustomerHashKey.CustomerID + "'");
+								} // G 071
+							
+
+							tCustomerStruct tCustomer = null;
+                    		  	 
+							   
+                    		  	 
+	       		  	    	tCustomerStruct fromLookup_tCustomer = null;
+							tCustomer = tCustomerDefault;
+										 
+							
+								 
+							
+							
+								if (tHash_Lookup_tCustomer !=null && tHash_Lookup_tCustomer.hasNext()) { // G 099
+								
+							
+								
+								fromLookup_tCustomer = tHash_Lookup_tCustomer.next();
+
+							
+							
+								} // G 099
+							
+							
+
+							if(fromLookup_tCustomer != null) {
+								tCustomer = fromLookup_tCustomer;
+							}
+							
+							
+							
+			  							
+								
+	                    		  	
+		                    
+	            	
+	            	
+	            // ###############################
+        { // start of Var scope
+        
+	        // ###############################
+        	// # Vars tables
+        
+Var__tMap_4__Struct Var = Var__tMap_4;// ###############################
+        // ###############################
+        // # Output tables
+
+copyOfrpSales = null;
+
+
+// # Output table : 'copyOfrpSales'
+copyOfrpSales_tmp.OrderDate = TalendDate.parseDate("yyyy-MM-dd",tSalesOrderHeader.OrderDate);
+copyOfrpSales_tmp.CountryRegion = tAddress.CountryRegion ;
+copyOfrpSales_tmp.StateProvince = tAddress.StateProvince ;
+copyOfrpSales_tmp.City = tAddress.City ;
+copyOfrpSales_tmp.SalesOrign = tSalesOrderHeader.OnlineOrderFlag == false ? "Venda Offline" : "Venda Online";
+copyOfrpSales_tmp.SalesPerson = tCustomer.SalesPerson ;
+copyOfrpSales_tmp.TotalDue = tSalesOrderHeader.TotalDue ;
+copyOfrpSales_tmp.TotalDue_1 = tSalesOrderHeader.TotalDue ;
+copyOfrpSales = copyOfrpSales_tmp;
+// ###############################
+
+} // end of Var scope
+
+rejectedInnerJoin_tMap_4 = false;
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+	tos_count_tMap_4++;
+
+/**
+ * [tMap_4 main ] stop
+ */
+	
+	/**
+	 * [tMap_4 process_data_begin ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_4";
+
+	
+
+ 
+
+
+
+/**
+ * [tMap_4 process_data_begin ] stop
+ */
+// Start of branch "copyOfrpSales"
+if(copyOfrpSales != null) { 
+
+
+
+	
+	/**
+	 * [tAggregateRow_3_AGGOUT main ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_3";
+	
+	currentComponent="tAggregateRow_3_AGGOUT";
+
+	
+					if(execStat){
+						runStat.updateStatOnConnection(iterateId,1,1,"copyOfrpSales");
+					}
+					
+	
+operation_finder_tAggregateRow_3.OrderDate = copyOfrpSales.OrderDate;
+			operation_finder_tAggregateRow_3.CountryRegion = copyOfrpSales.CountryRegion;
+			operation_finder_tAggregateRow_3.StateProvince = copyOfrpSales.StateProvince;
+			operation_finder_tAggregateRow_3.City = copyOfrpSales.City;
+			operation_finder_tAggregateRow_3.SalesOrign = copyOfrpSales.SalesOrign;
+			operation_finder_tAggregateRow_3.SalesPerson = copyOfrpSales.SalesPerson;
+			
+
+	operation_finder_tAggregateRow_3.hashCodeDirty = true;
+	
+	operation_result_tAggregateRow_3 = hash_tAggregateRow_3.get(operation_finder_tAggregateRow_3);
+
+	
+
+	if(operation_result_tAggregateRow_3 == null) { // G_OutMain_AggR_001
+
+		operation_result_tAggregateRow_3 = new AggOperationStruct_tAggregateRow_3();
+
+		operation_result_tAggregateRow_3.OrderDate = operation_finder_tAggregateRow_3.OrderDate;
+				operation_result_tAggregateRow_3.CountryRegion = operation_finder_tAggregateRow_3.CountryRegion;
+				operation_result_tAggregateRow_3.StateProvince = operation_finder_tAggregateRow_3.StateProvince;
+				operation_result_tAggregateRow_3.City = operation_finder_tAggregateRow_3.City;
+				operation_result_tAggregateRow_3.SalesOrign = operation_finder_tAggregateRow_3.SalesOrign;
+				operation_result_tAggregateRow_3.SalesPerson = operation_finder_tAggregateRow_3.SalesPerson;
+				
+		
+		
+
+		hash_tAggregateRow_3.put(operation_result_tAggregateRow_3, operation_result_tAggregateRow_3);
+	
+	} // G_OutMain_AggR_001
+
+
+	
+					if(operation_result_tAggregateRow_3.TotalDue_sum == null) {
+						operation_result_tAggregateRow_3.TotalDue_sum = new BigDecimal(0).setScale(4);
+					}
+					operation_result_tAggregateRow_3.TotalDue_sum = operation_result_tAggregateRow_3.TotalDue_sum.add(
+						new BigDecimal(
+							String.valueOf(
+								copyOfrpSales.TotalDue
+							)
+						)
+					);
+					
+					if(operation_result_tAggregateRow_3.TotalDue_1_sum == null) {
+						operation_result_tAggregateRow_3.TotalDue_1_sum = new BigDecimal(0).setScale(4);
+					}
+					operation_result_tAggregateRow_3.TotalDue_1_sum = operation_result_tAggregateRow_3.TotalDue_1_sum.add(
+						new BigDecimal(
+							String.valueOf(
+								copyOfrpSales.TotalDue_1
+							)
+						)
+					);
+					
+
+
+ 
+
+
+	tos_count_tAggregateRow_3_AGGOUT++;
+
+/**
+ * [tAggregateRow_3_AGGOUT main ] stop
+ */
+	
+	/**
+	 * [tAggregateRow_3_AGGOUT process_data_begin ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_3";
+	
+	currentComponent="tAggregateRow_3_AGGOUT";
+
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_3_AGGOUT process_data_begin ] stop
+ */
+	
+	/**
+	 * [tAggregateRow_3_AGGOUT process_data_end ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_3";
+	
+	currentComponent="tAggregateRow_3_AGGOUT";
+
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_3_AGGOUT process_data_end ] stop
+ */
+
+} // End of branch "copyOfrpSales"
+
+
+
+
+	
+	/**
+	 * [tMap_4 process_data_end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_4";
+
+	
+
+ 
+
+
+
+/**
+ * [tMap_4 process_data_end ] stop
+ */
+
+} // End of branch "tSalesOrderHeader"
+
+
+
+
+	
+	/**
+	 * [tFileInputDelimited_7 process_data_end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_7";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_7 process_data_end ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_7 end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_7";
+
+	
+
+
+
+            }
+            }finally{
+                if(!((Object)("D:/DataLake/Harmonized/HA_salesOrderHeader_"+TalendDate.getDate("YYYY-MM-DD")+".csv") instanceof java.io.InputStream)){
+                	if(fid_tFileInputDelimited_7!=null){
+                		fid_tFileInputDelimited_7.close();
+                	}
+                }
+                if(fid_tFileInputDelimited_7!=null){
+                	globalMap.put("tFileInputDelimited_7_NB_LINE", fid_tFileInputDelimited_7.getRowNumber());
+					
+                }
+			}
+			  
+
+ 
+
+ok_Hash.put("tFileInputDelimited_7", true);
+end_Hash.put("tFileInputDelimited_7", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tFileInputDelimited_7 end ] stop
+ */
+
+	
+	/**
+	 * [tMap_4 end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_4";
+
+	
+
+
+// ###############################
+// # Lookup hashes releasing
+					if(tHash_Lookup_tAddress != null) {
+						tHash_Lookup_tAddress.endGet();
+					}
+					globalMap.remove( "tHash_Lookup_tAddress" );
+
+					
+					
+				
+					if(tHash_Lookup_tCustomer != null) {
+						tHash_Lookup_tCustomer.endGet();
+					}
+					globalMap.remove( "tHash_Lookup_tCustomer" );
+
+					
+					
+				
+// ###############################      
+
+
+
+
+
+				if(execStat){
+			  		runStat.updateStat(resourceMap,iterateId,2,0,"tSalesOrderHeader");
+			  	}
+			  	
+ 
+
+ok_Hash.put("tMap_4", true);
+end_Hash.put("tMap_4", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tMap_4 end ] stop
+ */
+
+	
+	/**
+	 * [tAggregateRow_3_AGGOUT end ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_3";
+	
+	currentComponent="tAggregateRow_3_AGGOUT";
+
+	
+
+				if(execStat){
+			  		runStat.updateStat(resourceMap,iterateId,2,0,"copyOfrpSales");
+			  	}
+			  	
+ 
+
+ok_Hash.put("tAggregateRow_3_AGGOUT", true);
+end_Hash.put("tAggregateRow_3_AGGOUT", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tAggregateRow_3_AGGOUT end ] stop
+ */
+
+
+	
+	/**
+	 * [tAggregateRow_4_AGGOUT begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tAggregateRow_4_AGGOUT", false);
+		start_Hash.put("tAggregateRow_4_AGGOUT", System.currentTimeMillis());
+		
+	
+		currentVirtualComponent = "tAggregateRow_4";
+	
+	currentComponent="tAggregateRow_4_AGGOUT";
+
+	
+					if(execStat) {
+						runStat.updateStatOnConnection(resourceMap,iterateId,0,0,"row3");
+					}
+				
+		int tos_count_tAggregateRow_4_AGGOUT = 0;
+		
+
+// ------------ Seems it is not used
+
+java.util.Map hashAggreg_tAggregateRow_4 = new java.util.HashMap(); 
+
+// ------------
+
+	class UtilClass_tAggregateRow_4 { // G_OutBegin_AggR_144
+
+		public double sd(Double[] data) {
+	        final int n = data.length;
+        	if (n < 2) {
+	            return Double.NaN;
+        	}
+        	double d1 = 0d;
+        	double d2 =0d;
+	        
+	        for (int i = 0; i < data.length; i++) {
+            	d1 += (data[i]*data[i]);
+            	d2 += data[i];
+        	}
+        
+	        return Math.sqrt((n*d1 - d2*d2)/n/(n-1));
+	    }
+	    
+		public void checkedIADD(byte a, byte b, boolean checkTypeOverFlow, boolean checkUlp) {
+		    byte r = (byte) (a + b);
+		    if (checkTypeOverFlow && ((a ^ r) & (b ^ r)) < 0) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'short/Short'", "'byte/Byte'"));
+		    }
+		}
+		
+		public void checkedIADD(short a, short b, boolean checkTypeOverFlow, boolean checkUlp) {
+		    short r = (short) (a + b);
+		    if (checkTypeOverFlow && ((a ^ r) & (b ^ r)) < 0) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'int/Integer'", "'short/Short'"));
+		    }
+		}
+		
+		public void checkedIADD(int a, int b, boolean checkTypeOverFlow, boolean checkUlp) {
+		    int r = a + b;
+		    if (checkTypeOverFlow && ((a ^ r) & (b ^ r)) < 0) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'long/Long'", "'int/Integer'"));
+		    }
+		}
+		
+		public void checkedIADD(long a, long b, boolean checkTypeOverFlow, boolean checkUlp) {
+		    long r = a + b;
+		    if (checkTypeOverFlow && ((a ^ r) & (b ^ r)) < 0) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'BigDecimal'", "'long/Long'"));
+		    }
+		}
+		
+		public void checkedIADD(float a, float b, boolean checkTypeOverFlow, boolean checkUlp) {
+		
+			if(checkUlp) {
+			    float minAddedValue = Math.ulp(a);
+			    if (minAddedValue > Math.abs(b)) {
+			        throw new RuntimeException(buildPrecisionMessage(String.valueOf(a), String.valueOf(b), "'double' or 'BigDecimal'", "'float/Float'"));
+			    }
+			}
+			
+		    if (checkTypeOverFlow && ((double) a + (double) b > (double) Float.MAX_VALUE) || ((double) a + (double) b < (double) -Float.MAX_VALUE)) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'double' or 'BigDecimal'", "'float/Float'"));
+		    }
+		}
+		
+		public void checkedIADD(double a, double b, boolean checkTypeOverFlow, boolean checkUlp) {
+		
+			if(checkUlp) {
+			    double minAddedValue = Math.ulp(a);
+			    if (minAddedValue > Math.abs(b)) {
+			        throw new RuntimeException(buildPrecisionMessage(String.valueOf(a), String.valueOf(a), "'BigDecimal'", "'double/Double'"));
+			    }
+			}
+		
+		    if (checkTypeOverFlow && (a + b > (double) Double.MAX_VALUE) || (a + b < -Double.MAX_VALUE )) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'BigDecimal'", "'double/Double'"));
+		    }
+		}
+		
+		public void checkedIADD(double a, byte b, boolean checkTypeOverFlow, boolean checkUlp) {
+		
+		    if (checkTypeOverFlow && (a + b > (double) Double.MAX_VALUE) || (a + b < -Double.MAX_VALUE )) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'BigDecimal'", "'double/Double'"));
+		    }
+		}
+		
+		public void checkedIADD(double a, short b, boolean checkTypeOverFlow, boolean checkUlp) {
+		
+		    if (checkTypeOverFlow && (a + b > (double) Double.MAX_VALUE) || (a + b < -Double.MAX_VALUE )) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'BigDecimal'", "'double/Double'"));
+		    }
+		}
+		
+		public void checkedIADD(double a, int b, boolean checkTypeOverFlow, boolean checkUlp) {
+		
+		    if (checkTypeOverFlow && (a + b > (double) Double.MAX_VALUE) || (a + b < -Double.MAX_VALUE )) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'BigDecimal'", "'double/Double'"));
+		    }
+		}
+		
+		public void checkedIADD(double a, float b, boolean checkTypeOverFlow, boolean checkUlp) {
+		
+			if(checkUlp) {
+			    double minAddedValue = Math.ulp(a);
+			    if (minAddedValue > Math.abs(b)) {
+			        throw new RuntimeException(buildPrecisionMessage(String.valueOf(a), String.valueOf(a), "'BigDecimal'", "'double/Double'"));
+			    }
+			}
+		
+		    if (checkTypeOverFlow && (a + b > (double) Double.MAX_VALUE) || (a + b < -Double.MAX_VALUE )) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'BigDecimal'", "'double/Double'"));
+		    }
+		}
+		
+		private String buildOverflowMessage(String a, String b, String advicedTypes, String originalType) {
+		    return "Type overflow when adding " + b + " to " + a
+		    + ", to resolve this problem, increase the precision by using "+ advicedTypes +" type in place of "+ originalType +".";
+		}
+		
+		private String buildPrecisionMessage(String a, String b, String advicedTypes, String originalType) {
+		    return "The double precision is unsufficient to add the value " + b + " to " + a
+		    + ", to resolve this problem, increase the precision by using "+ advicedTypes +" type in place of "+ originalType +".";
+		}
+
+	} // G_OutBegin_AggR_144
+
+	UtilClass_tAggregateRow_4 utilClass_tAggregateRow_4 = new UtilClass_tAggregateRow_4();
+
+	
+
+	class AggOperationStruct_tAggregateRow_4 { // G_OutBegin_AggR_100
+
+		private static final int DEFAULT_HASHCODE = 1;
+	    private static final int PRIME = 31;
+	    private int hashCode = DEFAULT_HASHCODE;
+	    public boolean hashCodeDirty = true;
+
+    				java.util.Date OrderDate;
+    				String CountryRegion;
+    				String StateProvince;
+    				String City;
+    				String SalesOrign;
+         			float TotalDue_max;
+         			float TotalDue_1_min;
+        
+	    @Override
+		public int hashCode() {
+			if (this.hashCodeDirty) {
+				final int prime = PRIME;
+				int result = DEFAULT_HASHCODE;
+		
+							result = prime * result + ((this.OrderDate == null) ? 0 : this.OrderDate.hashCode());
+							
+							result = prime * result + ((this.CountryRegion == null) ? 0 : this.CountryRegion.hashCode());
+							
+							result = prime * result + ((this.StateProvince == null) ? 0 : this.StateProvince.hashCode());
+							
+							result = prime * result + ((this.City == null) ? 0 : this.City.hashCode());
+							
+							result = prime * result + ((this.SalesOrign == null) ? 0 : this.SalesOrign.hashCode());
+							
+	    		this.hashCode = result;
+	    		this.hashCodeDirty = false;		
+			}
+			return this.hashCode;
+		}
+		
+		@Override
+		public boolean equals(Object obj) {
+			if (this == obj) return true;
+			if (obj == null) return false;
+			if (getClass() != obj.getClass()) return false;
+			final AggOperationStruct_tAggregateRow_4 other = (AggOperationStruct_tAggregateRow_4) obj;
+			
+							if (this.OrderDate == null) {
+								if (other.OrderDate != null) 
+									return false;
+							} else if (!this.OrderDate.equals(other.OrderDate)) 
+								return false;
+						
+							if (this.CountryRegion == null) {
+								if (other.CountryRegion != null) 
+									return false;
+							} else if (!this.CountryRegion.equals(other.CountryRegion)) 
+								return false;
+						
+							if (this.StateProvince == null) {
+								if (other.StateProvince != null) 
+									return false;
+							} else if (!this.StateProvince.equals(other.StateProvince)) 
+								return false;
+						
+							if (this.City == null) {
+								if (other.City != null) 
+									return false;
+							} else if (!this.City.equals(other.City)) 
+								return false;
+						
+							if (this.SalesOrign == null) {
+								if (other.SalesOrign != null) 
+									return false;
+							} else if (!this.SalesOrign.equals(other.SalesOrign)) 
+								return false;
+						
+			
+			return true;
+		}
+  
+        
+	} // G_OutBegin_AggR_100
+
+	AggOperationStruct_tAggregateRow_4 operation_result_tAggregateRow_4 = null;
+	AggOperationStruct_tAggregateRow_4 operation_finder_tAggregateRow_4 = new AggOperationStruct_tAggregateRow_4();
+	java.util.Map<AggOperationStruct_tAggregateRow_4,AggOperationStruct_tAggregateRow_4> hash_tAggregateRow_4 = new java.util.HashMap<AggOperationStruct_tAggregateRow_4,AggOperationStruct_tAggregateRow_4>();
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_4_AGGOUT begin ] stop
+ */
+
+
+
+	
+	/**
+	 * [tAggregateRow_3_AGGIN begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tAggregateRow_3_AGGIN", false);
+		start_Hash.put("tAggregateRow_3_AGGIN", System.currentTimeMillis());
+		
+	
+		currentVirtualComponent = "tAggregateRow_3";
+	
+	currentComponent="tAggregateRow_3_AGGIN";
+
+	
+		int tos_count_tAggregateRow_3_AGGIN = 0;
+		
+
+java.util.Collection<AggOperationStruct_tAggregateRow_3> values_tAggregateRow_3 = hash_tAggregateRow_3.values();
+
+globalMap.put("tAggregateRow_3_NB_LINE", values_tAggregateRow_3.size());
+
+for(AggOperationStruct_tAggregateRow_3 aggregated_row_tAggregateRow_3 : values_tAggregateRow_3) { // G_AggR_600
+
+
+
+ 
+
+
+
+/**
+ * [tAggregateRow_3_AGGIN begin ] stop
+ */
+	
+	/**
+	 * [tAggregateRow_3_AGGIN main ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_3";
+	
+	currentComponent="tAggregateRow_3_AGGIN";
+
+	
+
+            				    row3.OrderDate = aggregated_row_tAggregateRow_3.OrderDate;
+            				    
+            				    row3.CountryRegion = aggregated_row_tAggregateRow_3.CountryRegion;
+            				    
+            				    row3.StateProvince = aggregated_row_tAggregateRow_3.StateProvince;
+            				    
+            				    row3.City = aggregated_row_tAggregateRow_3.City;
+            				    
+            				    row3.SalesOrign = aggregated_row_tAggregateRow_3.SalesOrign;
+            				    
+            				    row3.SalesPerson = aggregated_row_tAggregateRow_3.SalesPerson;
+            				    
+    								if(aggregated_row_tAggregateRow_3.TotalDue_sum != null) {
+    								row3.TotalDue = aggregated_row_tAggregateRow_3.TotalDue_sum.floatValue();
+										
+    								}else{
+    								
+    									row3.TotalDue = 0;
+    									
+    								}
+    								
+    								if(aggregated_row_tAggregateRow_3.TotalDue_1_sum != null) {
+    								row3.TotalDue_1 = aggregated_row_tAggregateRow_3.TotalDue_1_sum.floatValue();
+										
+    								}else{
+    								
+    									row3.TotalDue_1 = 0;
+    									
+    								}
+    								
+
+ 
+
+
+	tos_count_tAggregateRow_3_AGGIN++;
+
+/**
+ * [tAggregateRow_3_AGGIN main ] stop
+ */
+	
+	/**
+	 * [tAggregateRow_3_AGGIN process_data_begin ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_3";
+	
+	currentComponent="tAggregateRow_3_AGGIN";
+
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_3_AGGIN process_data_begin ] stop
+ */
+
+	
+	/**
+	 * [tAggregateRow_4_AGGOUT main ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_4";
+	
+	currentComponent="tAggregateRow_4_AGGOUT";
+
+	
+					if(execStat){
+						runStat.updateStatOnConnection(iterateId,1,1,"row3");
+					}
+					
+	
+operation_finder_tAggregateRow_4.OrderDate = row3.OrderDate;
+			operation_finder_tAggregateRow_4.CountryRegion = row3.CountryRegion;
+			operation_finder_tAggregateRow_4.StateProvince = row3.StateProvince;
+			operation_finder_tAggregateRow_4.City = row3.City;
+			operation_finder_tAggregateRow_4.SalesOrign = row3.SalesOrign;
+			
+
+	operation_finder_tAggregateRow_4.hashCodeDirty = true;
+	
+	operation_result_tAggregateRow_4 = hash_tAggregateRow_4.get(operation_finder_tAggregateRow_4);
+
+	
+		boolean isFirstAdd_tAggregateRow_4 = false;
+	
+
+	if(operation_result_tAggregateRow_4 == null) { // G_OutMain_AggR_001
+
+		operation_result_tAggregateRow_4 = new AggOperationStruct_tAggregateRow_4();
+
+		operation_result_tAggregateRow_4.OrderDate = operation_finder_tAggregateRow_4.OrderDate;
+				operation_result_tAggregateRow_4.CountryRegion = operation_finder_tAggregateRow_4.CountryRegion;
+				operation_result_tAggregateRow_4.StateProvince = operation_finder_tAggregateRow_4.StateProvince;
+				operation_result_tAggregateRow_4.City = operation_finder_tAggregateRow_4.City;
+				operation_result_tAggregateRow_4.SalesOrign = operation_finder_tAggregateRow_4.SalesOrign;
+				
+		
+		
+			isFirstAdd_tAggregateRow_4 = true;
+		
+
+		hash_tAggregateRow_4.put(operation_result_tAggregateRow_4, operation_result_tAggregateRow_4);
+	
+	} // G_OutMain_AggR_001
+
+
+	
+					if(
+						
+						row3.TotalDue > operation_result_tAggregateRow_4.TotalDue_max
+						 || isFirstAdd_tAggregateRow_4 
+					) {
+						operation_result_tAggregateRow_4.TotalDue_max = row3.TotalDue;
+					}
+					
+					if(
+						
+						row3.TotalDue_1 < operation_result_tAggregateRow_4.TotalDue_1_min
+						 || isFirstAdd_tAggregateRow_4 
+					) {
+						operation_result_tAggregateRow_4.TotalDue_1_min = row3.TotalDue_1;
+					}
+					
+
+
+ 
+
+
+	tos_count_tAggregateRow_4_AGGOUT++;
+
+/**
+ * [tAggregateRow_4_AGGOUT main ] stop
+ */
+	
+	/**
+	 * [tAggregateRow_4_AGGOUT process_data_begin ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_4";
+	
+	currentComponent="tAggregateRow_4_AGGOUT";
+
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_4_AGGOUT process_data_begin ] stop
+ */
+	
+	/**
+	 * [tAggregateRow_4_AGGOUT process_data_end ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_4";
+	
+	currentComponent="tAggregateRow_4_AGGOUT";
+
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_4_AGGOUT process_data_end ] stop
+ */
+
+
+
+	
+	/**
+	 * [tAggregateRow_3_AGGIN process_data_end ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_3";
+	
+	currentComponent="tAggregateRow_3_AGGIN";
+
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_3_AGGIN process_data_end ] stop
+ */
+	
+	/**
+	 * [tAggregateRow_3_AGGIN end ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_3";
+	
+	currentComponent="tAggregateRow_3_AGGIN";
+
+	
+
+} // G_AggR_600
+
+ 
+
+ok_Hash.put("tAggregateRow_3_AGGIN", true);
+end_Hash.put("tAggregateRow_3_AGGIN", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tAggregateRow_3_AGGIN end ] stop
+ */
+
+	
+	/**
+	 * [tAggregateRow_4_AGGOUT end ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_4";
+	
+	currentComponent="tAggregateRow_4_AGGOUT";
+
+	
+
+				if(execStat){
+			  		runStat.updateStat(resourceMap,iterateId,2,0,"row3");
+			  	}
+			  	
+ 
+
+ok_Hash.put("tAggregateRow_4_AGGOUT", true);
+end_Hash.put("tAggregateRow_4_AGGOUT", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tAggregateRow_4_AGGOUT end ] stop
+ */
+
+
+
+	
+	/**
+	 * [tAdvancedHash_SalesTemp begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tAdvancedHash_SalesTemp", false);
+		start_Hash.put("tAdvancedHash_SalesTemp", System.currentTimeMillis());
+		
+	
+	currentComponent="tAdvancedHash_SalesTemp";
+
+	
+					if(execStat) {
+						runStat.updateStatOnConnection(resourceMap,iterateId,0,0,"SalesTemp");
+					}
+				
+		int tos_count_tAdvancedHash_SalesTemp = 0;
+		
+
+			   		// connection name:SalesTemp
+			   		// source node:tMap_6 - inputs:(row4,max,min) outputs:(SalesTemp,SalesTemp) | target node:tAdvancedHash_SalesTemp - inputs:(SalesTemp) outputs:()
+			   		// linked node: tMap_8 - inputs:(row1,SalesTemp) outputs:(SalesResult)
+			   
+			   		org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE matchingModeEnum_SalesTemp = 
+			   			org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE.UNIQUE_MATCH;
+			   			
+			   
+	   			org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<SalesTempStruct> tHash_Lookup_SalesTemp =org.talend.designer.components.lookup.memory.AdvancedMemoryLookup.
+	   						<SalesTempStruct>getLookup(matchingModeEnum_SalesTemp);
+	   						   
+		   	   	   globalMap.put("tHash_Lookup_SalesTemp", tHash_Lookup_SalesTemp);
+		   	   	   
+				
+           
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_SalesTemp begin ] stop
+ */
+
+
+
+	
+	/**
+	 * [tMap_6 begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tMap_6", false);
+		start_Hash.put("tMap_6", System.currentTimeMillis());
+		
+	
+	currentComponent="tMap_6";
+
+	
+					if(execStat) {
+						runStat.updateStatOnConnection(resourceMap,iterateId,0,0,"row4");
+					}
+				
+		int tos_count_tMap_6 = 0;
+		
+
+
+
+
+// ###############################
+// # Lookup's keys initialization
+	
+		org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<maxStruct> tHash_Lookup_max = (org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<maxStruct>) 
+				((org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<maxStruct>) 
+					globalMap.get( "tHash_Lookup_max" ))
+					;					
+					
+	
+
+maxStruct maxHashKey = new maxStruct();
+maxStruct maxDefault = new maxStruct();
+	
+		org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<minStruct> tHash_Lookup_min = (org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<minStruct>) 
+				((org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<minStruct>) 
+					globalMap.get( "tHash_Lookup_min" ))
+					;					
+					
+	
+
+minStruct minHashKey = new minStruct();
+minStruct minDefault = new minStruct();
+// ###############################        
+
+// ###############################
+// # Vars initialization
+class  Var__tMap_6__Struct  {
+}
+Var__tMap_6__Struct Var__tMap_6 = new Var__tMap_6__Struct();
+// ###############################
+
+// ###############################
+// # Outputs initialization
+SalesTempStruct SalesTemp_tmp = new SalesTempStruct();
+// ###############################
+
+        
+        
+
+
+
+        
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+/**
+ * [tMap_6 begin ] stop
+ */
+
+
+
+	
+	/**
+	 * [tAggregateRow_4_AGGIN begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tAggregateRow_4_AGGIN", false);
+		start_Hash.put("tAggregateRow_4_AGGIN", System.currentTimeMillis());
+		
+	
+		currentVirtualComponent = "tAggregateRow_4";
+	
+	currentComponent="tAggregateRow_4_AGGIN";
+
+	
+		int tos_count_tAggregateRow_4_AGGIN = 0;
+		
+
+java.util.Collection<AggOperationStruct_tAggregateRow_4> values_tAggregateRow_4 = hash_tAggregateRow_4.values();
+
+globalMap.put("tAggregateRow_4_NB_LINE", values_tAggregateRow_4.size());
+
+for(AggOperationStruct_tAggregateRow_4 aggregated_row_tAggregateRow_4 : values_tAggregateRow_4) { // G_AggR_600
+
+
+
+ 
+
+
+
+/**
+ * [tAggregateRow_4_AGGIN begin ] stop
+ */
+	
+	/**
+	 * [tAggregateRow_4_AGGIN main ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_4";
+	
+	currentComponent="tAggregateRow_4_AGGIN";
+
+	
+
+            				    row4.OrderDate = aggregated_row_tAggregateRow_4.OrderDate;
+            				    
+            				    row4.CountryRegion = aggregated_row_tAggregateRow_4.CountryRegion;
+            				    
+            				    row4.StateProvince = aggregated_row_tAggregateRow_4.StateProvince;
+            				    
+            				    row4.City = aggregated_row_tAggregateRow_4.City;
+            				    
+            				    row4.SalesOrign = aggregated_row_tAggregateRow_4.SalesOrign;
+            				    
+                                row4.TotalDue = aggregated_row_tAggregateRow_4.TotalDue_max;
+                                row4.TotalDue_1 = aggregated_row_tAggregateRow_4.TotalDue_1_min;
+
+ 
+
+
+	tos_count_tAggregateRow_4_AGGIN++;
+
+/**
+ * [tAggregateRow_4_AGGIN main ] stop
+ */
+	
+	/**
+	 * [tAggregateRow_4_AGGIN process_data_begin ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_4";
+	
+	currentComponent="tAggregateRow_4_AGGIN";
+
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_4_AGGIN process_data_begin ] stop
+ */
+
+	
+	/**
+	 * [tMap_6 main ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_6";
+
+	
+					if(execStat){
+						runStat.updateStatOnConnection(iterateId,1,1,"row4");
+					}
+					
+
+		
+		
+		boolean hasCasePrimitiveKeyWithNull_tMap_6 = false;
+		
+        // ###############################
+        // # Input tables (lookups)
+		  boolean rejectedInnerJoin_tMap_6 = false;
+		  boolean mainRowRejected_tMap_6 = false;
+            				    								  
+		
+
+				///////////////////////////////////////////////
+				// Starting Lookup Table "max" 
+				///////////////////////////////////////////////
+
+
+				
+				
+                            
+ 					    boolean forceLoopmax = false;
+       		  	    	
+       		  	    	
+ 							maxStruct maxObjectFromLookup = null;
+                          
+		           		  	if(!rejectedInnerJoin_tMap_6) { // G_TM_M_020
+
+								
+								hasCasePrimitiveKeyWithNull_tMap_6 = false;
+								
+                        		    		    maxHashKey.OrderDate = row4.OrderDate  == null ? null : new java.util.Date(row4.OrderDate .getTime());
+                        		    		
+                        		    		    maxHashKey.CountryRegion = row4.CountryRegion ;
+                        		    		
+                        		    		    maxHashKey.StateProvince = row4.StateProvince ;
+                        		    		
+                        		    		    maxHashKey.City = row4.City ;
+                        		    		
+                        		    		    maxHashKey.SalesOrign = row4.SalesOrign ;
+                        		    		
+	                        		    	Object exprKeyValue_max__TotalDue = row4.TotalDue ;
+	                        		    	if(exprKeyValue_max__TotalDue == null) {
+	                        		    		hasCasePrimitiveKeyWithNull_tMap_6 = true;
+	                        		    	} else {
+                        		    			maxHashKey.TotalDue = (float)(Float) exprKeyValue_max__TotalDue;
+                        		    		}
+                        		    		
+
+								
+		                        	maxHashKey.hashCodeDirty = true;
+                        		
+	  					
+	  							
+	
+		  							if(!hasCasePrimitiveKeyWithNull_tMap_6) { // G_TM_M_091
+		  							
+			  					
+			  					
+			  					
+	  					
+		  							tHash_Lookup_max.lookup( maxHashKey );
+
+	  							
+
+	  							
+
+			  						} // G_TM_M_091
+			  						
+			  					
+
+ 								
+		  				
+	  								
+						
+									
+  									  		
+ 								
+
+
+
+							} // G_TM_M_020
+			           		  	  
+							
+				           		if(tHash_Lookup_max != null && tHash_Lookup_max.getCount(maxHashKey) > 1) { // G 071
+			  							
+			  						
+									 		
+									//System.out.println("WARNING: UNIQUE MATCH is configured for the lookup 'max' and it contains more one result from keys :  max.OrderDate = '" + maxHashKey.OrderDate + "', max.CountryRegion = '" + maxHashKey.CountryRegion + "', max.StateProvince = '" + maxHashKey.StateProvince + "', max.City = '" + maxHashKey.City + "', max.SalesOrign = '" + maxHashKey.SalesOrign + "', max.TotalDue = '" + maxHashKey.TotalDue + "'");
+								} // G 071
+							
+
+							maxStruct max = null;
+                    		  	 
+							   
+                    		  	 
+	       		  	    	maxStruct fromLookup_max = null;
+							max = maxDefault;
+										 
+							
+								 
+							
+							
+								if (tHash_Lookup_max !=null && tHash_Lookup_max.hasNext()) { // G 099
+								
+							
+								
+								fromLookup_max = tHash_Lookup_max.next();
+
+							
+							
+								} // G 099
+							
+							
+
+							if(fromLookup_max != null) {
+								max = fromLookup_max;
+							}
+							
+							
+							
+			  							
+								
+	                    		  	
+		                    
+	            	
+	           	
+	            	
+	            	
+	            
+
+				///////////////////////////////////////////////
+				// Starting Lookup Table "min" 
+				///////////////////////////////////////////////
+
+
+				
+				
+                            
+ 					    boolean forceLoopmin = false;
+       		  	    	
+       		  	    	
+ 							minStruct minObjectFromLookup = null;
+                          
+		           		  	if(!rejectedInnerJoin_tMap_6) { // G_TM_M_020
+
+								
+								hasCasePrimitiveKeyWithNull_tMap_6 = false;
+								
+                        		    		    minHashKey.OrderDate = row4.OrderDate  == null ? null : new java.util.Date(row4.OrderDate .getTime());
+                        		    		
+                        		    		    minHashKey.CountryRegion = row4.CountryRegion ;
+                        		    		
+                        		    		    minHashKey.StateProvince = row4.StateProvince ;
+                        		    		
+                        		    		    minHashKey.City = row4.City ;
+                        		    		
+                        		    		    minHashKey.SalesOrign = row4.SalesOrign ;
+                        		    		
+	                        		    	Object exprKeyValue_min__TotalDue = row4.TotalDue_1 ;
+	                        		    	if(exprKeyValue_min__TotalDue == null) {
+	                        		    		hasCasePrimitiveKeyWithNull_tMap_6 = true;
+	                        		    	} else {
+                        		    			minHashKey.TotalDue = (float)(Float) exprKeyValue_min__TotalDue;
+                        		    		}
+                        		    		
+
+								
+		                        	minHashKey.hashCodeDirty = true;
+                        		
+	  					
+	  							
+	
+		  							if(!hasCasePrimitiveKeyWithNull_tMap_6) { // G_TM_M_091
+		  							
+			  					
+			  					
+			  					
+	  					
+		  							tHash_Lookup_min.lookup( minHashKey );
+
+	  							
+
+	  							
+
+			  						} // G_TM_M_091
+			  						
+			  					
+
+ 								
+		  				
+	  								
+						
+									
+  									  		
+ 								
+
+
+
+							} // G_TM_M_020
+			           		  	  
+							
+				           		if(tHash_Lookup_min != null && tHash_Lookup_min.getCount(minHashKey) > 1) { // G 071
+			  							
+			  						
+									 		
+									//System.out.println("WARNING: UNIQUE MATCH is configured for the lookup 'min' and it contains more one result from keys :  min.OrderDate = '" + minHashKey.OrderDate + "', min.CountryRegion = '" + minHashKey.CountryRegion + "', min.StateProvince = '" + minHashKey.StateProvince + "', min.City = '" + minHashKey.City + "', min.SalesOrign = '" + minHashKey.SalesOrign + "', min.TotalDue = '" + minHashKey.TotalDue + "'");
+								} // G 071
+							
+
+							minStruct min = null;
+                    		  	 
+							   
+                    		  	 
+	       		  	    	minStruct fromLookup_min = null;
+							min = minDefault;
+										 
+							
+								 
+							
+							
+								if (tHash_Lookup_min !=null && tHash_Lookup_min.hasNext()) { // G 099
+								
+							
+								
+								fromLookup_min = tHash_Lookup_min.next();
+
+							
+							
+								} // G 099
+							
+							
+
+							if(fromLookup_min != null) {
+								min = fromLookup_min;
+							}
+							
+							
+							
+			  							
+								
+	                    		  	
+		                    
+	            	
+	            	
+	            // ###############################
+        { // start of Var scope
+        
+	        // ###############################
+        	// # Vars tables
+        
+Var__tMap_6__Struct Var = Var__tMap_6;// ###############################
+        // ###############################
+        // # Output tables
+
+SalesTemp = null;
+
+
+// # Output table : 'SalesTemp'
+SalesTemp_tmp.OrderDate = row4.OrderDate ;
+SalesTemp_tmp.CountryRegion = row4.CountryRegion ;
+SalesTemp_tmp.StateProvince = row4.StateProvince ;
+SalesTemp_tmp.City = row4.City ;
+SalesTemp_tmp.SalesOrign = row4.SalesOrign ;
+SalesTemp_tmp.SalesPersonMAX = max.SalesPerson ;
+SalesTemp_tmp.SalesPersonMIN = min.SalesPerson ;
+SalesTemp = SalesTemp_tmp;
+// ###############################
+
+} // end of Var scope
+
+rejectedInnerJoin_tMap_6 = false;
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+	tos_count_tMap_6++;
+
+/**
+ * [tMap_6 main ] stop
+ */
+	
+	/**
+	 * [tMap_6 process_data_begin ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_6";
+
+	
+
+ 
+
+
+
+/**
+ * [tMap_6 process_data_begin ] stop
+ */
+// Start of branch "SalesTemp"
+if(SalesTemp != null) { 
+
+
+
+	
+	/**
+	 * [tAdvancedHash_SalesTemp main ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_SalesTemp";
+
+	
+					if(execStat){
+						runStat.updateStatOnConnection(iterateId,1,1,"SalesTemp");
+					}
+					
+
+
+			   
+			   
+
+					SalesTempStruct SalesTemp_HashRow = new SalesTempStruct();
+		   	   	   
+				
+				SalesTemp_HashRow.OrderDate = SalesTemp.OrderDate;
+				
+				SalesTemp_HashRow.CountryRegion = SalesTemp.CountryRegion;
+				
+				SalesTemp_HashRow.StateProvince = SalesTemp.StateProvince;
+				
+				SalesTemp_HashRow.City = SalesTemp.City;
+				
+				SalesTemp_HashRow.SalesOrign = SalesTemp.SalesOrign;
+				
+				SalesTemp_HashRow.SalesPersonMAX = SalesTemp.SalesPersonMAX;
+				
+				SalesTemp_HashRow.SalesPersonMIN = SalesTemp.SalesPersonMIN;
+				
+			tHash_Lookup_SalesTemp.put(SalesTemp_HashRow);
+			
+            
+
+
+
+
+ 
+
+
+	tos_count_tAdvancedHash_SalesTemp++;
+
+/**
+ * [tAdvancedHash_SalesTemp main ] stop
+ */
+	
+	/**
+	 * [tAdvancedHash_SalesTemp process_data_begin ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_SalesTemp";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_SalesTemp process_data_begin ] stop
+ */
+	
+	/**
+	 * [tAdvancedHash_SalesTemp process_data_end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_SalesTemp";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_SalesTemp process_data_end ] stop
+ */
+
+} // End of branch "SalesTemp"
+
+
+
+
+	
+	/**
+	 * [tMap_6 process_data_end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_6";
+
+	
+
+ 
+
+
+
+/**
+ * [tMap_6 process_data_end ] stop
+ */
+
+
+
+	
+	/**
+	 * [tAggregateRow_4_AGGIN process_data_end ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_4";
+	
+	currentComponent="tAggregateRow_4_AGGIN";
+
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_4_AGGIN process_data_end ] stop
+ */
+	
+	/**
+	 * [tAggregateRow_4_AGGIN end ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_4";
+	
+	currentComponent="tAggregateRow_4_AGGIN";
+
+	
+
+} // G_AggR_600
+
+ 
+
+ok_Hash.put("tAggregateRow_4_AGGIN", true);
+end_Hash.put("tAggregateRow_4_AGGIN", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tAggregateRow_4_AGGIN end ] stop
+ */
+
+	
+	/**
+	 * [tMap_6 end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_6";
+
+	
+
+
+// ###############################
+// # Lookup hashes releasing
+					if(tHash_Lookup_max != null) {
+						tHash_Lookup_max.endGet();
+					}
+					globalMap.remove( "tHash_Lookup_max" );
+
+					
+					
+				
+					if(tHash_Lookup_min != null) {
+						tHash_Lookup_min.endGet();
+					}
+					globalMap.remove( "tHash_Lookup_min" );
+
+					
+					
+				
+// ###############################      
+
+
+
+
+
+				if(execStat){
+			  		runStat.updateStat(resourceMap,iterateId,2,0,"row4");
+			  	}
+			  	
+ 
+
+ok_Hash.put("tMap_6", true);
+end_Hash.put("tMap_6", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tMap_6 end ] stop
+ */
+
+	
+	/**
+	 * [tAdvancedHash_SalesTemp end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_SalesTemp";
+
+	
+
+tHash_Lookup_SalesTemp.endPut();
+
+				if(execStat){
+			  		runStat.updateStat(resourceMap,iterateId,2,0,"SalesTemp");
+			  	}
+			  	
+ 
+
+ok_Hash.put("tAdvancedHash_SalesTemp", true);
+end_Hash.put("tAdvancedHash_SalesTemp", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tAdvancedHash_SalesTemp end ] stop
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				}//end the resume
+
+				
+
+
+
+	
+			}catch(java.lang.Exception e){	
+				
+				TalendException te = new TalendException(e, currentComponent, globalMap);
+				
+					te.setVirtualComponentName(currentVirtualComponent);
+				
+				throw te;
+			}catch(java.lang.Error error){	
+				
+					runStat.stopThreadStat();
+				
+				throw error;
+			}finally{
+				
+					     			//free memory for "tMap_6"
+					     			globalMap.remove("tHash_Lookup_max"); 
+				     			
+					     			//free memory for "tMap_6"
+					     			globalMap.remove("tHash_Lookup_min"); 
+				     			
+							//free memory for "tAggregateRow_4_AGGIN"
+							globalMap.remove("tAggregateRow_4");
+						
+							//free memory for "tAggregateRow_3_AGGIN"
+							globalMap.remove("tAggregateRow_3");
+						
+					     			//free memory for "tMap_4"
+					     			globalMap.remove("tHash_Lookup_tAddress"); 
+				     			
+					     			//free memory for "tMap_4"
+					     			globalMap.remove("tHash_Lookup_tCustomer"); 
+				     			
+				try{
+					
+	
+	/**
+	 * [tFileInputDelimited_7 finally ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_7";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_7 finally ] stop
+ */
+
+	
+	/**
+	 * [tMap_4 finally ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_4";
+
+	
+
+ 
+
+
+
+/**
+ * [tMap_4 finally ] stop
+ */
+
+	
+	/**
+	 * [tAggregateRow_3_AGGOUT finally ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_3";
+	
+	currentComponent="tAggregateRow_3_AGGOUT";
+
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_3_AGGOUT finally ] stop
+ */
+
+	
+	/**
+	 * [tAggregateRow_3_AGGIN finally ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_3";
+	
+	currentComponent="tAggregateRow_3_AGGIN";
+
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_3_AGGIN finally ] stop
+ */
+
+	
+	/**
+	 * [tAggregateRow_4_AGGOUT finally ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_4";
+	
+	currentComponent="tAggregateRow_4_AGGOUT";
+
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_4_AGGOUT finally ] stop
+ */
+
+	
+	/**
+	 * [tAggregateRow_4_AGGIN finally ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_4";
+	
+	currentComponent="tAggregateRow_4_AGGIN";
+
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_4_AGGIN finally ] stop
+ */
+
+	
+	/**
+	 * [tMap_6 finally ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_6";
+
+	
+
+ 
+
+
+
+/**
+ * [tMap_6 finally ] stop
+ */
+
+	
+	/**
+	 * [tAdvancedHash_SalesTemp finally ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_SalesTemp";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_SalesTemp finally ] stop
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				}catch(java.lang.Exception e){	
+					//ignore
+				}catch(java.lang.Error error){
+					//ignore
+				}
+				resourceMap = null;
+			}
+		
+
+		globalMap.put("tFileInputDelimited_7_SUBPROCESS_STATE", 1);
+	}
+	
+
+
+public static class tAddressStruct implements routines.system.IPersistableComparableLookupRow<tAddressStruct> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+	protected static final int DEFAULT_HASHCODE = 1;
+    protected static final int PRIME = 31;
+    protected int hashCode = DEFAULT_HASHCODE;
+    public boolean hashCodeDirty = true;
+
+    public String loopKey;
+
+
+
+	
+			    public int AddressID;
+
+				public int getAddressID () {
+					return this.AddressID;
+				}
+				
+			    public String AddressLine1;
+
+				public String getAddressLine1 () {
+					return this.AddressLine1;
+				}
+				
+			    public String AddressLine2;
+
+				public String getAddressLine2 () {
+					return this.AddressLine2;
+				}
+				
+			    public String StateProvince;
+
+				public String getStateProvince () {
+					return this.StateProvince;
+				}
+				
+			    public String CountryRegion;
+
+				public String getCountryRegion () {
+					return this.CountryRegion;
+				}
+				
+			    public String City;
+
+				public String getCity () {
+					return this.City;
+				}
+				
+			    public String PostalCode;
+
+				public String getPostalCode () {
+					return this.PostalCode;
+				}
+				
+
+
+	@Override
+	public int hashCode() {
+		if (this.hashCodeDirty) {
+			final int prime = PRIME;
+			int result = DEFAULT_HASHCODE;
+	
+							result = prime * result + (int) this.AddressID;
+						
+    		this.hashCode = result;
+    		this.hashCodeDirty = false;
+		}
+		return this.hashCode;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) return true;
+		if (obj == null) return false;
+		if (getClass() != obj.getClass()) return false;
+		final tAddressStruct other = (tAddressStruct) obj;
+		
+						if (this.AddressID != other.AddressID)
+							return false;
+					
+
+		return true;
+    }
+
+	public void copyDataTo(tAddressStruct other) {
+
+		other.AddressID = this.AddressID;
+	            other.AddressLine1 = this.AddressLine1;
+	            other.AddressLine2 = this.AddressLine2;
+	            other.StateProvince = this.StateProvince;
+	            other.CountryRegion = this.CountryRegion;
+	            other.City = this.City;
+	            other.PostalCode = this.PostalCode;
+	            
+	}
+
+	public void copyKeysDataTo(tAddressStruct other) {
+
+		other.AddressID = this.AddressID;
+	            	
+	}
+
+
+
+
+	private String readString(DataInputStream dis, ObjectInputStream ois) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			byte[] byteArray = new byte[length];
+			dis.read(byteArray);
+			strReturn = new String(byteArray, utf8Charset);
+		}
+		return strReturn;
+	}
+
+	private void writeString(String str, DataOutputStream dos, ObjectOutputStream oos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+	}
+
+    public void readKeysData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+			        this.AddressID = dis.readInt();
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeKeysData(ObjectOutputStream dos) {
+        try {
+
+		
+					// int
+				
+		            	dos.writeInt(this.AddressID);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+
+    /**
+     * Fill Values data by reading ObjectInputStream.
+     */
+    public void readValuesData(DataInputStream dis, ObjectInputStream ois) {
+        try {
+
+			int length = 0;
+		
+						this.AddressLine1 = readString(dis,ois);
+					
+						this.AddressLine2 = readString(dis,ois);
+					
+						this.StateProvince = readString(dis,ois);
+					
+						this.CountryRegion = readString(dis,ois);
+					
+						this.City = readString(dis,ois);
+					
+						this.PostalCode = readString(dis,ois);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+    }
+
+    /**
+     * Return a byte array which represents Values data.
+     */
+    public void writeValuesData(DataOutputStream dos, ObjectOutputStream oos) {
+        try {
+
+		
+						writeString(this.AddressLine1, dos, oos);
+					
+						writeString(this.AddressLine2, dos, oos);
+					
+						writeString(this.StateProvince, dos, oos);
+					
+						writeString(this.CountryRegion, dos, oos);
+					
+						writeString(this.City, dos, oos);
+					
+						writeString(this.PostalCode, dos, oos);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        	}
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("AddressID="+String.valueOf(AddressID));
+		sb.append(",AddressLine1="+AddressLine1);
+		sb.append(",AddressLine2="+AddressLine2);
+		sb.append(",StateProvince="+StateProvince);
+		sb.append(",CountryRegion="+CountryRegion);
+		sb.append(",City="+City);
+		sb.append(",PostalCode="+PostalCode);
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(tAddressStruct other) {
+
+		int returnValue = -1;
+		
+						returnValue = checkNullsAndCompare(this.AddressID, other.AddressID);
+						if(returnValue != 0) {
+							return returnValue;
+						}
+
+					
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
+public void tFileInputDelimited_13Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+	globalMap.put("tFileInputDelimited_13_SUBPROCESS_STATE", 0);
+
+ final boolean execStat = this.execStat;
+	
+		String iterateId = "";
+	
+	
+	String currentComponent = "";
+	java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
+
+	try {
+			// TDI-39566 avoid throwing an useless Exception
+			boolean resumeIt = true;
+			if (globalResumeTicket == false && resumeEntryMethodName != null) {
+				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
+				resumeIt = resumeEntryMethodName.equals(currentMethodName);
+			}
+			if (resumeIt || globalResumeTicket) { //start the resume
+				globalResumeTicket = true;
+
+
+
+		tAddressStruct tAddress = new tAddressStruct();
+
+
+
+
+	
+	/**
+	 * [tAdvancedHash_tAddress begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tAdvancedHash_tAddress", false);
+		start_Hash.put("tAdvancedHash_tAddress", System.currentTimeMillis());
+		
+	
+	currentComponent="tAdvancedHash_tAddress";
+
+	
+					if(execStat) {
+						runStat.updateStatOnConnection(resourceMap,iterateId,0,0,"tAddress");
+					}
+				
+		int tos_count_tAdvancedHash_tAddress = 0;
+		
+
+			   		// connection name:tAddress
+			   		// source node:tFileInputDelimited_13 - inputs:(after_tFileInputDelimited_7) outputs:(tAddress,tAddress) | target node:tAdvancedHash_tAddress - inputs:(tAddress) outputs:()
+			   		// linked node: tMap_4 - inputs:(tSalesOrderHeader,tAddress,tCustomer) outputs:(copyOfrpSales)
+			   
+			   		org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE matchingModeEnum_tAddress = 
+			   			org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE.UNIQUE_MATCH;
+			   			
+			   
+	   			org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<tAddressStruct> tHash_Lookup_tAddress =org.talend.designer.components.lookup.memory.AdvancedMemoryLookup.
+	   						<tAddressStruct>getLookup(matchingModeEnum_tAddress);
+	   						   
+		   	   	   globalMap.put("tHash_Lookup_tAddress", tHash_Lookup_tAddress);
+		   	   	   
+				
+           
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_tAddress begin ] stop
+ */
+
+
+
+	
+	/**
+	 * [tFileInputDelimited_13 begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tFileInputDelimited_13", false);
+		start_Hash.put("tFileInputDelimited_13", System.currentTimeMillis());
+		
+	
+	currentComponent="tFileInputDelimited_13";
+
+	
+		int tos_count_tFileInputDelimited_13 = 0;
+		
+	
+	
+	
+ 
+	
+	
+	final routines.system.RowState rowstate_tFileInputDelimited_13 = new routines.system.RowState();
+	
+	
+				int nb_line_tFileInputDelimited_13 = 0;
+				org.talend.fileprocess.FileInputDelimited fid_tFileInputDelimited_13 = null;
+				int limit_tFileInputDelimited_13 = -1;
+				try{
+					
+						Object filename_tFileInputDelimited_13 = "D:/DataLake/Harmonized/HA_address_"+TalendDate.getDate("YYYY-MM-DD")+".csv";
+						if(filename_tFileInputDelimited_13 instanceof java.io.InputStream){
+							
+			int footer_value_tFileInputDelimited_13 = 0, random_value_tFileInputDelimited_13 = -1;
+			if(footer_value_tFileInputDelimited_13 >0 || random_value_tFileInputDelimited_13 > 0){
+				throw new java.lang.Exception("When the input source is a stream,footer and random shouldn't be bigger than 0.");				
+			}
+		
+						}
+						try {
+							fid_tFileInputDelimited_13 = new org.talend.fileprocess.FileInputDelimited("D:/DataLake/Harmonized/HA_address_"+TalendDate.getDate("YYYY-MM-DD")+".csv", "ISO-8859-15",";","\n",true,1,0,
+									limit_tFileInputDelimited_13
+								,-1, false);
+						} catch(java.lang.Exception e) {
+							
+								
+								System.err.println(e.getMessage());
+							
+						}
+					
+				    
+					while (fid_tFileInputDelimited_13!=null && fid_tFileInputDelimited_13.nextRecord()) {
+						rowstate_tFileInputDelimited_13.reset();
+						
+			    						tAddress = null;			
+									
+			    						tAddress = null;			
+												
+									boolean whetherReject_tFileInputDelimited_13 = false;
+									tAddress = new tAddressStruct();
+									try {
+										
+				int columnIndexWithD_tFileInputDelimited_13 = 0;
+				
+					String temp = ""; 
+				
+					columnIndexWithD_tFileInputDelimited_13 = 0;
+					
+						temp = fid_tFileInputDelimited_13.get(columnIndexWithD_tFileInputDelimited_13);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								tAddress.AddressID = ParserUtils.parseTo_int(temp);
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_13) {
+									rowstate_tFileInputDelimited_13.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"AddressID", "tAddress", temp, ex_tFileInputDelimited_13), ex_tFileInputDelimited_13));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_13.setException(new RuntimeException("Value is empty for column : 'AddressID' in 'tAddress' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_13 = 1;
+					
+							tAddress.AddressLine1 = fid_tFileInputDelimited_13.get(columnIndexWithD_tFileInputDelimited_13);
+						
+				
+					columnIndexWithD_tFileInputDelimited_13 = 2;
+					
+							tAddress.AddressLine2 = fid_tFileInputDelimited_13.get(columnIndexWithD_tFileInputDelimited_13);
+						
+				
+					columnIndexWithD_tFileInputDelimited_13 = 3;
+					
+							tAddress.StateProvince = fid_tFileInputDelimited_13.get(columnIndexWithD_tFileInputDelimited_13);
+						
+				
+					columnIndexWithD_tFileInputDelimited_13 = 4;
+					
+							tAddress.CountryRegion = fid_tFileInputDelimited_13.get(columnIndexWithD_tFileInputDelimited_13);
+						
+				
+					columnIndexWithD_tFileInputDelimited_13 = 5;
+					
+							tAddress.City = fid_tFileInputDelimited_13.get(columnIndexWithD_tFileInputDelimited_13);
+						
+				
+					columnIndexWithD_tFileInputDelimited_13 = 6;
+					
+							tAddress.PostalCode = fid_tFileInputDelimited_13.get(columnIndexWithD_tFileInputDelimited_13);
+						
+				
+				
+										
+										if(rowstate_tFileInputDelimited_13.getException()!=null) {
+											throw rowstate_tFileInputDelimited_13.getException();
+										}
+										
+										
+							
+			    					} catch (java.lang.Exception e) {
+			        					whetherReject_tFileInputDelimited_13 = true;
+			        					
+			                					System.err.println(e.getMessage());
+			                					tAddress = null;
+			                				
+			    					}
+								
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_13 begin ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_13 main ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_13";
+
+	
+
+ 
+
+
+	tos_count_tFileInputDelimited_13++;
+
+/**
+ * [tFileInputDelimited_13 main ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_13 process_data_begin ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_13";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_13 process_data_begin ] stop
+ */
+// Start of branch "tAddress"
+if(tAddress != null) { 
+
+
+
+	
+	/**
+	 * [tAdvancedHash_tAddress main ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_tAddress";
+
+	
+					if(execStat){
+						runStat.updateStatOnConnection(iterateId,1,1,"tAddress");
+					}
+					
+
+
+			   
+			   
+
+					tAddressStruct tAddress_HashRow = new tAddressStruct();
+		   	   	   
+				
+				tAddress_HashRow.AddressID = tAddress.AddressID;
+				
+				tAddress_HashRow.AddressLine1 = tAddress.AddressLine1;
+				
+				tAddress_HashRow.AddressLine2 = tAddress.AddressLine2;
+				
+				tAddress_HashRow.StateProvince = tAddress.StateProvince;
+				
+				tAddress_HashRow.CountryRegion = tAddress.CountryRegion;
+				
+				tAddress_HashRow.City = tAddress.City;
+				
+				tAddress_HashRow.PostalCode = tAddress.PostalCode;
+				
+			tHash_Lookup_tAddress.put(tAddress_HashRow);
+			
+            
+
+
+
+
+ 
+
+
+	tos_count_tAdvancedHash_tAddress++;
+
+/**
+ * [tAdvancedHash_tAddress main ] stop
+ */
+	
+	/**
+	 * [tAdvancedHash_tAddress process_data_begin ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_tAddress";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_tAddress process_data_begin ] stop
+ */
+	
+	/**
+	 * [tAdvancedHash_tAddress process_data_end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_tAddress";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_tAddress process_data_end ] stop
+ */
+
+} // End of branch "tAddress"
+
+
+
+
+	
+	/**
+	 * [tFileInputDelimited_13 process_data_end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_13";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_13 process_data_end ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_13 end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_13";
+
+	
+
+
+
+            }
+            }finally{
+                if(!((Object)("D:/DataLake/Harmonized/HA_address_"+TalendDate.getDate("YYYY-MM-DD")+".csv") instanceof java.io.InputStream)){
+                	if(fid_tFileInputDelimited_13!=null){
+                		fid_tFileInputDelimited_13.close();
+                	}
+                }
+                if(fid_tFileInputDelimited_13!=null){
+                	globalMap.put("tFileInputDelimited_13_NB_LINE", fid_tFileInputDelimited_13.getRowNumber());
+					
+                }
+			}
+			  
+
+ 
+
+ok_Hash.put("tFileInputDelimited_13", true);
+end_Hash.put("tFileInputDelimited_13", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tFileInputDelimited_13 end ] stop
+ */
+
+	
+	/**
+	 * [tAdvancedHash_tAddress end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_tAddress";
+
+	
+
+tHash_Lookup_tAddress.endPut();
+
+				if(execStat){
+			  		runStat.updateStat(resourceMap,iterateId,2,0,"tAddress");
+			  	}
+			  	
+ 
+
+ok_Hash.put("tAdvancedHash_tAddress", true);
+end_Hash.put("tAdvancedHash_tAddress", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tAdvancedHash_tAddress end ] stop
+ */
+
+
+
+				}//end the resume
+
+				
+
+
+
+	
+			}catch(java.lang.Exception e){	
+				
+				TalendException te = new TalendException(e, currentComponent, globalMap);
+				
+				throw te;
+			}catch(java.lang.Error error){	
+				
+					runStat.stopThreadStat();
+				
+				throw error;
+			}finally{
+				
+				try{
+					
+	
+	/**
+	 * [tFileInputDelimited_13 finally ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_13";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_13 finally ] stop
+ */
+
+	
+	/**
+	 * [tAdvancedHash_tAddress finally ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_tAddress";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_tAddress finally ] stop
+ */
+
+
+
+				}catch(java.lang.Exception e){	
+					//ignore
+				}catch(java.lang.Error error){
+					//ignore
+				}
+				resourceMap = null;
+			}
+		
+
+		globalMap.put("tFileInputDelimited_13_SUBPROCESS_STATE", 1);
+	}
+	
+
+
+public static class tCustomerStruct implements routines.system.IPersistableComparableLookupRow<tCustomerStruct> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+	protected static final int DEFAULT_HASHCODE = 1;
+    protected static final int PRIME = 31;
+    protected int hashCode = DEFAULT_HASHCODE;
+    public boolean hashCodeDirty = true;
+
+    public String loopKey;
+
+
+
+	
+			    public int CustomerID;
+
+				public int getCustomerID () {
+					return this.CustomerID;
+				}
+				
+			    public boolean NameStyle;
+
+				public boolean getNameStyle () {
+					return this.NameStyle;
+				}
+				
+			    public String Title;
+
+				public String getTitle () {
+					return this.Title;
+				}
+				
+			    public String FirstName;
+
+				public String getFirstName () {
+					return this.FirstName;
+				}
+				
+			    public String MiddleName;
+
+				public String getMiddleName () {
+					return this.MiddleName;
+				}
+				
+			    public String LastName;
+
+				public String getLastName () {
+					return this.LastName;
+				}
+				
+			    public String Suffix;
+
+				public String getSuffix () {
+					return this.Suffix;
+				}
+				
+			    public String CompanyName;
+
+				public String getCompanyName () {
+					return this.CompanyName;
+				}
+				
+			    public String SalesPerson;
+
+				public String getSalesPerson () {
+					return this.SalesPerson;
+				}
+				
+			    public String EmailAddress;
+
+				public String getEmailAddress () {
+					return this.EmailAddress;
+				}
+				
+			    public String Phone;
+
+				public String getPhone () {
+					return this.Phone;
+				}
+				
+
+
+	@Override
+	public int hashCode() {
+		if (this.hashCodeDirty) {
+			final int prime = PRIME;
+			int result = DEFAULT_HASHCODE;
+	
+							result = prime * result + (int) this.CustomerID;
+						
+    		this.hashCode = result;
+    		this.hashCodeDirty = false;
+		}
+		return this.hashCode;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) return true;
+		if (obj == null) return false;
+		if (getClass() != obj.getClass()) return false;
+		final tCustomerStruct other = (tCustomerStruct) obj;
+		
+						if (this.CustomerID != other.CustomerID)
+							return false;
+					
+
+		return true;
+    }
+
+	public void copyDataTo(tCustomerStruct other) {
+
+		other.CustomerID = this.CustomerID;
+	            other.NameStyle = this.NameStyle;
+	            other.Title = this.Title;
+	            other.FirstName = this.FirstName;
+	            other.MiddleName = this.MiddleName;
+	            other.LastName = this.LastName;
+	            other.Suffix = this.Suffix;
+	            other.CompanyName = this.CompanyName;
+	            other.SalesPerson = this.SalesPerson;
+	            other.EmailAddress = this.EmailAddress;
+	            other.Phone = this.Phone;
+	            
+	}
+
+	public void copyKeysDataTo(tCustomerStruct other) {
+
+		other.CustomerID = this.CustomerID;
+	            	
+	}
+
+
+
+
+	private String readString(DataInputStream dis, ObjectInputStream ois) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			byte[] byteArray = new byte[length];
+			dis.read(byteArray);
+			strReturn = new String(byteArray, utf8Charset);
+		}
+		return strReturn;
+	}
+
+	private void writeString(String str, DataOutputStream dos, ObjectOutputStream oos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+	}
+
+    public void readKeysData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+			        this.CustomerID = dis.readInt();
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeKeysData(ObjectOutputStream dos) {
+        try {
+
+		
+					// int
+				
+		            	dos.writeInt(this.CustomerID);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+
+    /**
+     * Fill Values data by reading ObjectInputStream.
+     */
+    public void readValuesData(DataInputStream dis, ObjectInputStream ois) {
+        try {
+
+			int length = 0;
+		
+			            this.NameStyle = dis.readBoolean();
+					
+						this.Title = readString(dis,ois);
+					
+						this.FirstName = readString(dis,ois);
+					
+						this.MiddleName = readString(dis,ois);
+					
+						this.LastName = readString(dis,ois);
+					
+						this.Suffix = readString(dis,ois);
+					
+						this.CompanyName = readString(dis,ois);
+					
+						this.SalesPerson = readString(dis,ois);
+					
+						this.EmailAddress = readString(dis,ois);
+					
+						this.Phone = readString(dis,ois);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+    }
+
+    /**
+     * Return a byte array which represents Values data.
+     */
+    public void writeValuesData(DataOutputStream dos, ObjectOutputStream oos) {
+        try {
+
+		
+		            	dos.writeBoolean(this.NameStyle);
+					
+						writeString(this.Title, dos, oos);
+					
+						writeString(this.FirstName, dos, oos);
+					
+						writeString(this.MiddleName, dos, oos);
+					
+						writeString(this.LastName, dos, oos);
+					
+						writeString(this.Suffix, dos, oos);
+					
+						writeString(this.CompanyName, dos, oos);
+					
+						writeString(this.SalesPerson, dos, oos);
+					
+						writeString(this.EmailAddress, dos, oos);
+					
+						writeString(this.Phone, dos, oos);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        	}
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("CustomerID="+String.valueOf(CustomerID));
+		sb.append(",NameStyle="+String.valueOf(NameStyle));
+		sb.append(",Title="+Title);
+		sb.append(",FirstName="+FirstName);
+		sb.append(",MiddleName="+MiddleName);
+		sb.append(",LastName="+LastName);
+		sb.append(",Suffix="+Suffix);
+		sb.append(",CompanyName="+CompanyName);
+		sb.append(",SalesPerson="+SalesPerson);
+		sb.append(",EmailAddress="+EmailAddress);
+		sb.append(",Phone="+Phone);
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(tCustomerStruct other) {
+
+		int returnValue = -1;
+		
+						returnValue = checkNullsAndCompare(this.CustomerID, other.CustomerID);
+						if(returnValue != 0) {
+							return returnValue;
+						}
+
+					
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
+public void tFileInputDelimited_14Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+	globalMap.put("tFileInputDelimited_14_SUBPROCESS_STATE", 0);
+
+ final boolean execStat = this.execStat;
+	
+		String iterateId = "";
+	
+	
+	String currentComponent = "";
+	java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
+
+	try {
+			// TDI-39566 avoid throwing an useless Exception
+			boolean resumeIt = true;
+			if (globalResumeTicket == false && resumeEntryMethodName != null) {
+				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
+				resumeIt = resumeEntryMethodName.equals(currentMethodName);
+			}
+			if (resumeIt || globalResumeTicket) { //start the resume
+				globalResumeTicket = true;
+
+
+
+		tCustomerStruct tCustomer = new tCustomerStruct();
+
+
+
+
+	
+	/**
+	 * [tAdvancedHash_tCustomer begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tAdvancedHash_tCustomer", false);
+		start_Hash.put("tAdvancedHash_tCustomer", System.currentTimeMillis());
+		
+	
+	currentComponent="tAdvancedHash_tCustomer";
+
+	
+					if(execStat) {
+						runStat.updateStatOnConnection(resourceMap,iterateId,0,0,"tCustomer");
+					}
+				
+		int tos_count_tAdvancedHash_tCustomer = 0;
+		
+
+			   		// connection name:tCustomer
+			   		// source node:tFileInputDelimited_14 - inputs:(after_tFileInputDelimited_7) outputs:(tCustomer,tCustomer) | target node:tAdvancedHash_tCustomer - inputs:(tCustomer) outputs:()
+			   		// linked node: tMap_4 - inputs:(tSalesOrderHeader,tAddress,tCustomer) outputs:(copyOfrpSales)
+			   
+			   		org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE matchingModeEnum_tCustomer = 
+			   			org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE.UNIQUE_MATCH;
+			   			
+			   
+	   			org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<tCustomerStruct> tHash_Lookup_tCustomer =org.talend.designer.components.lookup.memory.AdvancedMemoryLookup.
+	   						<tCustomerStruct>getLookup(matchingModeEnum_tCustomer);
+	   						   
+		   	   	   globalMap.put("tHash_Lookup_tCustomer", tHash_Lookup_tCustomer);
+		   	   	   
+				
+           
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_tCustomer begin ] stop
+ */
+
+
+
+	
+	/**
+	 * [tFileInputDelimited_14 begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tFileInputDelimited_14", false);
+		start_Hash.put("tFileInputDelimited_14", System.currentTimeMillis());
+		
+	
+	currentComponent="tFileInputDelimited_14";
+
+	
+		int tos_count_tFileInputDelimited_14 = 0;
+		
+	
+	
+	
+ 
+	
+	
+	final routines.system.RowState rowstate_tFileInputDelimited_14 = new routines.system.RowState();
+	
+	
+				int nb_line_tFileInputDelimited_14 = 0;
+				org.talend.fileprocess.FileInputDelimited fid_tFileInputDelimited_14 = null;
+				int limit_tFileInputDelimited_14 = -1;
+				try{
+					
+						Object filename_tFileInputDelimited_14 = "D:/DataLake/Harmonized/HA_customer_"+TalendDate.getDate("YYYY-MM-DD")+".csv";
+						if(filename_tFileInputDelimited_14 instanceof java.io.InputStream){
+							
+			int footer_value_tFileInputDelimited_14 = 0, random_value_tFileInputDelimited_14 = -1;
+			if(footer_value_tFileInputDelimited_14 >0 || random_value_tFileInputDelimited_14 > 0){
+				throw new java.lang.Exception("When the input source is a stream,footer and random shouldn't be bigger than 0.");				
+			}
+		
+						}
+						try {
+							fid_tFileInputDelimited_14 = new org.talend.fileprocess.FileInputDelimited("D:/DataLake/Harmonized/HA_customer_"+TalendDate.getDate("YYYY-MM-DD")+".csv", "ISO-8859-15",";","\n",true,1,0,
+									limit_tFileInputDelimited_14
+								,-1, false);
+						} catch(java.lang.Exception e) {
+							
+								
+								System.err.println(e.getMessage());
+							
+						}
+					
+				    
+					while (fid_tFileInputDelimited_14!=null && fid_tFileInputDelimited_14.nextRecord()) {
+						rowstate_tFileInputDelimited_14.reset();
+						
+			    						tCustomer = null;			
+									
+			    						tCustomer = null;			
+												
+									boolean whetherReject_tFileInputDelimited_14 = false;
+									tCustomer = new tCustomerStruct();
+									try {
+										
+				int columnIndexWithD_tFileInputDelimited_14 = 0;
+				
+					String temp = ""; 
+				
+					columnIndexWithD_tFileInputDelimited_14 = 0;
+					
+						temp = fid_tFileInputDelimited_14.get(columnIndexWithD_tFileInputDelimited_14);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								tCustomer.CustomerID = ParserUtils.parseTo_int(temp);
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_14) {
+									rowstate_tFileInputDelimited_14.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"CustomerID", "tCustomer", temp, ex_tFileInputDelimited_14), ex_tFileInputDelimited_14));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_14.setException(new RuntimeException("Value is empty for column : 'CustomerID' in 'tCustomer' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_14 = 1;
+					
+						temp = fid_tFileInputDelimited_14.get(columnIndexWithD_tFileInputDelimited_14);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								tCustomer.NameStyle = ParserUtils.parseTo_boolean(temp);
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_14) {
+									rowstate_tFileInputDelimited_14.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"NameStyle", "tCustomer", temp, ex_tFileInputDelimited_14), ex_tFileInputDelimited_14));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_14.setException(new RuntimeException("Value is empty for column : 'NameStyle' in 'tCustomer' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_14 = 2;
+					
+							tCustomer.Title = fid_tFileInputDelimited_14.get(columnIndexWithD_tFileInputDelimited_14);
+						
+				
+					columnIndexWithD_tFileInputDelimited_14 = 3;
+					
+							tCustomer.FirstName = fid_tFileInputDelimited_14.get(columnIndexWithD_tFileInputDelimited_14);
+						
+				
+					columnIndexWithD_tFileInputDelimited_14 = 4;
+					
+							tCustomer.MiddleName = fid_tFileInputDelimited_14.get(columnIndexWithD_tFileInputDelimited_14);
+						
+				
+					columnIndexWithD_tFileInputDelimited_14 = 5;
+					
+							tCustomer.LastName = fid_tFileInputDelimited_14.get(columnIndexWithD_tFileInputDelimited_14);
+						
+				
+					columnIndexWithD_tFileInputDelimited_14 = 6;
+					
+							tCustomer.Suffix = fid_tFileInputDelimited_14.get(columnIndexWithD_tFileInputDelimited_14);
+						
+				
+					columnIndexWithD_tFileInputDelimited_14 = 7;
+					
+							tCustomer.CompanyName = fid_tFileInputDelimited_14.get(columnIndexWithD_tFileInputDelimited_14);
+						
+				
+					columnIndexWithD_tFileInputDelimited_14 = 8;
+					
+							tCustomer.SalesPerson = fid_tFileInputDelimited_14.get(columnIndexWithD_tFileInputDelimited_14);
+						
+				
+					columnIndexWithD_tFileInputDelimited_14 = 9;
+					
+							tCustomer.EmailAddress = fid_tFileInputDelimited_14.get(columnIndexWithD_tFileInputDelimited_14);
+						
+				
+					columnIndexWithD_tFileInputDelimited_14 = 10;
+					
+							tCustomer.Phone = fid_tFileInputDelimited_14.get(columnIndexWithD_tFileInputDelimited_14);
+						
+				
+				
+										
+										if(rowstate_tFileInputDelimited_14.getException()!=null) {
+											throw rowstate_tFileInputDelimited_14.getException();
+										}
+										
+										
+							
+			    					} catch (java.lang.Exception e) {
+			        					whetherReject_tFileInputDelimited_14 = true;
+			        					
+			                					System.err.println(e.getMessage());
+			                					tCustomer = null;
+			                				
+			    					}
+								
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_14 begin ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_14 main ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_14";
+
+	
+
+ 
+
+
+	tos_count_tFileInputDelimited_14++;
+
+/**
+ * [tFileInputDelimited_14 main ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_14 process_data_begin ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_14";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_14 process_data_begin ] stop
+ */
+// Start of branch "tCustomer"
+if(tCustomer != null) { 
+
+
+
+	
+	/**
+	 * [tAdvancedHash_tCustomer main ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_tCustomer";
+
+	
+					if(execStat){
+						runStat.updateStatOnConnection(iterateId,1,1,"tCustomer");
+					}
+					
+
+
+			   
+			   
+
+					tCustomerStruct tCustomer_HashRow = new tCustomerStruct();
+		   	   	   
+				
+				tCustomer_HashRow.CustomerID = tCustomer.CustomerID;
+				
+				tCustomer_HashRow.NameStyle = tCustomer.NameStyle;
+				
+				tCustomer_HashRow.Title = tCustomer.Title;
+				
+				tCustomer_HashRow.FirstName = tCustomer.FirstName;
+				
+				tCustomer_HashRow.MiddleName = tCustomer.MiddleName;
+				
+				tCustomer_HashRow.LastName = tCustomer.LastName;
+				
+				tCustomer_HashRow.Suffix = tCustomer.Suffix;
+				
+				tCustomer_HashRow.CompanyName = tCustomer.CompanyName;
+				
+				tCustomer_HashRow.SalesPerson = tCustomer.SalesPerson;
+				
+				tCustomer_HashRow.EmailAddress = tCustomer.EmailAddress;
+				
+				tCustomer_HashRow.Phone = tCustomer.Phone;
+				
+			tHash_Lookup_tCustomer.put(tCustomer_HashRow);
+			
+            
+
+
+
+
+ 
+
+
+	tos_count_tAdvancedHash_tCustomer++;
+
+/**
+ * [tAdvancedHash_tCustomer main ] stop
+ */
+	
+	/**
+	 * [tAdvancedHash_tCustomer process_data_begin ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_tCustomer";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_tCustomer process_data_begin ] stop
+ */
+	
+	/**
+	 * [tAdvancedHash_tCustomer process_data_end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_tCustomer";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_tCustomer process_data_end ] stop
+ */
+
+} // End of branch "tCustomer"
+
+
+
+
+	
+	/**
+	 * [tFileInputDelimited_14 process_data_end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_14";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_14 process_data_end ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_14 end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_14";
+
+	
+
+
+
+            }
+            }finally{
+                if(!((Object)("D:/DataLake/Harmonized/HA_customer_"+TalendDate.getDate("YYYY-MM-DD")+".csv") instanceof java.io.InputStream)){
+                	if(fid_tFileInputDelimited_14!=null){
+                		fid_tFileInputDelimited_14.close();
+                	}
+                }
+                if(fid_tFileInputDelimited_14!=null){
+                	globalMap.put("tFileInputDelimited_14_NB_LINE", fid_tFileInputDelimited_14.getRowNumber());
+					
+                }
+			}
+			  
+
+ 
+
+ok_Hash.put("tFileInputDelimited_14", true);
+end_Hash.put("tFileInputDelimited_14", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tFileInputDelimited_14 end ] stop
+ */
+
+	
+	/**
+	 * [tAdvancedHash_tCustomer end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_tCustomer";
+
+	
+
+tHash_Lookup_tCustomer.endPut();
+
+				if(execStat){
+			  		runStat.updateStat(resourceMap,iterateId,2,0,"tCustomer");
+			  	}
+			  	
+ 
+
+ok_Hash.put("tAdvancedHash_tCustomer", true);
+end_Hash.put("tAdvancedHash_tCustomer", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tAdvancedHash_tCustomer end ] stop
+ */
+
+
+
+				}//end the resume
+
+				
+
+
+
+	
+			}catch(java.lang.Exception e){	
+				
+				TalendException te = new TalendException(e, currentComponent, globalMap);
+				
+				throw te;
+			}catch(java.lang.Error error){	
+				
+					runStat.stopThreadStat();
+				
+				throw error;
+			}finally{
+				
+				try{
+					
+	
+	/**
+	 * [tFileInputDelimited_14 finally ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_14";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_14 finally ] stop
+ */
+
+	
+	/**
+	 * [tAdvancedHash_tCustomer finally ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_tCustomer";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_tCustomer finally ] stop
+ */
+
+
+
+				}catch(java.lang.Exception e){	
+					//ignore
+				}catch(java.lang.Error error){
+					//ignore
+				}
+				resourceMap = null;
+			}
+		
+
+		globalMap.put("tFileInputDelimited_14_SUBPROCESS_STATE", 1);
+	}
+	
+
+
+public static class maxStruct implements routines.system.IPersistableComparableLookupRow<maxStruct> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+	protected static final int DEFAULT_HASHCODE = 1;
+    protected static final int PRIME = 31;
+    protected int hashCode = DEFAULT_HASHCODE;
+    public boolean hashCodeDirty = true;
+
+    public String loopKey;
+
+
+
+	
+			    public java.util.Date OrderDate;
+
+				public java.util.Date getOrderDate () {
+					return this.OrderDate;
+				}
+				
+			    public String CountryRegion;
+
+				public String getCountryRegion () {
+					return this.CountryRegion;
+				}
+				
+			    public String StateProvince;
+
+				public String getStateProvince () {
+					return this.StateProvince;
+				}
+				
+			    public String City;
+
+				public String getCity () {
+					return this.City;
+				}
+				
+			    public String SalesOrign;
+
+				public String getSalesOrign () {
+					return this.SalesOrign;
+				}
+				
+			    public String SalesPerson;
+
+				public String getSalesPerson () {
+					return this.SalesPerson;
+				}
+				
+			    public float TotalDue;
+
+				public float getTotalDue () {
+					return this.TotalDue;
+				}
+				
+
+
+	@Override
+	public int hashCode() {
+		if (this.hashCodeDirty) {
+			final int prime = PRIME;
+			int result = DEFAULT_HASHCODE;
+	
+						result = prime * result + ((this.OrderDate == null) ? 0 : this.OrderDate.hashCode());
+					
+						result = prime * result + ((this.CountryRegion == null) ? 0 : this.CountryRegion.hashCode());
+					
+						result = prime * result + ((this.StateProvince == null) ? 0 : this.StateProvince.hashCode());
+					
+						result = prime * result + ((this.City == null) ? 0 : this.City.hashCode());
+					
+						result = prime * result + ((this.SalesOrign == null) ? 0 : this.SalesOrign.hashCode());
+					
+							result = prime * result + (int) this.TotalDue;
+						
+    		this.hashCode = result;
+    		this.hashCodeDirty = false;
+		}
+		return this.hashCode;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) return true;
+		if (obj == null) return false;
+		if (getClass() != obj.getClass()) return false;
+		final maxStruct other = (maxStruct) obj;
+		
+						if (this.OrderDate == null) {
+							if (other.OrderDate != null)
+								return false;
+						
+						} else if (!this.OrderDate.equals(other.OrderDate))
+						
+							return false;
+					
+						if (this.CountryRegion == null) {
+							if (other.CountryRegion != null)
+								return false;
+						
+						} else if (!this.CountryRegion.equals(other.CountryRegion))
+						
+							return false;
+					
+						if (this.StateProvince == null) {
+							if (other.StateProvince != null)
+								return false;
+						
+						} else if (!this.StateProvince.equals(other.StateProvince))
+						
+							return false;
+					
+						if (this.City == null) {
+							if (other.City != null)
+								return false;
+						
+						} else if (!this.City.equals(other.City))
+						
+							return false;
+					
+						if (this.SalesOrign == null) {
+							if (other.SalesOrign != null)
+								return false;
+						
+						} else if (!this.SalesOrign.equals(other.SalesOrign))
+						
+							return false;
+					
+						if (this.TotalDue != other.TotalDue)
+							return false;
+					
+
+		return true;
+    }
+
+	public void copyDataTo(maxStruct other) {
+
+		other.OrderDate = this.OrderDate;
+	            other.CountryRegion = this.CountryRegion;
+	            other.StateProvince = this.StateProvince;
+	            other.City = this.City;
+	            other.SalesOrign = this.SalesOrign;
+	            other.SalesPerson = this.SalesPerson;
+	            other.TotalDue = this.TotalDue;
+	            
+	}
+
+	public void copyKeysDataTo(maxStruct other) {
+
+		other.OrderDate = this.OrderDate;
+	            	other.CountryRegion = this.CountryRegion;
+	            	other.StateProvince = this.StateProvince;
+	            	other.City = this.City;
+	            	other.SalesOrign = this.SalesOrign;
+	            	other.TotalDue = this.TotalDue;
+	            	
+	}
+
+
+
+
+	private java.util.Date readDate(ObjectInputStream dis) throws IOException{
+		java.util.Date dateReturn = null;
+        int length = 0;
+        length = dis.readByte();
+		if (length == -1) {
+			dateReturn = null;
+		} else {
+	    	dateReturn = new Date(dis.readLong());
+		}
+		return dateReturn;
+	}
+
+    private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException{
+		if(date1 == null) {
+            dos.writeByte(-1);
+		} else {
+			dos.writeByte(0);
+	    	dos.writeLong(date1.getTime());
+    	}
+    }
+
+	private String readString(ObjectInputStream dis) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			if(length > commonByteArray_INGESTAODADOS_JobSalesReport.length) {
+				if(length < 1024 && commonByteArray_INGESTAODADOS_JobSalesReport.length == 0) {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[1024];
+				} else {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[2 * length];
+   				}
+			}
+			dis.readFully(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length);
+			strReturn = new String(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length, utf8Charset);
+		}
+		return strReturn;
+	}
+
+    private void writeString(String str, ObjectOutputStream dos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+    }
+
+	private String readString(DataInputStream dis, ObjectInputStream ois) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			byte[] byteArray = new byte[length];
+			dis.read(byteArray);
+			strReturn = new String(byteArray, utf8Charset);
+		}
+		return strReturn;
+	}
+
+	private void writeString(String str, DataOutputStream dos, ObjectOutputStream oos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+	}
+
+    public void readKeysData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+					this.OrderDate = readDate(dis);
+					
+					this.CountryRegion = readString(dis);
+					
+					this.StateProvince = readString(dis);
+					
+					this.City = readString(dis);
+					
+					this.SalesOrign = readString(dis);
+					
+			        this.TotalDue = dis.readFloat();
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeKeysData(ObjectOutputStream dos) {
+        try {
+
+		
+					// java.util.Date
+				
+						writeDate(this.OrderDate,dos);
+					
+					// String
+				
+						writeString(this.CountryRegion,dos);
+					
+					// String
+				
+						writeString(this.StateProvince,dos);
+					
+					// String
+				
+						writeString(this.City,dos);
+					
+					// String
+				
+						writeString(this.SalesOrign,dos);
+					
+					// float
+				
+		            	dos.writeFloat(this.TotalDue);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+
+    /**
+     * Fill Values data by reading ObjectInputStream.
+     */
+    public void readValuesData(DataInputStream dis, ObjectInputStream ois) {
+        try {
+
+			int length = 0;
+		
+						this.SalesPerson = readString(dis,ois);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+    }
+
+    /**
+     * Return a byte array which represents Values data.
+     */
+    public void writeValuesData(DataOutputStream dos, ObjectOutputStream oos) {
+        try {
+
+		
+						writeString(this.SalesPerson, dos, oos);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        	}
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("OrderDate="+String.valueOf(OrderDate));
+		sb.append(",CountryRegion="+CountryRegion);
+		sb.append(",StateProvince="+StateProvince);
+		sb.append(",City="+City);
+		sb.append(",SalesOrign="+SalesOrign);
+		sb.append(",SalesPerson="+SalesPerson);
+		sb.append(",TotalDue="+String.valueOf(TotalDue));
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(maxStruct other) {
+
+		int returnValue = -1;
+		
+						returnValue = checkNullsAndCompare(this.OrderDate, other.OrderDate);
+						if(returnValue != 0) {
+							return returnValue;
+						}
+
+					
+						returnValue = checkNullsAndCompare(this.CountryRegion, other.CountryRegion);
+						if(returnValue != 0) {
+							return returnValue;
+						}
+
+					
+						returnValue = checkNullsAndCompare(this.StateProvince, other.StateProvince);
+						if(returnValue != 0) {
+							return returnValue;
+						}
+
+					
+						returnValue = checkNullsAndCompare(this.City, other.City);
+						if(returnValue != 0) {
+							return returnValue;
+						}
+
+					
+						returnValue = checkNullsAndCompare(this.SalesOrign, other.SalesOrign);
+						if(returnValue != 0) {
+							return returnValue;
+						}
+
+					
+						returnValue = checkNullsAndCompare(this.TotalDue, other.TotalDue);
+						if(returnValue != 0) {
+							return returnValue;
+						}
+
+					
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
+
+public static class OnRowsEndStructtAggregateRow_5 implements routines.system.IPersistableRow<OnRowsEndStructtAggregateRow_5> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+
+	
+			    public java.util.Date OrderDate;
+
+				public java.util.Date getOrderDate () {
+					return this.OrderDate;
+				}
+				
+			    public String CountryRegion;
+
+				public String getCountryRegion () {
+					return this.CountryRegion;
+				}
+				
+			    public String StateProvince;
+
+				public String getStateProvince () {
+					return this.StateProvince;
+				}
+				
+			    public String City;
+
+				public String getCity () {
+					return this.City;
+				}
+				
+			    public String SalesOrign;
+
+				public String getSalesOrign () {
+					return this.SalesOrign;
+				}
+				
+			    public String SalesPerson;
+
+				public String getSalesPerson () {
+					return this.SalesPerson;
+				}
+				
+			    public float TotalDue;
+
+				public float getTotalDue () {
+					return this.TotalDue;
+				}
+				
+
+
+
+	private java.util.Date readDate(ObjectInputStream dis) throws IOException{
+		java.util.Date dateReturn = null;
+        int length = 0;
+        length = dis.readByte();
+		if (length == -1) {
+			dateReturn = null;
+		} else {
+	    	dateReturn = new Date(dis.readLong());
+		}
+		return dateReturn;
+	}
+
+    private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException{
+		if(date1 == null) {
+            dos.writeByte(-1);
+		} else {
+			dos.writeByte(0);
+	    	dos.writeLong(date1.getTime());
+    	}
+    }
+
+	private String readString(ObjectInputStream dis) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			if(length > commonByteArray_INGESTAODADOS_JobSalesReport.length) {
+				if(length < 1024 && commonByteArray_INGESTAODADOS_JobSalesReport.length == 0) {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[1024];
+				} else {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[2 * length];
+   				}
+			}
+			dis.readFully(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length);
+			strReturn = new String(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length, utf8Charset);
+		}
+		return strReturn;
+	}
+
+    private void writeString(String str, ObjectOutputStream dos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+    }
+
+    public void readData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+					this.OrderDate = readDate(dis);
+					
+					this.CountryRegion = readString(dis);
+					
+					this.StateProvince = readString(dis);
+					
+					this.City = readString(dis);
+					
+					this.SalesOrign = readString(dis);
+					
+					this.SalesPerson = readString(dis);
+					
+			        this.TotalDue = dis.readFloat();
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeData(ObjectOutputStream dos) {
+        try {
+
+		
+					// java.util.Date
+				
+						writeDate(this.OrderDate,dos);
+					
+					// String
+				
+						writeString(this.CountryRegion,dos);
+					
+					// String
+				
+						writeString(this.StateProvince,dos);
+					
+					// String
+				
+						writeString(this.City,dos);
+					
+					// String
+				
+						writeString(this.SalesOrign,dos);
+					
+					// String
+				
+						writeString(this.SalesPerson,dos);
+					
+					// float
+				
+		            	dos.writeFloat(this.TotalDue);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("OrderDate="+String.valueOf(OrderDate));
+		sb.append(",CountryRegion="+CountryRegion);
+		sb.append(",StateProvince="+StateProvince);
+		sb.append(",City="+City);
+		sb.append(",SalesOrign="+SalesOrign);
+		sb.append(",SalesPerson="+SalesPerson);
+		sb.append(",TotalDue="+String.valueOf(TotalDue));
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(OnRowsEndStructtAggregateRow_5 other) {
+
+		int returnValue = -1;
+		
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
+
+public static class copyOfcopyOfrpSalesStruct implements routines.system.IPersistableRow<copyOfcopyOfrpSalesStruct> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+
+	
+			    public java.util.Date OrderDate;
+
+				public java.util.Date getOrderDate () {
+					return this.OrderDate;
+				}
+				
+			    public String CountryRegion;
+
+				public String getCountryRegion () {
+					return this.CountryRegion;
+				}
+				
+			    public String StateProvince;
+
+				public String getStateProvince () {
+					return this.StateProvince;
+				}
+				
+			    public String City;
+
+				public String getCity () {
+					return this.City;
+				}
+				
+			    public String SalesOrign;
+
+				public String getSalesOrign () {
+					return this.SalesOrign;
+				}
+				
+			    public String SalesPerson;
+
+				public String getSalesPerson () {
+					return this.SalesPerson;
+				}
+				
+			    public float TotalDue;
+
+				public float getTotalDue () {
+					return this.TotalDue;
+				}
+				
+
+
+
+	private java.util.Date readDate(ObjectInputStream dis) throws IOException{
+		java.util.Date dateReturn = null;
+        int length = 0;
+        length = dis.readByte();
+		if (length == -1) {
+			dateReturn = null;
+		} else {
+	    	dateReturn = new Date(dis.readLong());
+		}
+		return dateReturn;
+	}
+
+    private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException{
+		if(date1 == null) {
+            dos.writeByte(-1);
+		} else {
+			dos.writeByte(0);
+	    	dos.writeLong(date1.getTime());
+    	}
+    }
+
+	private String readString(ObjectInputStream dis) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			if(length > commonByteArray_INGESTAODADOS_JobSalesReport.length) {
+				if(length < 1024 && commonByteArray_INGESTAODADOS_JobSalesReport.length == 0) {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[1024];
+				} else {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[2 * length];
+   				}
+			}
+			dis.readFully(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length);
+			strReturn = new String(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length, utf8Charset);
+		}
+		return strReturn;
+	}
+
+    private void writeString(String str, ObjectOutputStream dos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+    }
+
+    public void readData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+					this.OrderDate = readDate(dis);
+					
+					this.CountryRegion = readString(dis);
+					
+					this.StateProvince = readString(dis);
+					
+					this.City = readString(dis);
+					
+					this.SalesOrign = readString(dis);
+					
+					this.SalesPerson = readString(dis);
+					
+			        this.TotalDue = dis.readFloat();
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeData(ObjectOutputStream dos) {
+        try {
+
+		
+					// java.util.Date
+				
+						writeDate(this.OrderDate,dos);
+					
+					// String
+				
+						writeString(this.CountryRegion,dos);
+					
+					// String
+				
+						writeString(this.StateProvince,dos);
+					
+					// String
+				
+						writeString(this.City,dos);
+					
+					// String
+				
+						writeString(this.SalesOrign,dos);
+					
+					// String
+				
+						writeString(this.SalesPerson,dos);
+					
+					// float
+				
+		            	dos.writeFloat(this.TotalDue);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("OrderDate="+String.valueOf(OrderDate));
+		sb.append(",CountryRegion="+CountryRegion);
+		sb.append(",StateProvince="+StateProvince);
+		sb.append(",City="+City);
+		sb.append(",SalesOrign="+SalesOrign);
+		sb.append(",SalesPerson="+SalesPerson);
+		sb.append(",TotalDue="+String.valueOf(TotalDue));
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(copyOfcopyOfrpSalesStruct other) {
+
+		int returnValue = -1;
+		
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
+
+public static class row5Struct implements routines.system.IPersistableRow<row5Struct> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+
+	
+			    public int SalesOrderID;
+
+				public int getSalesOrderID () {
+					return this.SalesOrderID;
+				}
+				
+			    public short RevisionNumber;
+
+				public short getRevisionNumber () {
+					return this.RevisionNumber;
+				}
+				
+			    public String OrderDate;
+
+				public String getOrderDate () {
+					return this.OrderDate;
+				}
+				
+			    public String DueDate;
+
+				public String getDueDate () {
+					return this.DueDate;
+				}
+				
+			    public String ShipDate;
+
+				public String getShipDate () {
+					return this.ShipDate;
+				}
+				
+			    public short Status;
+
+				public short getStatus () {
+					return this.Status;
+				}
+				
+			    public boolean OnlineOrderFlag;
+
+				public boolean getOnlineOrderFlag () {
+					return this.OnlineOrderFlag;
+				}
+				
+			    public String SalesOrderNumber;
+
+				public String getSalesOrderNumber () {
+					return this.SalesOrderNumber;
+				}
+				
+			    public String PurchaseOrderNumber;
+
+				public String getPurchaseOrderNumber () {
+					return this.PurchaseOrderNumber;
+				}
+				
+			    public String AccountNumber;
+
+				public String getAccountNumber () {
+					return this.AccountNumber;
+				}
+				
+			    public int CustomerID;
+
+				public int getCustomerID () {
+					return this.CustomerID;
+				}
+				
+			    public Integer ShipToAddressID;
+
+				public Integer getShipToAddressID () {
+					return this.ShipToAddressID;
+				}
+				
+			    public Integer BillToAddressID;
+
+				public Integer getBillToAddressID () {
+					return this.BillToAddressID;
+				}
+				
+			    public String ShipMethod;
+
+				public String getShipMethod () {
+					return this.ShipMethod;
+				}
+				
+			    public String CreditCardApprovalCode;
+
+				public String getCreditCardApprovalCode () {
+					return this.CreditCardApprovalCode;
+				}
+				
+			    public Object SubTotal;
+
+				public Object getSubTotal () {
+					return this.SubTotal;
+				}
+				
+			    public Object TaxAmt;
+
+				public Object getTaxAmt () {
+					return this.TaxAmt;
+				}
+				
+			    public Object Freight;
+
+				public Object getFreight () {
+					return this.Freight;
+				}
+				
+			    public float TotalDue;
+
+				public float getTotalDue () {
+					return this.TotalDue;
+				}
+				
+
+
+
+	private String readString(ObjectInputStream dis) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			if(length > commonByteArray_INGESTAODADOS_JobSalesReport.length) {
+				if(length < 1024 && commonByteArray_INGESTAODADOS_JobSalesReport.length == 0) {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[1024];
+				} else {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[2 * length];
+   				}
+			}
+			dis.readFully(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length);
+			strReturn = new String(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length, utf8Charset);
+		}
+		return strReturn;
+	}
+
+    private void writeString(String str, ObjectOutputStream dos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+    }
+	private Integer readInteger(ObjectInputStream dis) throws IOException{
+		Integer intReturn;
+        int length = 0;
+        length = dis.readByte();
+		if (length == -1) {
+			intReturn = null;
+		} else {
+	    	intReturn = dis.readInt();
+		}
+		return intReturn;
+	}
+
+	private void writeInteger(Integer intNum, ObjectOutputStream dos) throws IOException{
+		if(intNum == null) {
+            dos.writeByte(-1);
+		} else {
+			dos.writeByte(0);
+	    	dos.writeInt(intNum);
+    	}
+	}
+
+    public void readData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+			        this.SalesOrderID = dis.readInt();
+					
+			        this.RevisionNumber = dis.readShort();
+					
+					this.OrderDate = readString(dis);
+					
+					this.DueDate = readString(dis);
+					
+					this.ShipDate = readString(dis);
+					
+			        this.Status = dis.readShort();
+					
+			        this.OnlineOrderFlag = dis.readBoolean();
+					
+					this.SalesOrderNumber = readString(dis);
+					
+					this.PurchaseOrderNumber = readString(dis);
+					
+					this.AccountNumber = readString(dis);
+					
+			        this.CustomerID = dis.readInt();
+					
+						this.ShipToAddressID = readInteger(dis);
+					
+						this.BillToAddressID = readInteger(dis);
+					
+					this.ShipMethod = readString(dis);
+					
+					this.CreditCardApprovalCode = readString(dis);
+					
+						this.SubTotal = (Object) dis.readObject();
+					
+						this.TaxAmt = (Object) dis.readObject();
+					
+						this.Freight = (Object) dis.readObject();
+					
+			        this.TotalDue = dis.readFloat();
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+			} catch(ClassNotFoundException eCNFE) {
+				 throw new RuntimeException(eCNFE);
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeData(ObjectOutputStream dos) {
+        try {
+
+		
+					// int
+				
+		            	dos.writeInt(this.SalesOrderID);
+					
+					// short
+				
+		            	dos.writeShort(this.RevisionNumber);
+					
+					// String
+				
+						writeString(this.OrderDate,dos);
+					
+					// String
+				
+						writeString(this.DueDate,dos);
+					
+					// String
+				
+						writeString(this.ShipDate,dos);
+					
+					// short
+				
+		            	dos.writeShort(this.Status);
+					
+					// boolean
+				
+		            	dos.writeBoolean(this.OnlineOrderFlag);
+					
+					// String
+				
+						writeString(this.SalesOrderNumber,dos);
+					
+					// String
+				
+						writeString(this.PurchaseOrderNumber,dos);
+					
+					// String
+				
+						writeString(this.AccountNumber,dos);
+					
+					// int
+				
+		            	dos.writeInt(this.CustomerID);
+					
+					// Integer
+				
+						writeInteger(this.ShipToAddressID,dos);
+					
+					// Integer
+				
+						writeInteger(this.BillToAddressID,dos);
+					
+					// String
+				
+						writeString(this.ShipMethod,dos);
+					
+					// String
+				
+						writeString(this.CreditCardApprovalCode,dos);
+					
+					// Object
+				
+       			    	dos.writeObject(this.SubTotal);
+					
+					// Object
+				
+       			    	dos.writeObject(this.TaxAmt);
+					
+					// Object
+				
+       			    	dos.writeObject(this.Freight);
+					
+					// float
+				
+		            	dos.writeFloat(this.TotalDue);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("SalesOrderID="+String.valueOf(SalesOrderID));
+		sb.append(",RevisionNumber="+String.valueOf(RevisionNumber));
+		sb.append(",OrderDate="+OrderDate);
+		sb.append(",DueDate="+DueDate);
+		sb.append(",ShipDate="+ShipDate);
+		sb.append(",Status="+String.valueOf(Status));
+		sb.append(",OnlineOrderFlag="+String.valueOf(OnlineOrderFlag));
+		sb.append(",SalesOrderNumber="+SalesOrderNumber);
+		sb.append(",PurchaseOrderNumber="+PurchaseOrderNumber);
+		sb.append(",AccountNumber="+AccountNumber);
+		sb.append(",CustomerID="+String.valueOf(CustomerID));
+		sb.append(",ShipToAddressID="+String.valueOf(ShipToAddressID));
+		sb.append(",BillToAddressID="+String.valueOf(BillToAddressID));
+		sb.append(",ShipMethod="+ShipMethod);
+		sb.append(",CreditCardApprovalCode="+CreditCardApprovalCode);
+		sb.append(",SubTotal="+String.valueOf(SubTotal));
+		sb.append(",TaxAmt="+String.valueOf(TaxAmt));
+		sb.append(",Freight="+String.valueOf(Freight));
+		sb.append(",TotalDue="+String.valueOf(TotalDue));
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(row5Struct other) {
+
+		int returnValue = -1;
+		
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
+
+public static class after_tFileInputDelimited_15Struct implements routines.system.IPersistableRow<after_tFileInputDelimited_15Struct> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+
+	
+			    public int SalesOrderID;
+
+				public int getSalesOrderID () {
+					return this.SalesOrderID;
+				}
+				
+			    public short RevisionNumber;
+
+				public short getRevisionNumber () {
+					return this.RevisionNumber;
+				}
+				
+			    public String OrderDate;
+
+				public String getOrderDate () {
+					return this.OrderDate;
+				}
+				
+			    public String DueDate;
+
+				public String getDueDate () {
+					return this.DueDate;
+				}
+				
+			    public String ShipDate;
+
+				public String getShipDate () {
+					return this.ShipDate;
+				}
+				
+			    public short Status;
+
+				public short getStatus () {
+					return this.Status;
+				}
+				
+			    public boolean OnlineOrderFlag;
+
+				public boolean getOnlineOrderFlag () {
+					return this.OnlineOrderFlag;
+				}
+				
+			    public String SalesOrderNumber;
+
+				public String getSalesOrderNumber () {
+					return this.SalesOrderNumber;
+				}
+				
+			    public String PurchaseOrderNumber;
+
+				public String getPurchaseOrderNumber () {
+					return this.PurchaseOrderNumber;
+				}
+				
+			    public String AccountNumber;
+
+				public String getAccountNumber () {
+					return this.AccountNumber;
+				}
+				
+			    public int CustomerID;
+
+				public int getCustomerID () {
+					return this.CustomerID;
+				}
+				
+			    public Integer ShipToAddressID;
+
+				public Integer getShipToAddressID () {
+					return this.ShipToAddressID;
+				}
+				
+			    public Integer BillToAddressID;
+
+				public Integer getBillToAddressID () {
+					return this.BillToAddressID;
+				}
+				
+			    public String ShipMethod;
+
+				public String getShipMethod () {
+					return this.ShipMethod;
+				}
+				
+			    public String CreditCardApprovalCode;
+
+				public String getCreditCardApprovalCode () {
+					return this.CreditCardApprovalCode;
+				}
+				
+			    public Object SubTotal;
+
+				public Object getSubTotal () {
+					return this.SubTotal;
+				}
+				
+			    public Object TaxAmt;
+
+				public Object getTaxAmt () {
+					return this.TaxAmt;
+				}
+				
+			    public Object Freight;
+
+				public Object getFreight () {
+					return this.Freight;
+				}
+				
+			    public float TotalDue;
+
+				public float getTotalDue () {
+					return this.TotalDue;
+				}
+				
+
+
+
+	private String readString(ObjectInputStream dis) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			if(length > commonByteArray_INGESTAODADOS_JobSalesReport.length) {
+				if(length < 1024 && commonByteArray_INGESTAODADOS_JobSalesReport.length == 0) {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[1024];
+				} else {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[2 * length];
+   				}
+			}
+			dis.readFully(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length);
+			strReturn = new String(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length, utf8Charset);
+		}
+		return strReturn;
+	}
+
+    private void writeString(String str, ObjectOutputStream dos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+    }
+	private Integer readInteger(ObjectInputStream dis) throws IOException{
+		Integer intReturn;
+        int length = 0;
+        length = dis.readByte();
+		if (length == -1) {
+			intReturn = null;
+		} else {
+	    	intReturn = dis.readInt();
+		}
+		return intReturn;
+	}
+
+	private void writeInteger(Integer intNum, ObjectOutputStream dos) throws IOException{
+		if(intNum == null) {
+            dos.writeByte(-1);
+		} else {
+			dos.writeByte(0);
+	    	dos.writeInt(intNum);
+    	}
+	}
+
+    public void readData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+			        this.SalesOrderID = dis.readInt();
+					
+			        this.RevisionNumber = dis.readShort();
+					
+					this.OrderDate = readString(dis);
+					
+					this.DueDate = readString(dis);
+					
+					this.ShipDate = readString(dis);
+					
+			        this.Status = dis.readShort();
+					
+			        this.OnlineOrderFlag = dis.readBoolean();
+					
+					this.SalesOrderNumber = readString(dis);
+					
+					this.PurchaseOrderNumber = readString(dis);
+					
+					this.AccountNumber = readString(dis);
+					
+			        this.CustomerID = dis.readInt();
+					
+						this.ShipToAddressID = readInteger(dis);
+					
+						this.BillToAddressID = readInteger(dis);
+					
+					this.ShipMethod = readString(dis);
+					
+					this.CreditCardApprovalCode = readString(dis);
+					
+						this.SubTotal = (Object) dis.readObject();
+					
+						this.TaxAmt = (Object) dis.readObject();
+					
+						this.Freight = (Object) dis.readObject();
+					
+			        this.TotalDue = dis.readFloat();
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+			} catch(ClassNotFoundException eCNFE) {
+				 throw new RuntimeException(eCNFE);
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeData(ObjectOutputStream dos) {
+        try {
+
+		
+					// int
+				
+		            	dos.writeInt(this.SalesOrderID);
+					
+					// short
+				
+		            	dos.writeShort(this.RevisionNumber);
+					
+					// String
+				
+						writeString(this.OrderDate,dos);
+					
+					// String
+				
+						writeString(this.DueDate,dos);
+					
+					// String
+				
+						writeString(this.ShipDate,dos);
+					
+					// short
+				
+		            	dos.writeShort(this.Status);
+					
+					// boolean
+				
+		            	dos.writeBoolean(this.OnlineOrderFlag);
+					
+					// String
+				
+						writeString(this.SalesOrderNumber,dos);
+					
+					// String
+				
+						writeString(this.PurchaseOrderNumber,dos);
+					
+					// String
+				
+						writeString(this.AccountNumber,dos);
+					
+					// int
+				
+		            	dos.writeInt(this.CustomerID);
+					
+					// Integer
+				
+						writeInteger(this.ShipToAddressID,dos);
+					
+					// Integer
+				
+						writeInteger(this.BillToAddressID,dos);
+					
+					// String
+				
+						writeString(this.ShipMethod,dos);
+					
+					// String
+				
+						writeString(this.CreditCardApprovalCode,dos);
+					
+					// Object
+				
+       			    	dos.writeObject(this.SubTotal);
+					
+					// Object
+				
+       			    	dos.writeObject(this.TaxAmt);
+					
+					// Object
+				
+       			    	dos.writeObject(this.Freight);
+					
+					// float
+				
+		            	dos.writeFloat(this.TotalDue);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("SalesOrderID="+String.valueOf(SalesOrderID));
+		sb.append(",RevisionNumber="+String.valueOf(RevisionNumber));
+		sb.append(",OrderDate="+OrderDate);
+		sb.append(",DueDate="+DueDate);
+		sb.append(",ShipDate="+ShipDate);
+		sb.append(",Status="+String.valueOf(Status));
+		sb.append(",OnlineOrderFlag="+String.valueOf(OnlineOrderFlag));
+		sb.append(",SalesOrderNumber="+SalesOrderNumber);
+		sb.append(",PurchaseOrderNumber="+PurchaseOrderNumber);
+		sb.append(",AccountNumber="+AccountNumber);
+		sb.append(",CustomerID="+String.valueOf(CustomerID));
+		sb.append(",ShipToAddressID="+String.valueOf(ShipToAddressID));
+		sb.append(",BillToAddressID="+String.valueOf(BillToAddressID));
+		sb.append(",ShipMethod="+ShipMethod);
+		sb.append(",CreditCardApprovalCode="+CreditCardApprovalCode);
+		sb.append(",SubTotal="+String.valueOf(SubTotal));
+		sb.append(",TaxAmt="+String.valueOf(TaxAmt));
+		sb.append(",Freight="+String.valueOf(Freight));
+		sb.append(",TotalDue="+String.valueOf(TotalDue));
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(after_tFileInputDelimited_15Struct other) {
+
+		int returnValue = -1;
+		
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
+public void tFileInputDelimited_15Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+	globalMap.put("tFileInputDelimited_15_SUBPROCESS_STATE", 0);
+
+ final boolean execStat = this.execStat;
+		String currentVirtualComponent = null;
+	
+		String iterateId = "";
+	
+	
+	String currentComponent = "";
+	java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
+
+	try {
+			// TDI-39566 avoid throwing an useless Exception
+			boolean resumeIt = true;
+			if (globalResumeTicket == false && resumeEntryMethodName != null) {
+				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
+				resumeIt = resumeEntryMethodName.equals(currentMethodName);
+			}
+			if (resumeIt || globalResumeTicket) { //start the resume
+				globalResumeTicket = true;
+
+
+		tFileInputDelimited_16Process(globalMap);
+		tFileInputDelimited_17Process(globalMap);
+
+		row5Struct row5 = new row5Struct();
+copyOfcopyOfrpSalesStruct copyOfcopyOfrpSales = new copyOfcopyOfrpSalesStruct();
+maxStruct max = new maxStruct();
+
+
+
+
+
+	
+	/**
+	 * [tAggregateRow_5_AGGOUT begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tAggregateRow_5_AGGOUT", false);
+		start_Hash.put("tAggregateRow_5_AGGOUT", System.currentTimeMillis());
+		
+	
+		currentVirtualComponent = "tAggregateRow_5";
+	
+	currentComponent="tAggregateRow_5_AGGOUT";
+
+	
+					if(execStat) {
+						runStat.updateStatOnConnection(resourceMap,iterateId,0,0,"copyOfcopyOfrpSales");
+					}
+				
+		int tos_count_tAggregateRow_5_AGGOUT = 0;
+		
+
+// ------------ Seems it is not used
+
+java.util.Map hashAggreg_tAggregateRow_5 = new java.util.HashMap(); 
+
+// ------------
+
+	class UtilClass_tAggregateRow_5 { // G_OutBegin_AggR_144
+
+		public double sd(Double[] data) {
+	        final int n = data.length;
+        	if (n < 2) {
+	            return Double.NaN;
+        	}
+        	double d1 = 0d;
+        	double d2 =0d;
+	        
+	        for (int i = 0; i < data.length; i++) {
+            	d1 += (data[i]*data[i]);
+            	d2 += data[i];
+        	}
+        
+	        return Math.sqrt((n*d1 - d2*d2)/n/(n-1));
+	    }
+	    
+		public void checkedIADD(byte a, byte b, boolean checkTypeOverFlow, boolean checkUlp) {
+		    byte r = (byte) (a + b);
+		    if (checkTypeOverFlow && ((a ^ r) & (b ^ r)) < 0) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'short/Short'", "'byte/Byte'"));
+		    }
+		}
+		
+		public void checkedIADD(short a, short b, boolean checkTypeOverFlow, boolean checkUlp) {
+		    short r = (short) (a + b);
+		    if (checkTypeOverFlow && ((a ^ r) & (b ^ r)) < 0) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'int/Integer'", "'short/Short'"));
+		    }
+		}
+		
+		public void checkedIADD(int a, int b, boolean checkTypeOverFlow, boolean checkUlp) {
+		    int r = a + b;
+		    if (checkTypeOverFlow && ((a ^ r) & (b ^ r)) < 0) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'long/Long'", "'int/Integer'"));
+		    }
+		}
+		
+		public void checkedIADD(long a, long b, boolean checkTypeOverFlow, boolean checkUlp) {
+		    long r = a + b;
+		    if (checkTypeOverFlow && ((a ^ r) & (b ^ r)) < 0) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'BigDecimal'", "'long/Long'"));
+		    }
+		}
+		
+		public void checkedIADD(float a, float b, boolean checkTypeOverFlow, boolean checkUlp) {
+		
+			if(checkUlp) {
+			    float minAddedValue = Math.ulp(a);
+			    if (minAddedValue > Math.abs(b)) {
+			        throw new RuntimeException(buildPrecisionMessage(String.valueOf(a), String.valueOf(b), "'double' or 'BigDecimal'", "'float/Float'"));
+			    }
+			}
+			
+		    if (checkTypeOverFlow && ((double) a + (double) b > (double) Float.MAX_VALUE) || ((double) a + (double) b < (double) -Float.MAX_VALUE)) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'double' or 'BigDecimal'", "'float/Float'"));
+		    }
+		}
+		
+		public void checkedIADD(double a, double b, boolean checkTypeOverFlow, boolean checkUlp) {
+		
+			if(checkUlp) {
+			    double minAddedValue = Math.ulp(a);
+			    if (minAddedValue > Math.abs(b)) {
+			        throw new RuntimeException(buildPrecisionMessage(String.valueOf(a), String.valueOf(a), "'BigDecimal'", "'double/Double'"));
+			    }
+			}
+		
+		    if (checkTypeOverFlow && (a + b > (double) Double.MAX_VALUE) || (a + b < -Double.MAX_VALUE )) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'BigDecimal'", "'double/Double'"));
+		    }
+		}
+		
+		public void checkedIADD(double a, byte b, boolean checkTypeOverFlow, boolean checkUlp) {
+		
+		    if (checkTypeOverFlow && (a + b > (double) Double.MAX_VALUE) || (a + b < -Double.MAX_VALUE )) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'BigDecimal'", "'double/Double'"));
+		    }
+		}
+		
+		public void checkedIADD(double a, short b, boolean checkTypeOverFlow, boolean checkUlp) {
+		
+		    if (checkTypeOverFlow && (a + b > (double) Double.MAX_VALUE) || (a + b < -Double.MAX_VALUE )) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'BigDecimal'", "'double/Double'"));
+		    }
+		}
+		
+		public void checkedIADD(double a, int b, boolean checkTypeOverFlow, boolean checkUlp) {
+		
+		    if (checkTypeOverFlow && (a + b > (double) Double.MAX_VALUE) || (a + b < -Double.MAX_VALUE )) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'BigDecimal'", "'double/Double'"));
+		    }
+		}
+		
+		public void checkedIADD(double a, float b, boolean checkTypeOverFlow, boolean checkUlp) {
+		
+			if(checkUlp) {
+			    double minAddedValue = Math.ulp(a);
+			    if (minAddedValue > Math.abs(b)) {
+			        throw new RuntimeException(buildPrecisionMessage(String.valueOf(a), String.valueOf(a), "'BigDecimal'", "'double/Double'"));
+			    }
+			}
+		
+		    if (checkTypeOverFlow && (a + b > (double) Double.MAX_VALUE) || (a + b < -Double.MAX_VALUE )) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'BigDecimal'", "'double/Double'"));
+		    }
+		}
+		
+		private String buildOverflowMessage(String a, String b, String advicedTypes, String originalType) {
+		    return "Type overflow when adding " + b + " to " + a
+		    + ", to resolve this problem, increase the precision by using "+ advicedTypes +" type in place of "+ originalType +".";
+		}
+		
+		private String buildPrecisionMessage(String a, String b, String advicedTypes, String originalType) {
+		    return "The double precision is unsufficient to add the value " + b + " to " + a
+		    + ", to resolve this problem, increase the precision by using "+ advicedTypes +" type in place of "+ originalType +".";
+		}
+
+	} // G_OutBegin_AggR_144
+
+	UtilClass_tAggregateRow_5 utilClass_tAggregateRow_5 = new UtilClass_tAggregateRow_5();
+
+	
+
+	class AggOperationStruct_tAggregateRow_5 { // G_OutBegin_AggR_100
+
+		private static final int DEFAULT_HASHCODE = 1;
+	    private static final int PRIME = 31;
+	    private int hashCode = DEFAULT_HASHCODE;
+	    public boolean hashCodeDirty = true;
+
+    				java.util.Date OrderDate;
+    				String CountryRegion;
+    				String StateProvince;
+    				String City;
+    				String SalesOrign;
+    				String SalesPerson;BigDecimal TotalDue_sum;
+           			
+        
+	    @Override
+		public int hashCode() {
+			if (this.hashCodeDirty) {
+				final int prime = PRIME;
+				int result = DEFAULT_HASHCODE;
+		
+							result = prime * result + ((this.OrderDate == null) ? 0 : this.OrderDate.hashCode());
+							
+							result = prime * result + ((this.CountryRegion == null) ? 0 : this.CountryRegion.hashCode());
+							
+							result = prime * result + ((this.StateProvince == null) ? 0 : this.StateProvince.hashCode());
+							
+							result = prime * result + ((this.City == null) ? 0 : this.City.hashCode());
+							
+							result = prime * result + ((this.SalesOrign == null) ? 0 : this.SalesOrign.hashCode());
+							
+							result = prime * result + ((this.SalesPerson == null) ? 0 : this.SalesPerson.hashCode());
+							
+	    		this.hashCode = result;
+	    		this.hashCodeDirty = false;		
+			}
+			return this.hashCode;
+		}
+		
+		@Override
+		public boolean equals(Object obj) {
+			if (this == obj) return true;
+			if (obj == null) return false;
+			if (getClass() != obj.getClass()) return false;
+			final AggOperationStruct_tAggregateRow_5 other = (AggOperationStruct_tAggregateRow_5) obj;
+			
+							if (this.OrderDate == null) {
+								if (other.OrderDate != null) 
+									return false;
+							} else if (!this.OrderDate.equals(other.OrderDate)) 
+								return false;
+						
+							if (this.CountryRegion == null) {
+								if (other.CountryRegion != null) 
+									return false;
+							} else if (!this.CountryRegion.equals(other.CountryRegion)) 
+								return false;
+						
+							if (this.StateProvince == null) {
+								if (other.StateProvince != null) 
+									return false;
+							} else if (!this.StateProvince.equals(other.StateProvince)) 
+								return false;
+						
+							if (this.City == null) {
+								if (other.City != null) 
+									return false;
+							} else if (!this.City.equals(other.City)) 
+								return false;
+						
+							if (this.SalesOrign == null) {
+								if (other.SalesOrign != null) 
+									return false;
+							} else if (!this.SalesOrign.equals(other.SalesOrign)) 
+								return false;
+						
+							if (this.SalesPerson == null) {
+								if (other.SalesPerson != null) 
+									return false;
+							} else if (!this.SalesPerson.equals(other.SalesPerson)) 
+								return false;
+						
+			
+			return true;
+		}
+  
+        
+	} // G_OutBegin_AggR_100
+
+	AggOperationStruct_tAggregateRow_5 operation_result_tAggregateRow_5 = null;
+	AggOperationStruct_tAggregateRow_5 operation_finder_tAggregateRow_5 = new AggOperationStruct_tAggregateRow_5();
+	java.util.Map<AggOperationStruct_tAggregateRow_5,AggOperationStruct_tAggregateRow_5> hash_tAggregateRow_5 = new java.util.HashMap<AggOperationStruct_tAggregateRow_5,AggOperationStruct_tAggregateRow_5>();
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_5_AGGOUT begin ] stop
+ */
+
+
+
+	
+	/**
+	 * [tMap_5 begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tMap_5", false);
+		start_Hash.put("tMap_5", System.currentTimeMillis());
+		
+	
+	currentComponent="tMap_5";
+
+	
+					if(execStat) {
+						runStat.updateStatOnConnection(resourceMap,iterateId,0,0,"row5");
+					}
+				
+		int tos_count_tMap_5 = 0;
+		
+
+
+
+
+// ###############################
+// # Lookup's keys initialization
+	
+		org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row8Struct> tHash_Lookup_row8 = (org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row8Struct>) 
+				((org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row8Struct>) 
+					globalMap.get( "tHash_Lookup_row8" ))
+					;					
+					
+	
+
+row8Struct row8HashKey = new row8Struct();
+row8Struct row8Default = new row8Struct();
+	
+		org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row6Struct> tHash_Lookup_row6 = (org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row6Struct>) 
+				((org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row6Struct>) 
+					globalMap.get( "tHash_Lookup_row6" ))
+					;					
+					
+	
+
+row6Struct row6HashKey = new row6Struct();
+row6Struct row6Default = new row6Struct();
+// ###############################        
+
+// ###############################
+// # Vars initialization
+class  Var__tMap_5__Struct  {
+}
+Var__tMap_5__Struct Var__tMap_5 = new Var__tMap_5__Struct();
+// ###############################
+
+// ###############################
+// # Outputs initialization
+copyOfcopyOfrpSalesStruct copyOfcopyOfrpSales_tmp = new copyOfcopyOfrpSalesStruct();
+// ###############################
+
+        
+        
+
+
+
+        
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+/**
+ * [tMap_5 begin ] stop
+ */
+
+
+
+	
+	/**
+	 * [tFileInputDelimited_15 begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tFileInputDelimited_15", false);
+		start_Hash.put("tFileInputDelimited_15", System.currentTimeMillis());
+		
+	
+	currentComponent="tFileInputDelimited_15";
+
+	
+		int tos_count_tFileInputDelimited_15 = 0;
+		
+	
+	
+	
+ 
+	
+	
+	final routines.system.RowState rowstate_tFileInputDelimited_15 = new routines.system.RowState();
+	
+	
+				int nb_line_tFileInputDelimited_15 = 0;
+				org.talend.fileprocess.FileInputDelimited fid_tFileInputDelimited_15 = null;
+				int limit_tFileInputDelimited_15 = -1;
+				try{
+					
+						Object filename_tFileInputDelimited_15 = "D:/DataLake/Harmonized/HA_salesOrderHeader_"+TalendDate.getDate("YYYY-MM-DD")+".csv";
+						if(filename_tFileInputDelimited_15 instanceof java.io.InputStream){
+							
+			int footer_value_tFileInputDelimited_15 = 0, random_value_tFileInputDelimited_15 = -1;
+			if(footer_value_tFileInputDelimited_15 >0 || random_value_tFileInputDelimited_15 > 0){
+				throw new java.lang.Exception("When the input source is a stream,footer and random shouldn't be bigger than 0.");				
+			}
+		
+						}
+						try {
+							fid_tFileInputDelimited_15 = new org.talend.fileprocess.FileInputDelimited("D:/DataLake/Harmonized/HA_salesOrderHeader_"+TalendDate.getDate("YYYY-MM-DD")+".csv", "ISO-8859-15",";","\n",true,1,0,
+									limit_tFileInputDelimited_15
+								,-1, false);
+						} catch(java.lang.Exception e) {
+							
+								
+								System.err.println(e.getMessage());
+							
+						}
+					
+				    
+					while (fid_tFileInputDelimited_15!=null && fid_tFileInputDelimited_15.nextRecord()) {
+						rowstate_tFileInputDelimited_15.reset();
+						
+			    						row5 = null;			
+												
+									boolean whetherReject_tFileInputDelimited_15 = false;
+									row5 = new row5Struct();
+									try {
+										
+				int columnIndexWithD_tFileInputDelimited_15 = 0;
+				
+					String temp = ""; 
+				
+					columnIndexWithD_tFileInputDelimited_15 = 0;
+					
+						temp = fid_tFileInputDelimited_15.get(columnIndexWithD_tFileInputDelimited_15);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								row5.SalesOrderID = ParserUtils.parseTo_int(ParserUtils.parseTo_Number(temp, ',', '.'));
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_15) {
+									rowstate_tFileInputDelimited_15.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"SalesOrderID", "row5", temp, ex_tFileInputDelimited_15), ex_tFileInputDelimited_15));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_15.setException(new RuntimeException("Value is empty for column : 'SalesOrderID' in 'row5' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_15 = 1;
+					
+						temp = fid_tFileInputDelimited_15.get(columnIndexWithD_tFileInputDelimited_15);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								row5.RevisionNumber = ParserUtils.parseTo_short(ParserUtils.parseTo_Number(temp, ',', '.'));
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_15) {
+									rowstate_tFileInputDelimited_15.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"RevisionNumber", "row5", temp, ex_tFileInputDelimited_15), ex_tFileInputDelimited_15));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_15.setException(new RuntimeException("Value is empty for column : 'RevisionNumber' in 'row5' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_15 = 2;
+					
+							row5.OrderDate = fid_tFileInputDelimited_15.get(columnIndexWithD_tFileInputDelimited_15);
+						
+				
+					columnIndexWithD_tFileInputDelimited_15 = 3;
+					
+							row5.DueDate = fid_tFileInputDelimited_15.get(columnIndexWithD_tFileInputDelimited_15);
+						
+				
+					columnIndexWithD_tFileInputDelimited_15 = 4;
+					
+							row5.ShipDate = fid_tFileInputDelimited_15.get(columnIndexWithD_tFileInputDelimited_15);
+						
+				
+					columnIndexWithD_tFileInputDelimited_15 = 5;
+					
+						temp = fid_tFileInputDelimited_15.get(columnIndexWithD_tFileInputDelimited_15);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								row5.Status = ParserUtils.parseTo_short(ParserUtils.parseTo_Number(temp, ',', '.'));
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_15) {
+									rowstate_tFileInputDelimited_15.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"Status", "row5", temp, ex_tFileInputDelimited_15), ex_tFileInputDelimited_15));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_15.setException(new RuntimeException("Value is empty for column : 'Status' in 'row5' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_15 = 6;
+					
+						temp = fid_tFileInputDelimited_15.get(columnIndexWithD_tFileInputDelimited_15);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								row5.OnlineOrderFlag = ParserUtils.parseTo_boolean(temp);
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_15) {
+									rowstate_tFileInputDelimited_15.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"OnlineOrderFlag", "row5", temp, ex_tFileInputDelimited_15), ex_tFileInputDelimited_15));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_15.setException(new RuntimeException("Value is empty for column : 'OnlineOrderFlag' in 'row5' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_15 = 7;
+					
+							row5.SalesOrderNumber = fid_tFileInputDelimited_15.get(columnIndexWithD_tFileInputDelimited_15);
+						
+				
+					columnIndexWithD_tFileInputDelimited_15 = 8;
+					
+							row5.PurchaseOrderNumber = fid_tFileInputDelimited_15.get(columnIndexWithD_tFileInputDelimited_15);
+						
+				
+					columnIndexWithD_tFileInputDelimited_15 = 9;
+					
+							row5.AccountNumber = fid_tFileInputDelimited_15.get(columnIndexWithD_tFileInputDelimited_15);
+						
+				
+					columnIndexWithD_tFileInputDelimited_15 = 10;
+					
+						temp = fid_tFileInputDelimited_15.get(columnIndexWithD_tFileInputDelimited_15);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								row5.CustomerID = ParserUtils.parseTo_int(ParserUtils.parseTo_Number(temp, ',', '.'));
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_15) {
+									rowstate_tFileInputDelimited_15.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"CustomerID", "row5", temp, ex_tFileInputDelimited_15), ex_tFileInputDelimited_15));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_15.setException(new RuntimeException("Value is empty for column : 'CustomerID' in 'row5' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_15 = 11;
+					
+						temp = fid_tFileInputDelimited_15.get(columnIndexWithD_tFileInputDelimited_15);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								row5.ShipToAddressID = ParserUtils.parseTo_Integer(ParserUtils.parseTo_Number(temp, ',', '.'));
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_15) {
+									rowstate_tFileInputDelimited_15.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"ShipToAddressID", "row5", temp, ex_tFileInputDelimited_15), ex_tFileInputDelimited_15));
+								}
+    							
+						} else {						
+							
+								
+									row5.ShipToAddressID = null;
+								
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_15 = 12;
+					
+						temp = fid_tFileInputDelimited_15.get(columnIndexWithD_tFileInputDelimited_15);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								row5.BillToAddressID = ParserUtils.parseTo_Integer(ParserUtils.parseTo_Number(temp, ',', '.'));
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_15) {
+									rowstate_tFileInputDelimited_15.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"BillToAddressID", "row5", temp, ex_tFileInputDelimited_15), ex_tFileInputDelimited_15));
+								}
+    							
+						} else {						
+							
+								
+									row5.BillToAddressID = null;
+								
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_15 = 13;
+					
+							row5.ShipMethod = fid_tFileInputDelimited_15.get(columnIndexWithD_tFileInputDelimited_15);
+						
+				
+					columnIndexWithD_tFileInputDelimited_15 = 14;
+					
+							row5.CreditCardApprovalCode = fid_tFileInputDelimited_15.get(columnIndexWithD_tFileInputDelimited_15);
+						
+				
+					columnIndexWithD_tFileInputDelimited_15 = 15;
+					
+							row5.SubTotal = fid_tFileInputDelimited_15.get(columnIndexWithD_tFileInputDelimited_15);
+						
+				
+					columnIndexWithD_tFileInputDelimited_15 = 16;
+					
+							row5.TaxAmt = fid_tFileInputDelimited_15.get(columnIndexWithD_tFileInputDelimited_15);
+						
+				
+					columnIndexWithD_tFileInputDelimited_15 = 17;
+					
+							row5.Freight = fid_tFileInputDelimited_15.get(columnIndexWithD_tFileInputDelimited_15);
+						
+				
+					columnIndexWithD_tFileInputDelimited_15 = 18;
+					
+						temp = fid_tFileInputDelimited_15.get(columnIndexWithD_tFileInputDelimited_15);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								row5.TotalDue = ParserUtils.parseTo_float(ParserUtils.parseTo_Number(temp, ',', '.'));
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_15) {
+									rowstate_tFileInputDelimited_15.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"TotalDue", "row5", temp, ex_tFileInputDelimited_15), ex_tFileInputDelimited_15));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_15.setException(new RuntimeException("Value is empty for column : 'TotalDue' in 'row5' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+				
+										
+										if(rowstate_tFileInputDelimited_15.getException()!=null) {
+											throw rowstate_tFileInputDelimited_15.getException();
+										}
+										
+										
+							
+			    					} catch (java.lang.Exception e) {
+			        					whetherReject_tFileInputDelimited_15 = true;
+			        					
+			                					System.err.println(e.getMessage());
+			                					row5 = null;
+			                				
+			    					}
+								
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_15 begin ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_15 main ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_15";
+
+	
+
+ 
+
+
+	tos_count_tFileInputDelimited_15++;
+
+/**
+ * [tFileInputDelimited_15 main ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_15 process_data_begin ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_15";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_15 process_data_begin ] stop
+ */
+// Start of branch "row5"
+if(row5 != null) { 
+
+
+
+	
+	/**
+	 * [tMap_5 main ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_5";
+
+	
+					if(execStat){
+						runStat.updateStatOnConnection(iterateId,1,1,"row5");
+					}
+					
+
+		
+		
+		boolean hasCasePrimitiveKeyWithNull_tMap_5 = false;
+		
+        // ###############################
+        // # Input tables (lookups)
+		  boolean rejectedInnerJoin_tMap_5 = false;
+		  boolean mainRowRejected_tMap_5 = false;
+            				    								  
+		
+
+				///////////////////////////////////////////////
+				// Starting Lookup Table "row8" 
+				///////////////////////////////////////////////
+
+
+				
+				
+                            
+ 					    boolean forceLooprow8 = false;
+       		  	    	
+       		  	    	
+ 							row8Struct row8ObjectFromLookup = null;
+                          
+		           		  	if(!rejectedInnerJoin_tMap_5) { // G_TM_M_020
+
+								
+								hasCasePrimitiveKeyWithNull_tMap_5 = false;
+								
+	                        		    	Object exprKeyValue_row8__AddressID = row5.BillToAddressID ;
+	                        		    	if(exprKeyValue_row8__AddressID == null) {
+	                        		    		hasCasePrimitiveKeyWithNull_tMap_5 = true;
+	                        		    	} else {
+                        		    			row8HashKey.AddressID = (int)(Integer) exprKeyValue_row8__AddressID;
+                        		    		}
+                        		    		
+
+								
+		                        	row8HashKey.hashCodeDirty = true;
+                        		
+	  					
+	  							
+	
+		  							if(!hasCasePrimitiveKeyWithNull_tMap_5) { // G_TM_M_091
+		  							
+			  					
+			  					
+			  					
+	  					
+		  							tHash_Lookup_row8.lookup( row8HashKey );
+
+	  							
+
+	  							
+
+			  						} // G_TM_M_091
+			  						
+			  					
+
+ 								
+		  				
+	  								
+						
+									
+  									  		
+ 								
+
+
+
+							} // G_TM_M_020
+			           		  	  
+							
+				           		if(tHash_Lookup_row8 != null && tHash_Lookup_row8.getCount(row8HashKey) > 1) { // G 071
+			  							
+			  						
+									 		
+									//System.out.println("WARNING: UNIQUE MATCH is configured for the lookup 'row8' and it contains more one result from keys :  row8.AddressID = '" + row8HashKey.AddressID + "'");
+								} // G 071
+							
+
+							row8Struct row8 = null;
+                    		  	 
+							   
+                    		  	 
+	       		  	    	row8Struct fromLookup_row8 = null;
+							row8 = row8Default;
+										 
+							
+								 
+							
+							
+								if (tHash_Lookup_row8 !=null && tHash_Lookup_row8.hasNext()) { // G 099
+								
+							
+								
+								fromLookup_row8 = tHash_Lookup_row8.next();
+
+							
+							
+								} // G 099
+							
+							
+
+							if(fromLookup_row8 != null) {
+								row8 = fromLookup_row8;
+							}
+							
+							
+							
+			  							
+								
+	                    		  	
+		                    
+	            	
+	           	
+	            	
+	            	
+	            
+
+				///////////////////////////////////////////////
+				// Starting Lookup Table "row6" 
+				///////////////////////////////////////////////
+
+
+				
+				
+                            
+ 					    boolean forceLooprow6 = false;
+       		  	    	
+       		  	    	
+ 							row6Struct row6ObjectFromLookup = null;
+                          
+		           		  	if(!rejectedInnerJoin_tMap_5) { // G_TM_M_020
+
+								
+								hasCasePrimitiveKeyWithNull_tMap_5 = false;
+								
+	                        		    	Object exprKeyValue_row6__CustomerID = row5.CustomerID ;
+	                        		    	if(exprKeyValue_row6__CustomerID == null) {
+	                        		    		hasCasePrimitiveKeyWithNull_tMap_5 = true;
+	                        		    	} else {
+                        		    			row6HashKey.CustomerID = (int)(Integer) exprKeyValue_row6__CustomerID;
+                        		    		}
+                        		    		
+
+								
+		                        	row6HashKey.hashCodeDirty = true;
+                        		
+	  					
+	  							
+	
+		  							if(!hasCasePrimitiveKeyWithNull_tMap_5) { // G_TM_M_091
+		  							
+			  					
+			  					
+			  					
+	  					
+		  							tHash_Lookup_row6.lookup( row6HashKey );
+
+	  							
+
+	  							
+
+			  						} // G_TM_M_091
+			  						
+			  					
+
+ 								
+		  				
+	  								
+						
+									
+  									  		
+ 								
+
+
+
+							} // G_TM_M_020
+			           		  	  
+							
+				           		if(tHash_Lookup_row6 != null && tHash_Lookup_row6.getCount(row6HashKey) > 1) { // G 071
+			  							
+			  						
+									 		
+									//System.out.println("WARNING: UNIQUE MATCH is configured for the lookup 'row6' and it contains more one result from keys :  row6.CustomerID = '" + row6HashKey.CustomerID + "'");
+								} // G 071
+							
+
+							row6Struct row6 = null;
+                    		  	 
+							   
+                    		  	 
+	       		  	    	row6Struct fromLookup_row6 = null;
+							row6 = row6Default;
+										 
+							
+								 
+							
+							
+								if (tHash_Lookup_row6 !=null && tHash_Lookup_row6.hasNext()) { // G 099
+								
+							
+								
+								fromLookup_row6 = tHash_Lookup_row6.next();
+
+							
+							
+								} // G 099
+							
+							
+
+							if(fromLookup_row6 != null) {
+								row6 = fromLookup_row6;
+							}
+							
+							
+							
+			  							
+								
+	                    		  	
+		                    
+	            	
+	            	
+	            // ###############################
+        { // start of Var scope
+        
+	        // ###############################
+        	// # Vars tables
+        
+Var__tMap_5__Struct Var = Var__tMap_5;// ###############################
+        // ###############################
+        // # Output tables
+
+copyOfcopyOfrpSales = null;
+
+
+// # Output table : 'copyOfcopyOfrpSales'
+copyOfcopyOfrpSales_tmp.OrderDate = TalendDate.parseDate("yyyy-MM-dd",row5.OrderDate);
+copyOfcopyOfrpSales_tmp.CountryRegion = row8.CountryRegion ;
+copyOfcopyOfrpSales_tmp.StateProvince = row8.StateProvince ;
+copyOfcopyOfrpSales_tmp.City = row8.City ;
+copyOfcopyOfrpSales_tmp.SalesOrign = row5.OnlineOrderFlag == false ? "Venda Offline" : "Venda Online";
+copyOfcopyOfrpSales_tmp.SalesPerson = row6.SalesPerson ;
+copyOfcopyOfrpSales_tmp.TotalDue = row5.TotalDue ;
+copyOfcopyOfrpSales = copyOfcopyOfrpSales_tmp;
+// ###############################
+
+} // end of Var scope
+
+rejectedInnerJoin_tMap_5 = false;
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+	tos_count_tMap_5++;
+
+/**
+ * [tMap_5 main ] stop
+ */
+	
+	/**
+	 * [tMap_5 process_data_begin ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_5";
+
+	
+
+ 
+
+
+
+/**
+ * [tMap_5 process_data_begin ] stop
+ */
+// Start of branch "copyOfcopyOfrpSales"
+if(copyOfcopyOfrpSales != null) { 
+
+
+
+	
+	/**
+	 * [tAggregateRow_5_AGGOUT main ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_5";
+	
+	currentComponent="tAggregateRow_5_AGGOUT";
+
+	
+					if(execStat){
+						runStat.updateStatOnConnection(iterateId,1,1,"copyOfcopyOfrpSales");
+					}
+					
+	
+operation_finder_tAggregateRow_5.OrderDate = copyOfcopyOfrpSales.OrderDate;
+			operation_finder_tAggregateRow_5.CountryRegion = copyOfcopyOfrpSales.CountryRegion;
+			operation_finder_tAggregateRow_5.StateProvince = copyOfcopyOfrpSales.StateProvince;
+			operation_finder_tAggregateRow_5.City = copyOfcopyOfrpSales.City;
+			operation_finder_tAggregateRow_5.SalesOrign = copyOfcopyOfrpSales.SalesOrign;
+			operation_finder_tAggregateRow_5.SalesPerson = copyOfcopyOfrpSales.SalesPerson;
+			
+
+	operation_finder_tAggregateRow_5.hashCodeDirty = true;
+	
+	operation_result_tAggregateRow_5 = hash_tAggregateRow_5.get(operation_finder_tAggregateRow_5);
+
+	
+
+	if(operation_result_tAggregateRow_5 == null) { // G_OutMain_AggR_001
+
+		operation_result_tAggregateRow_5 = new AggOperationStruct_tAggregateRow_5();
+
+		operation_result_tAggregateRow_5.OrderDate = operation_finder_tAggregateRow_5.OrderDate;
+				operation_result_tAggregateRow_5.CountryRegion = operation_finder_tAggregateRow_5.CountryRegion;
+				operation_result_tAggregateRow_5.StateProvince = operation_finder_tAggregateRow_5.StateProvince;
+				operation_result_tAggregateRow_5.City = operation_finder_tAggregateRow_5.City;
+				operation_result_tAggregateRow_5.SalesOrign = operation_finder_tAggregateRow_5.SalesOrign;
+				operation_result_tAggregateRow_5.SalesPerson = operation_finder_tAggregateRow_5.SalesPerson;
+				
+		
+		
+
+		hash_tAggregateRow_5.put(operation_result_tAggregateRow_5, operation_result_tAggregateRow_5);
+	
+	} // G_OutMain_AggR_001
+
+
+	
+					if(operation_result_tAggregateRow_5.TotalDue_sum == null) {
+						operation_result_tAggregateRow_5.TotalDue_sum = new BigDecimal(0).setScale(4);
+					}
+					operation_result_tAggregateRow_5.TotalDue_sum = operation_result_tAggregateRow_5.TotalDue_sum.add(
+						new BigDecimal(
+							String.valueOf(
+								copyOfcopyOfrpSales.TotalDue
+							)
+						)
+					);
+					
+
+
+ 
+
+
+	tos_count_tAggregateRow_5_AGGOUT++;
+
+/**
+ * [tAggregateRow_5_AGGOUT main ] stop
+ */
+	
+	/**
+	 * [tAggregateRow_5_AGGOUT process_data_begin ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_5";
+	
+	currentComponent="tAggregateRow_5_AGGOUT";
+
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_5_AGGOUT process_data_begin ] stop
+ */
+	
+	/**
+	 * [tAggregateRow_5_AGGOUT process_data_end ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_5";
+	
+	currentComponent="tAggregateRow_5_AGGOUT";
+
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_5_AGGOUT process_data_end ] stop
+ */
+
+} // End of branch "copyOfcopyOfrpSales"
+
+
+
+
+	
+	/**
+	 * [tMap_5 process_data_end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_5";
+
+	
+
+ 
+
+
+
+/**
+ * [tMap_5 process_data_end ] stop
+ */
+
+} // End of branch "row5"
+
+
+
+
+	
+	/**
+	 * [tFileInputDelimited_15 process_data_end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_15";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_15 process_data_end ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_15 end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_15";
+
+	
+
+
+
+            }
+            }finally{
+                if(!((Object)("D:/DataLake/Harmonized/HA_salesOrderHeader_"+TalendDate.getDate("YYYY-MM-DD")+".csv") instanceof java.io.InputStream)){
+                	if(fid_tFileInputDelimited_15!=null){
+                		fid_tFileInputDelimited_15.close();
+                	}
+                }
+                if(fid_tFileInputDelimited_15!=null){
+                	globalMap.put("tFileInputDelimited_15_NB_LINE", fid_tFileInputDelimited_15.getRowNumber());
+					
+                }
+			}
+			  
+
+ 
+
+ok_Hash.put("tFileInputDelimited_15", true);
+end_Hash.put("tFileInputDelimited_15", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tFileInputDelimited_15 end ] stop
+ */
+
+	
+	/**
+	 * [tMap_5 end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_5";
+
+	
+
+
+// ###############################
+// # Lookup hashes releasing
+					if(tHash_Lookup_row8 != null) {
+						tHash_Lookup_row8.endGet();
+					}
+					globalMap.remove( "tHash_Lookup_row8" );
+
+					
+					
+				
+					if(tHash_Lookup_row6 != null) {
+						tHash_Lookup_row6.endGet();
+					}
+					globalMap.remove( "tHash_Lookup_row6" );
+
+					
+					
+				
+// ###############################      
+
+
+
+
+
+				if(execStat){
+			  		runStat.updateStat(resourceMap,iterateId,2,0,"row5");
+			  	}
+			  	
+ 
+
+ok_Hash.put("tMap_5", true);
+end_Hash.put("tMap_5", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tMap_5 end ] stop
+ */
+
+	
+	/**
+	 * [tAggregateRow_5_AGGOUT end ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_5";
+	
+	currentComponent="tAggregateRow_5_AGGOUT";
+
+	
+
+				if(execStat){
+			  		runStat.updateStat(resourceMap,iterateId,2,0,"copyOfcopyOfrpSales");
+			  	}
+			  	
+ 
+
+ok_Hash.put("tAggregateRow_5_AGGOUT", true);
+end_Hash.put("tAggregateRow_5_AGGOUT", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tAggregateRow_5_AGGOUT end ] stop
+ */
+
+
+	
+	/**
+	 * [tAdvancedHash_max begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tAdvancedHash_max", false);
+		start_Hash.put("tAdvancedHash_max", System.currentTimeMillis());
+		
+	
+	currentComponent="tAdvancedHash_max";
+
+	
+					if(execStat) {
+						runStat.updateStatOnConnection(resourceMap,iterateId,0,0,"max");
+					}
+				
+		int tos_count_tAdvancedHash_max = 0;
+		
+
+			   		// connection name:max
+			   		// source node:tAggregateRow_5_AGGIN - inputs:(OnRowsEnd) outputs:(max,max) | target node:tAdvancedHash_max - inputs:(max) outputs:()
+			   		// linked node: tMap_6 - inputs:(row4,max,min) outputs:(SalesTemp,SalesTemp)
+			   
+			   		org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE matchingModeEnum_max = 
+			   			org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE.UNIQUE_MATCH;
+			   			
+			   
+	   			org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<maxStruct> tHash_Lookup_max =org.talend.designer.components.lookup.memory.AdvancedMemoryLookup.
+	   						<maxStruct>getLookup(matchingModeEnum_max);
+	   						   
+		   	   	   globalMap.put("tHash_Lookup_max", tHash_Lookup_max);
+		   	   	   
+				
+           
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_max begin ] stop
+ */
+
+
+
+	
+	/**
+	 * [tAggregateRow_5_AGGIN begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tAggregateRow_5_AGGIN", false);
+		start_Hash.put("tAggregateRow_5_AGGIN", System.currentTimeMillis());
+		
+	
+		currentVirtualComponent = "tAggregateRow_5";
+	
+	currentComponent="tAggregateRow_5_AGGIN";
+
+	
+		int tos_count_tAggregateRow_5_AGGIN = 0;
+		
+
+java.util.Collection<AggOperationStruct_tAggregateRow_5> values_tAggregateRow_5 = hash_tAggregateRow_5.values();
+
+globalMap.put("tAggregateRow_5_NB_LINE", values_tAggregateRow_5.size());
+
+for(AggOperationStruct_tAggregateRow_5 aggregated_row_tAggregateRow_5 : values_tAggregateRow_5) { // G_AggR_600
+
+
+
+ 
+
+
+
+/**
+ * [tAggregateRow_5_AGGIN begin ] stop
+ */
+	
+	/**
+	 * [tAggregateRow_5_AGGIN main ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_5";
+	
+	currentComponent="tAggregateRow_5_AGGIN";
+
+	
+
+            				    max.OrderDate = aggregated_row_tAggregateRow_5.OrderDate;
+            				    
+            				    max.CountryRegion = aggregated_row_tAggregateRow_5.CountryRegion;
+            				    
+            				    max.StateProvince = aggregated_row_tAggregateRow_5.StateProvince;
+            				    
+            				    max.City = aggregated_row_tAggregateRow_5.City;
+            				    
+            				    max.SalesOrign = aggregated_row_tAggregateRow_5.SalesOrign;
+            				    
+            				    max.SalesPerson = aggregated_row_tAggregateRow_5.SalesPerson;
+            				    
+    								if(aggregated_row_tAggregateRow_5.TotalDue_sum != null) {
+    								max.TotalDue = aggregated_row_tAggregateRow_5.TotalDue_sum.floatValue();
+										
+    								}else{
+    								
+    									max.TotalDue = 0;
+    									
+    								}
+    								
+
+ 
+
+
+	tos_count_tAggregateRow_5_AGGIN++;
+
+/**
+ * [tAggregateRow_5_AGGIN main ] stop
+ */
+	
+	/**
+	 * [tAggregateRow_5_AGGIN process_data_begin ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_5";
+	
+	currentComponent="tAggregateRow_5_AGGIN";
+
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_5_AGGIN process_data_begin ] stop
+ */
+
+	
+	/**
+	 * [tAdvancedHash_max main ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_max";
+
+	
+					if(execStat){
+						runStat.updateStatOnConnection(iterateId,1,1,"max");
+					}
+					
+
+
+			   
+			   
+
+					maxStruct max_HashRow = new maxStruct();
+		   	   	   
+				
+				max_HashRow.OrderDate = max.OrderDate;
+				
+				max_HashRow.CountryRegion = max.CountryRegion;
+				
+				max_HashRow.StateProvince = max.StateProvince;
+				
+				max_HashRow.City = max.City;
+				
+				max_HashRow.SalesOrign = max.SalesOrign;
+				
+				max_HashRow.SalesPerson = max.SalesPerson;
+				
+				max_HashRow.TotalDue = max.TotalDue;
+				
+			tHash_Lookup_max.put(max_HashRow);
+			
+            
+
+
+
+
+ 
+
+
+	tos_count_tAdvancedHash_max++;
+
+/**
+ * [tAdvancedHash_max main ] stop
+ */
+	
+	/**
+	 * [tAdvancedHash_max process_data_begin ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_max";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_max process_data_begin ] stop
+ */
+	
+	/**
+	 * [tAdvancedHash_max process_data_end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_max";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_max process_data_end ] stop
+ */
+
+
+
+	
+	/**
+	 * [tAggregateRow_5_AGGIN process_data_end ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_5";
+	
+	currentComponent="tAggregateRow_5_AGGIN";
+
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_5_AGGIN process_data_end ] stop
+ */
+	
+	/**
+	 * [tAggregateRow_5_AGGIN end ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_5";
+	
+	currentComponent="tAggregateRow_5_AGGIN";
+
+	
+
+} // G_AggR_600
+
+ 
+
+ok_Hash.put("tAggregateRow_5_AGGIN", true);
+end_Hash.put("tAggregateRow_5_AGGIN", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tAggregateRow_5_AGGIN end ] stop
+ */
+
+	
+	/**
+	 * [tAdvancedHash_max end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_max";
+
+	
+
+tHash_Lookup_max.endPut();
+
+				if(execStat){
+			  		runStat.updateStat(resourceMap,iterateId,2,0,"max");
+			  	}
+			  	
+ 
+
+ok_Hash.put("tAdvancedHash_max", true);
+end_Hash.put("tAdvancedHash_max", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tAdvancedHash_max end ] stop
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+				}//end the resume
+
+				
+
+
+
+	
+			}catch(java.lang.Exception e){	
+				
+				TalendException te = new TalendException(e, currentComponent, globalMap);
+				
+					te.setVirtualComponentName(currentVirtualComponent);
+				
+				throw te;
+			}catch(java.lang.Error error){	
+				
+					runStat.stopThreadStat();
+				
+				throw error;
+			}finally{
+				
+							//free memory for "tAggregateRow_5_AGGIN"
+							globalMap.remove("tAggregateRow_5");
+						
+					     			//free memory for "tMap_5"
+					     			globalMap.remove("tHash_Lookup_row6"); 
+				     			
+					     			//free memory for "tMap_5"
+					     			globalMap.remove("tHash_Lookup_row8"); 
+				     			
+				try{
+					
+	
+	/**
+	 * [tFileInputDelimited_15 finally ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_15";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_15 finally ] stop
+ */
+
+	
+	/**
+	 * [tMap_5 finally ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_5";
+
+	
+
+ 
+
+
+
+/**
+ * [tMap_5 finally ] stop
+ */
+
+	
+	/**
+	 * [tAggregateRow_5_AGGOUT finally ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_5";
+	
+	currentComponent="tAggregateRow_5_AGGOUT";
+
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_5_AGGOUT finally ] stop
+ */
+
+	
+	/**
+	 * [tAggregateRow_5_AGGIN finally ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_5";
+	
+	currentComponent="tAggregateRow_5_AGGIN";
+
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_5_AGGIN finally ] stop
+ */
+
+	
+	/**
+	 * [tAdvancedHash_max finally ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_max";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_max finally ] stop
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+				}catch(java.lang.Exception e){	
+					//ignore
+				}catch(java.lang.Error error){
+					//ignore
+				}
+				resourceMap = null;
+			}
+		
+
+		globalMap.put("tFileInputDelimited_15_SUBPROCESS_STATE", 1);
+	}
+	
+
+
+public static class row6Struct implements routines.system.IPersistableComparableLookupRow<row6Struct> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+	protected static final int DEFAULT_HASHCODE = 1;
+    protected static final int PRIME = 31;
+    protected int hashCode = DEFAULT_HASHCODE;
+    public boolean hashCodeDirty = true;
+
+    public String loopKey;
+
+
+
+	
+			    public int CustomerID;
+
+				public int getCustomerID () {
+					return this.CustomerID;
+				}
+				
+			    public boolean NameStyle;
+
+				public boolean getNameStyle () {
+					return this.NameStyle;
+				}
+				
+			    public String Title;
+
+				public String getTitle () {
+					return this.Title;
+				}
+				
+			    public String FirstName;
+
+				public String getFirstName () {
+					return this.FirstName;
+				}
+				
+			    public String MiddleName;
+
+				public String getMiddleName () {
+					return this.MiddleName;
+				}
+				
+			    public String LastName;
+
+				public String getLastName () {
+					return this.LastName;
+				}
+				
+			    public String Suffix;
+
+				public String getSuffix () {
+					return this.Suffix;
+				}
+				
+			    public String CompanyName;
+
+				public String getCompanyName () {
+					return this.CompanyName;
+				}
+				
+			    public String SalesPerson;
+
+				public String getSalesPerson () {
+					return this.SalesPerson;
+				}
+				
+			    public String EmailAddress;
+
+				public String getEmailAddress () {
+					return this.EmailAddress;
+				}
+				
+			    public String Phone;
+
+				public String getPhone () {
+					return this.Phone;
+				}
+				
+
+
+	@Override
+	public int hashCode() {
+		if (this.hashCodeDirty) {
+			final int prime = PRIME;
+			int result = DEFAULT_HASHCODE;
+	
+							result = prime * result + (int) this.CustomerID;
+						
+    		this.hashCode = result;
+    		this.hashCodeDirty = false;
+		}
+		return this.hashCode;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) return true;
+		if (obj == null) return false;
+		if (getClass() != obj.getClass()) return false;
+		final row6Struct other = (row6Struct) obj;
+		
+						if (this.CustomerID != other.CustomerID)
+							return false;
+					
+
+		return true;
+    }
+
+	public void copyDataTo(row6Struct other) {
+
+		other.CustomerID = this.CustomerID;
+	            other.NameStyle = this.NameStyle;
+	            other.Title = this.Title;
+	            other.FirstName = this.FirstName;
+	            other.MiddleName = this.MiddleName;
+	            other.LastName = this.LastName;
+	            other.Suffix = this.Suffix;
+	            other.CompanyName = this.CompanyName;
+	            other.SalesPerson = this.SalesPerson;
+	            other.EmailAddress = this.EmailAddress;
+	            other.Phone = this.Phone;
+	            
+	}
+
+	public void copyKeysDataTo(row6Struct other) {
+
+		other.CustomerID = this.CustomerID;
+	            	
+	}
+
+
+
+
+	private String readString(DataInputStream dis, ObjectInputStream ois) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			byte[] byteArray = new byte[length];
+			dis.read(byteArray);
+			strReturn = new String(byteArray, utf8Charset);
+		}
+		return strReturn;
+	}
+
+	private void writeString(String str, DataOutputStream dos, ObjectOutputStream oos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+	}
+
+    public void readKeysData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+			        this.CustomerID = dis.readInt();
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeKeysData(ObjectOutputStream dos) {
+        try {
+
+		
+					// int
+				
+		            	dos.writeInt(this.CustomerID);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+
+    /**
+     * Fill Values data by reading ObjectInputStream.
+     */
+    public void readValuesData(DataInputStream dis, ObjectInputStream ois) {
+        try {
+
+			int length = 0;
+		
+			            this.NameStyle = dis.readBoolean();
+					
+						this.Title = readString(dis,ois);
+					
+						this.FirstName = readString(dis,ois);
+					
+						this.MiddleName = readString(dis,ois);
+					
+						this.LastName = readString(dis,ois);
+					
+						this.Suffix = readString(dis,ois);
+					
+						this.CompanyName = readString(dis,ois);
+					
+						this.SalesPerson = readString(dis,ois);
+					
+						this.EmailAddress = readString(dis,ois);
+					
+						this.Phone = readString(dis,ois);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+    }
+
+    /**
+     * Return a byte array which represents Values data.
+     */
+    public void writeValuesData(DataOutputStream dos, ObjectOutputStream oos) {
+        try {
+
+		
+		            	dos.writeBoolean(this.NameStyle);
+					
+						writeString(this.Title, dos, oos);
+					
+						writeString(this.FirstName, dos, oos);
+					
+						writeString(this.MiddleName, dos, oos);
+					
+						writeString(this.LastName, dos, oos);
+					
+						writeString(this.Suffix, dos, oos);
+					
+						writeString(this.CompanyName, dos, oos);
+					
+						writeString(this.SalesPerson, dos, oos);
+					
+						writeString(this.EmailAddress, dos, oos);
+					
+						writeString(this.Phone, dos, oos);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        	}
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("CustomerID="+String.valueOf(CustomerID));
+		sb.append(",NameStyle="+String.valueOf(NameStyle));
+		sb.append(",Title="+Title);
+		sb.append(",FirstName="+FirstName);
+		sb.append(",MiddleName="+MiddleName);
+		sb.append(",LastName="+LastName);
+		sb.append(",Suffix="+Suffix);
+		sb.append(",CompanyName="+CompanyName);
+		sb.append(",SalesPerson="+SalesPerson);
+		sb.append(",EmailAddress="+EmailAddress);
+		sb.append(",Phone="+Phone);
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(row6Struct other) {
+
+		int returnValue = -1;
+		
+						returnValue = checkNullsAndCompare(this.CustomerID, other.CustomerID);
+						if(returnValue != 0) {
+							return returnValue;
+						}
+
+					
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
+public void tFileInputDelimited_16Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+	globalMap.put("tFileInputDelimited_16_SUBPROCESS_STATE", 0);
+
+ final boolean execStat = this.execStat;
+	
+		String iterateId = "";
+	
+	
+	String currentComponent = "";
+	java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
+
+	try {
+			// TDI-39566 avoid throwing an useless Exception
+			boolean resumeIt = true;
+			if (globalResumeTicket == false && resumeEntryMethodName != null) {
+				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
+				resumeIt = resumeEntryMethodName.equals(currentMethodName);
+			}
+			if (resumeIt || globalResumeTicket) { //start the resume
+				globalResumeTicket = true;
+
+
+
+		row6Struct row6 = new row6Struct();
+
+
+
+
+	
+	/**
+	 * [tAdvancedHash_row6 begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tAdvancedHash_row6", false);
+		start_Hash.put("tAdvancedHash_row6", System.currentTimeMillis());
+		
+	
+	currentComponent="tAdvancedHash_row6";
+
+	
+					if(execStat) {
+						runStat.updateStatOnConnection(resourceMap,iterateId,0,0,"row6");
+					}
+				
+		int tos_count_tAdvancedHash_row6 = 0;
+		
+
+			   		// connection name:row6
+			   		// source node:tFileInputDelimited_16 - inputs:(after_tFileInputDelimited_15) outputs:(row6,row6) | target node:tAdvancedHash_row6 - inputs:(row6) outputs:()
+			   		// linked node: tMap_5 - inputs:(row5,row6,row8) outputs:(copyOfcopyOfrpSales)
+			   
+			   		org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE matchingModeEnum_row6 = 
+			   			org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE.UNIQUE_MATCH;
+			   			
+			   
+	   			org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row6Struct> tHash_Lookup_row6 =org.talend.designer.components.lookup.memory.AdvancedMemoryLookup.
+	   						<row6Struct>getLookup(matchingModeEnum_row6);
+	   						   
+		   	   	   globalMap.put("tHash_Lookup_row6", tHash_Lookup_row6);
+		   	   	   
+				
+           
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_row6 begin ] stop
+ */
+
+
+
+	
+	/**
+	 * [tFileInputDelimited_16 begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tFileInputDelimited_16", false);
+		start_Hash.put("tFileInputDelimited_16", System.currentTimeMillis());
+		
+	
+	currentComponent="tFileInputDelimited_16";
+
+	
+		int tos_count_tFileInputDelimited_16 = 0;
+		
+	
+	
+	
+ 
+	
+	
+	final routines.system.RowState rowstate_tFileInputDelimited_16 = new routines.system.RowState();
+	
+	
+				int nb_line_tFileInputDelimited_16 = 0;
+				org.talend.fileprocess.FileInputDelimited fid_tFileInputDelimited_16 = null;
+				int limit_tFileInputDelimited_16 = -1;
+				try{
+					
+						Object filename_tFileInputDelimited_16 = "D:/DataLake/Harmonized/HA_customer_"+TalendDate.getDate("YYYY-MM-DD")+".csv";
+						if(filename_tFileInputDelimited_16 instanceof java.io.InputStream){
+							
+			int footer_value_tFileInputDelimited_16 = 0, random_value_tFileInputDelimited_16 = -1;
+			if(footer_value_tFileInputDelimited_16 >0 || random_value_tFileInputDelimited_16 > 0){
+				throw new java.lang.Exception("When the input source is a stream,footer and random shouldn't be bigger than 0.");				
+			}
+		
+						}
+						try {
+							fid_tFileInputDelimited_16 = new org.talend.fileprocess.FileInputDelimited("D:/DataLake/Harmonized/HA_customer_"+TalendDate.getDate("YYYY-MM-DD")+".csv", "ISO-8859-15",";","\n",true,1,0,
+									limit_tFileInputDelimited_16
+								,-1, false);
+						} catch(java.lang.Exception e) {
+							
+								
+								System.err.println(e.getMessage());
+							
+						}
+					
+				    
+					while (fid_tFileInputDelimited_16!=null && fid_tFileInputDelimited_16.nextRecord()) {
+						rowstate_tFileInputDelimited_16.reset();
+						
+			    						row6 = null;			
+									
+			    						row6 = null;			
+												
+									boolean whetherReject_tFileInputDelimited_16 = false;
+									row6 = new row6Struct();
+									try {
+										
+				int columnIndexWithD_tFileInputDelimited_16 = 0;
+				
+					String temp = ""; 
+				
+					columnIndexWithD_tFileInputDelimited_16 = 0;
+					
+						temp = fid_tFileInputDelimited_16.get(columnIndexWithD_tFileInputDelimited_16);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								row6.CustomerID = ParserUtils.parseTo_int(temp);
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_16) {
+									rowstate_tFileInputDelimited_16.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"CustomerID", "row6", temp, ex_tFileInputDelimited_16), ex_tFileInputDelimited_16));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_16.setException(new RuntimeException("Value is empty for column : 'CustomerID' in 'row6' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_16 = 1;
+					
+						temp = fid_tFileInputDelimited_16.get(columnIndexWithD_tFileInputDelimited_16);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								row6.NameStyle = ParserUtils.parseTo_boolean(temp);
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_16) {
+									rowstate_tFileInputDelimited_16.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"NameStyle", "row6", temp, ex_tFileInputDelimited_16), ex_tFileInputDelimited_16));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_16.setException(new RuntimeException("Value is empty for column : 'NameStyle' in 'row6' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_16 = 2;
+					
+							row6.Title = fid_tFileInputDelimited_16.get(columnIndexWithD_tFileInputDelimited_16);
+						
+				
+					columnIndexWithD_tFileInputDelimited_16 = 3;
+					
+							row6.FirstName = fid_tFileInputDelimited_16.get(columnIndexWithD_tFileInputDelimited_16);
+						
+				
+					columnIndexWithD_tFileInputDelimited_16 = 4;
+					
+							row6.MiddleName = fid_tFileInputDelimited_16.get(columnIndexWithD_tFileInputDelimited_16);
+						
+				
+					columnIndexWithD_tFileInputDelimited_16 = 5;
+					
+							row6.LastName = fid_tFileInputDelimited_16.get(columnIndexWithD_tFileInputDelimited_16);
+						
+				
+					columnIndexWithD_tFileInputDelimited_16 = 6;
+					
+							row6.Suffix = fid_tFileInputDelimited_16.get(columnIndexWithD_tFileInputDelimited_16);
+						
+				
+					columnIndexWithD_tFileInputDelimited_16 = 7;
+					
+							row6.CompanyName = fid_tFileInputDelimited_16.get(columnIndexWithD_tFileInputDelimited_16);
+						
+				
+					columnIndexWithD_tFileInputDelimited_16 = 8;
+					
+							row6.SalesPerson = fid_tFileInputDelimited_16.get(columnIndexWithD_tFileInputDelimited_16);
+						
+				
+					columnIndexWithD_tFileInputDelimited_16 = 9;
+					
+							row6.EmailAddress = fid_tFileInputDelimited_16.get(columnIndexWithD_tFileInputDelimited_16);
+						
+				
+					columnIndexWithD_tFileInputDelimited_16 = 10;
+					
+							row6.Phone = fid_tFileInputDelimited_16.get(columnIndexWithD_tFileInputDelimited_16);
+						
+				
+				
+										
+										if(rowstate_tFileInputDelimited_16.getException()!=null) {
+											throw rowstate_tFileInputDelimited_16.getException();
+										}
+										
+										
+							
+			    					} catch (java.lang.Exception e) {
+			        					whetherReject_tFileInputDelimited_16 = true;
+			        					
+			                					System.err.println(e.getMessage());
+			                					row6 = null;
+			                				
+			    					}
+								
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_16 begin ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_16 main ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_16";
+
+	
+
+ 
+
+
+	tos_count_tFileInputDelimited_16++;
+
+/**
+ * [tFileInputDelimited_16 main ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_16 process_data_begin ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_16";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_16 process_data_begin ] stop
+ */
+// Start of branch "row6"
+if(row6 != null) { 
+
+
+
+	
+	/**
+	 * [tAdvancedHash_row6 main ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_row6";
+
+	
+					if(execStat){
+						runStat.updateStatOnConnection(iterateId,1,1,"row6");
+					}
+					
+
+
+			   
+			   
+
+					row6Struct row6_HashRow = new row6Struct();
+		   	   	   
+				
+				row6_HashRow.CustomerID = row6.CustomerID;
+				
+				row6_HashRow.NameStyle = row6.NameStyle;
+				
+				row6_HashRow.Title = row6.Title;
+				
+				row6_HashRow.FirstName = row6.FirstName;
+				
+				row6_HashRow.MiddleName = row6.MiddleName;
+				
+				row6_HashRow.LastName = row6.LastName;
+				
+				row6_HashRow.Suffix = row6.Suffix;
+				
+				row6_HashRow.CompanyName = row6.CompanyName;
+				
+				row6_HashRow.SalesPerson = row6.SalesPerson;
+				
+				row6_HashRow.EmailAddress = row6.EmailAddress;
+				
+				row6_HashRow.Phone = row6.Phone;
+				
+			tHash_Lookup_row6.put(row6_HashRow);
+			
+            
+
+
+
+
+ 
+
+
+	tos_count_tAdvancedHash_row6++;
+
+/**
+ * [tAdvancedHash_row6 main ] stop
+ */
+	
+	/**
+	 * [tAdvancedHash_row6 process_data_begin ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_row6";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_row6 process_data_begin ] stop
+ */
+	
+	/**
+	 * [tAdvancedHash_row6 process_data_end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_row6";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_row6 process_data_end ] stop
+ */
+
+} // End of branch "row6"
+
+
+
+
+	
+	/**
+	 * [tFileInputDelimited_16 process_data_end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_16";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_16 process_data_end ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_16 end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_16";
+
+	
+
+
+
+            }
+            }finally{
+                if(!((Object)("D:/DataLake/Harmonized/HA_customer_"+TalendDate.getDate("YYYY-MM-DD")+".csv") instanceof java.io.InputStream)){
+                	if(fid_tFileInputDelimited_16!=null){
+                		fid_tFileInputDelimited_16.close();
+                	}
+                }
+                if(fid_tFileInputDelimited_16!=null){
+                	globalMap.put("tFileInputDelimited_16_NB_LINE", fid_tFileInputDelimited_16.getRowNumber());
+					
+                }
+			}
+			  
+
+ 
+
+ok_Hash.put("tFileInputDelimited_16", true);
+end_Hash.put("tFileInputDelimited_16", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tFileInputDelimited_16 end ] stop
+ */
+
+	
+	/**
+	 * [tAdvancedHash_row6 end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_row6";
+
+	
+
+tHash_Lookup_row6.endPut();
+
+				if(execStat){
+			  		runStat.updateStat(resourceMap,iterateId,2,0,"row6");
+			  	}
+			  	
+ 
+
+ok_Hash.put("tAdvancedHash_row6", true);
+end_Hash.put("tAdvancedHash_row6", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tAdvancedHash_row6 end ] stop
+ */
+
+
+
+				}//end the resume
+
+				
+
+
+
+	
+			}catch(java.lang.Exception e){	
+				
+				TalendException te = new TalendException(e, currentComponent, globalMap);
+				
+				throw te;
+			}catch(java.lang.Error error){	
+				
+					runStat.stopThreadStat();
+				
+				throw error;
+			}finally{
+				
+				try{
+					
+	
+	/**
+	 * [tFileInputDelimited_16 finally ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_16";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_16 finally ] stop
+ */
+
+	
+	/**
+	 * [tAdvancedHash_row6 finally ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_row6";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_row6 finally ] stop
+ */
+
+
+
+				}catch(java.lang.Exception e){	
+					//ignore
+				}catch(java.lang.Error error){
+					//ignore
+				}
+				resourceMap = null;
+			}
+		
+
+		globalMap.put("tFileInputDelimited_16_SUBPROCESS_STATE", 1);
+	}
+	
+
+
+public static class row8Struct implements routines.system.IPersistableComparableLookupRow<row8Struct> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+	protected static final int DEFAULT_HASHCODE = 1;
+    protected static final int PRIME = 31;
+    protected int hashCode = DEFAULT_HASHCODE;
+    public boolean hashCodeDirty = true;
+
+    public String loopKey;
+
+
+
+	
+			    public int AddressID;
+
+				public int getAddressID () {
+					return this.AddressID;
+				}
+				
+			    public String AddressLine1;
+
+				public String getAddressLine1 () {
+					return this.AddressLine1;
+				}
+				
+			    public String AddressLine2;
+
+				public String getAddressLine2 () {
+					return this.AddressLine2;
+				}
+				
+			    public String StateProvince;
+
+				public String getStateProvince () {
+					return this.StateProvince;
+				}
+				
+			    public String CountryRegion;
+
+				public String getCountryRegion () {
+					return this.CountryRegion;
+				}
+				
+			    public String City;
+
+				public String getCity () {
+					return this.City;
+				}
+				
+			    public String PostalCode;
+
+				public String getPostalCode () {
+					return this.PostalCode;
+				}
+				
+
+
+	@Override
+	public int hashCode() {
+		if (this.hashCodeDirty) {
+			final int prime = PRIME;
+			int result = DEFAULT_HASHCODE;
+	
+							result = prime * result + (int) this.AddressID;
+						
+    		this.hashCode = result;
+    		this.hashCodeDirty = false;
+		}
+		return this.hashCode;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) return true;
+		if (obj == null) return false;
+		if (getClass() != obj.getClass()) return false;
+		final row8Struct other = (row8Struct) obj;
+		
+						if (this.AddressID != other.AddressID)
+							return false;
+					
+
+		return true;
+    }
+
+	public void copyDataTo(row8Struct other) {
+
+		other.AddressID = this.AddressID;
+	            other.AddressLine1 = this.AddressLine1;
+	            other.AddressLine2 = this.AddressLine2;
+	            other.StateProvince = this.StateProvince;
+	            other.CountryRegion = this.CountryRegion;
+	            other.City = this.City;
+	            other.PostalCode = this.PostalCode;
+	            
+	}
+
+	public void copyKeysDataTo(row8Struct other) {
+
+		other.AddressID = this.AddressID;
+	            	
+	}
+
+
+
+
+	private String readString(DataInputStream dis, ObjectInputStream ois) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			byte[] byteArray = new byte[length];
+			dis.read(byteArray);
+			strReturn = new String(byteArray, utf8Charset);
+		}
+		return strReturn;
+	}
+
+	private void writeString(String str, DataOutputStream dos, ObjectOutputStream oos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+	}
+
+    public void readKeysData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+			        this.AddressID = dis.readInt();
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeKeysData(ObjectOutputStream dos) {
+        try {
+
+		
+					// int
+				
+		            	dos.writeInt(this.AddressID);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+
+    /**
+     * Fill Values data by reading ObjectInputStream.
+     */
+    public void readValuesData(DataInputStream dis, ObjectInputStream ois) {
+        try {
+
+			int length = 0;
+		
+						this.AddressLine1 = readString(dis,ois);
+					
+						this.AddressLine2 = readString(dis,ois);
+					
+						this.StateProvince = readString(dis,ois);
+					
+						this.CountryRegion = readString(dis,ois);
+					
+						this.City = readString(dis,ois);
+					
+						this.PostalCode = readString(dis,ois);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+    }
+
+    /**
+     * Return a byte array which represents Values data.
+     */
+    public void writeValuesData(DataOutputStream dos, ObjectOutputStream oos) {
+        try {
+
+		
+						writeString(this.AddressLine1, dos, oos);
+					
+						writeString(this.AddressLine2, dos, oos);
+					
+						writeString(this.StateProvince, dos, oos);
+					
+						writeString(this.CountryRegion, dos, oos);
+					
+						writeString(this.City, dos, oos);
+					
+						writeString(this.PostalCode, dos, oos);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        	}
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("AddressID="+String.valueOf(AddressID));
+		sb.append(",AddressLine1="+AddressLine1);
+		sb.append(",AddressLine2="+AddressLine2);
+		sb.append(",StateProvince="+StateProvince);
+		sb.append(",CountryRegion="+CountryRegion);
+		sb.append(",City="+City);
+		sb.append(",PostalCode="+PostalCode);
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(row8Struct other) {
+
+		int returnValue = -1;
+		
+						returnValue = checkNullsAndCompare(this.AddressID, other.AddressID);
+						if(returnValue != 0) {
+							return returnValue;
+						}
+
+					
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
+public void tFileInputDelimited_17Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+	globalMap.put("tFileInputDelimited_17_SUBPROCESS_STATE", 0);
+
+ final boolean execStat = this.execStat;
+	
+		String iterateId = "";
+	
+	
+	String currentComponent = "";
+	java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
+
+	try {
+			// TDI-39566 avoid throwing an useless Exception
+			boolean resumeIt = true;
+			if (globalResumeTicket == false && resumeEntryMethodName != null) {
+				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
+				resumeIt = resumeEntryMethodName.equals(currentMethodName);
+			}
+			if (resumeIt || globalResumeTicket) { //start the resume
+				globalResumeTicket = true;
+
+
+
+		row8Struct row8 = new row8Struct();
+
+
+
+
+	
+	/**
+	 * [tAdvancedHash_row8 begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tAdvancedHash_row8", false);
+		start_Hash.put("tAdvancedHash_row8", System.currentTimeMillis());
+		
+	
+	currentComponent="tAdvancedHash_row8";
+
+	
+					if(execStat) {
+						runStat.updateStatOnConnection(resourceMap,iterateId,0,0,"row8");
+					}
+				
+		int tos_count_tAdvancedHash_row8 = 0;
+		
+
+			   		// connection name:row8
+			   		// source node:tFileInputDelimited_17 - inputs:(after_tFileInputDelimited_15) outputs:(row8,row8) | target node:tAdvancedHash_row8 - inputs:(row8) outputs:()
+			   		// linked node: tMap_5 - inputs:(row5,row6,row8) outputs:(copyOfcopyOfrpSales)
+			   
+			   		org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE matchingModeEnum_row8 = 
+			   			org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE.UNIQUE_MATCH;
+			   			
+			   
+	   			org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row8Struct> tHash_Lookup_row8 =org.talend.designer.components.lookup.memory.AdvancedMemoryLookup.
+	   						<row8Struct>getLookup(matchingModeEnum_row8);
+	   						   
+		   	   	   globalMap.put("tHash_Lookup_row8", tHash_Lookup_row8);
+		   	   	   
+				
+           
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_row8 begin ] stop
+ */
+
+
+
+	
+	/**
+	 * [tFileInputDelimited_17 begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tFileInputDelimited_17", false);
+		start_Hash.put("tFileInputDelimited_17", System.currentTimeMillis());
+		
+	
+	currentComponent="tFileInputDelimited_17";
+
+	
+		int tos_count_tFileInputDelimited_17 = 0;
+		
+	
+	
+	
+ 
+	
+	
+	final routines.system.RowState rowstate_tFileInputDelimited_17 = new routines.system.RowState();
+	
+	
+				int nb_line_tFileInputDelimited_17 = 0;
+				org.talend.fileprocess.FileInputDelimited fid_tFileInputDelimited_17 = null;
+				int limit_tFileInputDelimited_17 = -1;
+				try{
+					
+						Object filename_tFileInputDelimited_17 = "D:/DataLake/Harmonized/HA_address_"+TalendDate.getDate("YYYY-MM-DD")+".csv";
+						if(filename_tFileInputDelimited_17 instanceof java.io.InputStream){
+							
+			int footer_value_tFileInputDelimited_17 = 0, random_value_tFileInputDelimited_17 = -1;
+			if(footer_value_tFileInputDelimited_17 >0 || random_value_tFileInputDelimited_17 > 0){
+				throw new java.lang.Exception("When the input source is a stream,footer and random shouldn't be bigger than 0.");				
+			}
+		
+						}
+						try {
+							fid_tFileInputDelimited_17 = new org.talend.fileprocess.FileInputDelimited("D:/DataLake/Harmonized/HA_address_"+TalendDate.getDate("YYYY-MM-DD")+".csv", "ISO-8859-15",";","\n",true,1,0,
+									limit_tFileInputDelimited_17
+								,-1, false);
+						} catch(java.lang.Exception e) {
+							
+								
+								System.err.println(e.getMessage());
+							
+						}
+					
+				    
+					while (fid_tFileInputDelimited_17!=null && fid_tFileInputDelimited_17.nextRecord()) {
+						rowstate_tFileInputDelimited_17.reset();
+						
+			    						row8 = null;			
+									
+			    						row8 = null;			
+												
+									boolean whetherReject_tFileInputDelimited_17 = false;
+									row8 = new row8Struct();
+									try {
+										
+				int columnIndexWithD_tFileInputDelimited_17 = 0;
+				
+					String temp = ""; 
+				
+					columnIndexWithD_tFileInputDelimited_17 = 0;
+					
+						temp = fid_tFileInputDelimited_17.get(columnIndexWithD_tFileInputDelimited_17);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								row8.AddressID = ParserUtils.parseTo_int(temp);
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_17) {
+									rowstate_tFileInputDelimited_17.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"AddressID", "row8", temp, ex_tFileInputDelimited_17), ex_tFileInputDelimited_17));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_17.setException(new RuntimeException("Value is empty for column : 'AddressID' in 'row8' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_17 = 1;
+					
+							row8.AddressLine1 = fid_tFileInputDelimited_17.get(columnIndexWithD_tFileInputDelimited_17);
+						
+				
+					columnIndexWithD_tFileInputDelimited_17 = 2;
+					
+							row8.AddressLine2 = fid_tFileInputDelimited_17.get(columnIndexWithD_tFileInputDelimited_17);
+						
+				
+					columnIndexWithD_tFileInputDelimited_17 = 3;
+					
+							row8.StateProvince = fid_tFileInputDelimited_17.get(columnIndexWithD_tFileInputDelimited_17);
+						
+				
+					columnIndexWithD_tFileInputDelimited_17 = 4;
+					
+							row8.CountryRegion = fid_tFileInputDelimited_17.get(columnIndexWithD_tFileInputDelimited_17);
+						
+				
+					columnIndexWithD_tFileInputDelimited_17 = 5;
+					
+							row8.City = fid_tFileInputDelimited_17.get(columnIndexWithD_tFileInputDelimited_17);
+						
+				
+					columnIndexWithD_tFileInputDelimited_17 = 6;
+					
+							row8.PostalCode = fid_tFileInputDelimited_17.get(columnIndexWithD_tFileInputDelimited_17);
+						
+				
+				
+										
+										if(rowstate_tFileInputDelimited_17.getException()!=null) {
+											throw rowstate_tFileInputDelimited_17.getException();
+										}
+										
+										
+							
+			    					} catch (java.lang.Exception e) {
+			        					whetherReject_tFileInputDelimited_17 = true;
+			        					
+			                					System.err.println(e.getMessage());
+			                					row8 = null;
+			                				
+			    					}
+								
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_17 begin ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_17 main ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_17";
+
+	
+
+ 
+
+
+	tos_count_tFileInputDelimited_17++;
+
+/**
+ * [tFileInputDelimited_17 main ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_17 process_data_begin ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_17";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_17 process_data_begin ] stop
+ */
+// Start of branch "row8"
+if(row8 != null) { 
+
+
+
+	
+	/**
+	 * [tAdvancedHash_row8 main ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_row8";
+
+	
+					if(execStat){
+						runStat.updateStatOnConnection(iterateId,1,1,"row8");
+					}
+					
+
+
+			   
+			   
+
+					row8Struct row8_HashRow = new row8Struct();
+		   	   	   
+				
+				row8_HashRow.AddressID = row8.AddressID;
+				
+				row8_HashRow.AddressLine1 = row8.AddressLine1;
+				
+				row8_HashRow.AddressLine2 = row8.AddressLine2;
+				
+				row8_HashRow.StateProvince = row8.StateProvince;
+				
+				row8_HashRow.CountryRegion = row8.CountryRegion;
+				
+				row8_HashRow.City = row8.City;
+				
+				row8_HashRow.PostalCode = row8.PostalCode;
+				
+			tHash_Lookup_row8.put(row8_HashRow);
+			
+            
+
+
+
+
+ 
+
+
+	tos_count_tAdvancedHash_row8++;
+
+/**
+ * [tAdvancedHash_row8 main ] stop
+ */
+	
+	/**
+	 * [tAdvancedHash_row8 process_data_begin ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_row8";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_row8 process_data_begin ] stop
+ */
+	
+	/**
+	 * [tAdvancedHash_row8 process_data_end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_row8";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_row8 process_data_end ] stop
+ */
+
+} // End of branch "row8"
+
+
+
+
+	
+	/**
+	 * [tFileInputDelimited_17 process_data_end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_17";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_17 process_data_end ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_17 end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_17";
+
+	
+
+
+
+            }
+            }finally{
+                if(!((Object)("D:/DataLake/Harmonized/HA_address_"+TalendDate.getDate("YYYY-MM-DD")+".csv") instanceof java.io.InputStream)){
+                	if(fid_tFileInputDelimited_17!=null){
+                		fid_tFileInputDelimited_17.close();
+                	}
+                }
+                if(fid_tFileInputDelimited_17!=null){
+                	globalMap.put("tFileInputDelimited_17_NB_LINE", fid_tFileInputDelimited_17.getRowNumber());
+					
+                }
+			}
+			  
+
+ 
+
+ok_Hash.put("tFileInputDelimited_17", true);
+end_Hash.put("tFileInputDelimited_17", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tFileInputDelimited_17 end ] stop
+ */
+
+	
+	/**
+	 * [tAdvancedHash_row8 end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_row8";
+
+	
+
+tHash_Lookup_row8.endPut();
+
+				if(execStat){
+			  		runStat.updateStat(resourceMap,iterateId,2,0,"row8");
+			  	}
+			  	
+ 
+
+ok_Hash.put("tAdvancedHash_row8", true);
+end_Hash.put("tAdvancedHash_row8", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tAdvancedHash_row8 end ] stop
+ */
+
+
+
+				}//end the resume
+
+				
+
+
+
+	
+			}catch(java.lang.Exception e){	
+				
+				TalendException te = new TalendException(e, currentComponent, globalMap);
+				
+				throw te;
+			}catch(java.lang.Error error){	
+				
+					runStat.stopThreadStat();
+				
+				throw error;
+			}finally{
+				
+				try{
+					
+	
+	/**
+	 * [tFileInputDelimited_17 finally ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_17";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_17 finally ] stop
+ */
+
+	
+	/**
+	 * [tAdvancedHash_row8 finally ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_row8";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_row8 finally ] stop
+ */
+
+
+
+				}catch(java.lang.Exception e){	
+					//ignore
+				}catch(java.lang.Error error){
+					//ignore
+				}
+				resourceMap = null;
+			}
+		
+
+		globalMap.put("tFileInputDelimited_17_SUBPROCESS_STATE", 1);
+	}
+	
+
+
+public static class minStruct implements routines.system.IPersistableComparableLookupRow<minStruct> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+	protected static final int DEFAULT_HASHCODE = 1;
+    protected static final int PRIME = 31;
+    protected int hashCode = DEFAULT_HASHCODE;
+    public boolean hashCodeDirty = true;
+
+    public String loopKey;
+
+
+
+	
+			    public java.util.Date OrderDate;
+
+				public java.util.Date getOrderDate () {
+					return this.OrderDate;
+				}
+				
+			    public String CountryRegion;
+
+				public String getCountryRegion () {
+					return this.CountryRegion;
+				}
+				
+			    public String StateProvince;
+
+				public String getStateProvince () {
+					return this.StateProvince;
+				}
+				
+			    public String City;
+
+				public String getCity () {
+					return this.City;
+				}
+				
+			    public String SalesOrign;
+
+				public String getSalesOrign () {
+					return this.SalesOrign;
+				}
+				
+			    public String SalesPerson;
+
+				public String getSalesPerson () {
+					return this.SalesPerson;
+				}
+				
+			    public float TotalDue;
+
+				public float getTotalDue () {
+					return this.TotalDue;
+				}
+				
+
+
+	@Override
+	public int hashCode() {
+		if (this.hashCodeDirty) {
+			final int prime = PRIME;
+			int result = DEFAULT_HASHCODE;
+	
+						result = prime * result + ((this.OrderDate == null) ? 0 : this.OrderDate.hashCode());
+					
+						result = prime * result + ((this.CountryRegion == null) ? 0 : this.CountryRegion.hashCode());
+					
+						result = prime * result + ((this.StateProvince == null) ? 0 : this.StateProvince.hashCode());
+					
+						result = prime * result + ((this.City == null) ? 0 : this.City.hashCode());
+					
+						result = prime * result + ((this.SalesOrign == null) ? 0 : this.SalesOrign.hashCode());
+					
+							result = prime * result + (int) this.TotalDue;
+						
+    		this.hashCode = result;
+    		this.hashCodeDirty = false;
+		}
+		return this.hashCode;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) return true;
+		if (obj == null) return false;
+		if (getClass() != obj.getClass()) return false;
+		final minStruct other = (minStruct) obj;
+		
+						if (this.OrderDate == null) {
+							if (other.OrderDate != null)
+								return false;
+						
+						} else if (!this.OrderDate.equals(other.OrderDate))
+						
+							return false;
+					
+						if (this.CountryRegion == null) {
+							if (other.CountryRegion != null)
+								return false;
+						
+						} else if (!this.CountryRegion.equals(other.CountryRegion))
+						
+							return false;
+					
+						if (this.StateProvince == null) {
+							if (other.StateProvince != null)
+								return false;
+						
+						} else if (!this.StateProvince.equals(other.StateProvince))
+						
+							return false;
+					
+						if (this.City == null) {
+							if (other.City != null)
+								return false;
+						
+						} else if (!this.City.equals(other.City))
+						
+							return false;
+					
+						if (this.SalesOrign == null) {
+							if (other.SalesOrign != null)
+								return false;
+						
+						} else if (!this.SalesOrign.equals(other.SalesOrign))
+						
+							return false;
+					
+						if (this.TotalDue != other.TotalDue)
+							return false;
+					
+
+		return true;
+    }
+
+	public void copyDataTo(minStruct other) {
+
+		other.OrderDate = this.OrderDate;
+	            other.CountryRegion = this.CountryRegion;
+	            other.StateProvince = this.StateProvince;
+	            other.City = this.City;
+	            other.SalesOrign = this.SalesOrign;
+	            other.SalesPerson = this.SalesPerson;
+	            other.TotalDue = this.TotalDue;
+	            
+	}
+
+	public void copyKeysDataTo(minStruct other) {
+
+		other.OrderDate = this.OrderDate;
+	            	other.CountryRegion = this.CountryRegion;
+	            	other.StateProvince = this.StateProvince;
+	            	other.City = this.City;
+	            	other.SalesOrign = this.SalesOrign;
+	            	other.TotalDue = this.TotalDue;
+	            	
+	}
+
+
+
+
+	private java.util.Date readDate(ObjectInputStream dis) throws IOException{
+		java.util.Date dateReturn = null;
+        int length = 0;
+        length = dis.readByte();
+		if (length == -1) {
+			dateReturn = null;
+		} else {
+	    	dateReturn = new Date(dis.readLong());
+		}
+		return dateReturn;
+	}
+
+    private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException{
+		if(date1 == null) {
+            dos.writeByte(-1);
+		} else {
+			dos.writeByte(0);
+	    	dos.writeLong(date1.getTime());
+    	}
+    }
+
+	private String readString(ObjectInputStream dis) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			if(length > commonByteArray_INGESTAODADOS_JobSalesReport.length) {
+				if(length < 1024 && commonByteArray_INGESTAODADOS_JobSalesReport.length == 0) {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[1024];
+				} else {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[2 * length];
+   				}
+			}
+			dis.readFully(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length);
+			strReturn = new String(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length, utf8Charset);
+		}
+		return strReturn;
+	}
+
+    private void writeString(String str, ObjectOutputStream dos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+    }
+
+	private String readString(DataInputStream dis, ObjectInputStream ois) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			byte[] byteArray = new byte[length];
+			dis.read(byteArray);
+			strReturn = new String(byteArray, utf8Charset);
+		}
+		return strReturn;
+	}
+
+	private void writeString(String str, DataOutputStream dos, ObjectOutputStream oos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+	}
+
+    public void readKeysData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+					this.OrderDate = readDate(dis);
+					
+					this.CountryRegion = readString(dis);
+					
+					this.StateProvince = readString(dis);
+					
+					this.City = readString(dis);
+					
+					this.SalesOrign = readString(dis);
+					
+			        this.TotalDue = dis.readFloat();
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeKeysData(ObjectOutputStream dos) {
+        try {
+
+		
+					// java.util.Date
+				
+						writeDate(this.OrderDate,dos);
+					
+					// String
+				
+						writeString(this.CountryRegion,dos);
+					
+					// String
+				
+						writeString(this.StateProvince,dos);
+					
+					// String
+				
+						writeString(this.City,dos);
+					
+					// String
+				
+						writeString(this.SalesOrign,dos);
+					
+					// float
+				
+		            	dos.writeFloat(this.TotalDue);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+
+    /**
+     * Fill Values data by reading ObjectInputStream.
+     */
+    public void readValuesData(DataInputStream dis, ObjectInputStream ois) {
+        try {
+
+			int length = 0;
+		
+						this.SalesPerson = readString(dis,ois);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+    }
+
+    /**
+     * Return a byte array which represents Values data.
+     */
+    public void writeValuesData(DataOutputStream dos, ObjectOutputStream oos) {
+        try {
+
+		
+						writeString(this.SalesPerson, dos, oos);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        	}
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("OrderDate="+String.valueOf(OrderDate));
+		sb.append(",CountryRegion="+CountryRegion);
+		sb.append(",StateProvince="+StateProvince);
+		sb.append(",City="+City);
+		sb.append(",SalesOrign="+SalesOrign);
+		sb.append(",SalesPerson="+SalesPerson);
+		sb.append(",TotalDue="+String.valueOf(TotalDue));
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(minStruct other) {
+
+		int returnValue = -1;
+		
+						returnValue = checkNullsAndCompare(this.OrderDate, other.OrderDate);
+						if(returnValue != 0) {
+							return returnValue;
+						}
+
+					
+						returnValue = checkNullsAndCompare(this.CountryRegion, other.CountryRegion);
+						if(returnValue != 0) {
+							return returnValue;
+						}
+
+					
+						returnValue = checkNullsAndCompare(this.StateProvince, other.StateProvince);
+						if(returnValue != 0) {
+							return returnValue;
+						}
+
+					
+						returnValue = checkNullsAndCompare(this.City, other.City);
+						if(returnValue != 0) {
+							return returnValue;
+						}
+
+					
+						returnValue = checkNullsAndCompare(this.SalesOrign, other.SalesOrign);
+						if(returnValue != 0) {
+							return returnValue;
+						}
+
+					
+						returnValue = checkNullsAndCompare(this.TotalDue, other.TotalDue);
+						if(returnValue != 0) {
+							return returnValue;
+						}
+
+					
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
+
+public static class OnRowsEndStructtAggregateRow_6 implements routines.system.IPersistableRow<OnRowsEndStructtAggregateRow_6> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+
+	
+			    public java.util.Date OrderDate;
+
+				public java.util.Date getOrderDate () {
+					return this.OrderDate;
+				}
+				
+			    public String CountryRegion;
+
+				public String getCountryRegion () {
+					return this.CountryRegion;
+				}
+				
+			    public String StateProvince;
+
+				public String getStateProvince () {
+					return this.StateProvince;
+				}
+				
+			    public String City;
+
+				public String getCity () {
+					return this.City;
+				}
+				
+			    public String SalesOrign;
+
+				public String getSalesOrign () {
+					return this.SalesOrign;
+				}
+				
+			    public String SalesPerson;
+
+				public String getSalesPerson () {
+					return this.SalesPerson;
+				}
+				
+			    public float TotalDue;
+
+				public float getTotalDue () {
+					return this.TotalDue;
+				}
+				
+
+
+
+	private java.util.Date readDate(ObjectInputStream dis) throws IOException{
+		java.util.Date dateReturn = null;
+        int length = 0;
+        length = dis.readByte();
+		if (length == -1) {
+			dateReturn = null;
+		} else {
+	    	dateReturn = new Date(dis.readLong());
+		}
+		return dateReturn;
+	}
+
+    private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException{
+		if(date1 == null) {
+            dos.writeByte(-1);
+		} else {
+			dos.writeByte(0);
+	    	dos.writeLong(date1.getTime());
+    	}
+    }
+
+	private String readString(ObjectInputStream dis) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			if(length > commonByteArray_INGESTAODADOS_JobSalesReport.length) {
+				if(length < 1024 && commonByteArray_INGESTAODADOS_JobSalesReport.length == 0) {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[1024];
+				} else {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[2 * length];
+   				}
+			}
+			dis.readFully(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length);
+			strReturn = new String(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length, utf8Charset);
+		}
+		return strReturn;
+	}
+
+    private void writeString(String str, ObjectOutputStream dos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+    }
+
+    public void readData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+					this.OrderDate = readDate(dis);
+					
+					this.CountryRegion = readString(dis);
+					
+					this.StateProvince = readString(dis);
+					
+					this.City = readString(dis);
+					
+					this.SalesOrign = readString(dis);
+					
+					this.SalesPerson = readString(dis);
+					
+			        this.TotalDue = dis.readFloat();
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeData(ObjectOutputStream dos) {
+        try {
+
+		
+					// java.util.Date
+				
+						writeDate(this.OrderDate,dos);
+					
+					// String
+				
+						writeString(this.CountryRegion,dos);
+					
+					// String
+				
+						writeString(this.StateProvince,dos);
+					
+					// String
+				
+						writeString(this.City,dos);
+					
+					// String
+				
+						writeString(this.SalesOrign,dos);
+					
+					// String
+				
+						writeString(this.SalesPerson,dos);
+					
+					// float
+				
+		            	dos.writeFloat(this.TotalDue);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("OrderDate="+String.valueOf(OrderDate));
+		sb.append(",CountryRegion="+CountryRegion);
+		sb.append(",StateProvince="+StateProvince);
+		sb.append(",City="+City);
+		sb.append(",SalesOrign="+SalesOrign);
+		sb.append(",SalesPerson="+SalesPerson);
+		sb.append(",TotalDue="+String.valueOf(TotalDue));
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(OnRowsEndStructtAggregateRow_6 other) {
+
+		int returnValue = -1;
+		
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
+
+public static class copyOfcopyOfcopyOfrpSalesStruct implements routines.system.IPersistableRow<copyOfcopyOfcopyOfrpSalesStruct> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+
+	
+			    public java.util.Date OrderDate;
+
+				public java.util.Date getOrderDate () {
+					return this.OrderDate;
+				}
+				
+			    public String CountryRegion;
+
+				public String getCountryRegion () {
+					return this.CountryRegion;
+				}
+				
+			    public String StateProvince;
+
+				public String getStateProvince () {
+					return this.StateProvince;
+				}
+				
+			    public String City;
+
+				public String getCity () {
+					return this.City;
+				}
+				
+			    public String SalesOrign;
+
+				public String getSalesOrign () {
+					return this.SalesOrign;
+				}
+				
+			    public String SalesPerson;
+
+				public String getSalesPerson () {
+					return this.SalesPerson;
+				}
+				
+			    public float TotalDue;
+
+				public float getTotalDue () {
+					return this.TotalDue;
+				}
+				
+
+
+
+	private java.util.Date readDate(ObjectInputStream dis) throws IOException{
+		java.util.Date dateReturn = null;
+        int length = 0;
+        length = dis.readByte();
+		if (length == -1) {
+			dateReturn = null;
+		} else {
+	    	dateReturn = new Date(dis.readLong());
+		}
+		return dateReturn;
+	}
+
+    private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException{
+		if(date1 == null) {
+            dos.writeByte(-1);
+		} else {
+			dos.writeByte(0);
+	    	dos.writeLong(date1.getTime());
+    	}
+    }
+
+	private String readString(ObjectInputStream dis) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			if(length > commonByteArray_INGESTAODADOS_JobSalesReport.length) {
+				if(length < 1024 && commonByteArray_INGESTAODADOS_JobSalesReport.length == 0) {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[1024];
+				} else {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[2 * length];
+   				}
+			}
+			dis.readFully(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length);
+			strReturn = new String(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length, utf8Charset);
+		}
+		return strReturn;
+	}
+
+    private void writeString(String str, ObjectOutputStream dos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+    }
+
+    public void readData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+					this.OrderDate = readDate(dis);
+					
+					this.CountryRegion = readString(dis);
+					
+					this.StateProvince = readString(dis);
+					
+					this.City = readString(dis);
+					
+					this.SalesOrign = readString(dis);
+					
+					this.SalesPerson = readString(dis);
+					
+			        this.TotalDue = dis.readFloat();
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeData(ObjectOutputStream dos) {
+        try {
+
+		
+					// java.util.Date
+				
+						writeDate(this.OrderDate,dos);
+					
+					// String
+				
+						writeString(this.CountryRegion,dos);
+					
+					// String
+				
+						writeString(this.StateProvince,dos);
+					
+					// String
+				
+						writeString(this.City,dos);
+					
+					// String
+				
+						writeString(this.SalesOrign,dos);
+					
+					// String
+				
+						writeString(this.SalesPerson,dos);
+					
+					// float
+				
+		            	dos.writeFloat(this.TotalDue);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("OrderDate="+String.valueOf(OrderDate));
+		sb.append(",CountryRegion="+CountryRegion);
+		sb.append(",StateProvince="+StateProvince);
+		sb.append(",City="+City);
+		sb.append(",SalesOrign="+SalesOrign);
+		sb.append(",SalesPerson="+SalesPerson);
+		sb.append(",TotalDue="+String.valueOf(TotalDue));
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(copyOfcopyOfcopyOfrpSalesStruct other) {
+
+		int returnValue = -1;
+		
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
+
+public static class row7Struct implements routines.system.IPersistableRow<row7Struct> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+
+	
+			    public int SalesOrderID;
+
+				public int getSalesOrderID () {
+					return this.SalesOrderID;
+				}
+				
+			    public short RevisionNumber;
+
+				public short getRevisionNumber () {
+					return this.RevisionNumber;
+				}
+				
+			    public String OrderDate;
+
+				public String getOrderDate () {
+					return this.OrderDate;
+				}
+				
+			    public String DueDate;
+
+				public String getDueDate () {
+					return this.DueDate;
+				}
+				
+			    public String ShipDate;
+
+				public String getShipDate () {
+					return this.ShipDate;
+				}
+				
+			    public short Status;
+
+				public short getStatus () {
+					return this.Status;
+				}
+				
+			    public boolean OnlineOrderFlag;
+
+				public boolean getOnlineOrderFlag () {
+					return this.OnlineOrderFlag;
+				}
+				
+			    public String SalesOrderNumber;
+
+				public String getSalesOrderNumber () {
+					return this.SalesOrderNumber;
+				}
+				
+			    public String PurchaseOrderNumber;
+
+				public String getPurchaseOrderNumber () {
+					return this.PurchaseOrderNumber;
+				}
+				
+			    public String AccountNumber;
+
+				public String getAccountNumber () {
+					return this.AccountNumber;
+				}
+				
+			    public int CustomerID;
+
+				public int getCustomerID () {
+					return this.CustomerID;
+				}
+				
+			    public Integer ShipToAddressID;
+
+				public Integer getShipToAddressID () {
+					return this.ShipToAddressID;
+				}
+				
+			    public Integer BillToAddressID;
+
+				public Integer getBillToAddressID () {
+					return this.BillToAddressID;
+				}
+				
+			    public String ShipMethod;
+
+				public String getShipMethod () {
+					return this.ShipMethod;
+				}
+				
+			    public String CreditCardApprovalCode;
+
+				public String getCreditCardApprovalCode () {
+					return this.CreditCardApprovalCode;
+				}
+				
+			    public Object SubTotal;
+
+				public Object getSubTotal () {
+					return this.SubTotal;
+				}
+				
+			    public Object TaxAmt;
+
+				public Object getTaxAmt () {
+					return this.TaxAmt;
+				}
+				
+			    public Object Freight;
+
+				public Object getFreight () {
+					return this.Freight;
+				}
+				
+			    public float TotalDue;
+
+				public float getTotalDue () {
+					return this.TotalDue;
+				}
+				
+
+
+
+	private String readString(ObjectInputStream dis) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			if(length > commonByteArray_INGESTAODADOS_JobSalesReport.length) {
+				if(length < 1024 && commonByteArray_INGESTAODADOS_JobSalesReport.length == 0) {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[1024];
+				} else {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[2 * length];
+   				}
+			}
+			dis.readFully(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length);
+			strReturn = new String(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length, utf8Charset);
+		}
+		return strReturn;
+	}
+
+    private void writeString(String str, ObjectOutputStream dos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+    }
+	private Integer readInteger(ObjectInputStream dis) throws IOException{
+		Integer intReturn;
+        int length = 0;
+        length = dis.readByte();
+		if (length == -1) {
+			intReturn = null;
+		} else {
+	    	intReturn = dis.readInt();
+		}
+		return intReturn;
+	}
+
+	private void writeInteger(Integer intNum, ObjectOutputStream dos) throws IOException{
+		if(intNum == null) {
+            dos.writeByte(-1);
+		} else {
+			dos.writeByte(0);
+	    	dos.writeInt(intNum);
+    	}
+	}
+
+    public void readData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+			        this.SalesOrderID = dis.readInt();
+					
+			        this.RevisionNumber = dis.readShort();
+					
+					this.OrderDate = readString(dis);
+					
+					this.DueDate = readString(dis);
+					
+					this.ShipDate = readString(dis);
+					
+			        this.Status = dis.readShort();
+					
+			        this.OnlineOrderFlag = dis.readBoolean();
+					
+					this.SalesOrderNumber = readString(dis);
+					
+					this.PurchaseOrderNumber = readString(dis);
+					
+					this.AccountNumber = readString(dis);
+					
+			        this.CustomerID = dis.readInt();
+					
+						this.ShipToAddressID = readInteger(dis);
+					
+						this.BillToAddressID = readInteger(dis);
+					
+					this.ShipMethod = readString(dis);
+					
+					this.CreditCardApprovalCode = readString(dis);
+					
+						this.SubTotal = (Object) dis.readObject();
+					
+						this.TaxAmt = (Object) dis.readObject();
+					
+						this.Freight = (Object) dis.readObject();
+					
+			        this.TotalDue = dis.readFloat();
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+			} catch(ClassNotFoundException eCNFE) {
+				 throw new RuntimeException(eCNFE);
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeData(ObjectOutputStream dos) {
+        try {
+
+		
+					// int
+				
+		            	dos.writeInt(this.SalesOrderID);
+					
+					// short
+				
+		            	dos.writeShort(this.RevisionNumber);
+					
+					// String
+				
+						writeString(this.OrderDate,dos);
+					
+					// String
+				
+						writeString(this.DueDate,dos);
+					
+					// String
+				
+						writeString(this.ShipDate,dos);
+					
+					// short
+				
+		            	dos.writeShort(this.Status);
+					
+					// boolean
+				
+		            	dos.writeBoolean(this.OnlineOrderFlag);
+					
+					// String
+				
+						writeString(this.SalesOrderNumber,dos);
+					
+					// String
+				
+						writeString(this.PurchaseOrderNumber,dos);
+					
+					// String
+				
+						writeString(this.AccountNumber,dos);
+					
+					// int
+				
+		            	dos.writeInt(this.CustomerID);
+					
+					// Integer
+				
+						writeInteger(this.ShipToAddressID,dos);
+					
+					// Integer
+				
+						writeInteger(this.BillToAddressID,dos);
+					
+					// String
+				
+						writeString(this.ShipMethod,dos);
+					
+					// String
+				
+						writeString(this.CreditCardApprovalCode,dos);
+					
+					// Object
+				
+       			    	dos.writeObject(this.SubTotal);
+					
+					// Object
+				
+       			    	dos.writeObject(this.TaxAmt);
+					
+					// Object
+				
+       			    	dos.writeObject(this.Freight);
+					
+					// float
+				
+		            	dos.writeFloat(this.TotalDue);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("SalesOrderID="+String.valueOf(SalesOrderID));
+		sb.append(",RevisionNumber="+String.valueOf(RevisionNumber));
+		sb.append(",OrderDate="+OrderDate);
+		sb.append(",DueDate="+DueDate);
+		sb.append(",ShipDate="+ShipDate);
+		sb.append(",Status="+String.valueOf(Status));
+		sb.append(",OnlineOrderFlag="+String.valueOf(OnlineOrderFlag));
+		sb.append(",SalesOrderNumber="+SalesOrderNumber);
+		sb.append(",PurchaseOrderNumber="+PurchaseOrderNumber);
+		sb.append(",AccountNumber="+AccountNumber);
+		sb.append(",CustomerID="+String.valueOf(CustomerID));
+		sb.append(",ShipToAddressID="+String.valueOf(ShipToAddressID));
+		sb.append(",BillToAddressID="+String.valueOf(BillToAddressID));
+		sb.append(",ShipMethod="+ShipMethod);
+		sb.append(",CreditCardApprovalCode="+CreditCardApprovalCode);
+		sb.append(",SubTotal="+String.valueOf(SubTotal));
+		sb.append(",TaxAmt="+String.valueOf(TaxAmt));
+		sb.append(",Freight="+String.valueOf(Freight));
+		sb.append(",TotalDue="+String.valueOf(TotalDue));
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(row7Struct other) {
+
+		int returnValue = -1;
+		
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
+
+public static class after_tFileInputDelimited_18Struct implements routines.system.IPersistableRow<after_tFileInputDelimited_18Struct> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+
+	
+			    public int SalesOrderID;
+
+				public int getSalesOrderID () {
+					return this.SalesOrderID;
+				}
+				
+			    public short RevisionNumber;
+
+				public short getRevisionNumber () {
+					return this.RevisionNumber;
+				}
+				
+			    public String OrderDate;
+
+				public String getOrderDate () {
+					return this.OrderDate;
+				}
+				
+			    public String DueDate;
+
+				public String getDueDate () {
+					return this.DueDate;
+				}
+				
+			    public String ShipDate;
+
+				public String getShipDate () {
+					return this.ShipDate;
+				}
+				
+			    public short Status;
+
+				public short getStatus () {
+					return this.Status;
+				}
+				
+			    public boolean OnlineOrderFlag;
+
+				public boolean getOnlineOrderFlag () {
+					return this.OnlineOrderFlag;
+				}
+				
+			    public String SalesOrderNumber;
+
+				public String getSalesOrderNumber () {
+					return this.SalesOrderNumber;
+				}
+				
+			    public String PurchaseOrderNumber;
+
+				public String getPurchaseOrderNumber () {
+					return this.PurchaseOrderNumber;
+				}
+				
+			    public String AccountNumber;
+
+				public String getAccountNumber () {
+					return this.AccountNumber;
+				}
+				
+			    public int CustomerID;
+
+				public int getCustomerID () {
+					return this.CustomerID;
+				}
+				
+			    public Integer ShipToAddressID;
+
+				public Integer getShipToAddressID () {
+					return this.ShipToAddressID;
+				}
+				
+			    public Integer BillToAddressID;
+
+				public Integer getBillToAddressID () {
+					return this.BillToAddressID;
+				}
+				
+			    public String ShipMethod;
+
+				public String getShipMethod () {
+					return this.ShipMethod;
+				}
+				
+			    public String CreditCardApprovalCode;
+
+				public String getCreditCardApprovalCode () {
+					return this.CreditCardApprovalCode;
+				}
+				
+			    public Object SubTotal;
+
+				public Object getSubTotal () {
+					return this.SubTotal;
+				}
+				
+			    public Object TaxAmt;
+
+				public Object getTaxAmt () {
+					return this.TaxAmt;
+				}
+				
+			    public Object Freight;
+
+				public Object getFreight () {
+					return this.Freight;
+				}
+				
+			    public float TotalDue;
+
+				public float getTotalDue () {
+					return this.TotalDue;
+				}
+				
+
+
+
+	private String readString(ObjectInputStream dis) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			if(length > commonByteArray_INGESTAODADOS_JobSalesReport.length) {
+				if(length < 1024 && commonByteArray_INGESTAODADOS_JobSalesReport.length == 0) {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[1024];
+				} else {
+   					commonByteArray_INGESTAODADOS_JobSalesReport = new byte[2 * length];
+   				}
+			}
+			dis.readFully(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length);
+			strReturn = new String(commonByteArray_INGESTAODADOS_JobSalesReport, 0, length, utf8Charset);
+		}
+		return strReturn;
+	}
+
+    private void writeString(String str, ObjectOutputStream dos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+    }
+	private Integer readInteger(ObjectInputStream dis) throws IOException{
+		Integer intReturn;
+        int length = 0;
+        length = dis.readByte();
+		if (length == -1) {
+			intReturn = null;
+		} else {
+	    	intReturn = dis.readInt();
+		}
+		return intReturn;
+	}
+
+	private void writeInteger(Integer intNum, ObjectOutputStream dos) throws IOException{
+		if(intNum == null) {
+            dos.writeByte(-1);
+		} else {
+			dos.writeByte(0);
+	    	dos.writeInt(intNum);
+    	}
+	}
+
+    public void readData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+			        this.SalesOrderID = dis.readInt();
+					
+			        this.RevisionNumber = dis.readShort();
+					
+					this.OrderDate = readString(dis);
+					
+					this.DueDate = readString(dis);
+					
+					this.ShipDate = readString(dis);
+					
+			        this.Status = dis.readShort();
+					
+			        this.OnlineOrderFlag = dis.readBoolean();
+					
+					this.SalesOrderNumber = readString(dis);
+					
+					this.PurchaseOrderNumber = readString(dis);
+					
+					this.AccountNumber = readString(dis);
+					
+			        this.CustomerID = dis.readInt();
+					
+						this.ShipToAddressID = readInteger(dis);
+					
+						this.BillToAddressID = readInteger(dis);
+					
+					this.ShipMethod = readString(dis);
+					
+					this.CreditCardApprovalCode = readString(dis);
+					
+						this.SubTotal = (Object) dis.readObject();
+					
+						this.TaxAmt = (Object) dis.readObject();
+					
+						this.Freight = (Object) dis.readObject();
+					
+			        this.TotalDue = dis.readFloat();
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+			} catch(ClassNotFoundException eCNFE) {
+				 throw new RuntimeException(eCNFE);
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeData(ObjectOutputStream dos) {
+        try {
+
+		
+					// int
+				
+		            	dos.writeInt(this.SalesOrderID);
+					
+					// short
+				
+		            	dos.writeShort(this.RevisionNumber);
+					
+					// String
+				
+						writeString(this.OrderDate,dos);
+					
+					// String
+				
+						writeString(this.DueDate,dos);
+					
+					// String
+				
+						writeString(this.ShipDate,dos);
+					
+					// short
+				
+		            	dos.writeShort(this.Status);
+					
+					// boolean
+				
+		            	dos.writeBoolean(this.OnlineOrderFlag);
+					
+					// String
+				
+						writeString(this.SalesOrderNumber,dos);
+					
+					// String
+				
+						writeString(this.PurchaseOrderNumber,dos);
+					
+					// String
+				
+						writeString(this.AccountNumber,dos);
+					
+					// int
+				
+		            	dos.writeInt(this.CustomerID);
+					
+					// Integer
+				
+						writeInteger(this.ShipToAddressID,dos);
+					
+					// Integer
+				
+						writeInteger(this.BillToAddressID,dos);
+					
+					// String
+				
+						writeString(this.ShipMethod,dos);
+					
+					// String
+				
+						writeString(this.CreditCardApprovalCode,dos);
+					
+					// Object
+				
+       			    	dos.writeObject(this.SubTotal);
+					
+					// Object
+				
+       			    	dos.writeObject(this.TaxAmt);
+					
+					// Object
+				
+       			    	dos.writeObject(this.Freight);
+					
+					// float
+				
+		            	dos.writeFloat(this.TotalDue);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("SalesOrderID="+String.valueOf(SalesOrderID));
+		sb.append(",RevisionNumber="+String.valueOf(RevisionNumber));
+		sb.append(",OrderDate="+OrderDate);
+		sb.append(",DueDate="+DueDate);
+		sb.append(",ShipDate="+ShipDate);
+		sb.append(",Status="+String.valueOf(Status));
+		sb.append(",OnlineOrderFlag="+String.valueOf(OnlineOrderFlag));
+		sb.append(",SalesOrderNumber="+SalesOrderNumber);
+		sb.append(",PurchaseOrderNumber="+PurchaseOrderNumber);
+		sb.append(",AccountNumber="+AccountNumber);
+		sb.append(",CustomerID="+String.valueOf(CustomerID));
+		sb.append(",ShipToAddressID="+String.valueOf(ShipToAddressID));
+		sb.append(",BillToAddressID="+String.valueOf(BillToAddressID));
+		sb.append(",ShipMethod="+ShipMethod);
+		sb.append(",CreditCardApprovalCode="+CreditCardApprovalCode);
+		sb.append(",SubTotal="+String.valueOf(SubTotal));
+		sb.append(",TaxAmt="+String.valueOf(TaxAmt));
+		sb.append(",Freight="+String.valueOf(Freight));
+		sb.append(",TotalDue="+String.valueOf(TotalDue));
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(after_tFileInputDelimited_18Struct other) {
+
+		int returnValue = -1;
+		
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
+public void tFileInputDelimited_18Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+	globalMap.put("tFileInputDelimited_18_SUBPROCESS_STATE", 0);
+
+ final boolean execStat = this.execStat;
+		String currentVirtualComponent = null;
+	
+		String iterateId = "";
+	
+	
+	String currentComponent = "";
+	java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
+
+	try {
+			// TDI-39566 avoid throwing an useless Exception
+			boolean resumeIt = true;
+			if (globalResumeTicket == false && resumeEntryMethodName != null) {
+				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
+				resumeIt = resumeEntryMethodName.equals(currentMethodName);
+			}
+			if (resumeIt || globalResumeTicket) { //start the resume
+				globalResumeTicket = true;
+
+
+		tFileInputDelimited_19Process(globalMap);
+		tFileInputDelimited_20Process(globalMap);
+
+		row7Struct row7 = new row7Struct();
+copyOfcopyOfcopyOfrpSalesStruct copyOfcopyOfcopyOfrpSales = new copyOfcopyOfcopyOfrpSalesStruct();
+minStruct min = new minStruct();
+
+
+
+
+
+	
+	/**
+	 * [tAggregateRow_6_AGGOUT begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tAggregateRow_6_AGGOUT", false);
+		start_Hash.put("tAggregateRow_6_AGGOUT", System.currentTimeMillis());
+		
+	
+		currentVirtualComponent = "tAggregateRow_6";
+	
+	currentComponent="tAggregateRow_6_AGGOUT";
+
+	
+					if(execStat) {
+						runStat.updateStatOnConnection(resourceMap,iterateId,0,0,"copyOfcopyOfcopyOfrpSales");
+					}
+				
+		int tos_count_tAggregateRow_6_AGGOUT = 0;
+		
+
+// ------------ Seems it is not used
+
+java.util.Map hashAggreg_tAggregateRow_6 = new java.util.HashMap(); 
+
+// ------------
+
+	class UtilClass_tAggregateRow_6 { // G_OutBegin_AggR_144
+
+		public double sd(Double[] data) {
+	        final int n = data.length;
+        	if (n < 2) {
+	            return Double.NaN;
+        	}
+        	double d1 = 0d;
+        	double d2 =0d;
+	        
+	        for (int i = 0; i < data.length; i++) {
+            	d1 += (data[i]*data[i]);
+            	d2 += data[i];
+        	}
+        
+	        return Math.sqrt((n*d1 - d2*d2)/n/(n-1));
+	    }
+	    
+		public void checkedIADD(byte a, byte b, boolean checkTypeOverFlow, boolean checkUlp) {
+		    byte r = (byte) (a + b);
+		    if (checkTypeOverFlow && ((a ^ r) & (b ^ r)) < 0) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'short/Short'", "'byte/Byte'"));
+		    }
+		}
+		
+		public void checkedIADD(short a, short b, boolean checkTypeOverFlow, boolean checkUlp) {
+		    short r = (short) (a + b);
+		    if (checkTypeOverFlow && ((a ^ r) & (b ^ r)) < 0) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'int/Integer'", "'short/Short'"));
+		    }
+		}
+		
+		public void checkedIADD(int a, int b, boolean checkTypeOverFlow, boolean checkUlp) {
+		    int r = a + b;
+		    if (checkTypeOverFlow && ((a ^ r) & (b ^ r)) < 0) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'long/Long'", "'int/Integer'"));
+		    }
+		}
+		
+		public void checkedIADD(long a, long b, boolean checkTypeOverFlow, boolean checkUlp) {
+		    long r = a + b;
+		    if (checkTypeOverFlow && ((a ^ r) & (b ^ r)) < 0) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'BigDecimal'", "'long/Long'"));
+		    }
+		}
+		
+		public void checkedIADD(float a, float b, boolean checkTypeOverFlow, boolean checkUlp) {
+		
+			if(checkUlp) {
+			    float minAddedValue = Math.ulp(a);
+			    if (minAddedValue > Math.abs(b)) {
+			        throw new RuntimeException(buildPrecisionMessage(String.valueOf(a), String.valueOf(b), "'double' or 'BigDecimal'", "'float/Float'"));
+			    }
+			}
+			
+		    if (checkTypeOverFlow && ((double) a + (double) b > (double) Float.MAX_VALUE) || ((double) a + (double) b < (double) -Float.MAX_VALUE)) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'double' or 'BigDecimal'", "'float/Float'"));
+		    }
+		}
+		
+		public void checkedIADD(double a, double b, boolean checkTypeOverFlow, boolean checkUlp) {
+		
+			if(checkUlp) {
+			    double minAddedValue = Math.ulp(a);
+			    if (minAddedValue > Math.abs(b)) {
+			        throw new RuntimeException(buildPrecisionMessage(String.valueOf(a), String.valueOf(a), "'BigDecimal'", "'double/Double'"));
+			    }
+			}
+		
+		    if (checkTypeOverFlow && (a + b > (double) Double.MAX_VALUE) || (a + b < -Double.MAX_VALUE )) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'BigDecimal'", "'double/Double'"));
+		    }
+		}
+		
+		public void checkedIADD(double a, byte b, boolean checkTypeOverFlow, boolean checkUlp) {
+		
+		    if (checkTypeOverFlow && (a + b > (double) Double.MAX_VALUE) || (a + b < -Double.MAX_VALUE )) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'BigDecimal'", "'double/Double'"));
+		    }
+		}
+		
+		public void checkedIADD(double a, short b, boolean checkTypeOverFlow, boolean checkUlp) {
+		
+		    if (checkTypeOverFlow && (a + b > (double) Double.MAX_VALUE) || (a + b < -Double.MAX_VALUE )) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'BigDecimal'", "'double/Double'"));
+		    }
+		}
+		
+		public void checkedIADD(double a, int b, boolean checkTypeOverFlow, boolean checkUlp) {
+		
+		    if (checkTypeOverFlow && (a + b > (double) Double.MAX_VALUE) || (a + b < -Double.MAX_VALUE )) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'BigDecimal'", "'double/Double'"));
+		    }
+		}
+		
+		public void checkedIADD(double a, float b, boolean checkTypeOverFlow, boolean checkUlp) {
+		
+			if(checkUlp) {
+			    double minAddedValue = Math.ulp(a);
+			    if (minAddedValue > Math.abs(b)) {
+			        throw new RuntimeException(buildPrecisionMessage(String.valueOf(a), String.valueOf(a), "'BigDecimal'", "'double/Double'"));
+			    }
+			}
+		
+		    if (checkTypeOverFlow && (a + b > (double) Double.MAX_VALUE) || (a + b < -Double.MAX_VALUE )) {
+		        throw new RuntimeException(buildOverflowMessage(String.valueOf(a), String.valueOf(b), "'BigDecimal'", "'double/Double'"));
+		    }
+		}
+		
+		private String buildOverflowMessage(String a, String b, String advicedTypes, String originalType) {
+		    return "Type overflow when adding " + b + " to " + a
+		    + ", to resolve this problem, increase the precision by using "+ advicedTypes +" type in place of "+ originalType +".";
+		}
+		
+		private String buildPrecisionMessage(String a, String b, String advicedTypes, String originalType) {
+		    return "The double precision is unsufficient to add the value " + b + " to " + a
+		    + ", to resolve this problem, increase the precision by using "+ advicedTypes +" type in place of "+ originalType +".";
+		}
+
+	} // G_OutBegin_AggR_144
+
+	UtilClass_tAggregateRow_6 utilClass_tAggregateRow_6 = new UtilClass_tAggregateRow_6();
+
+	
+
+	class AggOperationStruct_tAggregateRow_6 { // G_OutBegin_AggR_100
+
+		private static final int DEFAULT_HASHCODE = 1;
+	    private static final int PRIME = 31;
+	    private int hashCode = DEFAULT_HASHCODE;
+	    public boolean hashCodeDirty = true;
+
+    				java.util.Date OrderDate;
+    				String CountryRegion;
+    				String StateProvince;
+    				String City;
+    				String SalesOrign;
+    				String SalesPerson;BigDecimal TotalDue_sum;
+           			
+        
+	    @Override
+		public int hashCode() {
+			if (this.hashCodeDirty) {
+				final int prime = PRIME;
+				int result = DEFAULT_HASHCODE;
+		
+							result = prime * result + ((this.OrderDate == null) ? 0 : this.OrderDate.hashCode());
+							
+							result = prime * result + ((this.CountryRegion == null) ? 0 : this.CountryRegion.hashCode());
+							
+							result = prime * result + ((this.StateProvince == null) ? 0 : this.StateProvince.hashCode());
+							
+							result = prime * result + ((this.City == null) ? 0 : this.City.hashCode());
+							
+							result = prime * result + ((this.SalesOrign == null) ? 0 : this.SalesOrign.hashCode());
+							
+							result = prime * result + ((this.SalesPerson == null) ? 0 : this.SalesPerson.hashCode());
+							
+	    		this.hashCode = result;
+	    		this.hashCodeDirty = false;		
+			}
+			return this.hashCode;
+		}
+		
+		@Override
+		public boolean equals(Object obj) {
+			if (this == obj) return true;
+			if (obj == null) return false;
+			if (getClass() != obj.getClass()) return false;
+			final AggOperationStruct_tAggregateRow_6 other = (AggOperationStruct_tAggregateRow_6) obj;
+			
+							if (this.OrderDate == null) {
+								if (other.OrderDate != null) 
+									return false;
+							} else if (!this.OrderDate.equals(other.OrderDate)) 
+								return false;
+						
+							if (this.CountryRegion == null) {
+								if (other.CountryRegion != null) 
+									return false;
+							} else if (!this.CountryRegion.equals(other.CountryRegion)) 
+								return false;
+						
+							if (this.StateProvince == null) {
+								if (other.StateProvince != null) 
+									return false;
+							} else if (!this.StateProvince.equals(other.StateProvince)) 
+								return false;
+						
+							if (this.City == null) {
+								if (other.City != null) 
+									return false;
+							} else if (!this.City.equals(other.City)) 
+								return false;
+						
+							if (this.SalesOrign == null) {
+								if (other.SalesOrign != null) 
+									return false;
+							} else if (!this.SalesOrign.equals(other.SalesOrign)) 
+								return false;
+						
+							if (this.SalesPerson == null) {
+								if (other.SalesPerson != null) 
+									return false;
+							} else if (!this.SalesPerson.equals(other.SalesPerson)) 
+								return false;
+						
+			
+			return true;
+		}
+  
+        
+	} // G_OutBegin_AggR_100
+
+	AggOperationStruct_tAggregateRow_6 operation_result_tAggregateRow_6 = null;
+	AggOperationStruct_tAggregateRow_6 operation_finder_tAggregateRow_6 = new AggOperationStruct_tAggregateRow_6();
+	java.util.Map<AggOperationStruct_tAggregateRow_6,AggOperationStruct_tAggregateRow_6> hash_tAggregateRow_6 = new java.util.HashMap<AggOperationStruct_tAggregateRow_6,AggOperationStruct_tAggregateRow_6>();
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_6_AGGOUT begin ] stop
+ */
+
+
+
+	
+	/**
+	 * [tMap_7 begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tMap_7", false);
+		start_Hash.put("tMap_7", System.currentTimeMillis());
+		
+	
+	currentComponent="tMap_7";
+
+	
+					if(execStat) {
+						runStat.updateStatOnConnection(resourceMap,iterateId,0,0,"row7");
+					}
+				
+		int tos_count_tMap_7 = 0;
+		
+
+
+
+
+// ###############################
+// # Lookup's keys initialization
+	
+		org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row10Struct> tHash_Lookup_row10 = (org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row10Struct>) 
+				((org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row10Struct>) 
+					globalMap.get( "tHash_Lookup_row10" ))
+					;					
+					
+	
+
+row10Struct row10HashKey = new row10Struct();
+row10Struct row10Default = new row10Struct();
+	
+		org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row9Struct> tHash_Lookup_row9 = (org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row9Struct>) 
+				((org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row9Struct>) 
+					globalMap.get( "tHash_Lookup_row9" ))
+					;					
+					
+	
+
+row9Struct row9HashKey = new row9Struct();
+row9Struct row9Default = new row9Struct();
+// ###############################        
+
+// ###############################
+// # Vars initialization
+class  Var__tMap_7__Struct  {
+}
+Var__tMap_7__Struct Var__tMap_7 = new Var__tMap_7__Struct();
+// ###############################
+
+// ###############################
+// # Outputs initialization
+copyOfcopyOfcopyOfrpSalesStruct copyOfcopyOfcopyOfrpSales_tmp = new copyOfcopyOfcopyOfrpSalesStruct();
+// ###############################
+
+        
+        
+
+
+
+        
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+/**
+ * [tMap_7 begin ] stop
+ */
+
+
+
+	
+	/**
+	 * [tFileInputDelimited_18 begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tFileInputDelimited_18", false);
+		start_Hash.put("tFileInputDelimited_18", System.currentTimeMillis());
+		
+	
+	currentComponent="tFileInputDelimited_18";
+
+	
+		int tos_count_tFileInputDelimited_18 = 0;
+		
+	
+	
+	
+ 
+	
+	
+	final routines.system.RowState rowstate_tFileInputDelimited_18 = new routines.system.RowState();
+	
+	
+				int nb_line_tFileInputDelimited_18 = 0;
+				org.talend.fileprocess.FileInputDelimited fid_tFileInputDelimited_18 = null;
+				int limit_tFileInputDelimited_18 = -1;
+				try{
+					
+						Object filename_tFileInputDelimited_18 = "D:/DataLake/Harmonized/HA_salesOrderHeader_"+TalendDate.getDate("YYYY-MM-DD")+".csv";
+						if(filename_tFileInputDelimited_18 instanceof java.io.InputStream){
+							
+			int footer_value_tFileInputDelimited_18 = 0, random_value_tFileInputDelimited_18 = -1;
+			if(footer_value_tFileInputDelimited_18 >0 || random_value_tFileInputDelimited_18 > 0){
+				throw new java.lang.Exception("When the input source is a stream,footer and random shouldn't be bigger than 0.");				
+			}
+		
+						}
+						try {
+							fid_tFileInputDelimited_18 = new org.talend.fileprocess.FileInputDelimited("D:/DataLake/Harmonized/HA_salesOrderHeader_"+TalendDate.getDate("YYYY-MM-DD")+".csv", "ISO-8859-15",";","\n",true,1,0,
+									limit_tFileInputDelimited_18
+								,-1, false);
+						} catch(java.lang.Exception e) {
+							
+								
+								System.err.println(e.getMessage());
+							
+						}
+					
+				    
+					while (fid_tFileInputDelimited_18!=null && fid_tFileInputDelimited_18.nextRecord()) {
+						rowstate_tFileInputDelimited_18.reset();
+						
+			    						row7 = null;			
+												
+									boolean whetherReject_tFileInputDelimited_18 = false;
+									row7 = new row7Struct();
+									try {
+										
+				int columnIndexWithD_tFileInputDelimited_18 = 0;
+				
+					String temp = ""; 
+				
+					columnIndexWithD_tFileInputDelimited_18 = 0;
+					
+						temp = fid_tFileInputDelimited_18.get(columnIndexWithD_tFileInputDelimited_18);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								row7.SalesOrderID = ParserUtils.parseTo_int(ParserUtils.parseTo_Number(temp, ',', '.'));
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_18) {
+									rowstate_tFileInputDelimited_18.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"SalesOrderID", "row7", temp, ex_tFileInputDelimited_18), ex_tFileInputDelimited_18));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_18.setException(new RuntimeException("Value is empty for column : 'SalesOrderID' in 'row7' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_18 = 1;
+					
+						temp = fid_tFileInputDelimited_18.get(columnIndexWithD_tFileInputDelimited_18);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								row7.RevisionNumber = ParserUtils.parseTo_short(ParserUtils.parseTo_Number(temp, ',', '.'));
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_18) {
+									rowstate_tFileInputDelimited_18.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"RevisionNumber", "row7", temp, ex_tFileInputDelimited_18), ex_tFileInputDelimited_18));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_18.setException(new RuntimeException("Value is empty for column : 'RevisionNumber' in 'row7' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_18 = 2;
+					
+							row7.OrderDate = fid_tFileInputDelimited_18.get(columnIndexWithD_tFileInputDelimited_18);
+						
+				
+					columnIndexWithD_tFileInputDelimited_18 = 3;
+					
+							row7.DueDate = fid_tFileInputDelimited_18.get(columnIndexWithD_tFileInputDelimited_18);
+						
+				
+					columnIndexWithD_tFileInputDelimited_18 = 4;
+					
+							row7.ShipDate = fid_tFileInputDelimited_18.get(columnIndexWithD_tFileInputDelimited_18);
+						
+				
+					columnIndexWithD_tFileInputDelimited_18 = 5;
+					
+						temp = fid_tFileInputDelimited_18.get(columnIndexWithD_tFileInputDelimited_18);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								row7.Status = ParserUtils.parseTo_short(ParserUtils.parseTo_Number(temp, ',', '.'));
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_18) {
+									rowstate_tFileInputDelimited_18.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"Status", "row7", temp, ex_tFileInputDelimited_18), ex_tFileInputDelimited_18));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_18.setException(new RuntimeException("Value is empty for column : 'Status' in 'row7' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_18 = 6;
+					
+						temp = fid_tFileInputDelimited_18.get(columnIndexWithD_tFileInputDelimited_18);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								row7.OnlineOrderFlag = ParserUtils.parseTo_boolean(temp);
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_18) {
+									rowstate_tFileInputDelimited_18.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"OnlineOrderFlag", "row7", temp, ex_tFileInputDelimited_18), ex_tFileInputDelimited_18));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_18.setException(new RuntimeException("Value is empty for column : 'OnlineOrderFlag' in 'row7' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_18 = 7;
+					
+							row7.SalesOrderNumber = fid_tFileInputDelimited_18.get(columnIndexWithD_tFileInputDelimited_18);
+						
+				
+					columnIndexWithD_tFileInputDelimited_18 = 8;
+					
+							row7.PurchaseOrderNumber = fid_tFileInputDelimited_18.get(columnIndexWithD_tFileInputDelimited_18);
+						
+				
+					columnIndexWithD_tFileInputDelimited_18 = 9;
+					
+							row7.AccountNumber = fid_tFileInputDelimited_18.get(columnIndexWithD_tFileInputDelimited_18);
+						
+				
+					columnIndexWithD_tFileInputDelimited_18 = 10;
+					
+						temp = fid_tFileInputDelimited_18.get(columnIndexWithD_tFileInputDelimited_18);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								row7.CustomerID = ParserUtils.parseTo_int(ParserUtils.parseTo_Number(temp, ',', '.'));
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_18) {
+									rowstate_tFileInputDelimited_18.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"CustomerID", "row7", temp, ex_tFileInputDelimited_18), ex_tFileInputDelimited_18));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_18.setException(new RuntimeException("Value is empty for column : 'CustomerID' in 'row7' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_18 = 11;
+					
+						temp = fid_tFileInputDelimited_18.get(columnIndexWithD_tFileInputDelimited_18);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								row7.ShipToAddressID = ParserUtils.parseTo_Integer(ParserUtils.parseTo_Number(temp, ',', '.'));
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_18) {
+									rowstate_tFileInputDelimited_18.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"ShipToAddressID", "row7", temp, ex_tFileInputDelimited_18), ex_tFileInputDelimited_18));
+								}
+    							
+						} else {						
+							
+								
+									row7.ShipToAddressID = null;
+								
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_18 = 12;
+					
+						temp = fid_tFileInputDelimited_18.get(columnIndexWithD_tFileInputDelimited_18);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								row7.BillToAddressID = ParserUtils.parseTo_Integer(ParserUtils.parseTo_Number(temp, ',', '.'));
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_18) {
+									rowstate_tFileInputDelimited_18.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"BillToAddressID", "row7", temp, ex_tFileInputDelimited_18), ex_tFileInputDelimited_18));
+								}
+    							
+						} else {						
+							
+								
+									row7.BillToAddressID = null;
+								
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_18 = 13;
+					
+							row7.ShipMethod = fid_tFileInputDelimited_18.get(columnIndexWithD_tFileInputDelimited_18);
+						
+				
+					columnIndexWithD_tFileInputDelimited_18 = 14;
+					
+							row7.CreditCardApprovalCode = fid_tFileInputDelimited_18.get(columnIndexWithD_tFileInputDelimited_18);
+						
+				
+					columnIndexWithD_tFileInputDelimited_18 = 15;
+					
+							row7.SubTotal = fid_tFileInputDelimited_18.get(columnIndexWithD_tFileInputDelimited_18);
+						
+				
+					columnIndexWithD_tFileInputDelimited_18 = 16;
+					
+							row7.TaxAmt = fid_tFileInputDelimited_18.get(columnIndexWithD_tFileInputDelimited_18);
+						
+				
+					columnIndexWithD_tFileInputDelimited_18 = 17;
+					
+							row7.Freight = fid_tFileInputDelimited_18.get(columnIndexWithD_tFileInputDelimited_18);
+						
+				
+					columnIndexWithD_tFileInputDelimited_18 = 18;
+					
+						temp = fid_tFileInputDelimited_18.get(columnIndexWithD_tFileInputDelimited_18);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								row7.TotalDue = ParserUtils.parseTo_float(ParserUtils.parseTo_Number(temp, ',', '.'));
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_18) {
+									rowstate_tFileInputDelimited_18.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"TotalDue", "row7", temp, ex_tFileInputDelimited_18), ex_tFileInputDelimited_18));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_18.setException(new RuntimeException("Value is empty for column : 'TotalDue' in 'row7' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+				
+										
+										if(rowstate_tFileInputDelimited_18.getException()!=null) {
+											throw rowstate_tFileInputDelimited_18.getException();
+										}
+										
+										
+							
+			    					} catch (java.lang.Exception e) {
+			        					whetherReject_tFileInputDelimited_18 = true;
+			        					
+			                					System.err.println(e.getMessage());
+			                					row7 = null;
+			                				
+			    					}
+								
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_18 begin ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_18 main ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_18";
+
+	
+
+ 
+
+
+	tos_count_tFileInputDelimited_18++;
+
+/**
+ * [tFileInputDelimited_18 main ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_18 process_data_begin ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_18";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_18 process_data_begin ] stop
+ */
+// Start of branch "row7"
+if(row7 != null) { 
+
+
+
+	
+	/**
+	 * [tMap_7 main ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_7";
+
+	
+					if(execStat){
+						runStat.updateStatOnConnection(iterateId,1,1,"row7");
+					}
+					
+
+		
+		
+		boolean hasCasePrimitiveKeyWithNull_tMap_7 = false;
+		
+        // ###############################
+        // # Input tables (lookups)
+		  boolean rejectedInnerJoin_tMap_7 = false;
+		  boolean mainRowRejected_tMap_7 = false;
+            				    								  
+		
+
+				///////////////////////////////////////////////
+				// Starting Lookup Table "row10" 
+				///////////////////////////////////////////////
+
+
+				
+				
+                            
+ 					    boolean forceLooprow10 = false;
+       		  	    	
+       		  	    	
+ 							row10Struct row10ObjectFromLookup = null;
+                          
+		           		  	if(!rejectedInnerJoin_tMap_7) { // G_TM_M_020
+
+								
+								hasCasePrimitiveKeyWithNull_tMap_7 = false;
+								
+	                        		    	Object exprKeyValue_row10__AddressID = row7.BillToAddressID ;
+	                        		    	if(exprKeyValue_row10__AddressID == null) {
+	                        		    		hasCasePrimitiveKeyWithNull_tMap_7 = true;
+	                        		    	} else {
+                        		    			row10HashKey.AddressID = (int)(Integer) exprKeyValue_row10__AddressID;
+                        		    		}
+                        		    		
+
+								
+		                        	row10HashKey.hashCodeDirty = true;
+                        		
+	  					
+	  							
+	
+		  							if(!hasCasePrimitiveKeyWithNull_tMap_7) { // G_TM_M_091
+		  							
+			  					
+			  					
+			  					
+	  					
+		  							tHash_Lookup_row10.lookup( row10HashKey );
+
+	  							
+
+	  							
+
+			  						} // G_TM_M_091
+			  						
+			  					
+
+ 								
+		  				
+	  								
+						
+									
+  									  		
+ 								
+
+
+
+							} // G_TM_M_020
+			           		  	  
+							
+				           		if(tHash_Lookup_row10 != null && tHash_Lookup_row10.getCount(row10HashKey) > 1) { // G 071
+			  							
+			  						
+									 		
+									//System.out.println("WARNING: UNIQUE MATCH is configured for the lookup 'row10' and it contains more one result from keys :  row10.AddressID = '" + row10HashKey.AddressID + "'");
+								} // G 071
+							
+
+							row10Struct row10 = null;
+                    		  	 
+							   
+                    		  	 
+	       		  	    	row10Struct fromLookup_row10 = null;
+							row10 = row10Default;
+										 
+							
+								 
+							
+							
+								if (tHash_Lookup_row10 !=null && tHash_Lookup_row10.hasNext()) { // G 099
+								
+							
+								
+								fromLookup_row10 = tHash_Lookup_row10.next();
+
+							
+							
+								} // G 099
+							
+							
+
+							if(fromLookup_row10 != null) {
+								row10 = fromLookup_row10;
+							}
+							
+							
+							
+			  							
+								
+	                    		  	
+		                    
+	            	
+	           	
+	            	
+	            	
+	            
+
+				///////////////////////////////////////////////
+				// Starting Lookup Table "row9" 
+				///////////////////////////////////////////////
+
+
+				
+				
+                            
+ 					    boolean forceLooprow9 = false;
+       		  	    	
+       		  	    	
+ 							row9Struct row9ObjectFromLookup = null;
+                          
+		           		  	if(!rejectedInnerJoin_tMap_7) { // G_TM_M_020
+
+								
+								hasCasePrimitiveKeyWithNull_tMap_7 = false;
+								
+	                        		    	Object exprKeyValue_row9__CustomerID = row7.CustomerID ;
+	                        		    	if(exprKeyValue_row9__CustomerID == null) {
+	                        		    		hasCasePrimitiveKeyWithNull_tMap_7 = true;
+	                        		    	} else {
+                        		    			row9HashKey.CustomerID = (int)(Integer) exprKeyValue_row9__CustomerID;
+                        		    		}
+                        		    		
+
+								
+		                        	row9HashKey.hashCodeDirty = true;
+                        		
+	  					
+	  							
+	
+		  							if(!hasCasePrimitiveKeyWithNull_tMap_7) { // G_TM_M_091
+		  							
+			  					
+			  					
+			  					
+	  					
+		  							tHash_Lookup_row9.lookup( row9HashKey );
+
+	  							
+
+	  							
+
+			  						} // G_TM_M_091
+			  						
+			  					
+
+ 								
+		  				
+	  								
+						
+									
+  									  		
+ 								
+
+
+
+							} // G_TM_M_020
+			           		  	  
+							
+				           		if(tHash_Lookup_row9 != null && tHash_Lookup_row9.getCount(row9HashKey) > 1) { // G 071
+			  							
+			  						
+									 		
+									//System.out.println("WARNING: UNIQUE MATCH is configured for the lookup 'row9' and it contains more one result from keys :  row9.CustomerID = '" + row9HashKey.CustomerID + "'");
+								} // G 071
+							
+
+							row9Struct row9 = null;
+                    		  	 
+							   
+                    		  	 
+	       		  	    	row9Struct fromLookup_row9 = null;
+							row9 = row9Default;
+										 
+							
+								 
+							
+							
+								if (tHash_Lookup_row9 !=null && tHash_Lookup_row9.hasNext()) { // G 099
+								
+							
+								
+								fromLookup_row9 = tHash_Lookup_row9.next();
+
+							
+							
+								} // G 099
+							
+							
+
+							if(fromLookup_row9 != null) {
+								row9 = fromLookup_row9;
+							}
+							
+							
+							
+			  							
+								
+	                    		  	
+		                    
+	            	
+	            	
+	            // ###############################
+        { // start of Var scope
+        
+	        // ###############################
+        	// # Vars tables
+        
+Var__tMap_7__Struct Var = Var__tMap_7;// ###############################
+        // ###############################
+        // # Output tables
+
+copyOfcopyOfcopyOfrpSales = null;
+
+
+// # Output table : 'copyOfcopyOfcopyOfrpSales'
+copyOfcopyOfcopyOfrpSales_tmp.OrderDate = TalendDate.parseDate("yyyy-MM-dd",row7.OrderDate);
+copyOfcopyOfcopyOfrpSales_tmp.CountryRegion = row10.CountryRegion ;
+copyOfcopyOfcopyOfrpSales_tmp.StateProvince = row10.StateProvince ;
+copyOfcopyOfcopyOfrpSales_tmp.City = row10.City ;
+copyOfcopyOfcopyOfrpSales_tmp.SalesOrign = row7.OnlineOrderFlag == false ? "Venda Offline" : "Venda Online";
+copyOfcopyOfcopyOfrpSales_tmp.SalesPerson = row9.SalesPerson ;
+copyOfcopyOfcopyOfrpSales_tmp.TotalDue = row7.TotalDue ;
+copyOfcopyOfcopyOfrpSales = copyOfcopyOfcopyOfrpSales_tmp;
+// ###############################
+
+} // end of Var scope
+
+rejectedInnerJoin_tMap_7 = false;
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+	tos_count_tMap_7++;
+
+/**
+ * [tMap_7 main ] stop
+ */
+	
+	/**
+	 * [tMap_7 process_data_begin ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_7";
+
+	
+
+ 
+
+
+
+/**
+ * [tMap_7 process_data_begin ] stop
+ */
+// Start of branch "copyOfcopyOfcopyOfrpSales"
+if(copyOfcopyOfcopyOfrpSales != null) { 
+
+
+
+	
+	/**
+	 * [tAggregateRow_6_AGGOUT main ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_6";
+	
+	currentComponent="tAggregateRow_6_AGGOUT";
+
+	
+					if(execStat){
+						runStat.updateStatOnConnection(iterateId,1,1,"copyOfcopyOfcopyOfrpSales");
+					}
+					
+	
+operation_finder_tAggregateRow_6.OrderDate = copyOfcopyOfcopyOfrpSales.OrderDate;
+			operation_finder_tAggregateRow_6.CountryRegion = copyOfcopyOfcopyOfrpSales.CountryRegion;
+			operation_finder_tAggregateRow_6.StateProvince = copyOfcopyOfcopyOfrpSales.StateProvince;
+			operation_finder_tAggregateRow_6.City = copyOfcopyOfcopyOfrpSales.City;
+			operation_finder_tAggregateRow_6.SalesOrign = copyOfcopyOfcopyOfrpSales.SalesOrign;
+			operation_finder_tAggregateRow_6.SalesPerson = copyOfcopyOfcopyOfrpSales.SalesPerson;
+			
+
+	operation_finder_tAggregateRow_6.hashCodeDirty = true;
+	
+	operation_result_tAggregateRow_6 = hash_tAggregateRow_6.get(operation_finder_tAggregateRow_6);
+
+	
+
+	if(operation_result_tAggregateRow_6 == null) { // G_OutMain_AggR_001
+
+		operation_result_tAggregateRow_6 = new AggOperationStruct_tAggregateRow_6();
+
+		operation_result_tAggregateRow_6.OrderDate = operation_finder_tAggregateRow_6.OrderDate;
+				operation_result_tAggregateRow_6.CountryRegion = operation_finder_tAggregateRow_6.CountryRegion;
+				operation_result_tAggregateRow_6.StateProvince = operation_finder_tAggregateRow_6.StateProvince;
+				operation_result_tAggregateRow_6.City = operation_finder_tAggregateRow_6.City;
+				operation_result_tAggregateRow_6.SalesOrign = operation_finder_tAggregateRow_6.SalesOrign;
+				operation_result_tAggregateRow_6.SalesPerson = operation_finder_tAggregateRow_6.SalesPerson;
+				
+		
+		
+
+		hash_tAggregateRow_6.put(operation_result_tAggregateRow_6, operation_result_tAggregateRow_6);
+	
+	} // G_OutMain_AggR_001
+
+
+	
+					if(operation_result_tAggregateRow_6.TotalDue_sum == null) {
+						operation_result_tAggregateRow_6.TotalDue_sum = new BigDecimal(0).setScale(4);
+					}
+					operation_result_tAggregateRow_6.TotalDue_sum = operation_result_tAggregateRow_6.TotalDue_sum.add(
+						new BigDecimal(
+							String.valueOf(
+								copyOfcopyOfcopyOfrpSales.TotalDue
+							)
+						)
+					);
+					
+
+
+ 
+
+
+	tos_count_tAggregateRow_6_AGGOUT++;
+
+/**
+ * [tAggregateRow_6_AGGOUT main ] stop
+ */
+	
+	/**
+	 * [tAggregateRow_6_AGGOUT process_data_begin ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_6";
+	
+	currentComponent="tAggregateRow_6_AGGOUT";
+
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_6_AGGOUT process_data_begin ] stop
+ */
+	
+	/**
+	 * [tAggregateRow_6_AGGOUT process_data_end ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_6";
+	
+	currentComponent="tAggregateRow_6_AGGOUT";
+
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_6_AGGOUT process_data_end ] stop
+ */
+
+} // End of branch "copyOfcopyOfcopyOfrpSales"
+
+
+
+
+	
+	/**
+	 * [tMap_7 process_data_end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_7";
+
+	
+
+ 
+
+
+
+/**
+ * [tMap_7 process_data_end ] stop
+ */
+
+} // End of branch "row7"
+
+
+
+
+	
+	/**
+	 * [tFileInputDelimited_18 process_data_end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_18";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_18 process_data_end ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_18 end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_18";
+
+	
+
+
+
+            }
+            }finally{
+                if(!((Object)("D:/DataLake/Harmonized/HA_salesOrderHeader_"+TalendDate.getDate("YYYY-MM-DD")+".csv") instanceof java.io.InputStream)){
+                	if(fid_tFileInputDelimited_18!=null){
+                		fid_tFileInputDelimited_18.close();
+                	}
+                }
+                if(fid_tFileInputDelimited_18!=null){
+                	globalMap.put("tFileInputDelimited_18_NB_LINE", fid_tFileInputDelimited_18.getRowNumber());
+					
+                }
+			}
+			  
+
+ 
+
+ok_Hash.put("tFileInputDelimited_18", true);
+end_Hash.put("tFileInputDelimited_18", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tFileInputDelimited_18 end ] stop
+ */
+
+	
+	/**
+	 * [tMap_7 end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_7";
+
+	
+
+
+// ###############################
+// # Lookup hashes releasing
+					if(tHash_Lookup_row10 != null) {
+						tHash_Lookup_row10.endGet();
+					}
+					globalMap.remove( "tHash_Lookup_row10" );
+
+					
+					
+				
+					if(tHash_Lookup_row9 != null) {
+						tHash_Lookup_row9.endGet();
+					}
+					globalMap.remove( "tHash_Lookup_row9" );
+
+					
+					
+				
+// ###############################      
+
+
+
+
+
+				if(execStat){
+			  		runStat.updateStat(resourceMap,iterateId,2,0,"row7");
+			  	}
+			  	
+ 
+
+ok_Hash.put("tMap_7", true);
+end_Hash.put("tMap_7", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tMap_7 end ] stop
+ */
+
+	
+	/**
+	 * [tAggregateRow_6_AGGOUT end ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_6";
+	
+	currentComponent="tAggregateRow_6_AGGOUT";
+
+	
+
+				if(execStat){
+			  		runStat.updateStat(resourceMap,iterateId,2,0,"copyOfcopyOfcopyOfrpSales");
+			  	}
+			  	
+ 
+
+ok_Hash.put("tAggregateRow_6_AGGOUT", true);
+end_Hash.put("tAggregateRow_6_AGGOUT", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tAggregateRow_6_AGGOUT end ] stop
+ */
+
+
+	
+	/**
+	 * [tAdvancedHash_min begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tAdvancedHash_min", false);
+		start_Hash.put("tAdvancedHash_min", System.currentTimeMillis());
+		
+	
+	currentComponent="tAdvancedHash_min";
+
+	
+					if(execStat) {
+						runStat.updateStatOnConnection(resourceMap,iterateId,0,0,"min");
+					}
+				
+		int tos_count_tAdvancedHash_min = 0;
+		
+
+			   		// connection name:min
+			   		// source node:tAggregateRow_6_AGGIN - inputs:(OnRowsEnd) outputs:(min,min) | target node:tAdvancedHash_min - inputs:(min) outputs:()
+			   		// linked node: tMap_6 - inputs:(row4,max,min) outputs:(SalesTemp,SalesTemp)
+			   
+			   		org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE matchingModeEnum_min = 
+			   			org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE.UNIQUE_MATCH;
+			   			
+			   
+	   			org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<minStruct> tHash_Lookup_min =org.talend.designer.components.lookup.memory.AdvancedMemoryLookup.
+	   						<minStruct>getLookup(matchingModeEnum_min);
+	   						   
+		   	   	   globalMap.put("tHash_Lookup_min", tHash_Lookup_min);
+		   	   	   
+				
+           
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_min begin ] stop
+ */
+
+
+
+	
+	/**
+	 * [tAggregateRow_6_AGGIN begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tAggregateRow_6_AGGIN", false);
+		start_Hash.put("tAggregateRow_6_AGGIN", System.currentTimeMillis());
+		
+	
+		currentVirtualComponent = "tAggregateRow_6";
+	
+	currentComponent="tAggregateRow_6_AGGIN";
+
+	
+		int tos_count_tAggregateRow_6_AGGIN = 0;
+		
+
+java.util.Collection<AggOperationStruct_tAggregateRow_6> values_tAggregateRow_6 = hash_tAggregateRow_6.values();
+
+globalMap.put("tAggregateRow_6_NB_LINE", values_tAggregateRow_6.size());
+
+for(AggOperationStruct_tAggregateRow_6 aggregated_row_tAggregateRow_6 : values_tAggregateRow_6) { // G_AggR_600
+
+
+
+ 
+
+
+
+/**
+ * [tAggregateRow_6_AGGIN begin ] stop
+ */
+	
+	/**
+	 * [tAggregateRow_6_AGGIN main ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_6";
+	
+	currentComponent="tAggregateRow_6_AGGIN";
+
+	
+
+            				    min.OrderDate = aggregated_row_tAggregateRow_6.OrderDate;
+            				    
+            				    min.CountryRegion = aggregated_row_tAggregateRow_6.CountryRegion;
+            				    
+            				    min.StateProvince = aggregated_row_tAggregateRow_6.StateProvince;
+            				    
+            				    min.City = aggregated_row_tAggregateRow_6.City;
+            				    
+            				    min.SalesOrign = aggregated_row_tAggregateRow_6.SalesOrign;
+            				    
+            				    min.SalesPerson = aggregated_row_tAggregateRow_6.SalesPerson;
+            				    
+    								if(aggregated_row_tAggregateRow_6.TotalDue_sum != null) {
+    								min.TotalDue = aggregated_row_tAggregateRow_6.TotalDue_sum.floatValue();
+										
+    								}else{
+    								
+    									min.TotalDue = 0;
+    									
+    								}
+    								
+
+ 
+
+
+	tos_count_tAggregateRow_6_AGGIN++;
+
+/**
+ * [tAggregateRow_6_AGGIN main ] stop
+ */
+	
+	/**
+	 * [tAggregateRow_6_AGGIN process_data_begin ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_6";
+	
+	currentComponent="tAggregateRow_6_AGGIN";
+
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_6_AGGIN process_data_begin ] stop
+ */
+
+	
+	/**
+	 * [tAdvancedHash_min main ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_min";
+
+	
+					if(execStat){
+						runStat.updateStatOnConnection(iterateId,1,1,"min");
+					}
+					
+
+
+			   
+			   
+
+					minStruct min_HashRow = new minStruct();
+		   	   	   
+				
+				min_HashRow.OrderDate = min.OrderDate;
+				
+				min_HashRow.CountryRegion = min.CountryRegion;
+				
+				min_HashRow.StateProvince = min.StateProvince;
+				
+				min_HashRow.City = min.City;
+				
+				min_HashRow.SalesOrign = min.SalesOrign;
+				
+				min_HashRow.SalesPerson = min.SalesPerson;
+				
+				min_HashRow.TotalDue = min.TotalDue;
+				
+			tHash_Lookup_min.put(min_HashRow);
+			
+            
+
+
+
+
+ 
+
+
+	tos_count_tAdvancedHash_min++;
+
+/**
+ * [tAdvancedHash_min main ] stop
+ */
+	
+	/**
+	 * [tAdvancedHash_min process_data_begin ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_min";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_min process_data_begin ] stop
+ */
+	
+	/**
+	 * [tAdvancedHash_min process_data_end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_min";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_min process_data_end ] stop
+ */
+
+
+
+	
+	/**
+	 * [tAggregateRow_6_AGGIN process_data_end ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_6";
+	
+	currentComponent="tAggregateRow_6_AGGIN";
+
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_6_AGGIN process_data_end ] stop
+ */
+	
+	/**
+	 * [tAggregateRow_6_AGGIN end ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_6";
+	
+	currentComponent="tAggregateRow_6_AGGIN";
+
+	
+
+} // G_AggR_600
+
+ 
+
+ok_Hash.put("tAggregateRow_6_AGGIN", true);
+end_Hash.put("tAggregateRow_6_AGGIN", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tAggregateRow_6_AGGIN end ] stop
+ */
+
+	
+	/**
+	 * [tAdvancedHash_min end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_min";
+
+	
+
+tHash_Lookup_min.endPut();
+
+				if(execStat){
+			  		runStat.updateStat(resourceMap,iterateId,2,0,"min");
+			  	}
+			  	
+ 
+
+ok_Hash.put("tAdvancedHash_min", true);
+end_Hash.put("tAdvancedHash_min", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tAdvancedHash_min end ] stop
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+				}//end the resume
+
+				
+
+
+
+	
+			}catch(java.lang.Exception e){	
+				
+				TalendException te = new TalendException(e, currentComponent, globalMap);
+				
+					te.setVirtualComponentName(currentVirtualComponent);
+				
+				throw te;
+			}catch(java.lang.Error error){	
+				
+					runStat.stopThreadStat();
+				
+				throw error;
+			}finally{
+				
+							//free memory for "tAggregateRow_6_AGGIN"
+							globalMap.remove("tAggregateRow_6");
+						
+					     			//free memory for "tMap_7"
+					     			globalMap.remove("tHash_Lookup_row9"); 
+				     			
+					     			//free memory for "tMap_7"
+					     			globalMap.remove("tHash_Lookup_row10"); 
+				     			
+				try{
+					
+	
+	/**
+	 * [tFileInputDelimited_18 finally ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_18";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_18 finally ] stop
+ */
+
+	
+	/**
+	 * [tMap_7 finally ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tMap_7";
+
+	
+
+ 
+
+
+
+/**
+ * [tMap_7 finally ] stop
+ */
+
+	
+	/**
+	 * [tAggregateRow_6_AGGOUT finally ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_6";
+	
+	currentComponent="tAggregateRow_6_AGGOUT";
+
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_6_AGGOUT finally ] stop
+ */
+
+	
+	/**
+	 * [tAggregateRow_6_AGGIN finally ] start
+	 */
+
+	
+
+	
+	
+		currentVirtualComponent = "tAggregateRow_6";
+	
+	currentComponent="tAggregateRow_6_AGGIN";
+
+	
+
+ 
+
+
+
+/**
+ * [tAggregateRow_6_AGGIN finally ] stop
+ */
+
+	
+	/**
+	 * [tAdvancedHash_min finally ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_min";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_min finally ] stop
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+				}catch(java.lang.Exception e){	
+					//ignore
+				}catch(java.lang.Error error){
+					//ignore
+				}
+				resourceMap = null;
+			}
+		
+
+		globalMap.put("tFileInputDelimited_18_SUBPROCESS_STATE", 1);
+	}
+	
+
+
+public static class row9Struct implements routines.system.IPersistableComparableLookupRow<row9Struct> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+	protected static final int DEFAULT_HASHCODE = 1;
+    protected static final int PRIME = 31;
+    protected int hashCode = DEFAULT_HASHCODE;
+    public boolean hashCodeDirty = true;
+
+    public String loopKey;
+
+
+
+	
+			    public int CustomerID;
+
+				public int getCustomerID () {
+					return this.CustomerID;
+				}
+				
+			    public boolean NameStyle;
+
+				public boolean getNameStyle () {
+					return this.NameStyle;
+				}
+				
+			    public String Title;
+
+				public String getTitle () {
+					return this.Title;
+				}
+				
+			    public String FirstName;
+
+				public String getFirstName () {
+					return this.FirstName;
+				}
+				
+			    public String MiddleName;
+
+				public String getMiddleName () {
+					return this.MiddleName;
+				}
+				
+			    public String LastName;
+
+				public String getLastName () {
+					return this.LastName;
+				}
+				
+			    public String Suffix;
+
+				public String getSuffix () {
+					return this.Suffix;
+				}
+				
+			    public String CompanyName;
+
+				public String getCompanyName () {
+					return this.CompanyName;
+				}
+				
+			    public String SalesPerson;
+
+				public String getSalesPerson () {
+					return this.SalesPerson;
+				}
+				
+			    public String EmailAddress;
+
+				public String getEmailAddress () {
+					return this.EmailAddress;
+				}
+				
+			    public String Phone;
+
+				public String getPhone () {
+					return this.Phone;
+				}
+				
+
+
+	@Override
+	public int hashCode() {
+		if (this.hashCodeDirty) {
+			final int prime = PRIME;
+			int result = DEFAULT_HASHCODE;
+	
+							result = prime * result + (int) this.CustomerID;
+						
+    		this.hashCode = result;
+    		this.hashCodeDirty = false;
+		}
+		return this.hashCode;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) return true;
+		if (obj == null) return false;
+		if (getClass() != obj.getClass()) return false;
+		final row9Struct other = (row9Struct) obj;
+		
+						if (this.CustomerID != other.CustomerID)
+							return false;
+					
+
+		return true;
+    }
+
+	public void copyDataTo(row9Struct other) {
+
+		other.CustomerID = this.CustomerID;
+	            other.NameStyle = this.NameStyle;
+	            other.Title = this.Title;
+	            other.FirstName = this.FirstName;
+	            other.MiddleName = this.MiddleName;
+	            other.LastName = this.LastName;
+	            other.Suffix = this.Suffix;
+	            other.CompanyName = this.CompanyName;
+	            other.SalesPerson = this.SalesPerson;
+	            other.EmailAddress = this.EmailAddress;
+	            other.Phone = this.Phone;
+	            
+	}
+
+	public void copyKeysDataTo(row9Struct other) {
+
+		other.CustomerID = this.CustomerID;
+	            	
+	}
+
+
+
+
+	private String readString(DataInputStream dis, ObjectInputStream ois) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			byte[] byteArray = new byte[length];
+			dis.read(byteArray);
+			strReturn = new String(byteArray, utf8Charset);
+		}
+		return strReturn;
+	}
+
+	private void writeString(String str, DataOutputStream dos, ObjectOutputStream oos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+	}
+
+    public void readKeysData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+			        this.CustomerID = dis.readInt();
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeKeysData(ObjectOutputStream dos) {
+        try {
+
+		
+					// int
+				
+		            	dos.writeInt(this.CustomerID);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+
+    /**
+     * Fill Values data by reading ObjectInputStream.
+     */
+    public void readValuesData(DataInputStream dis, ObjectInputStream ois) {
+        try {
+
+			int length = 0;
+		
+			            this.NameStyle = dis.readBoolean();
+					
+						this.Title = readString(dis,ois);
+					
+						this.FirstName = readString(dis,ois);
+					
+						this.MiddleName = readString(dis,ois);
+					
+						this.LastName = readString(dis,ois);
+					
+						this.Suffix = readString(dis,ois);
+					
+						this.CompanyName = readString(dis,ois);
+					
+						this.SalesPerson = readString(dis,ois);
+					
+						this.EmailAddress = readString(dis,ois);
+					
+						this.Phone = readString(dis,ois);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+    }
+
+    /**
+     * Return a byte array which represents Values data.
+     */
+    public void writeValuesData(DataOutputStream dos, ObjectOutputStream oos) {
+        try {
+
+		
+		            	dos.writeBoolean(this.NameStyle);
+					
+						writeString(this.Title, dos, oos);
+					
+						writeString(this.FirstName, dos, oos);
+					
+						writeString(this.MiddleName, dos, oos);
+					
+						writeString(this.LastName, dos, oos);
+					
+						writeString(this.Suffix, dos, oos);
+					
+						writeString(this.CompanyName, dos, oos);
+					
+						writeString(this.SalesPerson, dos, oos);
+					
+						writeString(this.EmailAddress, dos, oos);
+					
+						writeString(this.Phone, dos, oos);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        	}
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("CustomerID="+String.valueOf(CustomerID));
+		sb.append(",NameStyle="+String.valueOf(NameStyle));
+		sb.append(",Title="+Title);
+		sb.append(",FirstName="+FirstName);
+		sb.append(",MiddleName="+MiddleName);
+		sb.append(",LastName="+LastName);
+		sb.append(",Suffix="+Suffix);
+		sb.append(",CompanyName="+CompanyName);
+		sb.append(",SalesPerson="+SalesPerson);
+		sb.append(",EmailAddress="+EmailAddress);
+		sb.append(",Phone="+Phone);
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(row9Struct other) {
+
+		int returnValue = -1;
+		
+						returnValue = checkNullsAndCompare(this.CustomerID, other.CustomerID);
+						if(returnValue != 0) {
+							return returnValue;
+						}
+
+					
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
+public void tFileInputDelimited_19Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+	globalMap.put("tFileInputDelimited_19_SUBPROCESS_STATE", 0);
+
+ final boolean execStat = this.execStat;
+	
+		String iterateId = "";
+	
+	
+	String currentComponent = "";
+	java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
+
+	try {
+			// TDI-39566 avoid throwing an useless Exception
+			boolean resumeIt = true;
+			if (globalResumeTicket == false && resumeEntryMethodName != null) {
+				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
+				resumeIt = resumeEntryMethodName.equals(currentMethodName);
+			}
+			if (resumeIt || globalResumeTicket) { //start the resume
+				globalResumeTicket = true;
+
+
+
+		row9Struct row9 = new row9Struct();
+
+
+
+
+	
+	/**
+	 * [tAdvancedHash_row9 begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tAdvancedHash_row9", false);
+		start_Hash.put("tAdvancedHash_row9", System.currentTimeMillis());
+		
+	
+	currentComponent="tAdvancedHash_row9";
+
+	
+					if(execStat) {
+						runStat.updateStatOnConnection(resourceMap,iterateId,0,0,"row9");
+					}
+				
+		int tos_count_tAdvancedHash_row9 = 0;
+		
+
+			   		// connection name:row9
+			   		// source node:tFileInputDelimited_19 - inputs:(after_tFileInputDelimited_18) outputs:(row9,row9) | target node:tAdvancedHash_row9 - inputs:(row9) outputs:()
+			   		// linked node: tMap_7 - inputs:(row7,row9,row10) outputs:(copyOfcopyOfcopyOfrpSales)
+			   
+			   		org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE matchingModeEnum_row9 = 
+			   			org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE.UNIQUE_MATCH;
+			   			
+			   
+	   			org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row9Struct> tHash_Lookup_row9 =org.talend.designer.components.lookup.memory.AdvancedMemoryLookup.
+	   						<row9Struct>getLookup(matchingModeEnum_row9);
+	   						   
+		   	   	   globalMap.put("tHash_Lookup_row9", tHash_Lookup_row9);
+		   	   	   
+				
+           
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_row9 begin ] stop
+ */
+
+
+
+	
+	/**
+	 * [tFileInputDelimited_19 begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tFileInputDelimited_19", false);
+		start_Hash.put("tFileInputDelimited_19", System.currentTimeMillis());
+		
+	
+	currentComponent="tFileInputDelimited_19";
+
+	
+		int tos_count_tFileInputDelimited_19 = 0;
+		
+	
+	
+	
+ 
+	
+	
+	final routines.system.RowState rowstate_tFileInputDelimited_19 = new routines.system.RowState();
+	
+	
+				int nb_line_tFileInputDelimited_19 = 0;
+				org.talend.fileprocess.FileInputDelimited fid_tFileInputDelimited_19 = null;
+				int limit_tFileInputDelimited_19 = -1;
+				try{
+					
+						Object filename_tFileInputDelimited_19 = "D:/DataLake/Harmonized/HA_customer_"+TalendDate.getDate("YYYY-MM-DD")+".csv";
+						if(filename_tFileInputDelimited_19 instanceof java.io.InputStream){
+							
+			int footer_value_tFileInputDelimited_19 = 0, random_value_tFileInputDelimited_19 = -1;
+			if(footer_value_tFileInputDelimited_19 >0 || random_value_tFileInputDelimited_19 > 0){
+				throw new java.lang.Exception("When the input source is a stream,footer and random shouldn't be bigger than 0.");				
+			}
+		
+						}
+						try {
+							fid_tFileInputDelimited_19 = new org.talend.fileprocess.FileInputDelimited("D:/DataLake/Harmonized/HA_customer_"+TalendDate.getDate("YYYY-MM-DD")+".csv", "ISO-8859-15",";","\n",true,1,0,
+									limit_tFileInputDelimited_19
+								,-1, false);
+						} catch(java.lang.Exception e) {
+							
+								
+								System.err.println(e.getMessage());
+							
+						}
+					
+				    
+					while (fid_tFileInputDelimited_19!=null && fid_tFileInputDelimited_19.nextRecord()) {
+						rowstate_tFileInputDelimited_19.reset();
+						
+			    						row9 = null;			
+									
+			    						row9 = null;			
+												
+									boolean whetherReject_tFileInputDelimited_19 = false;
+									row9 = new row9Struct();
+									try {
+										
+				int columnIndexWithD_tFileInputDelimited_19 = 0;
+				
+					String temp = ""; 
+				
+					columnIndexWithD_tFileInputDelimited_19 = 0;
+					
+						temp = fid_tFileInputDelimited_19.get(columnIndexWithD_tFileInputDelimited_19);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								row9.CustomerID = ParserUtils.parseTo_int(temp);
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_19) {
+									rowstate_tFileInputDelimited_19.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"CustomerID", "row9", temp, ex_tFileInputDelimited_19), ex_tFileInputDelimited_19));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_19.setException(new RuntimeException("Value is empty for column : 'CustomerID' in 'row9' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_19 = 1;
+					
+						temp = fid_tFileInputDelimited_19.get(columnIndexWithD_tFileInputDelimited_19);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								row9.NameStyle = ParserUtils.parseTo_boolean(temp);
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_19) {
+									rowstate_tFileInputDelimited_19.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"NameStyle", "row9", temp, ex_tFileInputDelimited_19), ex_tFileInputDelimited_19));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_19.setException(new RuntimeException("Value is empty for column : 'NameStyle' in 'row9' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_19 = 2;
+					
+							row9.Title = fid_tFileInputDelimited_19.get(columnIndexWithD_tFileInputDelimited_19);
+						
+				
+					columnIndexWithD_tFileInputDelimited_19 = 3;
+					
+							row9.FirstName = fid_tFileInputDelimited_19.get(columnIndexWithD_tFileInputDelimited_19);
+						
+				
+					columnIndexWithD_tFileInputDelimited_19 = 4;
+					
+							row9.MiddleName = fid_tFileInputDelimited_19.get(columnIndexWithD_tFileInputDelimited_19);
+						
+				
+					columnIndexWithD_tFileInputDelimited_19 = 5;
+					
+							row9.LastName = fid_tFileInputDelimited_19.get(columnIndexWithD_tFileInputDelimited_19);
+						
+				
+					columnIndexWithD_tFileInputDelimited_19 = 6;
+					
+							row9.Suffix = fid_tFileInputDelimited_19.get(columnIndexWithD_tFileInputDelimited_19);
+						
+				
+					columnIndexWithD_tFileInputDelimited_19 = 7;
+					
+							row9.CompanyName = fid_tFileInputDelimited_19.get(columnIndexWithD_tFileInputDelimited_19);
+						
+				
+					columnIndexWithD_tFileInputDelimited_19 = 8;
+					
+							row9.SalesPerson = fid_tFileInputDelimited_19.get(columnIndexWithD_tFileInputDelimited_19);
+						
+				
+					columnIndexWithD_tFileInputDelimited_19 = 9;
+					
+							row9.EmailAddress = fid_tFileInputDelimited_19.get(columnIndexWithD_tFileInputDelimited_19);
+						
+				
+					columnIndexWithD_tFileInputDelimited_19 = 10;
+					
+							row9.Phone = fid_tFileInputDelimited_19.get(columnIndexWithD_tFileInputDelimited_19);
+						
+				
+				
+										
+										if(rowstate_tFileInputDelimited_19.getException()!=null) {
+											throw rowstate_tFileInputDelimited_19.getException();
+										}
+										
+										
+							
+			    					} catch (java.lang.Exception e) {
+			        					whetherReject_tFileInputDelimited_19 = true;
+			        					
+			                					System.err.println(e.getMessage());
+			                					row9 = null;
+			                				
+			    					}
+								
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_19 begin ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_19 main ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_19";
+
+	
+
+ 
+
+
+	tos_count_tFileInputDelimited_19++;
+
+/**
+ * [tFileInputDelimited_19 main ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_19 process_data_begin ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_19";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_19 process_data_begin ] stop
+ */
+// Start of branch "row9"
+if(row9 != null) { 
+
+
+
+	
+	/**
+	 * [tAdvancedHash_row9 main ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_row9";
+
+	
+					if(execStat){
+						runStat.updateStatOnConnection(iterateId,1,1,"row9");
+					}
+					
+
+
+			   
+			   
+
+					row9Struct row9_HashRow = new row9Struct();
+		   	   	   
+				
+				row9_HashRow.CustomerID = row9.CustomerID;
+				
+				row9_HashRow.NameStyle = row9.NameStyle;
+				
+				row9_HashRow.Title = row9.Title;
+				
+				row9_HashRow.FirstName = row9.FirstName;
+				
+				row9_HashRow.MiddleName = row9.MiddleName;
+				
+				row9_HashRow.LastName = row9.LastName;
+				
+				row9_HashRow.Suffix = row9.Suffix;
+				
+				row9_HashRow.CompanyName = row9.CompanyName;
+				
+				row9_HashRow.SalesPerson = row9.SalesPerson;
+				
+				row9_HashRow.EmailAddress = row9.EmailAddress;
+				
+				row9_HashRow.Phone = row9.Phone;
+				
+			tHash_Lookup_row9.put(row9_HashRow);
+			
+            
+
+
+
+
+ 
+
+
+	tos_count_tAdvancedHash_row9++;
+
+/**
+ * [tAdvancedHash_row9 main ] stop
+ */
+	
+	/**
+	 * [tAdvancedHash_row9 process_data_begin ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_row9";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_row9 process_data_begin ] stop
+ */
+	
+	/**
+	 * [tAdvancedHash_row9 process_data_end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_row9";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_row9 process_data_end ] stop
+ */
+
+} // End of branch "row9"
+
+
+
+
+	
+	/**
+	 * [tFileInputDelimited_19 process_data_end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_19";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_19 process_data_end ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_19 end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_19";
+
+	
+
+
+
+            }
+            }finally{
+                if(!((Object)("D:/DataLake/Harmonized/HA_customer_"+TalendDate.getDate("YYYY-MM-DD")+".csv") instanceof java.io.InputStream)){
+                	if(fid_tFileInputDelimited_19!=null){
+                		fid_tFileInputDelimited_19.close();
+                	}
+                }
+                if(fid_tFileInputDelimited_19!=null){
+                	globalMap.put("tFileInputDelimited_19_NB_LINE", fid_tFileInputDelimited_19.getRowNumber());
+					
+                }
+			}
+			  
+
+ 
+
+ok_Hash.put("tFileInputDelimited_19", true);
+end_Hash.put("tFileInputDelimited_19", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tFileInputDelimited_19 end ] stop
+ */
+
+	
+	/**
+	 * [tAdvancedHash_row9 end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_row9";
+
+	
+
+tHash_Lookup_row9.endPut();
+
+				if(execStat){
+			  		runStat.updateStat(resourceMap,iterateId,2,0,"row9");
+			  	}
+			  	
+ 
+
+ok_Hash.put("tAdvancedHash_row9", true);
+end_Hash.put("tAdvancedHash_row9", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tAdvancedHash_row9 end ] stop
+ */
+
+
+
+				}//end the resume
+
+				
+
+
+
+	
+			}catch(java.lang.Exception e){	
+				
+				TalendException te = new TalendException(e, currentComponent, globalMap);
+				
+				throw te;
+			}catch(java.lang.Error error){	
+				
+					runStat.stopThreadStat();
+				
+				throw error;
+			}finally{
+				
+				try{
+					
+	
+	/**
+	 * [tFileInputDelimited_19 finally ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_19";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_19 finally ] stop
+ */
+
+	
+	/**
+	 * [tAdvancedHash_row9 finally ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_row9";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_row9 finally ] stop
+ */
+
+
+
+				}catch(java.lang.Exception e){	
+					//ignore
+				}catch(java.lang.Error error){
+					//ignore
+				}
+				resourceMap = null;
+			}
+		
+
+		globalMap.put("tFileInputDelimited_19_SUBPROCESS_STATE", 1);
+	}
+	
+
+
+public static class row10Struct implements routines.system.IPersistableComparableLookupRow<row10Struct> {
+    final static byte[] commonByteArrayLock_INGESTAODADOS_JobSalesReport = new byte[0];
+    static byte[] commonByteArray_INGESTAODADOS_JobSalesReport = new byte[0];
+	protected static final int DEFAULT_HASHCODE = 1;
+    protected static final int PRIME = 31;
+    protected int hashCode = DEFAULT_HASHCODE;
+    public boolean hashCodeDirty = true;
+
+    public String loopKey;
+
+
+
+	
+			    public int AddressID;
+
+				public int getAddressID () {
+					return this.AddressID;
+				}
+				
+			    public String AddressLine1;
+
+				public String getAddressLine1 () {
+					return this.AddressLine1;
+				}
+				
+			    public String AddressLine2;
+
+				public String getAddressLine2 () {
+					return this.AddressLine2;
+				}
+				
+			    public String StateProvince;
+
+				public String getStateProvince () {
+					return this.StateProvince;
+				}
+				
+			    public String CountryRegion;
+
+				public String getCountryRegion () {
+					return this.CountryRegion;
+				}
+				
+			    public String City;
+
+				public String getCity () {
+					return this.City;
+				}
+				
+			    public String PostalCode;
+
+				public String getPostalCode () {
+					return this.PostalCode;
+				}
+				
+
+
+	@Override
+	public int hashCode() {
+		if (this.hashCodeDirty) {
+			final int prime = PRIME;
+			int result = DEFAULT_HASHCODE;
+	
+							result = prime * result + (int) this.AddressID;
+						
+    		this.hashCode = result;
+    		this.hashCodeDirty = false;
+		}
+		return this.hashCode;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) return true;
+		if (obj == null) return false;
+		if (getClass() != obj.getClass()) return false;
+		final row10Struct other = (row10Struct) obj;
+		
+						if (this.AddressID != other.AddressID)
+							return false;
+					
+
+		return true;
+    }
+
+	public void copyDataTo(row10Struct other) {
+
+		other.AddressID = this.AddressID;
+	            other.AddressLine1 = this.AddressLine1;
+	            other.AddressLine2 = this.AddressLine2;
+	            other.StateProvince = this.StateProvince;
+	            other.CountryRegion = this.CountryRegion;
+	            other.City = this.City;
+	            other.PostalCode = this.PostalCode;
+	            
+	}
+
+	public void copyKeysDataTo(row10Struct other) {
+
+		other.AddressID = this.AddressID;
+	            	
+	}
+
+
+
+
+	private String readString(DataInputStream dis, ObjectInputStream ois) throws IOException{
+		String strReturn = null;
+		int length = 0;
+        length = dis.readInt();
+		if (length == -1) {
+			strReturn = null;
+		} else {
+			byte[] byteArray = new byte[length];
+			dis.read(byteArray);
+			strReturn = new String(byteArray, utf8Charset);
+		}
+		return strReturn;
+	}
+
+	private void writeString(String str, DataOutputStream dos, ObjectOutputStream oos) throws IOException{
+		if(str == null) {
+            dos.writeInt(-1);
+		} else {
+            byte[] byteArray = str.getBytes(utf8Charset);
+	    	dos.writeInt(byteArray.length);
+			dos.write(byteArray);
+    	}
+	}
+
+    public void readKeysData(ObjectInputStream dis) {
+
+		synchronized(commonByteArrayLock_INGESTAODADOS_JobSalesReport) {
+
+        	try {
+
+        		int length = 0;
+		
+			        this.AddressID = dis.readInt();
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+      }
+
+
+    }
+
+    public void writeKeysData(ObjectOutputStream dos) {
+        try {
+
+		
+					// int
+				
+		            	dos.writeInt(this.AddressID);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        }
+
+
+    }
+
+
+
+    /**
+     * Fill Values data by reading ObjectInputStream.
+     */
+    public void readValuesData(DataInputStream dis, ObjectInputStream ois) {
+        try {
+
+			int length = 0;
+		
+						this.AddressLine1 = readString(dis,ois);
+					
+						this.AddressLine2 = readString(dis,ois);
+					
+						this.StateProvince = readString(dis,ois);
+					
+						this.CountryRegion = readString(dis,ois);
+					
+						this.City = readString(dis,ois);
+					
+						this.PostalCode = readString(dis,ois);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+
+		
+
+        }
+
+		
+
+    }
+
+    /**
+     * Return a byte array which represents Values data.
+     */
+    public void writeValuesData(DataOutputStream dos, ObjectOutputStream oos) {
+        try {
+
+		
+						writeString(this.AddressLine1, dos, oos);
+					
+						writeString(this.AddressLine2, dos, oos);
+					
+						writeString(this.StateProvince, dos, oos);
+					
+						writeString(this.CountryRegion, dos, oos);
+					
+						writeString(this.City, dos, oos);
+					
+						writeString(this.PostalCode, dos, oos);
+					
+        	} catch (IOException e) {
+	            throw new RuntimeException(e);
+        	}
+
+    }
+
+
+    public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("[");
+		sb.append("AddressID="+String.valueOf(AddressID));
+		sb.append(",AddressLine1="+AddressLine1);
+		sb.append(",AddressLine2="+AddressLine2);
+		sb.append(",StateProvince="+StateProvince);
+		sb.append(",CountryRegion="+CountryRegion);
+		sb.append(",City="+City);
+		sb.append(",PostalCode="+PostalCode);
+	    sb.append("]");
+
+	    return sb.toString();
+    }
+
+    /**
+     * Compare keys
+     */
+    public int compareTo(row10Struct other) {
+
+		int returnValue = -1;
+		
+						returnValue = checkNullsAndCompare(this.AddressID, other.AddressID);
+						if(returnValue != 0) {
+							return returnValue;
+						}
+
+					
+	    return returnValue;
+    }
+
+
+    private int checkNullsAndCompare(Object object1, Object object2) {
+        int returnValue = 0;
+		if (object1 instanceof Comparable && object2 instanceof Comparable) {
+            returnValue = ((Comparable) object1).compareTo(object2);
+        } else if (object1 != null && object2 != null) {
+            returnValue = compareStrings(object1.toString(), object2.toString());
+        } else if (object1 == null && object2 != null) {
+            returnValue = 1;
+        } else if (object1 != null && object2 == null) {
+            returnValue = -1;
+        } else {
+            returnValue = 0;
+        }
+
+        return returnValue;
+    }
+
+    private int compareStrings(String string1, String string2) {
+        return string1.compareTo(string2);
+    }
+
+
+}
+public void tFileInputDelimited_20Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+	globalMap.put("tFileInputDelimited_20_SUBPROCESS_STATE", 0);
+
+ final boolean execStat = this.execStat;
+	
+		String iterateId = "";
+	
+	
+	String currentComponent = "";
+	java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
+
+	try {
+			// TDI-39566 avoid throwing an useless Exception
+			boolean resumeIt = true;
+			if (globalResumeTicket == false && resumeEntryMethodName != null) {
+				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
+				resumeIt = resumeEntryMethodName.equals(currentMethodName);
+			}
+			if (resumeIt || globalResumeTicket) { //start the resume
+				globalResumeTicket = true;
+
+
+
+		row10Struct row10 = new row10Struct();
+
+
+
+
+	
+	/**
+	 * [tAdvancedHash_row10 begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tAdvancedHash_row10", false);
+		start_Hash.put("tAdvancedHash_row10", System.currentTimeMillis());
+		
+	
+	currentComponent="tAdvancedHash_row10";
+
+	
+					if(execStat) {
+						runStat.updateStatOnConnection(resourceMap,iterateId,0,0,"row10");
+					}
+				
+		int tos_count_tAdvancedHash_row10 = 0;
+		
+
+			   		// connection name:row10
+			   		// source node:tFileInputDelimited_20 - inputs:(after_tFileInputDelimited_18) outputs:(row10,row10) | target node:tAdvancedHash_row10 - inputs:(row10) outputs:()
+			   		// linked node: tMap_7 - inputs:(row7,row9,row10) outputs:(copyOfcopyOfcopyOfrpSales)
+			   
+			   		org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE matchingModeEnum_row10 = 
+			   			org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE.UNIQUE_MATCH;
+			   			
+			   
+	   			org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row10Struct> tHash_Lookup_row10 =org.talend.designer.components.lookup.memory.AdvancedMemoryLookup.
+	   						<row10Struct>getLookup(matchingModeEnum_row10);
+	   						   
+		   	   	   globalMap.put("tHash_Lookup_row10", tHash_Lookup_row10);
+		   	   	   
+				
+           
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_row10 begin ] stop
+ */
+
+
+
+	
+	/**
+	 * [tFileInputDelimited_20 begin ] start
+	 */
+
+	
+
+	
+		
+		ok_Hash.put("tFileInputDelimited_20", false);
+		start_Hash.put("tFileInputDelimited_20", System.currentTimeMillis());
+		
+	
+	currentComponent="tFileInputDelimited_20";
+
+	
+		int tos_count_tFileInputDelimited_20 = 0;
+		
+	
+	
+	
+ 
+	
+	
+	final routines.system.RowState rowstate_tFileInputDelimited_20 = new routines.system.RowState();
+	
+	
+				int nb_line_tFileInputDelimited_20 = 0;
+				org.talend.fileprocess.FileInputDelimited fid_tFileInputDelimited_20 = null;
+				int limit_tFileInputDelimited_20 = -1;
+				try{
+					
+						Object filename_tFileInputDelimited_20 = "D:/DataLake/Harmonized/HA_address_"+TalendDate.getDate("YYYY-MM-DD")+".csv";
+						if(filename_tFileInputDelimited_20 instanceof java.io.InputStream){
+							
+			int footer_value_tFileInputDelimited_20 = 0, random_value_tFileInputDelimited_20 = -1;
+			if(footer_value_tFileInputDelimited_20 >0 || random_value_tFileInputDelimited_20 > 0){
+				throw new java.lang.Exception("When the input source is a stream,footer and random shouldn't be bigger than 0.");				
+			}
+		
+						}
+						try {
+							fid_tFileInputDelimited_20 = new org.talend.fileprocess.FileInputDelimited("D:/DataLake/Harmonized/HA_address_"+TalendDate.getDate("YYYY-MM-DD")+".csv", "ISO-8859-15",";","\n",true,1,0,
+									limit_tFileInputDelimited_20
+								,-1, false);
+						} catch(java.lang.Exception e) {
+							
+								
+								System.err.println(e.getMessage());
+							
+						}
+					
+				    
+					while (fid_tFileInputDelimited_20!=null && fid_tFileInputDelimited_20.nextRecord()) {
+						rowstate_tFileInputDelimited_20.reset();
+						
+			    						row10 = null;			
+									
+			    						row10 = null;			
+												
+									boolean whetherReject_tFileInputDelimited_20 = false;
+									row10 = new row10Struct();
+									try {
+										
+				int columnIndexWithD_tFileInputDelimited_20 = 0;
+				
+					String temp = ""; 
+				
+					columnIndexWithD_tFileInputDelimited_20 = 0;
+					
+						temp = fid_tFileInputDelimited_20.get(columnIndexWithD_tFileInputDelimited_20);
+						if(temp.length() > 0) {
+							
+								try {
+								
+    								row10.AddressID = ParserUtils.parseTo_int(temp);
+    							
+    							} catch(java.lang.Exception ex_tFileInputDelimited_20) {
+									rowstate_tFileInputDelimited_20.setException(new RuntimeException(String.format("Couldn't parse value for column '%s' in '%s', value is '%s'. Details: %s",
+										"AddressID", "row10", temp, ex_tFileInputDelimited_20), ex_tFileInputDelimited_20));
+								}
+    							
+						} else {						
+							
+								rowstate_tFileInputDelimited_20.setException(new RuntimeException("Value is empty for column : 'AddressID' in 'row10' connection, value is invalid or this column should be nullable or have a default value."));
+							
+						}
+					
+				
+					columnIndexWithD_tFileInputDelimited_20 = 1;
+					
+							row10.AddressLine1 = fid_tFileInputDelimited_20.get(columnIndexWithD_tFileInputDelimited_20);
+						
+				
+					columnIndexWithD_tFileInputDelimited_20 = 2;
+					
+							row10.AddressLine2 = fid_tFileInputDelimited_20.get(columnIndexWithD_tFileInputDelimited_20);
+						
+				
+					columnIndexWithD_tFileInputDelimited_20 = 3;
+					
+							row10.StateProvince = fid_tFileInputDelimited_20.get(columnIndexWithD_tFileInputDelimited_20);
+						
+				
+					columnIndexWithD_tFileInputDelimited_20 = 4;
+					
+							row10.CountryRegion = fid_tFileInputDelimited_20.get(columnIndexWithD_tFileInputDelimited_20);
+						
+				
+					columnIndexWithD_tFileInputDelimited_20 = 5;
+					
+							row10.City = fid_tFileInputDelimited_20.get(columnIndexWithD_tFileInputDelimited_20);
+						
+				
+					columnIndexWithD_tFileInputDelimited_20 = 6;
+					
+							row10.PostalCode = fid_tFileInputDelimited_20.get(columnIndexWithD_tFileInputDelimited_20);
+						
+				
+				
+										
+										if(rowstate_tFileInputDelimited_20.getException()!=null) {
+											throw rowstate_tFileInputDelimited_20.getException();
+										}
+										
+										
+							
+			    					} catch (java.lang.Exception e) {
+			        					whetherReject_tFileInputDelimited_20 = true;
+			        					
+			                					System.err.println(e.getMessage());
+			                					row10 = null;
+			                				
+			    					}
+								
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_20 begin ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_20 main ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_20";
+
+	
+
+ 
+
+
+	tos_count_tFileInputDelimited_20++;
+
+/**
+ * [tFileInputDelimited_20 main ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_20 process_data_begin ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_20";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_20 process_data_begin ] stop
+ */
+// Start of branch "row10"
+if(row10 != null) { 
+
+
+
+	
+	/**
+	 * [tAdvancedHash_row10 main ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_row10";
+
+	
+					if(execStat){
+						runStat.updateStatOnConnection(iterateId,1,1,"row10");
+					}
+					
+
+
+			   
+			   
+
+					row10Struct row10_HashRow = new row10Struct();
+		   	   	   
+				
+				row10_HashRow.AddressID = row10.AddressID;
+				
+				row10_HashRow.AddressLine1 = row10.AddressLine1;
+				
+				row10_HashRow.AddressLine2 = row10.AddressLine2;
+				
+				row10_HashRow.StateProvince = row10.StateProvince;
+				
+				row10_HashRow.CountryRegion = row10.CountryRegion;
+				
+				row10_HashRow.City = row10.City;
+				
+				row10_HashRow.PostalCode = row10.PostalCode;
+				
+			tHash_Lookup_row10.put(row10_HashRow);
+			
+            
+
+
+
+
+ 
+
+
+	tos_count_tAdvancedHash_row10++;
+
+/**
+ * [tAdvancedHash_row10 main ] stop
+ */
+	
+	/**
+	 * [tAdvancedHash_row10 process_data_begin ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_row10";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_row10 process_data_begin ] stop
+ */
+	
+	/**
+	 * [tAdvancedHash_row10 process_data_end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_row10";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_row10 process_data_end ] stop
+ */
+
+} // End of branch "row10"
+
+
+
+
+	
+	/**
+	 * [tFileInputDelimited_20 process_data_end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_20";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_20 process_data_end ] stop
+ */
+	
+	/**
+	 * [tFileInputDelimited_20 end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_20";
+
+	
+
+
+
+            }
+            }finally{
+                if(!((Object)("D:/DataLake/Harmonized/HA_address_"+TalendDate.getDate("YYYY-MM-DD")+".csv") instanceof java.io.InputStream)){
+                	if(fid_tFileInputDelimited_20!=null){
+                		fid_tFileInputDelimited_20.close();
+                	}
+                }
+                if(fid_tFileInputDelimited_20!=null){
+                	globalMap.put("tFileInputDelimited_20_NB_LINE", fid_tFileInputDelimited_20.getRowNumber());
+					
+                }
+			}
+			  
+
+ 
+
+ok_Hash.put("tFileInputDelimited_20", true);
+end_Hash.put("tFileInputDelimited_20", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tFileInputDelimited_20 end ] stop
+ */
+
+	
+	/**
+	 * [tAdvancedHash_row10 end ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_row10";
+
+	
+
+tHash_Lookup_row10.endPut();
+
+				if(execStat){
+			  		runStat.updateStat(resourceMap,iterateId,2,0,"row10");
+			  	}
+			  	
+ 
+
+ok_Hash.put("tAdvancedHash_row10", true);
+end_Hash.put("tAdvancedHash_row10", System.currentTimeMillis());
+
+
+
+
+/**
+ * [tAdvancedHash_row10 end ] stop
+ */
+
+
+
+				}//end the resume
+
+				
+
+
+
+	
+			}catch(java.lang.Exception e){	
+				
+				TalendException te = new TalendException(e, currentComponent, globalMap);
+				
+				throw te;
+			}catch(java.lang.Error error){	
+				
+					runStat.stopThreadStat();
+				
+				throw error;
+			}finally{
+				
+				try{
+					
+	
+	/**
+	 * [tFileInputDelimited_20 finally ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tFileInputDelimited_20";
+
+	
+
+ 
+
+
+
+/**
+ * [tFileInputDelimited_20 finally ] stop
+ */
+
+	
+	/**
+	 * [tAdvancedHash_row10 finally ] start
+	 */
+
+	
+
+	
+	
+	currentComponent="tAdvancedHash_row10";
+
+	
+
+ 
+
+
+
+/**
+ * [tAdvancedHash_row10 finally ] stop
+ */
+
+
+
+				}catch(java.lang.Exception e){	
+					//ignore
+				}catch(java.lang.Error error){
+					//ignore
+				}
+				resourceMap = null;
+			}
+		
+
+		globalMap.put("tFileInputDelimited_20_SUBPROCESS_STATE", 1);
 	}
 	
 
@@ -17248,6 +35862,6 @@ if (execStat) {
     ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- *     432229 characters generated by Talend Open Studio for Big Data 
- *     on the 1 de Maio de 2021 2h49min22s BRT
+ *     873024 characters generated by Talend Open Studio for Big Data 
+ *     on the 1 de Maio de 2021 12h19min58s BRT
  ************************************************************************************************/
