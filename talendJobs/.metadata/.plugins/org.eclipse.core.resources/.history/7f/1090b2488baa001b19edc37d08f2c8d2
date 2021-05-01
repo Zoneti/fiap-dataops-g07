@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_TXh0oKofEeuyKa_uE-xKDg" id="_TXdjMKofEeuyKa_uE-xKDg" label="JobSalesReport" purpose="Job responsável pela geração do relatório de Vendas" description="Job responsável pela geração do relatório de Vendas" version="0.1" statusCode="" item="_TXh0oqofEeuyKa_uE-xKDg" displayName="JobSalesReport">
+    <author href="../talend.project#_IHCS0I0KEeusA4yTh_rCww"/>
+    <additionalProperties xmi:id="_TX0vkKofEeuyKa_uE-xKDg" key="created_product_fullname" value="Talend Open Studio for Big Data"/>
+    <additionalProperties xmi:id="_TX0vkaofEeuyKa_uE-xKDg" key="created_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_TX0vkqofEeuyKa_uE-xKDg" key="created_date" value="2021-04-30T22:48:18.569-0300"/>
+    <additionalProperties xmi:id="_TX0vk6ofEeuyKa_uE-xKDg" key="modified_product_fullname" value="Talend Open Studio for Big Data"/>
+    <additionalProperties xmi:id="_TX0vlKofEeuyKa_uE-xKDg" key="modified_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_TX0vlaofEeuyKa_uE-xKDg" key="modified_date" value="2021-05-01T04:51:56.092-0300"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_TXh0oaofEeuyKa_uE-xKDg" path=""/>
+  <TalendProperties:ProcessItem xmi:id="_TXh0oqofEeuyKa_uE-xKDg" property="_TXh0oKofEeuyKa_uE-xKDg" state="_TXh0oaofEeuyKa_uE-xKDg">
+    <process href="JobSalesReport_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

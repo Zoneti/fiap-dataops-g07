@@ -1,0 +1,66 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<externalNode i18n.job.component.parameters="Component Parameters:" i18n.job.properties="Propriedades" i18n.job.values="Values" i18n.mapper.table.for="Mapper table for " i18n.mapper.table.properties="Mapper table Properties" i18n.job.name="Nome" i18n.tmap.matching.mode="Matching-mode" i18n.mapper.table.isminimized="isMinimized" i18n.tmap.isreject="isReject" i18n.tmap.isrejectinnnerjoin="isRejectInnerJoin" i18n.tmap.isinnerjoin="isInnerJoin" i18n.tmap.expressionfilter="expressionFilter" i18n.mapper.table.metadata.entries="Metadata Table Entries" i18n.job.type="Type" i18n.mapper.table.expression="Express&#227;o" i18n.tmap.isnullable="isNullable" i18n.tmap.constraint.entries="Constraint Table Entries" name="tMap_6" preview="pictures/_TXdjMKofEeuyKa_uE-xKDg-tMap_6-PREVIEW.bmp">
+  <parameters>
+    <column name="tStatCatcher Statistics">false</column>
+    <column name="Mapping links display as: ">AUTO</column>
+    <column name="Temp data directory path: "></column>
+    <column name="Max buffer size (nb of rows): ">2000000</column>
+    <column name="Ignore trailing zeros for BigDecimal">true</column>
+    <column name="Visualizar informa&#231;&#245;es">false</column>
+    <column name="Coment&#225;rio"><![CDATA[]]></column>
+    <column name="Use an existing validation rule">false</column>
+  </parameters>
+  <mapperTable type="input">
+    <table name="row4" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="OrderDate" type="java.util.Date" expression="" isNullable="false"/>
+        <entry name="CountryRegion" type="String" expression="" isNullable="false"/>
+        <entry name="StateProvince" type="String" expression="" isNullable="false"/>
+        <entry name="City" type="String" expression="" isNullable="false"/>
+        <entry name="SalesOrign" type="String" expression="" isNullable="false"/>
+        <entry name="SalesPerson" type="String" expression="" isNullable="true"/>
+        <entry name="TotalDue" type="float" expression="" isNullable="false"/>
+        <entry name="TotalDue_1" type="float" expression="" isNullable="false"/>
+      </metadataTableEntries>
+    </table>
+    <table name="max" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="OrderDate" type="java.util.Date" expression="row4.OrderDate " isNullable="false"/>
+        <entry name="CountryRegion" type="String" expression="row4.CountryRegion " isNullable="false"/>
+        <entry name="StateProvince" type="String" expression="row4.StateProvince " isNullable="false"/>
+        <entry name="City" type="String" expression="row4.City " isNullable="false"/>
+        <entry name="SalesOrign" type="String" expression="row4.SalesOrign " isNullable="false"/>
+        <entry name="SalesPerson" type="String" expression="" isNullable="true"/>
+        <entry name="TotalDue" type="float" expression="row4.TotalDue " isNullable="false"/>
+      </metadataTableEntries>
+    </table>
+    <table name="min" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="OrderDate" type="java.util.Date" expression="row4.OrderDate " isNullable="false"/>
+        <entry name="CountryRegion" type="String" expression="row4.CountryRegion " isNullable="false"/>
+        <entry name="StateProvince" type="String" expression="row4.StateProvince " isNullable="false"/>
+        <entry name="City" type="String" expression="row4.City " isNullable="false"/>
+        <entry name="SalesOrign" type="String" expression="row4.SalesOrign " isNullable="false"/>
+        <entry name="SalesPerson" type="String" expression="" isNullable="true"/>
+        <entry name="TotalDue" type="float" expression="row4.TotalDue_1 " isNullable="false"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+  <mapperTable type="output">
+    <table name="SalesTemp" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="OrderDate" type="java.util.Date" expression="row4.OrderDate " isNullable="false"/>
+        <entry name="CountryRegion" type="String" expression="row4.CountryRegion " isNullable="false"/>
+        <entry name="StateProvince" type="String" expression="row4.StateProvince " isNullable="false"/>
+        <entry name="City" type="String" expression="row4.City " isNullable="false"/>
+        <entry name="SalesOrign" type="String" expression="row4.SalesOrign " isNullable="false"/>
+        <entry name="SalesPersonMAX" type="String" expression="max.SalesPerson " isNullable="true"/>
+        <entry name="SalesPersonMIN" type="String" expression="min.SalesPerson " isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+  <mapperTable type="var">
+    <table name="Var" isMinimized="true" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null"/>
+  </mapperTable>
+</externalNode>

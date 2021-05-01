@@ -1,0 +1,1420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:UcfWF41VNIYl7aCFOl/xwL9VHR2v0UL3gCFmzykz" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;D:/Projetos/fiap-dataops-g07/talendJobs/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:acoEPmCe0ICKG1SMRO5qBAPJzfxw4y4R1gVLhvtU" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_JsYgAI0KEeusA4yTh_rCww" name="DataOperation"/>
+    <routinesParameter id="_JtJVAI0KEeusA4yTh_rCww" name="Mathematical"/>
+    <routinesParameter id="_JtMYUI0KEeusA4yTh_rCww" name="Numeric"/>
+    <routinesParameter id="_JtO0kI0KEeusA4yTh_rCww" name="Relational"/>
+    <routinesParameter id="_JtR34I0KEeusA4yTh_rCww" name="StringHandling"/>
+    <routinesParameter id="_JtU7MI0KEeusA4yTh_rCww" name="TalendDataGenerator"/>
+    <routinesParameter id="_JtX-gI0KEeusA4yTh_rCww" name="TalendDate"/>
+    <routinesParameter id="_JtdeEI0KEeusA4yTh_rCww" name="TalendStringUtil"/>
+    <routinesParameter id="_JtbB0I0KEeusA4yTh_rCww" name="TalendString"/>
+  </parameters>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/DataLake/Harmonized/HA_customer_&quot;+TalendDate.getDate(&quot;YYYY-MM-DD&quot;)+&quot;.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;D:/Projetos/fiap-dataops-g07/talendJobs&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="true"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="30%"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NameStyle"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Title"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MiddleName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Suffix"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CompanyName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SalesPerson"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EmailAddress"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Phone"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NameStyle"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Title"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MiddleName"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Suffix"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CompanyName"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SalesPerson"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EmailAddress"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Phone"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="IN_HAcustomer"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Import dos dados da tabela Customer da hierarquia Harmonized"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_1">
+      <column comment="" defaultValue="" key="false" length="10" name="CustomerID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="NameStyle" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Title" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="FirstName" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="MiddleName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="LastName" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Suffix" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="CompanyName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="SalesPerson" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="EmailAddress" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Phone" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="10" name="CustomerID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="NameStyle" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Title" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="FirstName" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="MiddleName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="LastName" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Suffix" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="CompanyName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="SalesPerson" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="EmailAddress" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Phone" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_1eZMUKlbEeucQ7YV5N33cg-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Ajuste das colunas a serem exportadas"/>
+    <metadata connector="FLOW" name="vendedores">
+      <column comment="" defaultValue="" key="false" length="10" name="CustomerID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="SalesPerson" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" name="clientes">
+      <column comment="" defaultValue="" key="false" length="10" name="CustomerID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="CompanyName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="vendedores">
+        <mapperTableEntries name="CustomerID" expression="row1.CustomerID " type="id_Integer"/>
+        <mapperTableEntries name="SalesPerson" expression="row1.SalesPerson " type="id_String" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="clientes">
+        <mapperTableEntries name="CustomerID" expression="row1.CustomerID " type="id_Integer"/>
+        <mapperTableEntries name="CompanyName" expression="row1.CompanyName " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="CustomerID" type="id_Integer"/>
+        <mapperTableEntries name="NameStyle" type="id_Boolean"/>
+        <mapperTableEntries name="Title" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FirstName" type="id_String"/>
+        <mapperTableEntries name="MiddleName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LastName" type="id_String"/>
+        <mapperTableEntries name="Suffix" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CompanyName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SalesPerson" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EmailAddress" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Phone" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_2" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/DataLake/Curated/DC_company_&quot;+TalendDate.getDate(&quot;YYYY-MM-DD&quot;)+&quot;.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="FileOutLojaDS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Export dos dados de Lojas para a hierarquia Curated"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_2">
+      <column comment="" defaultValue="" key="false" length="10" name="CustomerID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="CompanyName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/DataLake/Curated/DC_vendedores_&quot;+TalendDate.getDate(&quot;YYYY-MM-DD&quot;)+&quot;.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="FileOutVendedoresDS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Export dos dados de Vendedores para a hierarquia Curated"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1">
+      <column comment="" defaultValue="" key="false" length="10" name="CustomerID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="SalesPerson" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/DataLake/Harmonized/HA_product_&quot;+TalendDate.getDate(&quot;YYYY-MM-DD&quot;)+&quot;.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;D:/Projetos/fiap-dataops-g07/talendJobs&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductNumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Color"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StandardCost"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ListPrice"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Size"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Weight"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductCategoryID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductModelID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SellStartDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SellEndDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DiscontinuedDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductNumber"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Color"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StandardCost"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ListPrice"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Size"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Weight"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductCategoryID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductModelID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SellStartDate"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SellEndDate"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DiscontinuedDate"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="IN_HAproduct"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Import dos dados da tabela Product da hierarquia Harmonized"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_2">
+      <column comment="" defaultValue="" key="false" length="10" name="ProductID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Name" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="ProductNumber" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Color" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="StandardCost" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="ListPrice" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Size" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="Weight" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="ProductCategoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="ProductModelID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="SellStartDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="SellEndDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DiscontinuedDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="10" name="ProductID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Name" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="ProductNumber" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Color" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="StandardCost" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="ListPrice" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Size" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="Weight" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="ProductCategoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="ProductModelID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="SellStartDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="SellEndDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DiscontinuedDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_1eZMUKlbEeucQ7YV5N33cg-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Ajuste das colunas a serem exportadas"/>
+    <metadata connector="FLOW" name="produto">
+      <column comment="" defaultValue="" key="false" length="10" name="ProductID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Name" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Category" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Model" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="ProductNumber" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Color" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="StandardCost" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="ListPrice" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Size" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_Object" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="Weight" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="SellStartDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="SellEndDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DiscontinuedDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="produto">
+        <mapperTableEntries name="ProductID" expression="product.ProductID " type="id_Integer"/>
+        <mapperTableEntries name="Name" expression="product.Name " type="id_String"/>
+        <mapperTableEntries name="Category" expression="category.Name " type="id_String"/>
+        <mapperTableEntries name="Model" expression="model.Name " type="id_String"/>
+        <mapperTableEntries name="ProductNumber" expression="product.ProductNumber " type="id_String"/>
+        <mapperTableEntries name="Color" expression="product.Color " type="id_String" nullable="true"/>
+        <mapperTableEntries name="StandardCost" expression="product.StandardCost " type="id_Object"/>
+        <mapperTableEntries name="ListPrice" expression="product.ListPrice " type="id_Object"/>
+        <mapperTableEntries name="Size" expression="product.Size " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="Weight" expression="product.Weight " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="SellStartDate" expression="product.SellStartDate " type="id_String"/>
+        <mapperTableEntries name="SellEndDate" expression="product.SellEndDate " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DiscontinuedDate" expression="product.DiscontinuedDate " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="product" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="ProductID" type="id_Integer"/>
+        <mapperTableEntries name="Name" type="id_String"/>
+        <mapperTableEntries name="ProductNumber" type="id_String"/>
+        <mapperTableEntries name="Color" type="id_String" nullable="true"/>
+        <mapperTableEntries name="StandardCost" type="id_Object"/>
+        <mapperTableEntries name="ListPrice" type="id_Object"/>
+        <mapperTableEntries name="Size" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Weight" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ProductCategoryID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="ProductModelID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="SellStartDate" type="id_String"/>
+        <mapperTableEntries name="SellEndDate" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DiscontinuedDate" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="category" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="ProductCategoryID" expression="product.ProductCategoryID " type="id_Integer" operator="="/>
+        <mapperTableEntries name="Name" type="id_String"/>
+        <mapperTableEntries name="ParentProductCategoryID" type="id_Integer" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="model" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="ProductModelID" expression="product.ProductModelID " type="id_Integer" operator="="/>
+        <mapperTableEntries name="Name" type="id_String"/>
+        <mapperTableEntries name="CatalogDescription" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_3" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/DataLake/Harmonized/HA_productCategory_&quot;+TalendDate.getDate(&quot;YYYY-MM-DD&quot;)+&quot;.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;D:/Projetos/fiap-dataops-g07/talendJobs&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductCategoryID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ParentProductCategoryID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductCategoryID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ParentProductCategoryID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="IN_HAproductCategory"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Import dos dados da tabela ProductCategory da hierarquia Harmonized"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_3">
+      <column comment="" defaultValue="" key="false" length="10" name="ProductCategoryID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Name" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="ParentProductCategoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="10" name="ProductCategoryID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Name" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="ParentProductCategoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_4" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/DataLake/Harmonized/HA_productModel_&quot;+TalendDate.getDate(&quot;YYYY-MM-DD&quot;)+&quot;.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;D:/Projetos/fiap-dataops-g07/talendJobs&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductModelID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CatalogDescription"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductModelID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CatalogDescription"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="IN_HAproductModel"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Import dos dados da tabela ProductModel da hierarquia Harmonized"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_4">
+      <column comment="" defaultValue="" key="false" length="10" name="ProductModelID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Name" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="CatalogDescription" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="10" name="ProductModelID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Name" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="CatalogDescription" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_3" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/DataLake/Curated/DC_produtos_&quot;+TalendDate.getDate(&quot;YYYY-MM-DD&quot;)+&quot;.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="true"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;.&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="FileOutProdutosDS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Export dos dados de Produtos para a hierarquia Curated"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_3">
+      <column comment="" defaultValue="" key="false" length="10" name="ProductID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Name" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Category" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Model" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="ProductNumber" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Color" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="StandardCost" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="ListPrice" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Size" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_Object" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="Weight" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="SellStartDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="SellEndDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DiscontinuedDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="608">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_5" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/DataLake/Harmonized/HA_salesOrderHeader_&quot;+TalendDate.getDate(&quot;YYYY-MM-DD&quot;)+&quot;.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;D:/Projetos/fiap-dataops-g07/talendJobs&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SalesOrderID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RevisionNumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrderDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DueDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShipDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OnlineOrderFlag"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SalesOrderNumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderNumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AccountNumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShipToAddressID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillToAddressID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShipMethod"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreditCardApprovalCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SubTotal"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TaxAmt"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Freight"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TotalDue"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SalesOrderID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RevisionNumber"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrderDate"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DueDate"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShipDate"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OnlineOrderFlag"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SalesOrderNumber"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderNumber"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AccountNumber"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShipToAddressID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillToAddressID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShipMethod"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreditCardApprovalCode"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SubTotal"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TaxAmt"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Freight"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TotalDue"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="IN_HAsalesOrderHeader"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Import dos dados da tabela SalesOrderHeader da hierarquia Harmonized"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_5">
+      <column comment="" defaultValue="" key="false" length="10" name="SalesOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="RevisionNumber" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OrderDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DueDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ShipDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Status" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="OnlineOrderFlag" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="SalesOrderNumber" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="PurchaseOrderNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="AccountNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="CustomerID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="ShipToAddressID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="BillToAddressID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ShipMethod" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CreditCardApprovalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SubTotal" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="TaxAmt" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Freight" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="TotalDue" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="10" name="SalesOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="RevisionNumber" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OrderDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DueDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ShipDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Status" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="OnlineOrderFlag" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="SalesOrderNumber" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="PurchaseOrderNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="AccountNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="CustomerID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="ShipToAddressID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="BillToAddressID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ShipMethod" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CreditCardApprovalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SubTotal" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="TaxAmt" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Freight" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="TotalDue" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_1eZMUKlbEeucQ7YV5N33cg-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Ajuste das colunas a serem exportadas"/>
+    <metadata connector="FLOW" name="Sales">
+      <column comment="" defaultValue="" key="false" length="10" name="SalesOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="RevisionNumber" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OrderDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DueDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ShipDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Status" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="OnlineOrderFlag" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="SalesOrderNumber" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="PurchaseOrderNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="AccountNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CustomerName" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="ShipAddressLine1" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="ShipAddressLine2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ShipStateProvince" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ShipCountryRegion" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="ShipCity" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="ShipPostalCode" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="BillAddressLine1" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="BillAddressLine2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="BillStateProvince" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="BillCountryRegion" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="BillCity" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="BillPostalCode" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ShipMethod" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CreditCardApprovalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SubTotal" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="TaxAmt" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Freight" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="TotalDue" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var"/>
+      <outputTables sizeState="INTERMEDIATE" name="Sales">
+        <mapperTableEntries name="SalesOrderID" expression="salesOrder.SalesOrderID " type="id_Integer"/>
+        <mapperTableEntries name="RevisionNumber" expression="salesOrder.RevisionNumber " type="id_Short"/>
+        <mapperTableEntries name="OrderDate" expression="salesOrder.OrderDate " type="id_String"/>
+        <mapperTableEntries name="DueDate" expression="salesOrder.DueDate " type="id_String"/>
+        <mapperTableEntries name="ShipDate" expression="salesOrder.ShipDate " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Status" expression="salesOrder.Status " type="id_Short"/>
+        <mapperTableEntries name="OnlineOrderFlag" expression="salesOrder.OnlineOrderFlag " type="id_Boolean"/>
+        <mapperTableEntries name="SalesOrderNumber" expression="salesOrder.SalesOrderNumber " type="id_String"/>
+        <mapperTableEntries name="PurchaseOrderNumber" expression="salesOrder.PurchaseOrderNumber " type="id_String" nullable="true"/>
+        <mapperTableEntries name="AccountNumber" expression="salesOrder.AccountNumber " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CustomerName" expression="customer.FirstName + customer.MiddleName + customer.LastName " type="id_String"/>
+        <mapperTableEntries name="ShipAddressLine1" expression="addressShip.AddressLine1 " type="id_String"/>
+        <mapperTableEntries name="ShipAddressLine2" expression="addressShip.AddressLine2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ShipStateProvince" expression="addressShip.StateProvince " type="id_String"/>
+        <mapperTableEntries name="ShipCountryRegion" expression="addressShip.CountryRegion " type="id_String"/>
+        <mapperTableEntries name="ShipCity" expression="addressShip.City " type="id_String"/>
+        <mapperTableEntries name="ShipPostalCode" expression="addressShip.PostalCode " type="id_String"/>
+        <mapperTableEntries name="BillAddressLine1" expression="addressBILL.AddressLine1 " type="id_String"/>
+        <mapperTableEntries name="BillAddressLine2" expression="addressBILL.AddressLine2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BillStateProvince" expression="addressBILL.StateProvince " type="id_String"/>
+        <mapperTableEntries name="BillCountryRegion" expression="addressBILL.CountryRegion " type="id_String"/>
+        <mapperTableEntries name="BillCity" expression="addressBILL.City " type="id_String"/>
+        <mapperTableEntries name="BillPostalCode" expression="addressBILL.PostalCode " type="id_String"/>
+        <mapperTableEntries name="ShipMethod" expression="salesOrder.ShipMethod " type="id_String"/>
+        <mapperTableEntries name="CreditCardApprovalCode" expression="salesOrder.CreditCardApprovalCode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SubTotal" expression="salesOrder.SubTotal " type="id_Object"/>
+        <mapperTableEntries name="TaxAmt" expression="salesOrder.TaxAmt " type="id_Object"/>
+        <mapperTableEntries name="Freight" expression="salesOrder.Freight " type="id_Object"/>
+        <mapperTableEntries name="TotalDue" expression="salesOrder.TotalDue " type="id_Object"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="salesOrder" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="SalesOrderID" type="id_Integer"/>
+        <mapperTableEntries name="RevisionNumber" type="id_Short"/>
+        <mapperTableEntries name="OrderDate" type="id_String"/>
+        <mapperTableEntries name="DueDate" type="id_String"/>
+        <mapperTableEntries name="ShipDate" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Status" type="id_Short"/>
+        <mapperTableEntries name="OnlineOrderFlag" type="id_Boolean"/>
+        <mapperTableEntries name="SalesOrderNumber" type="id_String"/>
+        <mapperTableEntries name="PurchaseOrderNumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AccountNumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CustomerID" type="id_Integer"/>
+        <mapperTableEntries name="ShipToAddressID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="BillToAddressID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="ShipMethod" type="id_String"/>
+        <mapperTableEntries name="CreditCardApprovalCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SubTotal" type="id_Object"/>
+        <mapperTableEntries name="TaxAmt" type="id_Object"/>
+        <mapperTableEntries name="Freight" type="id_Object"/>
+        <mapperTableEntries name="TotalDue" type="id_Object"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="customer" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="CustomerID" expression="salesOrder.CustomerID " type="id_Integer" operator="="/>
+        <mapperTableEntries name="NameStyle" type="id_Boolean"/>
+        <mapperTableEntries name="Title" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FirstName" expression="" type="id_String"/>
+        <mapperTableEntries name="MiddleName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LastName" type="id_String"/>
+        <mapperTableEntries name="Suffix" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CompanyName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SalesPerson" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EmailAddress" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Phone" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="addressShip" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="AddressID" expression="salesOrder.ShipToAddressID " type="id_Integer" operator="="/>
+        <mapperTableEntries name="AddressLine1" type="id_String"/>
+        <mapperTableEntries name="AddressLine2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="StateProvince" type="id_String"/>
+        <mapperTableEntries name="CountryRegion" type="id_String"/>
+        <mapperTableEntries name="City" type="id_String"/>
+        <mapperTableEntries name="PostalCode" type="id_String"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="addressBILL" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="AddressID" expression="salesOrder.BillToAddressID " type="id_Integer" operator="="/>
+        <mapperTableEntries name="AddressLine1" type="id_String"/>
+        <mapperTableEntries name="AddressLine2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="StateProvince" type="id_String"/>
+        <mapperTableEntries name="CountryRegion" type="id_String"/>
+        <mapperTableEntries name="City" type="id_String"/>
+        <mapperTableEntries name="PostalCode" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_7" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/DataLake/Harmonized/HA_customer_&quot;+TalendDate.getDate(&quot;YYYY-MM-DD&quot;)+&quot;.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;D:/Projetos/fiap-dataops-g07/talendJobs&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NameStyle"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Title"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MiddleName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Suffix"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CompanyName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SalesPerson"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EmailAddress"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Phone"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NameStyle"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Title"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MiddleName"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Suffix"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CompanyName"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SalesPerson"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EmailAddress"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Phone"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="IN_HAcustomer"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Import dos dados da tabela Customer da hierarquia Harmonized"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_7">
+      <column comment="" defaultValue="" key="false" length="10" name="CustomerID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="NameStyle" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Title" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="FirstName" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="MiddleName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="LastName" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Suffix" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="CompanyName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="SalesPerson" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="EmailAddress" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Phone" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="10" name="CustomerID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="NameStyle" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Title" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="FirstName" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="MiddleName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="LastName" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Suffix" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="CompanyName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="SalesPerson" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="EmailAddress" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Phone" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="672">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_6" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/DataLake/Harmonized/HA_address_&quot;+TalendDate.getDate(&quot;YYYY-MM-DD&quot;)+&quot;.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;D:/Projetos/fiap-dataops-g07/talendJobs&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="AddressID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AddressLine1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AddressLine2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StateProvince"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CountryRegion"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PostalCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="AddressID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AddressLine1"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AddressLine2"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StateProvince"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CountryRegion"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PostalCode"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="IN_HAaddress"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Import dos dados da tabela Address da hierarquia Harmonized"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_6">
+      <column comment="" defaultValue="" key="false" length="10" name="AddressID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="AddressLine1" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="AddressLine2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="StateProvince" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CountryRegion" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="City" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="PostalCode" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="10" name="AddressID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="AddressLine1" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="AddressLine2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="StateProvince" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CountryRegion" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="City" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="PostalCode" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="736">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_8" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/DataLake/Harmonized/HA_address_&quot;+TalendDate.getDate(&quot;YYYY-MM-DD&quot;)+&quot;.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;D:/Projetos/fiap-dataops-g07/talendJobs&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="AddressID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AddressLine1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AddressLine2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StateProvince"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CountryRegion"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PostalCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="AddressID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AddressLine1"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AddressLine2"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StateProvince"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CountryRegion"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PostalCode"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="IN_HAaddress"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Import dos dados da tabela Address da hierarquia Harmonized"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_8">
+      <column comment="" defaultValue="" key="false" length="10" name="AddressID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="AddressLine1" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="AddressLine2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="StateProvince" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CountryRegion" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="City" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="PostalCode" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="10" name="AddressID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="AddressLine1" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="AddressLine2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="StateProvince" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CountryRegion" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="City" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="PostalCode" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_4" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/DataLake/Curated/DC_sales_&quot;+TalendDate.getDate(&quot;YYYY-MM-DD&quot;)+&quot;.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="FileOutSalesDS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Export dos dados de Vendas para a hierarquia Curated"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_4">
+      <column comment="" defaultValue="" key="false" length="10" name="SalesOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="RevisionNumber" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OrderDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DueDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ShipDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Status" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="OnlineOrderFlag" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="SalesOrderNumber" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="PurchaseOrderNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="AccountNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CustomerName" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="ShipAddressLine1" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="ShipAddressLine2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ShipStateProvince" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ShipCountryRegion" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="ShipCity" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="ShipPostalCode" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="BillAddressLine1" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="BillAddressLine2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="BillStateProvince" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="BillCountryRegion" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="BillCity" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="BillPostalCode" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ShipMethod" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CreditCardApprovalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SubTotal" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="TaxAmt" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Freight" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="TotalDue" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Object" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="vendedores" lineStyle="0" metaname="vendedores" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="vendedores" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="clientes" lineStyle="0" metaname="clientes" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tFileOutputDelimited_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="clientes" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="product" lineStyle="0" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="product" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="produto" lineStyle="0" metaname="produto" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tFileOutputDelimited_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="produto" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="category" lineStyle="8" metaname="tFileInputDelimited_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_3" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="category" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="model" lineStyle="8" metaname="tFileInputDelimited_4" offsetLabelX="-3" offsetLabelY="40" source="tFileInputDelimited_4" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="model" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="salesOrder" lineStyle="0" metaname="tFileInputDelimited_5" offsetLabelX="-41" offsetLabelY="-50" source="tFileInputDelimited_5" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="salesOrder" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Sales" lineStyle="0" metaname="Sales" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tFileOutputDelimited_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Sales" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="customer" lineStyle="8" metaname="tFileInputDelimited_7" offsetLabelX="-3" offsetLabelY="47" source="tFileInputDelimited_7" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="customer" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="addressShip" lineStyle="8" metaname="tFileInputDelimited_6" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_6" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="addressShip" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="addressBILL" lineStyle="8" metaname="tFileInputDelimited_8" offsetLabelX="-50" offsetLabelY="-35" source="tFileInputDelimited_8" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="addressBILL" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_5" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
