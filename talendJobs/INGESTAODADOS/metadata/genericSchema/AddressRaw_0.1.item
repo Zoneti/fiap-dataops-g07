@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_nT1eAqlOEeucQ7YV5N33cg" comment="connectionComment" label="connectionLabel" dataPackage="_nT1eA6lOEeucQ7YV5N33cg"/>
+  <TalendMetadata:GenericPackage xmi:id="_nT1eA6lOEeucQ7YV5N33cg" dataManager="_nT1eAqlOEeucQ7YV5N33cg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_nT1eBKlOEeucQ7YV5N33cg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nT1eBalOEeucQ7YV5N33cg" name="AddressID" id="6206" label="AddressID" length="10" sourceType="INT IDENTITY" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_nT1eBqlOEeucQ7YV5N33cg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nT1eB6lOEeucQ7YV5N33cg" name="AddressLine1" id="6207" label="AddressLine1" length="60" sourceType="NVARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_nT1eCKlOEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nT1eCalOEeucQ7YV5N33cg" name="AddressLine2" id="6208" label="AddressLine2" length="60" sourceType="NVARCHAR" talendType="id_String">
+        <initialValue xmi:id="_nT1eCqlOEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nT1eC6lOEeucQ7YV5N33cg" name="StateProvince" id="6209" label="StateProvince" length="50" sourceType="NVARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_nT1eDKlOEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nT1eDalOEeucQ7YV5N33cg" name="CountryRegion" id="6210" label="CountryRegion" length="50" sourceType="NVARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_nT1eDqlOEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nT1eD6lOEeucQ7YV5N33cg" name="City" id="6211" label="City" length="30" sourceType="NVARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_nT1eEKlOEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nT1eEalOEeucQ7YV5N33cg" name="PostalCode" id="6212" label="PostalCode" length="15" sourceType="NVARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_nT1eEqlOEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nT1eE6lOEeucQ7YV5N33cg" name="rowguid" id="6213" label="rowguid" length="36" sourceType="UNIQUEIDENTIFIER" talendType="id_Object" nullable="false">
+        <initialValue xmi:id="_nT1eFKlOEeucQ7YV5N33cg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nT1eFalOEeucQ7YV5N33cg" name="ModifiedDate" id="6214" label="ModifiedDate" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" nullable="false">
+        <initialValue xmi:id="_nT1eFqlOEeucQ7YV5N33cg" body=""/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

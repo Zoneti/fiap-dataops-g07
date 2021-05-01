@@ -1,0 +1,70 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<externalNode i18n.job.component.parameters="Component Parameters:" i18n.job.properties="Propriedades" i18n.job.values="Values" i18n.mapper.table.for="Mapper table for " i18n.mapper.table.properties="Mapper table Properties" i18n.job.name="Nome" i18n.tmap.matching.mode="Matching-mode" i18n.mapper.table.isminimized="isMinimized" i18n.tmap.isreject="isReject" i18n.tmap.isrejectinnnerjoin="isRejectInnerJoin" i18n.tmap.isinnerjoin="isInnerJoin" i18n.tmap.expressionfilter="expressionFilter" i18n.mapper.table.metadata.entries="Metadata Table Entries" i18n.job.type="Type" i18n.mapper.table.expression="Express&#227;o" i18n.tmap.isnullable="isNullable" i18n.tmap.constraint.entries="Constraint Table Entries" name="tMap_10" preview="pictures/_uj7gEKUzEeua6dCb8KSJsQ-tMap_10-PREVIEW.bmp">
+  <parameters>
+    <column name="tStatCatcher Statistics">false</column>
+    <column name="Mapping links display as: ">AUTO</column>
+    <column name="Temp data directory path: "></column>
+    <column name="Max buffer size (nb of rows): ">2000000</column>
+    <column name="Ignore trailing zeros for BigDecimal">true</column>
+    <column name="Visualizar informa&#231;&#245;es">false</column>
+    <column name="Coment&#225;rio"><![CDATA[Retirada de colunas não utilizadas e padronização tipos]]></column>
+    <column name="Use an existing validation rule">false</column>
+  </parameters>
+  <mapperTable type="input">
+    <table name="row13" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="SalesOrderID" type="int" expression="" isNullable="false"/>
+        <entry name="RevisionNumber" type="short" expression="" isNullable="false"/>
+        <entry name="OrderDate" type="String" expression="" isNullable="false"/>
+        <entry name="DueDate" type="String" expression="" isNullable="false"/>
+        <entry name="ShipDate" type="String" expression="" isNullable="true"/>
+        <entry name="Status" type="short" expression="" isNullable="false"/>
+        <entry name="OnlineOrderFlag" type="boolean" expression="" isNullable="false"/>
+        <entry name="SalesOrderNumber" type="String" expression="" isNullable="false"/>
+        <entry name="PurchaseOrderNumber" type="String" expression="" isNullable="true"/>
+        <entry name="AccountNumber" type="String" expression="" isNullable="true"/>
+        <entry name="CustomerID" type="int" expression="" isNullable="false"/>
+        <entry name="ShipToAddressID" type="Integer" expression="" isNullable="true"/>
+        <entry name="BillToAddressID" type="Integer" expression="" isNullable="true"/>
+        <entry name="ShipMethod" type="String" expression="" isNullable="false"/>
+        <entry name="CreditCardApprovalCode" type="String" expression="" isNullable="true"/>
+        <entry name="SubTotal" type="Object" expression="" isNullable="false"/>
+        <entry name="TaxAmt" type="Object" expression="" isNullable="false"/>
+        <entry name="Freight" type="Object" expression="" isNullable="false"/>
+        <entry name="TotalDue" type="Object" expression="" isNullable="false"/>
+        <entry name="Comment" type="String" expression="" isNullable="true"/>
+        <entry name="rowguid" type="Object" expression="" isNullable="false"/>
+        <entry name="ModifiedDate" type="String" expression="" isNullable="false"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+  <mapperTable type="output">
+    <table name="out10" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="SalesOrderID" type="int" expression="row13.SalesOrderID " isNullable="false"/>
+        <entry name="RevisionNumber" type="short" expression="row13.RevisionNumber " isNullable="false"/>
+        <entry name="OrderDate" type="String" expression="row13.OrderDate " isNullable="false"/>
+        <entry name="DueDate" type="String" expression="row13.DueDate " isNullable="false"/>
+        <entry name="ShipDate" type="String" expression="row13.ShipDate " isNullable="true"/>
+        <entry name="Status" type="short" expression="row13.Status " isNullable="false"/>
+        <entry name="OnlineOrderFlag" type="boolean" expression="row13.OnlineOrderFlag " isNullable="false"/>
+        <entry name="SalesOrderNumber" type="String" expression="row13.SalesOrderNumber " isNullable="false"/>
+        <entry name="PurchaseOrderNumber" type="String" expression="row13.PurchaseOrderNumber " isNullable="true"/>
+        <entry name="AccountNumber" type="String" expression="row13.AccountNumber " isNullable="true"/>
+        <entry name="CustomerID" type="int" expression="row13.CustomerID " isNullable="false"/>
+        <entry name="ShipToAddressID" type="Integer" expression="row13.ShipToAddressID " isNullable="true"/>
+        <entry name="BillToAddressID" type="Integer" expression="row13.BillToAddressID " isNullable="true"/>
+        <entry name="ShipMethod" type="String" expression="row13.ShipMethod " isNullable="false"/>
+        <entry name="CreditCardApprovalCode" type="String" expression="row13.CreditCardApprovalCode " isNullable="true"/>
+        <entry name="SubTotal" type="Object" expression="row13.SubTotal " isNullable="false"/>
+        <entry name="TaxAmt" type="Object" expression="row13.TaxAmt " isNullable="false"/>
+        <entry name="Freight" type="Object" expression="row13.Freight " isNullable="false"/>
+        <entry name="TotalDue" type="Object" expression="row13.TotalDue " isNullable="false"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+  <mapperTable type="var">
+    <table name="Var" isMinimized="true" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null"/>
+  </mapperTable>
+</externalNode>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_WOXf8alQEeucQ7YV5N33cg" comment="connectionComment" label="connectionLabel" dataPackage="_WOXf8qlQEeucQ7YV5N33cg"/>
+  <TalendMetadata:GenericPackage xmi:id="_WOXf8qlQEeucQ7YV5N33cg" dataManager="_WOXf8alQEeucQ7YV5N33cg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_WOXf86lQEeucQ7YV5N33cg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WOXf9KlQEeucQ7YV5N33cg" name="ProductDescriptionID" id="341" label="ProductDescriptionID" length="10" sourceType="INT IDENTITY" talendType="id_Integer" key="true" nullable="false">
+        <initialValue xmi:id="_WOXf9alQEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WOXf9qlQEeucQ7YV5N33cg" name="Description" id="342" label="Description" length="400" sourceType="NVARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_WOXf96lQEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WOXf-KlQEeucQ7YV5N33cg" name="rowguid" id="343" label="rowguid" length="36" sourceType="UNIQUEIDENTIFIER" talendType="id_Object" nullable="false">
+        <initialValue xmi:id="_WOXf-alQEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WOXf-qlQEeucQ7YV5N33cg" name="ModifiedDate" id="344" label="ModifiedDate" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_WOXf-6lQEeucQ7YV5N33cg"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_73vKcqlPEeucQ7YV5N33cg" comment="connectionComment" label="connectionLabel" dataPackage="_73vKc6lPEeucQ7YV5N33cg"/>
+  <TalendMetadata:GenericPackage xmi:id="_73vKc6lPEeucQ7YV5N33cg" dataManager="_73vKcqlPEeucQ7YV5N33cg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_73vKdKlPEeucQ7YV5N33cg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_73vKdalPEeucQ7YV5N33cg" name="CustomerID" id="6230" label="CustomerID" length="10" sourceType="INT IDENTITY" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_73vKdqlPEeucQ7YV5N33cg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_73vKd6lPEeucQ7YV5N33cg" name="NameStyle" id="6231" label="NameStyle" length="1" sourceType="BIT" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_73vKeKlPEeucQ7YV5N33cg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_73vKealPEeucQ7YV5N33cg" name="Title" id="6232" label="Title" length="8" sourceType="NVARCHAR" talendType="id_String">
+        <initialValue xmi:id="_73vKeqlPEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_73vKe6lPEeucQ7YV5N33cg" name="FirstName" id="6233" label="FirstName" length="50" sourceType="NVARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_73vKfKlPEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_73vKfalPEeucQ7YV5N33cg" name="MiddleName" id="6234" label="MiddleName" length="50" sourceType="NVARCHAR" talendType="id_String">
+        <initialValue xmi:id="_73vKfqlPEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_73vKf6lPEeucQ7YV5N33cg" name="LastName" id="6235" label="LastName" length="50" sourceType="NVARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_73vKgKlPEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_73vKgalPEeucQ7YV5N33cg" name="Suffix" id="6236" label="Suffix" length="10" sourceType="NVARCHAR" talendType="id_String">
+        <initialValue xmi:id="_73vKgqlPEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_73vKg6lPEeucQ7YV5N33cg" name="CompanyName" id="6237" label="CompanyName" length="128" sourceType="NVARCHAR" talendType="id_String">
+        <initialValue xmi:id="_73vKhKlPEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_73vKhalPEeucQ7YV5N33cg" name="SalesPerson" id="6238" label="SalesPerson" length="256" sourceType="NVARCHAR" talendType="id_String">
+        <initialValue xmi:id="_73vKhqlPEeucQ7YV5N33cg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_73vKh6lPEeucQ7YV5N33cg" name="EmailAddress" id="6239" label="EmailAddress" length="50" sourceType="NVARCHAR" talendType="id_String">
+        <initialValue xmi:id="_73vKiKlPEeucQ7YV5N33cg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_73vKialPEeucQ7YV5N33cg" name="Phone" id="6240" label="Phone" length="25" sourceType="NVARCHAR" talendType="id_String">
+        <initialValue xmi:id="_73vKiqlPEeucQ7YV5N33cg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_73vKi6lPEeucQ7YV5N33cg" name="PasswordHash" id="6241" label="PasswordHash" length="128" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_73vKjKlPEeucQ7YV5N33cg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_73vKjalPEeucQ7YV5N33cg" name="PasswordSalt" id="6242" label="PasswordSalt" length="10" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_73vKjqlPEeucQ7YV5N33cg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_73vKj6lPEeucQ7YV5N33cg" name="rowguid" id="6243" label="rowguid" length="36" sourceType="UNIQUEIDENTIFIER" talendType="id_Object" nullable="false">
+        <initialValue xmi:id="_73vKkKlPEeucQ7YV5N33cg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_73vKkalPEeucQ7YV5N33cg" name="ModifiedDate" id="6244" label="ModifiedDate" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" nullable="false">
+        <initialValue xmi:id="_73vKkqlPEeucQ7YV5N33cg" body=""/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

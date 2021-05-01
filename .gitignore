@@ -1,0 +1,10 @@
+talendJobs/INGESTAODADOS/.settings/mappings/*
+talendJobs/INGESTAODADOS/process/*.screenshot
+talendJobs/INGESTAODADOS/temp/*
+talendJobs/INGESTAODADOS/code/routines/system/*
+talendJobs/INGESTAODADOS/sqlPatterns/*
+talendJobs/INGESTAODADOS/poms/code/*
+talendJobs/INGESTAODADOS/.metadata
+talendJobs/INGESTAODADOS/poms/jobs/process/*/src/main/ext-resources/xmlMappings/*
+talendJobs/INGESTAODADOS/poms/jobs/process/*/src/main/templates/*
+talendJobs/INGESTAODADOS/poms/jobs/process/*/target/*
