@@ -2,20 +2,20 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
   <TalendMetadata:GenericSchemaConnection xmi:id="_hFxuYqlQEeucQ7YV5N33cg" comment="connectionComment" label="connectionLabel" dataPackage="_hFxuY6lQEeucQ7YV5N33cg"/>
   <TalendMetadata:GenericPackage xmi:id="_hFxuY6lQEeucQ7YV5N33cg" dataManager="_hFxuYqlQEeucQ7YV5N33cg">
-    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_hFxuZKlQEeucQ7YV5N33cg" label="metadata">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_hFxuZKlQEeucQ7YV5N33cg" id="_FyDT4KoTEeuafqYJOSIdsg" label="metadata">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hFxuZalQEeucQ7YV5N33cg" name="SalesOrderID" id="6302" label="SalesOrderID" length="10" sourceType="INT" talendType="id_Integer" nullable="false">
         <initialValue xmi:id="_hFxuZqlQEeucQ7YV5N33cg" body=""/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hFxuZ6lQEeucQ7YV5N33cg" name="RevisionNumber" id="6303" label="RevisionNumber" length="3" sourceType="TINYINT" talendType="id_Short" nullable="false">
         <initialValue xmi:id="_hFxuaKlQEeucQ7YV5N33cg" body=""/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hFxuaalQEeucQ7YV5N33cg" name="OrderDate" id="6304" label="OrderDate" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" nullable="false">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hFxuaalQEeucQ7YV5N33cg" name="OrderDate" id="6304" label="OrderDate" length="-1" precision="3" sourceType="DATETIME" talendType="id_String" nullable="false">
         <initialValue xmi:id="_hFxuaqlQEeucQ7YV5N33cg"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hFxua6lQEeucQ7YV5N33cg" name="DueDate" id="6305" label="DueDate" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" nullable="false">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hFxua6lQEeucQ7YV5N33cg" name="DueDate" id="6305" label="DueDate" length="-1" precision="3" sourceType="DATETIME" talendType="id_String" nullable="false">
         <initialValue xmi:id="_hFxubKlQEeucQ7YV5N33cg"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hFxubalQEeucQ7YV5N33cg" name="ShipDate" id="6306" label="ShipDate" length="23" precision="3" sourceType="DATETIME" talendType="id_Date">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hFxubalQEeucQ7YV5N33cg" name="ShipDate" id="6306" label="ShipDate" length="-1" precision="3" sourceType="DATETIME" talendType="id_String">
         <initialValue xmi:id="_hFxubqlQEeucQ7YV5N33cg"/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hFxub6lQEeucQ7YV5N33cg" name="Status" id="6307" label="Status" length="3" sourceType="TINYINT" talendType="id_Short" nullable="false">
@@ -66,7 +66,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hFxujalQEeucQ7YV5N33cg" name="rowguid" id="6322" label="rowguid" length="36" sourceType="UNIQUEIDENTIFIER" talendType="id_Object" nullable="false">
         <initialValue xmi:id="_hFxujqlQEeucQ7YV5N33cg" body=""/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hFxuj6lQEeucQ7YV5N33cg" name="ModifiedDate" id="6323" label="ModifiedDate" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" nullable="false">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hFxuj6lQEeucQ7YV5N33cg" name="ModifiedDate" id="6323" label="ModifiedDate" length="-1" precision="3" sourceType="DATETIME" talendType="id_String" nullable="false">
         <initialValue xmi:id="_hFxukKlQEeucQ7YV5N33cg" body=""/>
       </feature>
     </ownedElement>

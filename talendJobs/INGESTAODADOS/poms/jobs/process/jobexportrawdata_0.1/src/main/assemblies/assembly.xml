@@ -254,6 +254,7 @@
         <dependencySet>
             <outputDirectory>${talend.job.name}</outputDirectory>
             <includes>
+                <include>org.example.ingestaodados.job:JobExportDS:jar:0.1.0</include>
                 <include>org.example.ingestaodados.job:JobExportRawData:jar:0.1.0</include>
                 <include>org.example.ingestaodados.job:JobExportHarmonized:jar:0.1.0</include>
             </includes>
