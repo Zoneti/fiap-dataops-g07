@@ -1,5 +1,5 @@
-Palette.Favorite.ComponentsList=tFileOutputDelimited,tFileInputDelimited,tMap,tPostjob,tReplicate
-Palette.RecentlyUsed.ComponentsList=tAggregateRow\:1619837540301,tFileOutputDelimited\:1619834789780,tMap\:1619833859571,tRunJob\:1619833768361,tReplicate\:1619829280299,tFileInputDelimited\:1619828297517,tPostjob\:1619749853526,tDBInput\:1619298242240,tDBSCD\:1619297452824,tBufferInput\:1619296571635,tBufferOutput\:1619296434011,tJavaRow\:1619296111630,tFilterRow\:1619295855490,tSampleRow\:1619293601242,tDBClose\:1618365216854,tDBConnection\:1618365174450,tLogRow\:1618362400469,tPrejob\:1618361793135
+Palette.Favorite.ComponentsList=tFileOutputDelimited,tFileInputDelimited,tMap,tPostjob,tReplicate,tAggregateRow
+Palette.RecentlyUsed.ComponentsList=tFileOutputDelimited\:1619847217193,tFileInputDelimited\:1619846929697,tAggregateRow\:1619846082547,tMap\:1619845746941,tJoin\:1619843768351,tSampleRow\:1619843688066,tFilterRow\:1619843650319,tSortRow\:1619843480316,tReplicate\:1619843466946,tAggregateSortedRow\:1619843356510,tRunJob\:1619833768361,tPostjob\:1619749853526,tDBInput\:1619298242240,tDBSCD\:1619297452824,tBufferInput\:1619296571635,tBufferOutput\:1619296434011,tJavaRow\:1619296111630,tDBClose\:1618365216854,tDBConnection\:1618365174450,tLogRow\:1618362400469,tPrejob\:1618361793135
 TalendEditorPaletteFactory.Size=125
 TalendEditorPaletteFactory.StateAS400=1
 TalendEditorPaletteFactory.StateAccess=1
