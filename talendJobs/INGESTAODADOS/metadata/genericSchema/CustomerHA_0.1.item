@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_MU5uUKo-Eeu-gepNM6E72w" comment="connectionComment" label="connectionLabel" dataPackage="_MU5uUao-Eeu-gepNM6E72w"/>
+  <TalendMetadata:GenericPackage xmi:id="_MU5uUao-Eeu-gepNM6E72w" dataManager="_MU5uUKo-Eeu-gepNM6E72w">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_MU5uUqo-Eeu-gepNM6E72w" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MU5uU6o-Eeu-gepNM6E72w" name="CustomerID" id="299" label="CustomerID" length="10" sourceType="INT IDENTITY" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_MU5uVKo-Eeu-gepNM6E72w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MU5uVao-Eeu-gepNM6E72w" name="NameStyle" id="300" label="NameStyle" length="1" sourceType="BIT" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_MU5uVqo-Eeu-gepNM6E72w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MU5uV6o-Eeu-gepNM6E72w" name="Title" id="301" label="Title" length="8" sourceType="NVARCHAR" talendType="id_String">
+        <initialValue xmi:id="_MU5uWKo-Eeu-gepNM6E72w"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MU5uWao-Eeu-gepNM6E72w" name="FirstName" id="302" label="FirstName" length="50" sourceType="NVARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_MU5uWqo-Eeu-gepNM6E72w"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MU5uW6o-Eeu-gepNM6E72w" name="MiddleName" id="303" label="MiddleName" length="50" sourceType="NVARCHAR" talendType="id_String">
+        <initialValue xmi:id="_MU5uXKo-Eeu-gepNM6E72w"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MU5uXao-Eeu-gepNM6E72w" name="LastName" id="304" label="LastName" length="50" sourceType="NVARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_MU5uXqo-Eeu-gepNM6E72w"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MU5uX6o-Eeu-gepNM6E72w" name="Suffix" id="305" label="Suffix" length="10" sourceType="NVARCHAR" talendType="id_String">
+        <initialValue xmi:id="_MU5uYKo-Eeu-gepNM6E72w"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MU5uYao-Eeu-gepNM6E72w" name="CompanyName" id="306" label="CompanyName" length="128" sourceType="NVARCHAR" talendType="id_String">
+        <initialValue xmi:id="_MU5uYqo-Eeu-gepNM6E72w"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MU5uY6o-Eeu-gepNM6E72w" name="SalesPerson" id="307" label="SalesPerson" length="256" sourceType="NVARCHAR" talendType="id_String">
+        <initialValue xmi:id="_MU5uZKo-Eeu-gepNM6E72w"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MU5uZao-Eeu-gepNM6E72w" name="EmailAddress" id="308" label="EmailAddress" length="50" sourceType="NVARCHAR" talendType="id_String">
+        <initialValue xmi:id="_MU5uZqo-Eeu-gepNM6E72w"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MU5uZ6o-Eeu-gepNM6E72w" name="Phone" id="309" label="Phone" length="25" sourceType="NVARCHAR" talendType="id_String">
+        <initialValue xmi:id="_MU5uaKo-Eeu-gepNM6E72w"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

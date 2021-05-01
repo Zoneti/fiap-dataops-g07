@@ -130,6 +130,18 @@
     "id" : "TalendStringUtil",
     "version" : "Latest",
     "type" : "routine"
+  }, {
+    "id" : "_Jdm4cKo7Eeu-gepNM6E72w - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_MU5HQKo-Eeu-gepNM6E72w - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_xkvl4Ko6Eeu-gepNM6E72w - metadata",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
